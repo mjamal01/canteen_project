@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+    <data name="Signup" xml:space="preserve">
+    <value>Sıgn up</value>
+  </data>
+    <data name="Signin" xml:space="preserve">
+    <value>Sıgn ın</value>
+  </data>
+    <data name="ForgotPass" xml:space="preserve">
+    <value>Forget Password</value>
+  </data>
+    <data name="Pass" xml:space="preserve">
+    <value>Password</value>
+  </data>
+    <data name="Mail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+    <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+    <data name="BestSeller" xml:space="preserve">
+    <value>Best Seller</value>
+  </data>
+    <data name="Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+    <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+    <data name="Clothing" xml:space="preserve">
+    <value>Clothing</value>
+  </data>
+    <data name="ConfirmPass" xml:space="preserve">
+    <value>Password Confirm</value>
+  </data>
+    <data name="Electronics" xml:space="preserve">
+    <value>Electronics</value>
+  </data>
+    <data name="LoremIpsum" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+    <data name="NameSurname" xml:space="preserve">
+    <value>Name Surname</value>
+  </data>
+    <data name="NotificatinTitle" xml:space="preserve">
+    <value>Big discount on electrical products</value>
+  </data>
+    <data name="NotificationSubtitle" xml:space="preserve">
+    <value>Discounts up to 50%</value>
+  </data>
+    <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+    <data name="PreviousViewed" xml:space="preserve">
+    <value>Previous Viewed</value>
+  </data>
+    <data name="ProcutTitle" xml:space="preserve">
+    <value>Men's Nike Air Max 270 Casual</value>
+  </data>
+    <data name="ProcutTitle1" xml:space="preserve">
+    <value>Grey Firozi Mesh</value>
+  </data>
+    <data name="ProcutTitle2" xml:space="preserve">
+    <value>Presto Yellow</value>
+  </data>
+    <data name="ProcutTitle3" xml:space="preserve">
+    <value>iPhone 8 Plus Gold</value>
+  </data>
+    <data name="ProductBrand" xml:space="preserve">
+    <value>Nike</value>
+  </data>
+    <data name="ProductBrand1" xml:space="preserve">
+    <value>ASIAN</value>
+  </data>
+    <data name="ProductBrand2" xml:space="preserve">
+    <value>Nike</value>
+  </data>
+    <data name="ProductBrand3" xml:space="preserve">
+    <value>Apple</value>
+  </data>
+    <data name="Shoes" xml:space="preserve">
+    <value>Shoes</value>
+  </data>
+    <data name="Shop" xml:space="preserve">
+    <value>Kodmax Canteens System</value>
+  </data>
+    <data name="TitleDesc" xml:space="preserve">
+    <value>With millions of products at your service</value>
+  </data>
+    <data name="AddAddress" xml:space="preserve">
+    <value>Add Address</value>
+  </data>
+    <data name="MyBasket" xml:space="preserve">
+    <value>My Basket</value>
+  </data>
+    <data name="SelectAddress" xml:space="preserve">
+    <value>Select Address</value>
+  </data>
+    <data name="SelectCreditCard" xml:space="preserve">
+    <value>Select Credit Card</value>
+  </data>
+    <data name="ShippingCost" xml:space="preserve">
+    <value>Shipping Cost</value>
+  </data>
+    <data name="TotalPrice" xml:space="preserve">
+    <value>Total Price:</value>
+  </data>
+    <data name="AddBasket" xml:space="preserve">
+    <value>Add Basket</value>
+  </data>
+    <data name="AddCreditCard" xml:space="preserve">
+    <value>Add Credit Card</value>
+  </data>
+    <data name="AddNewCard" xml:space="preserve">
+    <value>Add New Card</value>
+  </data>
+    <data name="AddressDetail" xml:space="preserve">
+    <value>Address Detail</value>
+  </data>
+    <data name="CardName" xml:space="preserve">
+    <value>Card Name</value>
+  </data>
+    <data name="CardNumber" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+    <data name="CityName" xml:space="preserve">
+    <value>New York</value>
+  </data>
+    <data name="Commented" xml:space="preserve">
+    <value>Commented on 5</value>
+  </data>
+    <data name="CountryName" xml:space="preserve">
+    <value>United State</value>
+  </data>
+    <data name="DarkThemeEnabled" xml:space="preserve">
+    <value>Dark Theme Enabled</value>
+  </data>
+    <data name="EditProfile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+    <data name="EnableNotification" xml:space="preserve">
+    <value>Enable Notification</value>
+  </data>
+    <data name="ExampleHomeAddress" xml:space="preserve">
+    <value>Example 'Home Address'</value>
+  </data>
+    <data name="Expiration" xml:space="preserve">
+    <value>Expiration</value>
+  </data>
+    <data name="Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+    <data name="LastView" xml:space="preserve">
+    <value>Last View</value>
+  </data>
+    <data name="AccountDetails" xml:space="preserve">
+    <value>Account Details</value>
+  </data>
+
+    <data name="ChildrenDetails" xml:space="preserve">
+    <value>Children Details</value>
+  </data>
+    <data name="Logout" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+    <data name="LoremComment" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</value>
+  </data>
+    <data name="MyComments" xml:space="preserve">
+    <value>My Comments</value>
+  </data>
+    <data name="MyFavorites" xml:space="preserve">
+    <value>My Favorites</value>
+  </data>
+    <data name="MyOrders" xml:space="preserve">
+    <value>My Orders</value>
+  </data>
+    <data name="MyProfile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+    <data name="NotificationDetail" xml:space="preserve">
+    <value>Notification Detail</value>
+  </data>
+    <data name="Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+    <data name="OrderDate" xml:space="preserve">
+    <value>Order Date :</value>
+  </data>
+    <data name="OrderNo" xml:space="preserve">
+    <value>Order No :</value>
+  </data>
+    <data name="OrderStatus" xml:space="preserve">
+    <value>Order Status :</value>
+  </data>
+    <data name="ProductDesc" xml:space="preserve">
+    <value>Asian Shoes are for regular comfort wear. The body of this shoe is in a neutral grey colour with light blue accents. The upper material keeps air circulation while moderated ankles take full care of your feet when you go out for running...</value>
+  </data>
+    <data name="ProductDetail" xml:space="preserve">
+    <value>Product Detail</value>
+  </data>
+    <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+    <data name="SelectCity" xml:space="preserve">
+    <value>Select City</value>
+  </data>
+    <data name="SelectCountry" xml:space="preserve">
+    <value>Select Country</value>
+  </data>
+    <data name="SelectStreet" xml:space="preserve">
+    <value>Select Street</value>
+  </data>
+    <data name="SendComment" xml:space="preserve">
+    <value>Send Comment</value>
+  </data>
+    <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+    <data name="ShowMoreDetail" xml:space="preserve">
+    <value>Show More Detail</value>
+  </data>
+    <data name="SortType" xml:space="preserve">
+    <value>Sort Type :</value>
+  </data>
+    <data name="StreetName" xml:space="preserve">
+    <value>Broadway</value>
+  </data>
+    <data name="SuccessOrder" xml:space="preserve">
+    <value>Completed Order!</value>
+  </data>
+    <data name="ViewAll" xml:space="preserve">
+    <value>View All</value>
+  </data>
+    <data name="YourComment" xml:space="preserve">
+    <value>Your Comment</value>
+  </data>
+    <data name="ReadMore" xml:space="preserve">
+    <value>Read More</value>
+        </data>
+    <data name="PackingStage" xml:space="preserve">
+    <value>Packing Stage</value>
+        </data>
+    <data name="AddNewAddress" xml:space="preserve">
+    <value>Add New Address</value>
+        </data>
+    <data name="AddressTitle" xml:space="preserve">
+    <value>Address Title</value>
+        </data>
+    <data name="HomePage" xml:space="preserve">
+    <value>Home Page</value>
+        </data>
+    <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+        </data>
+    <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+        </data>
+    <data name="EnterEmailAddress" xml:space="preserve">
+    <value>Please enter your email address.</value>
+        </data>
+    <data name="Success" xml:space="preserve">
+    <value>Success</value>
+        </data>
+    <data name="SuccessSendEmail" xml:space="preserve">
+    <value>The password renewal mail has been sent to your email address.</value>
+        </data>
+    <data name="Okay" xml:space="preserve">
+    <value>Okay</value>
+        </data>
+    <data name="CompleteOrder" xml:space="preserve">
+    <value>Complete Order</value>
+        </data>
+    <data name="AddedBakset" xml:space="preserve">
+    <value>Product has been added to your basket.</value>
+        </data>
+    <data name="TotalCurrentBalance" xml:space="preserve">
+    <value>Total Current Balance</value>
+        </data>
+
+    <data name="MaxAmountPerDay" xml:space="preserve">
+    <value>Maximum Amount Per Day</value>
+        </data>
+
+    <data name="LoadSummary" xml:space="preserve">
+    <value>Load Summary</value>
+        </data>
+    <data name="LoadSummarySimple" xml:space="preserve">
+    <value>Load Simple Summary</value>
+        </data>
+
+    <data name="SummaryStartDate" xml:space="preserve">
+    <value>Summary Start Date</value>
+        </data>
+    <data name="SummaryEndDate" xml:space="preserve">
+    <value>Summary End Date</value>
+        </data>
+    <data name="TransactionsSummary" xml:space="preserve">
+    <value>Transactions Summary</value>
+        </data>
+    <data name="AllowedProducts" xml:space="preserve">
+    <value>Allowed Products</value>
+        </data>
+    
+    <data name="SelectWeekDay" xml:space="preserve">
+    <value>Select week day</value>
+    </data>
+    
+    <data name="Update" xml:space="preserve">
+    <value>Update</value>
+    </data>
+    
+     <data name="ViewWeeklyPlan" xml:space="preserve">
+    <value>View Weekly Plan</value>
+    </data>
+    
+     <data name="Save" xml:space="preserve">
+    <value>Save</value>
+    </data>
+
+     <data name="MaximumAmountPerDay" xml:space="preserve">
+    <value>Maximum Amount Per Day</value>
+    </data>
+
+</root>

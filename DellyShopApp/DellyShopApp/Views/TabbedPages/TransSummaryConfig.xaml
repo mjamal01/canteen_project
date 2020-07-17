@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.TabbedPages.TransSummaryConfig"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.PartialViews"
+    xmlns:pancakeView1="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    BackgroundColor="{DynamicResource BackgroundColor}">
+    <StackLayout Padding="20">
+         <pancakeView:NavigationBarPartialView
+            BackButtonVisibler="False"
+            FavVisible="False"
+             IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.TransactionsSummary}" />
+       
+
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+            <StackLayout
+                Margin="15,10,15,0"
+                Padding="5"
+                Spacing="5">
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.TotalCurrentBalance}" />
+                <pancakeView1:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <renderers:BorderlessEntry
+                        Keyboard="Text"
+                        MaxLength="30"
+                        x:Name="entryBalance"
+                        IsReadOnly="True"
+                        Placeholder="0.0"
+                        Style="{DynamicResource BorderlessEntry}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </pancakeView1:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SummaryStartDate}" />
+                <pancakeView1:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessDatePicker
+                            x:Name="startDatePicker"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            />
+                        
+                    </StackLayout>
+                </pancakeView1:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SummaryEndDate}" />
+                <pancakeView1:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessDatePicker
+                            x:Name="endDatePicker"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}" />
+                 
+                    </StackLayout>
+                </pancakeView1:PancakeView>
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,5,150,5',Phone='50,5,50,5'}"
+                        Clicked="TransSummaryButtonClick"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.LoadSummary}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,5,150,5',Phone='50,5,50,5'}"
+                        Clicked="TransSummarySimpleButtonClick"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.LoadSummarySimple}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,5,150,5',Phone='50,5,50,5'}"
+                        Clicked="RefreshBalanceButtonClick"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="Refresh Balance Amount"
+                        TextColor="{DynamicResource LabelTextColor}" />
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

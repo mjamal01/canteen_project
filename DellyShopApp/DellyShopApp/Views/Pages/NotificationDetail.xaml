@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.NotificationDetail"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="True"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+          <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.NotificationDetail}" />
+     
+          
+      
+        <ScrollView x:Name="ParallaxScrollView" VerticalOptions="StartAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <RelativeLayout
+                    x:Name="ParalaxContainer"
+                    Grid.Row="0"
+                    HeightRequest="{x:OnIdiom Phone=200,
+                                              Tablet=400}"
+                    VerticalOptions="StartAndExpand">
+                    <Image
+                        x:Name="Imagestack"
+                        Aspect="AspectFill"
+                        HeightRequest="{x:OnIdiom Phone=200,
+                                                  Tablet=400}"
+                        Source="{Binding Image}"
+                        VerticalOptions="Start" />
+                    <StackLayout x:Name="ParallaxLabel">
+                        <StackLayout
+                            x:Name="TitleLabel"
+                            Padding="15"
+                            BackgroundColor="#A1000000"
+                            HorizontalOptions="StartAndExpand"
+                            TranslationX="-500">
+                            <Label
+                                FontAttributes="Bold"
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="{x:OnIdiom Phone=20,
+                                                     Tablet=30}"
+                                HorizontalOptions="Start"
+                                LineBreakMode="TailTruncation"
+                                Text="{Binding Title}"
+                                TextColor="{DynamicResource FontColor}" />
+                        </StackLayout>
+                        <StackLayout
+                            x:Name="DateLabel"
+                            Padding="10"
+                            BackgroundColor="#A1000000"
+                            HorizontalOptions="StartAndExpand"
+                            TranslationX="-500">
+                            <Label
+                                FontAttributes="Bold"
+                                FontFamily="{DynamicResource VerdanaProLight}"
+                                FontSize="{x:OnIdiom Phone=10,
+                                                     Tablet=20}"
+                                HorizontalOptions="EndAndExpand"
+                                LineBreakMode="TailTruncation"
+                                Text="{Binding InstertedAt, StringFormat='{0:dd.MM.yyyy HH:mm}'}"
+                                TextColor="{DynamicResource DescLabelColor}" />
+                        </StackLayout>
+                    </StackLayout>
+                </RelativeLayout>
+                <StackLayout
+                    x:Name="Textstack"
+                    Grid.Row="1"
+                    Padding="20"
+                    BackgroundColor="{DynamicResource BackgroundColor}"
+                    Orientation="Vertical">
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProLight}"
+                        FontSize="{x:OnIdiom Phone=15,
+                                             Tablet=20}"
+                        LineHeight="1.4"
+                        Text="{Binding Description}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

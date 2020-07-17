@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="DellyShopApp.Styles.WhiteTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--  ButtonColors  -->
+    <Color x:Key="ButtonTextColor">White</Color>
+    <!--<Color x:Key="ButtonBackgroudColor">#F16A38</Color>-->
+    <Color x:Key="ButtonBackgroudColor">#853DEB</Color>
+
+    <Color x:Key="ButtonBorderColor">White</Color>
+    <!--  ButtonColors  -->
+    <!--  LabelColors  -->
+    <Color x:Key="LabelTextColor">White</Color>
+    <!--<Color x:Key="LightLabelTextColor">#F16A38</Color>-->
+    <Color x:Key="LightLabelTextColor">#853DEB</Color>
+
+    <!--<Color x:Key="DarkLabelTextColor">#F16A38</Color>-->
+    <Color x:Key="DarkLabelTextColor">#853DEB</Color>
+
+    <Color x:Key="DescLabelColor">LightGray</Color>
+    <Color x:Key="TitleLabelColor">#292929</Color>
+    <Color x:Key="WhiteDarkFontColor">#292929</Color>
+
+    <!--<Color x:Key="PriceLabelColor">#F16A38</Color>-->
+    <Color x:Key="PriceLabelColor">#853DEB</Color>
+    <!--  LabelColors  -->
+    <!--  BoxviewColors  -->
+    <!--<Color x:Key="BoxviewBackgroudColor">#F16A38</Color>-->
+    <Color x:Key="BoxviewBackgroudColor">#853DEB</Color>
+
+    <!--  BoxviewColors  -->
+    <!--  PancakeColor  -->
+    <Color x:Key="MainPancakeBackgroudColor">White</Color>
+    <!--<Color x:Key="PancakeBackgroudColor">#F16A38</Color>-->
+    <Color x:Key="PancakeBackgroudColor">#853DEB</Color>
+
+    <!--  PancakeColor  -->
+    <!--  FontIconColors  -->
+    <!--<Color x:Key="IconBgColor">#F16A38</Color>-->
+    <Color x:Key="IconBgColor">#853DEB</Color>
+
+
+    <Color x:Key="WhiteIconBgColor">White</Color>
+    <!--  BoxviewColors  -->
+    <!--  EntryColor  -->
+    <Color x:Key="EntryTextColor">#292929</Color>
+    <Color x:Key="EntryBgColor">White</Color>
+    <!--  BoxviewColors  -->
+    <!--  ItemColors  -->
+    <Color x:Key="ItemColor">White</Color>
+    <!--  ItemColors  -->
+    <Color x:Key="BackgroundColor">White</Color>
+    <!--<Color x:Key="MainColor">#F16A38</Color>-->
+    <Color x:Key="MainColor">#853DEB</Color>
+
+
+
+
+
+    <Color x:Key="FontColor">White</Color>
+    <!--<Color x:Key="DarkFontColor">#F16A38</Color>-->
+    <Color x:Key="DarkFontColor">#853DEB</Color>
+
+
+    <Color x:Key="TitleFontColor">White</Color>
+    <Color x:Key="IconColor">White</Color>
+    <Color x:Key="DarkIconColor">White</Color>
+
+    <Color x:Key="EntryBackgroundColor">White</Color>
+    <Color x:Key="FavStarColor">#FDDB28</Color>
+
+    <Color x:Key="Primary">#E5E9EE</Color>
+    <Color x:Key="PrimaryDark">#75849D</Color>
+    <Color x:Key="Secondary">#B5BBC2</Color>
+    <Color x:Key="Accent">White</Color>
+
+    <Color x:Key="LightColor">LightGray</Color>
+
+
+
+</ResourceDictionary>

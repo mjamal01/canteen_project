@@ -1,0 +1,29 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{4AB913E1-A69E-471A-A58F-DA46CF5AAF01}|Default">
+  <MonoDevelop.Ide.ItemProperties.DellyShopApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DellyShopApp" expanded="True" selected="True">
+            <Node name="DellyShopApp" expanded="True" />
+            <Node name="DellyShopApp.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{4AB913E1-A69E-471A-A58F-DA46CF5AAF01}" ItemName="DellyShopApp.Android" ConfigurationId="Default" />
+        <StartupItem ItemId="{08B98A4F-5E26-4AE1-92E7-77EE71DCEA43}" ItemName="DellyShopApp.iOS" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.DellyShopApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CBE15A68-2836-4F0A-8373-C780FE40F3DF" />
+</Properties>

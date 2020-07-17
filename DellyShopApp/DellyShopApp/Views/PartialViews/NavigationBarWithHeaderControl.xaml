@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout
+    x:Class="DellyShopApp.Views.PartialViews.NavigationBarWithHeaderControl"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="White"
+    HeightRequest="70"
+    Orientation="Horizontal"
+    Spacing="0">
+    <Image
+        x:Name="BackButton"
+        Aspect="AspectFit"
+        HeightRequest="50"
+        HorizontalOptions="Start"
+        VerticalOptions="CenterAndExpand"
+        WidthRequest="50">
+        <Image.Source>
+            <FontImageSource
+                FontFamily="{DynamicResource MaterialFontFamily}"
+                Glyph="{x:Static font:FontAwesomeIcons.ThinLeft}"
+                Size="50"
+                Color="{DynamicResource MainColor}" />
+        </Image.Source>
+    </Image>
+    <Label
+        x:Name="Title"
+        Margin="-50,0,0,0"
+        FontFamily="{DynamicResource VerdanaProRegular}"
+        FontSize="22"
+        HorizontalOptions="CenterAndExpand"
+        LineBreakMode="TailTruncation"
+        Text="{Binding Title}"
+        TextColor="{DynamicResource MainColor}"
+        VerticalOptions="CenterAndExpand"
+        VerticalTextAlignment="Center" />
+    <pancakeView:PancakeView
+        x:Name="favImage"
+        BackgroundColor="{DynamicResource MainColor}"
+        CornerRadius="10"
+        HeightRequest="35"
+        HorizontalOptions="End"
+        VerticalOptions="CenterAndExpand"
+        WidthRequest="35">
+        <Image
+            Aspect="AspectFit"
+            HeightRequest="25"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="25">
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="{DynamicResource MaterialFontFamily}"
+                    Glyph="{x:Static font:FontAwesomeIcons.Settings}"
+                    Size="25"
+                    Color="{DynamicResource FontColor}" />
+            </Image.Source>
+        </Image>
+    </pancakeView:PancakeView>
+</StackLayout>

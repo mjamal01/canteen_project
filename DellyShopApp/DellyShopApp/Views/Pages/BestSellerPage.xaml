@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.BestSellerPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:customView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="True"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <StackLayout Margin="10">
+        <partialViews:NavigationBarPartialView
+            x:Name="Navbar"
+            BackButtonVisibler="True"
+            FavVisible="False"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.BestSeller}" />
+
+        <customView:FlowListView
+            x:Name="BestSeller"
+            BackgroundColor="{DynamicResource BackgroundColor}"
+            FlowColumnCount="2"
+            FlowColumnExpand="None"
+            HasUnevenRows="False"
+            IsPullToRefreshEnabled="True"
+            Refreshing="BestSeller_Refreshing"
+            RowHeight="280"
+            SeparatorVisibility="None"
+            VerticalOptions="FillAndExpand"
+            VerticalScrollBarVisibility="Never">
+            <customView:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <customView:PancakeView
+                        Margin="5"
+                        Padding="5"
+                        BackgroundColor="{DynamicResource ItemColor}"
+                        CornerRadius="8"
+                        Elevation="2"
+                        HasShadow="False"
+                        HeightRequest="250"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="StartAndExpand"
+                        WidthRequest="{x:OnIdiom Tablet=150,
+                                                 Phone=130}">
+                        <customView:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ProductDetailClick" />
+                        </customView:PancakeView.GestureRecognizers>
+                        <StackLayout>
+                            <forms:CachedImage
+                                Aspect="AspectFit"
+                                HeightRequest="150"
+                                Source="{Binding Image}" />
+                            <Label
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                Text="{Binding Title}"
+                                TextColor="{DynamicResource WhiteDarkFontColor}"
+                                VerticalOptions="Start" />
+                            <Label
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="10"
+                                HorizontalOptions="Start"
+                                Text="{Binding Brand}"
+                                TextColor="{DynamicResource DescLabelColor}"
+                                VerticalOptions="Start" />
+
+                            <Label
+                                FontFamily="{DynamicResource VerdanaProBold}"
+                                FontSize="25"
+                                HorizontalOptions="EndAndExpand"
+                                Text="{Binding Price, StringFormat='{0} $'}"
+                                TextColor="{DynamicResource DarkLabelTextColor}"
+                                VerticalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </customView:PancakeView>
+                </DataTemplate>
+            </customView:FlowListView.FlowColumnTemplate>
+        </customView:FlowListView>
+    </StackLayout>
+</base:BasePage>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.SuccessPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl;assembly=DellyShopApp"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="{DynamicResource MainColor}"
+    NavigationPage.HasNavigationBar="False">
+    <Frame BackgroundColor="{DynamicResource MainColor}">
+        <StackLayout>
+            <ScrollView
+                Margin="10"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Start">
+                <customControl:RepeaterView x:Name="BasketItems" ItemsSource="{Binding ProcutListModel}">
+                    <customControl:RepeaterView.ItemTemplate>
+                        <DataTemplate>
+                             <ViewCell>
+                            <pancakeView:PancakeView
+                                Margin="0,10,0,10"
+                                Padding="5"
+                                BackgroundColor="White"
+                                CornerRadius="{x:OnPlatform Android=25,
+                                                            iOS=10}"
+                                Elevation="1">
+                                <StackLayout
+                                    BackgroundColor="White"
+                                    Orientation="Horizontal"
+                                    VerticalOptions="FillAndExpand">
+
+                                    <StackLayout
+                                        Padding="0"
+                                        BackgroundColor="#f7f7f7"
+                                        HorizontalOptions="Start">
+                                        <Image
+                                            Aspect="AspectFit"
+                                            HeightRequest="50"
+                                            Source="{Binding Image}"
+                                            WidthRequest="50" />
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                        <Label
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="15"
+                                            Text="{Binding Title}"
+                                            TextColor="#2E2E2E" />
+                                        <Label
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="12"
+                                            Text="{Binding Brand}"
+                                            TextColor="#917A7A" />
+                                    </StackLayout>
+                                    <Label
+                                        Margin="0,0,10,0"
+                                        FontAttributes="Bold"
+                                        FontFamily="{DynamicResource VerdanaProRegular}"
+                                        FontSize="22"
+                                        HorizontalOptions="EndAndExpand"
+                                        Text="{Binding Price, StringFormat='{0} $'}"
+                                        TextColor="{DynamicResource MainColor}"
+                                        VerticalOptions="CenterAndExpand" />
+                                </StackLayout>
+                            </pancakeView:PancakeView>
+                                 </ViewCell>
+                        </DataTemplate>
+                    </customControl:RepeaterView.ItemTemplate>
+                </customControl:RepeaterView>
+            </ScrollView>
+            <StackLayout>
+                <Image
+                    Aspect="AspectFill"
+                    HeightRequest="80"
+                    HorizontalOptions="CenterAndExpand"
+                    Style="{DynamicResource ImageStyleEntry}"
+                    WidthRequest="80">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="{DynamicResource MaterialFontFamily}"
+                            Glyph="{x:Static font:FontAwesomeIcons.CheckCircled}"
+                            Color="White" />
+                    </Image.Source>
+                </Image>
+                <Label
+                    FontFamily="{DynamicResource VerdanaProRegular}"
+                    FontSize="35"
+                    HorizontalOptions="Center"
+                    Text="{x:Static languages:AppResources.SuccessOrder}"
+                    TextColor="White"
+                    VerticalOptions="StartAndExpand" />
+            </StackLayout>
+
+            <Button
+                Margin="0,0,0,10"
+                BackgroundColor="{DynamicResource MainColor}"
+                BorderColor="{DynamicResource FontColor}"
+                BorderWidth="1"
+                Clicked="ContinueClick"
+                CornerRadius="20"
+                FontFamily="{DynamicResource VerdanaProRegular}"
+                FontSize="15"
+                HeightRequest="40"
+                HorizontalOptions="CenterAndExpand"
+                MinimumWidthRequest="250"
+                Text="{x:Static languages:AppResources.HomePage}"
+                TextColor="{DynamicResource FontColor}"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="150" />
+
+        </StackLayout>
+    </Frame>
+</base:BasePage>

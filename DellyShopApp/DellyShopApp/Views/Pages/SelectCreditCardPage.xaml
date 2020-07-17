@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.SelectCreditCardPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    xmlns:cards="clr-namespace:DellyShopApp.Views.CustomView" xmlns:proc="clr-namespace:DellyShopApp.Processors"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <StackLayout Margin="10">
+         <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+             x:Name="Navbar"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.SelectCreditCard}" />
+     
+       
+        <cards:CoverFlowView
+            x:Name="CarouselView"
+            Margin="0,0,0,0"
+            Padding="0"
+            AreAnimationsEnabled="True"
+            HeightRequest="{x:OnIdiom Tablet=300,Phone=200}"
+            PositionShiftValue="40">
+            <x:Arguments>
+                <proc:BaseCoverFlowFrontViewProcessor OpacityFactor="0" ScaleFactor="0.90" />
+                <proc:BaseCoverFlowBackViewProcessor OpacityFactor="0" ScaleFactor="0.90" />
+            </x:Arguments>
+            <cards:CoverFlowView.ItemTemplate>
+                <DataTemplate>
+                    <ContentView>
+                        <pancakeView:PancakeView
+                            Margin="{x:OnIdiom Tablet='100,0,100,0',Phone='25,0,25,0'}"
+                            Padding="10"
+                            BackgroundGradientEndColor="{DynamicResource MainColor}"
+                            BackgroundGradientStartColor="{Binding CardColor}"
+                            CornerRadius="15"
+                            HasShadow="False">
+                            <StackLayout
+                                HorizontalOptions="FillAndExpand"
+                                Spacing="10"
+                                VerticalOptions="FillAndExpand">
+                                <Image
+                                    Aspect="AspectFill"
+                                    HeightRequest="41"
+                                    HorizontalOptions="EndAndExpand"
+                                    Source="masterCard"
+                                    VerticalOptions="Start"
+                                    WidthRequest="41" />
+                                <Label
+                                    FontSize="11"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{x:Static languages:AppResources.CardNumber}"
+                                    TextColor="White" />
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{Binding CardNumber}"
+                                    TextColor="White" />
+                                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                                    <StackLayout HorizontalOptions="FillAndExpand">
+                                        <Label
+                                            FontSize="11"
+                                            HorizontalOptions="StartAndExpand"
+                                            Text="{x:Static languages:AppResources.Expiration}"
+                                            TextColor="White" />
+                                        <Label
+                                            FontSize="20"
+                                            HorizontalOptions="StartAndExpand"
+                                            Text="{Binding Expiration}"
+                                            TextColor="White" />
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label
+                                            FontSize="11"
+                                            HorizontalOptions="StartAndExpand"
+                                            Text="{x:Static languages:AppResources.CardName}"
+                                            TextColor="White" />
+                                        <Label
+                                            FontSize="20"
+                                            HorizontalOptions="StartAndExpand"
+                                            Text="{Binding CardName}"
+                                            TextColor="White" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </pancakeView:PancakeView>
+                    </ContentView>
+                </DataTemplate>
+            </cards:CoverFlowView.ItemTemplate>
+        </cards:CoverFlowView>
+        <StackLayout Margin="{x:OnIdiom Tablet='10,20,10,0',Phone='2,20,2,0'}" Orientation="Horizontal">
+            <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                        Margin="5"
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        HorizontalOptions="Start"
+                        Text="CVV :"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="CenterAndExpand" />
+                    <renderers:BorderlessEntry
+                        ClearButtonVisibility="WhileEditing"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Numeric"
+                        MaxLength="3"
+                        ReturnType="Done"
+                        Style="{DynamicResource BorderlessEntry}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </StackLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                <pancakeView:PancakeView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AddCardClick" />
+                </pancakeView:PancakeView.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                        Margin="5"
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        Text="{x:Static languages:AppResources.AddCreditCard}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="Center" />
+                    <Image
+                        Margin="0,0,10,0"
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="20">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{x:Static font:FontAwesomeIcons.Plus}"
+                                Size="20"
+                                Color="{DynamicResource IconBgColor}" />
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+            </pancakeView:PancakeView>
+        </StackLayout>
+        <Frame
+            Margin="0,20,0,20"
+            BackgroundColor="{DynamicResource MainColor}"
+            Style="{DynamicResource ButtonFrameStyle}"
+            VerticalOptions="EndAndExpand">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ContinueOrderButton" />
+            </Frame.GestureRecognizers>
+            <Label
+                Style="{DynamicResource ButtonLabelStyle}"
+                Text="{x:Static languages:AppResources.CompleteOrder}"
+                TextColor="{DynamicResource LabelTextColor}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ContinueOrderButton" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+
+    </StackLayout>
+
+</base:BasePage>

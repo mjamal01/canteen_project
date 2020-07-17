@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Hello" xml:space="preserve">
+    <value>مرحبا</value>
+  </data>
+    <data name="Signup" xml:space="preserve">
+    <value>سجل</value>
+  </data>
+    <data name="Signin" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+    <data name="ForgotPass" xml:space="preserve">
+    <value>هل نسيت كلمة المرور؟</value>
+  </data>
+    <data name="Pass" xml:space="preserve">
+    <value>كلمه السر</value>
+  </data>
+    <data name="Mail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+    <data name="Address" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+    <data name="BestSeller" xml:space="preserve">
+    <value>الأكثر مبيعا</value>
+  </data>
+    <data name="Birthday" xml:space="preserve">
+    <value>عيد الميلاد</value>
+  </data>
+    <data name="Categories" xml:space="preserve">
+    <value>الاقسام</value>
+  </data>
+    <data name="Clothing" xml:space="preserve">
+    <value>ملابس</value>
+  </data>
+    <data name="ConfirmPass" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+    <data name="Electronics" xml:space="preserve">
+    <value>إلكترونيات</value>
+  </data>
+    <data name="LoremIpsum" xml:space="preserve">
+    <value>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي</value>
+  </data>
+    <data name="NameSurname" xml:space="preserve">
+    <value>اسم اللقب</value>
+  </data>
+    <data name="NotificatinTitle" xml:space="preserve">
+    <value>خصم كبير على المنتجات الكهربائية</value>
+  </data>
+    <data name="NotificationSubtitle" xml:space="preserve">
+    <value>خصومات تصل إلى 50 ٪</value>
+  </data>
+    <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+    <data name="PreviousViewed" xml:space="preserve">
+    <value>السابق مشاهدة</value>
+  </data>
+    <data name="ProcutTitle" xml:space="preserve">
+    <value>نايك اير ماكس 270</value>
+  </data>
+    <data name="ProcutTitle1" xml:space="preserve">
+    <value>Grey Firozi Mesh</value>
+  </data>
+    <data name="ProcutTitle2" xml:space="preserve">
+    <value>المعزوفة الصفراء</value>
+  </data>
+    <data name="ProcutTitle3" xml:space="preserve">
+    <value>iPhone 8 Plus ذهب</value>
+  </data>
+    <data name="ProductBrand" xml:space="preserve">
+    <value>نايك</value>
+  </data>
+    <data name="ProductBrand1" xml:space="preserve">
+    <value>الآسيوية</value>
+  </data>
+    <data name="ProductBrand2" xml:space="preserve">
+    <value>نايك</value>
+  </data>
+    <data name="ProductBrand3" xml:space="preserve">
+    <value>Apple</value>
+  </data>
+    <data name="Shoes" xml:space="preserve">
+    <value>أحذية</value>
+  </data>
+    <data name="Shop" xml:space="preserve">
+    <value>Delly متجر</value>
+  </data>
+    <data name="TitleDesc" xml:space="preserve">
+    <value>مع الملايين من المنتجات في خدمتك.</value>
+  </data>
+    <data name="AddAddress" xml:space="preserve">
+    <value>اضف عنوان</value>
+  </data>
+    <data name="MyBasket" xml:space="preserve">
+    <value>سلة</value>
+  </data>
+    <data name="SelectAddress" xml:space="preserve">
+    <value>اختر العنوان</value>
+  </data>
+    <data name="SelectCreditCard" xml:space="preserve">
+    <value>اختر بطاقة الائتمان</value>
+  </data>
+    <data name="ShippingCost" xml:space="preserve">
+    <value>تكلفة الشحن</value>
+  </data>
+    <data name="TotalPrice" xml:space="preserve">
+    <value>السعر الكلي:</value>
+  </data>
+    <data name="AddBasket" xml:space="preserve">
+    <value>أضف سلة</value>
+  </data>
+    <data name="AddCreditCard" xml:space="preserve">
+    <value>إضافة بطاقة الائتمان</value>
+  </data>
+    <data name="AddNewCard" xml:space="preserve">
+    <value>أضف بطاقة جديدة</value>
+  </data>
+    <data name="AddressDetail" xml:space="preserve">
+    <value>عنوان التفاصيل</value>
+  </data>
+    <data name="CardName" xml:space="preserve">
+    <value>اسم البطاقة</value>
+  </data>
+    <data name="CardNumber" xml:space="preserve">
+    <value>رقم البطاقة</value>
+  </data>
+    <data name="CityName" xml:space="preserve">
+    <value>مدينة الرياض</value>
+  </data>
+    <data name="Commented" xml:space="preserve">
+    <value>علق على 5</value>
+  </data>
+    <data name="CountryName" xml:space="preserve">
+    <value>المملكة العربية السعودية</value>
+  </data>
+    <data name="DarkThemeEnabled" xml:space="preserve">
+    <value>الظلام موضوع ممكن</value>
+  </data>
+    <data name="EditProfile" xml:space="preserve">
+    <value>تعديل الملف الشخصي</value>
+  </data>
+    <data name="EnableNotification" xml:space="preserve">
+    <value>تفعيل الإشعارات</value>
+  </data>
+    <data name="ExampleHomeAddress" xml:space="preserve">
+    <value>مثال عنوان المنزل</value>
+  </data>
+    <data name="Expiration" xml:space="preserve">
+    <value>انتهاء الصلاحية</value>
+  </data>
+    <data name="Last" xml:space="preserve">
+    <value>الاخير</value>
+  </data>
+    <data name="LastView" xml:space="preserve">
+    <value>مشاهدة الماضي</value>
+  </data>
+    <data name="AccountDetails" xml:space="preserve">
+    <value>تفاصيل الحساب</value>
+  </data>
+    
+    <data name="ChildrenDetails" xml:space="preserve">
+<value>تفاصيل الأطفال</value>
+  </data>
+
+    <data name="Logout" xml:space="preserve">
+    <value>الخروج</value>
+  </data>
+    <data name="LoremComment" xml:space="preserve">
+    <value>يتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه  بروشور او فلاير على سبيل المثال ...ت</value>
+  </data>
+    <data name="MyComments" xml:space="preserve">
+    <value>تعليقاتي</value>
+  </data>
+    <data name="MyFavorites" xml:space="preserve">
+    <value>مفضلتي</value>
+  </data>
+    <data name="MyOrders" xml:space="preserve">
+    <value>طلباتي</value>
+  </data>
+    <data name="MyProfile" xml:space="preserve">
+    <value>ملفي</value>
+  </data>
+    <data name="NotificationDetail" xml:space="preserve">
+    <value>تفاصيل الإخطار</value>
+  </data>
+    <data name="Notifications" xml:space="preserve">
+    <value>إخطارات</value>
+  </data>
+    <data name="OrderDate" xml:space="preserve">
+    <value>تاريخ الطلب :</value>
+  </data>
+    <data name="OrderNo" xml:space="preserve">
+    <value>رقم الطلب:</value>
+  </data>
+    <data name="OrderStatus" xml:space="preserve">
+    <value>حالة الطلب :</value>
+  </data>
+    <data name="Product Detail" xml:space="preserve">
+    <value>تفاصيل المنتج</value>
+  </data>
+    <data name="ProductDesc" xml:space="preserve">
+    <value>الأحذية الآسيوية هي لارتداء الراحة العادية. جسم هذا الحذاء بلون رمادي محايد مع لهجات زرقاء فاتحة. تحافظ المادة العلوية على دوران الهواء بينما تهتم الكاحلين المعتدلة بكامل قدميك عند الخروج للركض ...</value>
+  </data>
+    <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+    <data name="SelectCity" xml:space="preserve">
+    <value>اختر مدينة</value>
+  </data>
+    <data name="SelectCountry" xml:space="preserve">
+    <value>حدد الدولة</value>
+  </data>
+    <data name="SelectStreet" xml:space="preserve">
+    <value>اختر شارع</value>
+  </data>
+    <data name="SendComment" xml:space="preserve">
+    <value>إرسال تعليق</value>
+  </data>
+    <data name="Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+    <data name="ShowMoreDetail" xml:space="preserve">
+    <value>عرض المزيد من التفاصيل</value>
+  </data>
+    <data name="SortType" xml:space="preserve">
+    <value>نوع الفرز:</value>
+  </data>
+    <data name="StreetName" xml:space="preserve">
+    <value>النعي</value>
+  </data>
+    <data name="SuccessOrder" xml:space="preserve">
+    <value>الطلب جاهز!</value>
+  </data>
+    <data name="ViewAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+    <data name="YourComment" xml:space="preserve">
+    <value>تعليقك</value>
+  </data>
+    <data name="ReadMore" xml:space="preserve">
+    <value>قراءة المزيد</value>
+  </data>
+    <data name="PackingStage" xml:space="preserve">
+    <value>مرحلة التعبئة</value>
+        </data>
+    <data name="AddNewAddress" xml:space="preserve">
+    <value>أضف عنوانا جديدا</value>
+        </data>
+    <data name="AddressTitle" xml:space="preserve">
+    <value>عنوان عنوان</value>
+        </data>
+    <data name="HomePage" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+        </data>
+    <data name="ProductDetail" xml:space="preserve">
+    <value>تفاصيل المنتج</value>
+  </data>
+    <data name="SelectLanguage" xml:space="preserve">
+    <value>اختار اللغة</value>
+        </data>
+    <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+        </data>
+    <data name="EnterEmailAddress" xml:space="preserve">
+    <value>الرجاء إدخال عنوان البريد الإلكتروني الخاص بك.</value>
+        </data>
+    <data name="Success" xml:space="preserve">
+    <value>نجاح</value>
+        </data>
+    <data name="SuccessSendEmail" xml:space="preserve">
+    <value>تم إرسال بريد تجديد كلمة المرور إلى عنوان بريدك الإلكتروني.</value>
+        </data>
+    <data name="Okay" xml:space="preserve">
+    <value>حسنا</value>
+        </data>
+    <data name="CompleteOrder" xml:space="preserve">
+    <value>اكمل الطلب</value>
+        </data>
+      <data name="AddedBakset" xml:space="preserve">
+    <value>تم اضافة المنتج الى سلتك</value>
+        </data>
+        <data name="TotalCurrentBalance" xml:space="preserve">
+        <value>إجمالي الرصيد الحالي</value>
+        </data>
+    
+        <data name="MaxAmountPerDay" xml:space="preserve">
+        <value>المبلغ الأقصى لكل يوم</value>
+        </data>
+
+    <data name="LoadSummary" xml:space="preserve">
+        <value>ملخص التحميل</value>
+        </data>
+    
+        <data name="LoadSummarySimple" xml:space="preserve">
+        <value>تحميل ملخص بسيط</value>
+        </data>
+
+    <data name="SummaryStartDate" xml:space="preserve">
+        <value>تاريخ بدء الملخص</value>
+        </data>
+        <data name="SummaryEndDate" xml:space="preserve">
+        <value>تاريخ انتهاء الملخص</value>
+        </data>
+        <data name="TransactionsSummary" xml:space="preserve">
+      <value>ملخص المعاملات</value>
+        </data>
+        <data name="AllowedProducts" xml:space="preserve">
+      <value>المنتجات المسموح بها</value>
+        </data>
+     <data name="SelectWeekDay" xml:space="preserve">
+    <value>حدد يوم الأسبوع</value>
+        </data>
+        
+     <data name="Update" xml:space="preserve">
+    <value>تحديث</value>
+    </data>
+    
+      <data name="ViewWeeklyPlan" xml:space="preserve">
+    <value>عرض الخطة الأسبوعية</value>
+    </data>
+    
+         <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+    </data>
+    
+         <data name="MaximumAmountPerDay" xml:space="preserve">
+    <value>المبلغ الأقصى لكل يوم</value>
+    </data>
+
+</root>

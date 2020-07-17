@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.SettingsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp" xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    ios:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+           <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+         
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.Settings}" />
+     
+       
+        <StackLayout Margin="10">
+            <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                <StackLayout
+                    BackgroundColor="{DynamicResource ItemColor}"
+                    Orientation="Horizontal"
+                    VerticalOptions="FillAndExpand">
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="20"
+                        Style="{DynamicResource ProfleLabelStyle}"
+                        Text="{x:Static languages:AppResources.EnableNotification}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="CenterAndExpand" />
+                    <Switch
+                        HorizontalOptions="EndAndExpand"
+                        OnColor="{DynamicResource DarkLabelTextColor}"
+                        ThumbColor="{DynamicResource DarkLabelTextColor}"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                <StackLayout
+                    BackgroundColor="{DynamicResource ItemColor}"
+                    Orientation="Horizontal"
+                    VerticalOptions="FillAndExpand">
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="20"
+                        Style="{DynamicResource ProfleLabelStyle}"
+                        Text="{x:Static languages:AppResources.DarkThemeEnabled}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="CenterAndExpand" />
+                    <Switch
+                        HorizontalOptions="EndAndExpand"
+                        OnColor="{DynamicResource DarkLabelTextColor}"
+                        ThumbColor="{DynamicResource DarkLabelTextColor}"
+                        Toggled="Toggled"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                <StackLayout
+                    BackgroundColor="{DynamicResource ItemColor}"
+                    Orientation="Horizontal"
+                    VerticalOptions="FillAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SelectLanguage" />
+                    </StackLayout.GestureRecognizers>
+                    <Label
+                        x:Name="languageLabel"
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="20"
+                        Style="{DynamicResource ProfleLabelStyle}"
+                        Text="{x:Static languages:AppResources.SelectLanguage}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="CenterAndExpand" />
+                    <Image
+                        Margin="0,0,10,0"
+                        Aspect="AspectFit"
+                        HeightRequest="50"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="50">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                Size="50"
+                                Color="{DynamicResource IconBgColor}" />
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                <StackLayout
+                    BackgroundColor="{DynamicResource ItemColor}"
+                    Orientation="Horizontal"
+                    VerticalOptions="FillAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LogOutClick" />
+                    </StackLayout.GestureRecognizers>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="20"
+                        Style="{DynamicResource ProfleLabelStyle}"
+                        Text="{x:Static languages:AppResources.Logout}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}"
+                        VerticalOptions="CenterAndExpand" />
+                    <Image
+                        Margin="0,0,10,0"
+                        Aspect="AspectFit"
+                        HeightRequest="30"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="30">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{x:Static font:FontAwesomeIcons.Exit}"
+                                Size="30"
+                                Color="{DynamicResource IconBgColor}" />
+                        </Image.Source>
+                    </Image>
+
+                </StackLayout>
+            </pancakeView:PancakeView>
+        </StackLayout>
+    </StackLayout>
+</base:BasePage>

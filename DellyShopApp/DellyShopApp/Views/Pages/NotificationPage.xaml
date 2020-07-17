@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.NotificationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl;assembly=DellyShopApp"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="True"
+     xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+    <StackLayout Margin="10">
+         <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.Notifications}" />
+     
+       
+        <StackLayout>
+            <customControl:RepeaterView x:Name="NotificationItems">
+                <customControl:RepeaterView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                                <pancakeView:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ClickItem" />
+                                </pancakeView:PancakeView.GestureRecognizers>
+                                <StackLayout
+                                    BackgroundColor="{DynamicResource ItemColor}"
+                                    Orientation="Horizontal"
+                                    VerticalOptions="FillAndExpand">
+                                    <pancakeView:PancakeView
+                                        Padding="0"
+                                        HorizontalOptions="Start"
+                                        Style="{DynamicResource PancakeFrameStyle}"
+                                        VerticalOptions="FillAndExpand">
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="50"
+                                            Source="{Binding Image}"
+                                            WidthRequest="50" />
+                                    </pancakeView:PancakeView>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                        <Label
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="15"
+                                            Text="{Binding Title}"
+                                            TextColor="{DynamicResource WhiteDarkFontColor}" />
+                                        <Label
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="12"
+                                            Text="{Binding SubTitle}"
+                                            TextColor="{DynamicResource DescLabelColor}" />
+                                    </StackLayout>
+                                    <Image
+                                        HorizontalOptions="EndAndExpand"
+                                        Rotation="{Binding Rotate}"
+                                        Style="{DynamicResource ImageStyleEntry}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Image.Source>
+                                            <FontImageSource
+                                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                                Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                                Size="25"
+                                                Color="{DynamicResource IconBgColor}" />
+                                        </Image.Source>
+                                    </Image>
+                                </StackLayout>
+                            </pancakeView:PancakeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </customControl:RepeaterView.ItemTemplate>
+            </customControl:RepeaterView>
+        </StackLayout>
+    </StackLayout>
+</base:BasePage>

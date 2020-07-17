@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.TabbedPages.ProfilePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="{DynamicResource BackgroundColor}">
+    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+        <StackLayout
+            Margin="10"
+            Padding="5"
+            Spacing="10">
+            <StackLayout
+                Margin="0,10,0,0"
+                HeightRequest="50"
+                VerticalOptions="Start">
+                <Label
+                    FontFamily="{DynamicResource VerdanaProRegular}"
+                    FontSize="25"
+                    HorizontalOptions="CenterAndExpand"
+                    LineBreakMode="TailTruncation"
+                    Text="{x:Static languages:AppResources.MyProfile}"
+                    TextColor="{DynamicResource DarkLabelTextColor}"
+                    VerticalOptions="StartAndExpand"
+                    VerticalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout x:Name="MainStack">
+                <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal"
+                    Spacing="20">
+                    <pancakeView:PancakeView
+                        Padding="0"
+                        HeightRequest="120"
+                        HorizontalOptions="Start"
+                        Style="{DynamicResource PancakeFrameStyle}"
+                        WidthRequest="120">
+                        <forms:CachedImage
+                            Margin="0"
+                            Aspect="AspectFill"
+                            Source="pp" />
+                    </pancakeView:PancakeView>
+                    <StackLayout>
+                        <Label
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            LineBreakMode="TailTruncation"
+                            Text="XamDesign"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            VerticalOptions="Start"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            FontFamily="{DynamicResource VerdanaProCondLight}"
+                            FontSize="16"
+                            HorizontalOptions="Start"
+                            LineBreakMode="TailTruncation"
+                            Text="XamAppDesign@gmail.com"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            VerticalOptions="Start"
+                            VerticalTextAlignment="Center" />
+                        <pancakeView:PancakeView HorizontalOptions="FillAndExpand" Style="{DynamicResource PancakeFrameStyle}">
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="10,0,0,0"
+                                    HeightRequest="25"
+                                    Style="{DynamicResource ImageStyleEntry}"
+                                    WidthRequest="25">
+                                    <Image.Source>
+                                        <FontImageSource
+                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                            Glyph="{x:Static font:FontAwesomeIcons.UiEdit}"
+                                            Size="25"
+                                            Color="{DynamicResource IconBgColor}" />
+                                    </Image.Source>
+                                </Image>
+                                <Label
+                                    FontFamily="{DynamicResource VerdanaProRegular}"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    LineBreakMode="TailTruncation"
+                                    Text="{x:Static languages:AppResources.EditProfile}"
+                                    TextColor="{DynamicResource WhiteDarkFontColor}"
+                                    VerticalOptions="CenterAndExpand"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </pancakeView:PancakeView>
+                    </StackLayout>
+                </StackLayout>
+                <!--<pancakeView:PancakeView
+                    Margin="0,20,0,0"
+                    ClassId="LastView"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ClockTime}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.LastView}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>-->
+
+                <!--<pancakeView:PancakeView
+                    Margin="0,10,0,0"
+                    ClassId="MyFav"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.Heart}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.MyFavorites}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>-->
+
+                <!--<pancakeView:PancakeView
+                    Margin="0,10,0,0"
+                    ClassId="MyOder"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.Box}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.MyOrders}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>-->
+
+                <!--<pancakeView:PancakeView
+                    Margin="0,10,0,0"
+                    ClassId="MyComments"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.SpeechComments}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.MyComments}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>-->
+
+                <pancakeView:PancakeView
+                    Margin="0,10,0,0"
+                    ClassId="Notifications"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.Notification}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.Notifications}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <pancakeView:PancakeView
+                    Margin="0,10,0,10"
+                    ClassId="Settings"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.UiSettings}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.Settings}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</base:BasePage>

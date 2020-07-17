@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout
+    x:Class="DellyShopApp.Views.PartialViews.CreditCardDisplayView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    HorizontalOptions="FillAndExpand"
+     xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    NavigationPage.HasNavigationBar="False"
+    VerticalOptions="Start">
+    <pancakeView:PancakeView
+        Margin="10"
+        Padding="20"
+        BackgroundGradientEndColor="{DynamicResource MainColor}"
+        BackgroundGradientStartColor="{Binding CardNumber, Converter={StaticResource CardColorConverter}}"
+        CornerRadius="15"
+        Visual="Material">
+        <Grid ColumnSpacing="30" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image
+                Grid.Row="0"
+                Grid.Column="2"
+                Aspect="Fill"
+                HeightRequest="40"
+                HorizontalOptions="EndAndExpand"
+                Source="{Binding CardNumber, Converter={StaticResource CardLightConverter}}"
+                WidthRequest="40" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="18"
+                LineBreakMode="TailTruncation"
+                Text="{x:Static languages:AppResources.CardNumber}"
+                TextColor="{DynamicResource FontColor}" />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="15"
+                Text="{Binding CardNumber}"
+                TextColor="{DynamicResource FontColor}" />
+
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="0,20,0,0"
+                FontSize="18"
+                Text="{x:Static languages:AppResources.Expiration}"
+                TextColor="{DynamicResource FontColor}" />
+
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                FontSize="20"
+                Text="{Binding CardExpirationDate}"
+                TextColor="{DynamicResource FontColor}" />
+
+            <Label
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="0,20,0,0"
+                FontSize="18"
+                Text="Cvv"
+                TextColor="{DynamicResource FontColor}" />
+
+            <Label
+                Grid.Row="4"
+                Grid.Column="2"
+                FontSize="20"
+                Text="{Binding CardCvv}"
+                TextColor="{DynamicResource FontColor}" />
+        </Grid>
+    </pancakeView:PancakeView>
+</StackLayout>

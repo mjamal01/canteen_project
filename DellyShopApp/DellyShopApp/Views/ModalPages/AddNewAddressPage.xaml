@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.ModalPages.AddNewAddressPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    Visual="Material">
+    <StackLayout>
+         <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+             IsModalpage="True"
+            NavigationTitle="{x:Static languages:AppResources.AddNewAddress}" />
+       
+
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+            <StackLayout
+                Margin="15,10,15,0"
+                Padding="5"
+                Spacing="10">
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.AddressTitle}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <renderers:BorderlessEntry
+                        Keyboard="Text"
+                        MaxLength="15"
+                        Placeholder="{x:Static languages:AppResources.ExampleHomeAddress}"
+                        Style="{DynamicResource BorderlessEntry}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </pancakeView:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SelectCountry}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessPicker
+                            Title="{x:Static languages:AppResources.CountryName}"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            TitleColor="{DynamicResource WhiteDarkFontColor}" />
+                        <Image Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinDown}"
+                                    Size="40"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SelectCity}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessPicker
+                            Title="{x:Static languages:AppResources.CityName}"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            TitleColor="{DynamicResource WhiteDarkFontColor}" />
+                        <Image Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinDown}"
+                                    Size="40"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SelectStreet}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessPicker
+                            Title="{x:Static languages:AppResources.StreetName}"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            TitleColor="{DynamicResource WhiteDarkFontColor}" />
+                        <Image Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinDown}"
+                                    Size="40"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.AddressDetail}" />
+                <pancakeView:PancakeView HeightRequest="100" Style="{DynamicResource PancakeFrameStyle}">
+                    <renderers:BorderlessEditor
+                        BackgroundColor="Transparent"
+                        Keyboard="Text"
+                        MaxLength="50"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </pancakeView:PancakeView>
+                <Frame
+                    Margin="0,20,0,20"
+                    BackgroundColor="{DynamicResource MainColor}"
+                    Style="{DynamicResource ButtonFrameStyle}">
+                    <Label
+                        Style="{DynamicResource ButtonLabelStyle}"
+                        Text="{x:Static languages:AppResources.AddAddress}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

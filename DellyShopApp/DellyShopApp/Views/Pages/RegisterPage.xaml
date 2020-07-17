@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.RegisterPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:helpers="clr-namespace:DellyShopApp.Languages"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="False"
+    BackgroundColor="{DynamicResource MainColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <ScrollView
+        Margin="0,-20,0,0"
+        VerticalOptions="FillAndExpand"
+        VerticalScrollBarVisibility="Never">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <pancakeView:PancakeView
+                CornerRadius="0,0,50,50"
+                HorizontalOptions="FillAndExpand"
+                Style="{DynamicResource PancakeStyle}"
+                VerticalOptions="StartAndExpand">
+                <AbsoluteLayout Margin="0,20,0,0">
+                    <StackLayout
+                        Margin="5,5,0,0"
+                        AbsoluteLayout.LayoutBounds="0,0,.3,.3"
+                        AbsoluteLayout.LayoutFlags="All"
+                        HorizontalOptions="Start"
+                        Spacing="0"
+                        VerticalOptions="StartAndExpand">
+                        <forms:CachedImage
+                            Aspect="AspectFill"
+                            HeightRequest="90"
+                            HorizontalOptions="StartAndExpand"
+                            Source="icon"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="90" />
+                        <Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,0"
+                            FontAttributes="Bold"
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            FontSize="18"
+                            HorizontalOptions="CenterAndExpand"
+                            Style="{StaticResource LabelStyle}"
+                            Text="{x:Static helpers:AppResources.Signup}"
+                            TextColor="{DynamicResource LightLabelTextColor}" />
+
+                    </StackLayout>
+                    <BoxView
+                        AbsoluteLayout.LayoutBounds="1,0,.5,.5"
+                        AbsoluteLayout.LayoutFlags="All"
+                        CornerRadius="{x:OnPlatform Android=110,
+                                                    iOS=100}"
+                        HeightRequest="{x:OnPlatform Android=220,
+                                                     iOS=200}"
+                        Style="{DynamicResource CircleBoxView}"
+                        TranslationX="55"
+                        TranslationY="-55"
+                        WidthRequest="{x:OnPlatform Android=220,
+                                                    iOS=200}" />
+
+                    <pancakeView:PancakeView
+                        AbsoluteLayout.LayoutBounds="0,1,.5,.7"
+                        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="{DynamicResource PancakeBackgroudColor}"
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="100">
+                        <pancakeView:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="BackButton" />
+                        </pancakeView:PancakeView.GestureRecognizers>
+                        <Image
+                            Aspect="AspectFit"
+                            HeightRequest="50"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="50">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinLeft}"
+                                    Size="50"
+                                    Color="{DynamicResource WhiteIconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </pancakeView:PancakeView>
+                </AbsoluteLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView
+                Margin="10,0,10,0"
+                Padding="25"
+                HasShadow="False"
+                VerticalOptions="EndAndExpand">
+
+                <StackLayout>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.NameSurname}" />
+                    <StackLayout Orientation="Horizontal">
+                        <Frame Style="{DynamicResource FrameStyle}">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                    <Image.Source>
+                                        <FontImageSource
+                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                            Glyph="{x:Static font:FontAwesomeIcons.User}"
+                                            Size="20"
+                                            Color="{DynamicResource IconBgColor}" />
+                                    </Image.Source>
+                                </Image>
+                                <renderers:BorderlessEntry MaxLength="15" Style="{DynamicResource BorderlessEntry}" />
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame Style="{DynamicResource FrameStyle}">
+                            <renderers:BorderlessEntry MaxLength="15" Style="{DynamicResource BorderlessEntry}" />
+                        </Frame>
+                    </StackLayout>
+
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Mail}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiEmail}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <renderers:BorderlessEntry Keyboard="Email" Style="{DynamicResource BorderlessEntry}" />
+                        </StackLayout>
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.PhoneNumber}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiCall}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <renderers:BorderlessEntry Keyboard="Numeric" Style="{DynamicResource BorderlessEntry}" />
+                        </StackLayout>
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Pass}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiLock}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <renderers:BorderlessEntry IsPassword="True" Style="{DynamicResource BorderlessEntry}" />
+                        </StackLayout>
+
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.ConfirmPass}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiLock}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <renderers:BorderlessEntry IsPassword="True" Style="{DynamicResource BorderlessEntry}" />
+                        </StackLayout>
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Birthday}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Style="{DynamicResource ImageStyleEntryRegister}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.BirthdayCake}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <renderers:BorderlessDatePicker
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                TextColor="{DynamicResource EntryTextColor}" />
+                        </StackLayout>
+
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Address}" />
+                    <Frame HeightRequest="100" Style="{DynamicResource FrameStyle}">
+                        <renderers:BorderlessEditor BackgroundColor="Transparent" TextColor="{DynamicResource DarkFontColor}" />
+                    </Frame>
+                    <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        Clicked="RegisteruButtonClick"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static helpers:AppResources.Signup}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+                </StackLayout>
+            </pancakeView:PancakeView>
+
+        </StackLayout>
+    </ScrollView>
+</base:BasePage>

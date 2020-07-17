@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+x:Class="DellyShopApp.Views.Pages.SingleChildDetail"
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+xmlns:languages="clr-namespace:DellyShopApp.Languages"
+xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+iOsSpecific:Page.UseSafeArea="True"
+BackgroundColor="{DynamicResource BackgroundColor}"
+NavigationPage.HasNavigationBar="False">
+<StackLayout Padding="20">
+         <partialViews:NavigationBarPartialView
+            BackButtonVisibler="True"
+            FavVisible="False"
+             IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.AllowedProducts}" />
+
+
+              <Label Text="User Name" FontSize="28" HorizontalOptions="Center"
+            VerticalOptions="Center" FontAttributes="Bold" x:Name="ChildName"/>
+
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+            <StackLayout
+                Margin="15,10,15,0"
+                Padding="5"
+                Spacing="10">
+                <Label Style="{DynamicResource  EntryHeaderLabel}" Text="{x:Static languages:AppResources.MaxAmountPerDay}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <renderers:BorderlessEntry
+                        Keyboard="Text"
+                        MaxLength="30"
+                        x:Name="MaxAmountPerDay"
+                        IsReadOnly="False"
+                        Placeholder="0.0"
+                        Style="{DynamicResource BorderlessEntry}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </pancakeView:PancakeView>
+
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.SelectWeekDay}" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <renderers:BorderlessPicker
+                            HorizontalOptions="FillAndExpand"
+                            Style="{DynamicResource BorderlessPicker}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            TitleColor="{DynamicResource WhiteDarkFontColor}"
+                            x:Name="DayPicker"
+                            />
+                           
+
+                        <Image Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinDown}"
+                                    Size="40"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+
+                
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        Clicked="ClickUpdate"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.Update}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        Clicked="ClickViewWeeklyPlan"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.ViewWeeklyPlan}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+                <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        Clicked="ClickSave"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.Save}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

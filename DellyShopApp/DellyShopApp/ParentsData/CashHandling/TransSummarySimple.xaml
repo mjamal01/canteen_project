@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DellyShopApp.ParentsData.CashHandling"
+    x:Class="DellyShopApp.ParentsData.CashHandling.TransSummarySimple">
+    <ContentPage.BindingContext>
+        <local:CashTransViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="Device.iOS" Value="0, 20, 0, 0" />
+            <On Platform="Android" Value="0, 0, 0, 0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <Frame BorderColor="Gray"
+        CornerRadius="5"
+        Padding="8">
+        <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="Start">
+                            <Label Text="Total Credit:" TextColor="Navy" FontSize="10" FontAttributes="Bold" WidthRequest="90" HorizontalTextAlignment="Start"/>
+                            <Label Text="{Binding totalCredit,StringFormat='{0:N0}'}" TextColor="Navy" FontSize="10"
+                                    FontAttributes="Bold" MinimumWidthRequest="100" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+                        <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Label Text="Total Debit:" TextColor="Navy" FontSize="10" FontAttributes="Bold" WidthRequest="90" HorizontalTextAlignment="Start"/>
+                            <Label Text="{Binding totalDebit,StringFormat='{0:N0}'}" TextColor="Navy" FontSize="10"
+                                    FontAttributes="Bold" MinimumWidthRequest="100" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+                        
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="1">
+                        <Label Text="Date" TextColor="Navy" FontSize="10" WidthRequest="100" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        <Label Text="Order" TextColor="Navy" FontSize="10" WidthRequest="45" FontAttributes="Bold" HorizontalTextAlignment="End" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="Credit" TextColor="Navy" FontSize="10" WidthRequest="50" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Debit" TextColor="Navy" FontSize="10" WidthRequest="50" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Balance" TextColor="Navy" FontSize="10" WidthRequest="70" FontAttributes="Bold" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>                                       
+                                         
+                    <ListView ItemsSource="{Binding transactions}"
+                        HasUnevenRows="True"
+                        ItemTapped="ListView_ItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Margin="0,10,0,5">
+                                    <Label Text="{Binding DTG,StringFormat='{0:yyyy/MM/dd}'}" TextColor="Navy" FontSize="11" WidthRequest="100" HorizontalTextAlignment="Start"/>
+                                    <Label Text="{Binding Ref}" TextColor="Navy" FontSize="11" WidthRequest="40" HorizontalTextAlignment="End"  HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Credit, StringFormat='{0:N0}'}" TextColor="Navy" FontSize="11" WidthRequest="50" HorizontalTextAlignment="End"/>
+                                    <Label Text="{Binding Debit, StringFormat='{0:N0}'}" TextColor="Navy" FontSize="11" WidthRequest="50" HorizontalTextAlignment="End"/>
+                                    <Label Text="{Binding Balance, StringFormat='{0:N0}'}" TextColor="Navy"
+                                            FontSize="11" WidthRequest="70" HorizontalTextAlignment="End"  HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            
+        </Frame>
+    </ContentPage.Content></ContentPage>

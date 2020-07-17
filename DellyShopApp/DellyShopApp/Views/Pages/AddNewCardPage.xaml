@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.AddNewCardPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:fastEntry="clr-namespace:XamarinFastEntrySample.FastEntry;assembly=XamarinFastEntry.Behaviors"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <StackLayout Margin="10">
+        <partialViews:NavigationBarPartialView
+            x:Name="Navbar"
+            BackButtonVisibler="True"
+            FavVisible="False"
+            IsModalpage="True"
+            NavigationTitle="{x:Static languages:AppResources.AddNewCard}" />
+        <ScrollView>
+            <Grid
+                ColumnSpacing="20"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <partialViews:CreditCardDisplayView
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3" />
+                <pancakeView:PancakeView
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Margin="10"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.UiUser}"
+                                    Size="25"
+                                    Color="{Binding CardNumber, Converter={StaticResource CardColorConverter}}" />
+                            </Image.Source>
+                        </Image>
+                        <renderers:BorderlessEntry
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            HorizontalOptions="FillAndExpand"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            Visual="Custom" />
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <pancakeView:PancakeView
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Margin="10"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <Image HeightRequest="30" Source="{Binding CardNumber, Converter={StaticResource CardConverter}}" />
+                        <renderers:BorderlessEntry
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            HorizontalOptions="FillAndExpand"
+                            Keyboard="Numeric"
+                            Text="{Binding CardNumber, Mode=TwoWay}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            Visual="Custom">
+                            <renderers:BorderlessEntry.Behaviors>
+                                <fastEntry:XamarinFastEntryBehaviour Mask="####-####-####-####" MaxLength="19" />
+                            </renderers:BorderlessEntry.Behaviors>
+                        </renderers:BorderlessEntry>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <pancakeView:PancakeView
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Margin="10,0,0,0"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.UiCalendar}"
+                                    Size="25"
+                                    Color="{Binding CardNumber, Converter={StaticResource CardColorConverter}}" />
+                            </Image.Source>
+                        </Image>
+                        <renderers:BorderlessEntry
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            HorizontalOptions="FillAndExpand"
+                            Keyboard="Numeric"
+                            Text="{Binding CardExpirationDate}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            Visual="Custom">
+                            <renderers:BorderlessEntry.Behaviors>
+                                <fastEntry:XamarinFastEntryBehaviour Mask="##/##" MaxLength="19" />
+                            </renderers:BorderlessEntry.Behaviors>
+                        </renderers:BorderlessEntry>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <pancakeView:PancakeView
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Margin="0,0,10,0"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.CreditCard}"
+                                    Size="25"
+                                    Color="{Binding CardNumber, Converter={StaticResource CardColorConverter}}" />
+                            </Image.Source>
+                        </Image>
+                        <renderers:BorderlessEntry
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            HorizontalOptions="FillAndExpand"
+                            Keyboard="Numeric"
+                            Text="{Binding CardCvv}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            Visual="Custom">
+                            <renderers:BorderlessEntry.Behaviors>
+                                <fastEntry:XamarinFastEntryBehaviour Mask="###" MaxLength="3" />
+                            </renderers:BorderlessEntry.Behaviors>
+                        </renderers:BorderlessEntry>
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <Frame
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Margin="10"
+                    BackgroundColor="{Binding CardNumber, Converter={StaticResource CardColorConverter}}"
+                    Style="{DynamicResource ButtonFrameStyle}"
+                    VerticalOptions="EndAndExpand">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SaveClick" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout>
+                        <Label
+                            Style="{DynamicResource ButtonLabelStyle}"
+                            Text="{x:Static languages:AppResources.Save}"
+                            TextColor="{DynamicResource LabelTextColor}" />
+                    </StackLayout>
+
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

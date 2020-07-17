@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.Pages.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:helpers="clr-namespace:DellyShopApp.Languages"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    iOsSpecific:Page.UseSafeArea="False"
+    BackgroundColor="{DynamicResource MainColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <ScrollView
+        Margin="0,30,0,0"
+        VerticalOptions="Fill"
+        VerticalScrollBarVisibility="Never">
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+            <pancakeView:PancakeView
+                CornerRadius="0,0,5,5"
+                HorizontalOptions="FillAndExpand"
+                Style="{DynamicResource PancakeStyle}"
+                VerticalOptions="Center">
+                <AbsoluteLayout Margin="{x:OnPlatform Android='60,70,0,0',iOS ='180,70,0,0'}">
+                    <StackLayout
+                        Margin="5,5,0,0"
+                        AbsoluteLayout.LayoutBounds="{x:OnPlatform Android='0,-2,.9,.9', iOS='-0.2,0,.3,.3'}"
+                        AbsoluteLayout.LayoutFlags="All"
+                        HorizontalOptions="Center"
+                        Spacing="0"
+                        VerticalOptions="Center">
+                        <Image
+                            Aspect="AspectFill"
+                            HeightRequest="{x:OnPlatform Android='140', iOS='30'}"
+                            HorizontalOptions="Center"
+                            Source="icon"
+                            VerticalOptions="Center"
+                            WidthRequest="300"
+                            Scale="{x:OnPlatform Android='0.5', iOS='5'}"/>
+
+                        <!--<Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,0"
+                            FontAttributes="Bold"
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            FontSize="18"
+                            HorizontalOptions="CenterAndExpand"
+                            Style="{StaticResource LabelStyle}"
+                            Text="{x:Static helpers:AppResources.Signin}"
+                            TextColor="{DynamicResource LightLabelTextColor}" />-->
+                    </StackLayout>
+                    <!--<BoxView
+                        AbsoluteLayout.LayoutBounds="1,0,.5,.5"
+                        AbsoluteLayout.LayoutFlags="All"
+                        CornerRadius="{x:OnPlatform Android=110,
+                                                    iOS=100}"
+                        HeightRequest="{x:OnPlatform Android=220,
+                                                     iOS=200}"
+                        Style="{DynamicResource CircleBoxView}"
+                        TranslationX="55"
+                        TranslationY="-55"
+                        WidthRequest="{x:OnPlatform Android=220,
+                                                    iOS=200}" />-->
+                    <!--<pancakeView:PancakeView
+                        AbsoluteLayout.LayoutBounds="0,1,.5,.7"
+                        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="{DynamicResource PancakeBackgroudColor}"
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="100">
+
+
+                        #region
+                        
+                        <pancakeView:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="BackButton" />
+                        </pancakeView:PancakeView.GestureRecognizers>
+                        
+                        
+                        <Image
+                            Aspect="AspectFit"
+                            HeightRequest="50"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="50">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinLeft}"
+                                    Size="50"
+                                    Color="{DynamicResource WhiteIconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        
+                        #endregion
+                    </pancakeView:PancakeView>-->
+
+                </AbsoluteLayout>
+            </pancakeView:PancakeView>
+            <pancakeView:PancakeView
+                Margin="10,0,10,0"
+                Padding="25"
+                CornerRadius="35,35,0,0"
+                HasShadow="False"
+                VerticalOptions="StartAndExpand">
+                <StackLayout>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Mail}" />
+
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiEmail}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <!--This is email entry box-->
+                            <renderers:BorderlessEntry
+                                HorizontalOptions="FillAndExpand"
+                                Keyboard="Email"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                x:Name="EntryUserName"
+                                />
+                        </StackLayout>
+                    </Frame>
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.Pass}" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiLock}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                            <!--This is password entry box-->
+                            <renderers:BorderlessEntry
+                                HorizontalOptions="FillAndExpand"
+                                IsPassword="True"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                x:Name="EntryPassword"
+                                />
+                        </StackLayout>
+                    </Frame>
+                    <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        BackgroundColor="{DynamicResource ButtonBorderColor}"
+                        BorderColor="{DynamicResource ButtonBorderColor}"
+                        Clicked="LoginButtonClick"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static helpers:AppResources.Signin}"
+                        TextColor="{DynamicResource LightLabelTextColor}"
+                        x:Name="LoginButton"
+                        />
+                    <!--<Label
+                        Margin="0,0,0,10"
+                        HorizontalOptions="CenterAndExpand"
+                        Style="{DynamicResource LabelStyle}"
+                        Text="{x:Static helpers:AppResources.ForgotPass}"
+                        TextDecorations="Underline" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ForgetPassClick"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>-->
+                </StackLayout>
+            </pancakeView:PancakeView>
+        </StackLayout>
+    </ScrollView>
+</base:BasePage>

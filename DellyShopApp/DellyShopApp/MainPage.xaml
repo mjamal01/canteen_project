@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+ xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"    x:Class="DellyShopApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:helpers="clr-namespace:DellyShopApp.Languages"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    iOsSpecific:Page.UseSafeArea="False"
+    BackgroundColor="{DynamicResource MainColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <StackLayout>
+        <ScrollView
+            Margin="0,-20,0,0"
+            VerticalOptions="FillAndExpand"
+            VerticalScrollBarVisibility="Never">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <pancakeView:PancakeView
+                    CornerRadius="0,0,50,50"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeStyle}"
+                    VerticalOptions="StartAndExpand">
+                    <AbsoluteLayout Margin="0,20,0,0">
+                        <StackLayout
+                            Margin="5,5,0,0"
+                            AbsoluteLayout.LayoutBounds="0,0,.3,.3"
+                            AbsoluteLayout.LayoutFlags="All"
+                            HorizontalOptions="Start"
+                            Spacing="0"
+                            VerticalOptions="StartAndExpand">
+                            <forms:CachedImage
+                                Aspect="AspectFill"
+                                HeightRequest="90"
+                                HorizontalOptions="StartAndExpand"
+                                Source="icon"
+                                VerticalOptions="CenterAndExpand"
+                                WidthRequest="90" />
+                            <Label
+                                Margin="0,5,0,0"
+                                Padding="0,0,0,0"
+                                FontAttributes="Bold"
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="18"
+                                HorizontalOptions="CenterAndExpand"
+                                Style="{StaticResource LabelStyle}"
+                                Text="{x:Static helpers:AppResources.Hello}"
+                                TextColor="{DynamicResource LightLabelTextColor}" />
+
+                        </StackLayout>
+                        <BoxView
+                            AbsoluteLayout.LayoutBounds="1,0,.5,.5"
+                            AbsoluteLayout.LayoutFlags="All"
+                            CornerRadius="{x:OnPlatform Android=110,
+                                                        iOS=100}"
+                            HeightRequest="{x:OnPlatform Android=220,
+                                                         iOS=200}"
+                            Style="{DynamicResource CircleBoxView}"
+                            TranslationX="55"
+                            TranslationY="-55"
+                            WidthRequest="{x:OnPlatform Android=220,
+                                                        iOS=200}" />
+                        <BoxView
+                            AbsoluteLayout.LayoutBounds="0,1,.5,.5"
+                            AbsoluteLayout.LayoutFlags="All"
+                            CornerRadius="80"
+                            HeightRequest="160"
+                            Style="{DynamicResource CircleBoxView}"
+                            TranslationX="-100"
+                            TranslationY="-50"
+                            WidthRequest="160" />
+                        <BoxView
+                            AbsoluteLayout.LayoutBounds="1,1,.6,.7"
+                            AbsoluteLayout.LayoutFlags="All"
+                            CornerRadius="50"
+                            HeightRequest="100"
+                            Style="{DynamicResource CircleBoxView}"
+                            WidthRequest="100" />
+                    </AbsoluteLayout>
+                </pancakeView:PancakeView>
+
+                <StackLayout
+                    Margin="0,0,20,0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="StartAndExpand">
+                    <Button
+                        
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                        Clicked="SignUp_Clicked"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static helpers:AppResources.Signup}"
+                        TextColor="{DynamicResource LabelTextColor}" />
+                    <Button
+                         Margin="{x:OnIdiom Tablet='150,10,150,10',Phone='50,10,50,10'}"
+                        BackgroundColor="{DynamicResource ButtonBorderColor}"
+                        BorderColor="{DynamicResource ButtonBorderColor}"
+                        Clicked="LogIn_Clicked"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static helpers:AppResources.Signin}"
+                        TextColor="{DynamicResource LightLabelTextColor}" />
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</base:BasePage>

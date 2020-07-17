@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="DellyShopApp.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:DellyShopApp.Converters;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl;assembly=DellyShopApp"
+    xmlns:customView="clr-namespace:DellyShopApp.Views.CustomView"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--<Color x:Key="FontColor">White</Color>
+            <Color x:Key="MainColor">#F16A38</Color>
+            <Color x:Key="DarkFontColor">#252525</Color>
+            <Color x:Key="FavStarColor">#FDDB28</Color>
+            <Color x:Key="Primary">#E5E9EE</Color>
+            <Color x:Key="PrimaryDark">#75849D</Color>
+            <Color x:Key="Secondary">#B5BBC2</Color>
+            <Color x:Key="Accent">White</Color>
+            <Color x:Key="LightColor">LightGray</Color>-->
+             <Style x:Key="ActiveIndicator" TargetType="Frame">
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="BackgroundColor" Value="{x:DynamicResource LightColor}" />
+            </Style>
+            <Style x:Key="InactiveIndicator" TargetType="Frame">
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="BackgroundColor" Value="{x:DynamicResource AntiBgColorLabel}" />
+                <Setter Property="OutlineColor" Value="{x:DynamicResource AntiBgColorLabel}" />
+            </Style>
+            <ResourceDictionary Source="Styles/WhiteTheme.xaml" />
+
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="icofont" />
+                <On Platform="Android" Value="icofont.ttf#icofont" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="VerdanaProBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="VerdanaProBold.ttf#Verdana" />
+                <On Platform="iOS" Value="VerdanaProBold" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="VerdanaProCondLight" x:TypeArguments="x:String">
+                <On Platform="Android" Value="VerdanaProCondLight.ttf#Verdana" />
+                <On Platform="iOS" Value="VerdanaProCondLight" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="VerdanaProLight" x:TypeArguments="x:String">
+                <On Platform="Android" Value="VerdanaProLight.ttf#Verdana" />
+                <On Platform="iOS" Value="Font/VerdanaProLight" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="VerdanaProRegular" x:TypeArguments="x:String">
+                <On Platform="Android" Value="VerdanaProRegular.ttf#Verdana" />
+                <On Platform="iOS" Value="Font/VerdanaProRegular" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="VerdanaProSemiBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="VerdanaProSemiBold.ttf#Verdana" />
+                <On Platform="iOS" Value="Font/VerdanaProSemiBold" />
+            </OnPlatform>
+
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource TitleFontColor}" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+                <Setter Property="TextColor" Value="{DynamicResource LabelTextColor}" />
+            </Style>
+
+            <OnPlatform x:Key="ButtonFont" x:TypeArguments="x:String">
+                <On Platform="Android" Value="16" />
+                <On Platform="iOS" Value="20" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="BlncAmnt" x:TypeArguments="x:String">
+                <On Platform="Android" Value="10" />
+                <On Platform="iOS" Value="12" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="ButtonMargin" x:TypeArguments="x:String">
+                <On Platform="Android" Value="50,6,50,6" />
+                <On Platform="iOS" Value="50,10,50,10" />
+            </OnPlatform>
+
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="Margin" Value="50,10,50,10" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="BorderColor" Value="{DynamicResource ButtonBorderColor}" />
+                <Setter Property="CornerRadius" Value="25" />
+                <!--<Setter Property="FontSize" Value="20" />-->
+                <Setter Property="FontSize" Value="{DynamicResource ButtonFont}"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBackgroudColor}" />
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="HeightRequest" Value="57" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="TextColor" Value="{x:DynamicResource ButtonTextColor}" />
+            </Style>
+
+            <Style x:Key="CircleBoxView" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{DynamicResource BoxviewBackgroudColor}" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+            <Style x:Key="PancakeStyle" TargetType="customView:PancakeView">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource MainPancakeBackgroudColor}" />
+            </Style>
+
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="Padding" Value="{x:OnPlatform Android=5, iOS=8}" />
+                <Setter Property="CornerRadius" Value="{x:OnPlatform Android=25, iOS=25}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource ItemColor}" />
+                <Setter Property="BackgroundColor" Value="#F7F7F7" />
+            </Style>
+
+            <Style x:Key="PancakeFrameStyle" TargetType="customView:PancakeView">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="Padding" Value="{x:OnPlatform Android=5, iOS=8}" />
+                <Setter Property="CornerRadius" Value="{x:OnPlatform Android=25, iOS=25}" />
+                <Setter Property="Elevation" Value="{x:OnPlatform Android=2, iOS=3}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource ItemColor}" />
+            </Style>
+
+            <Style x:Key="ScrollViewStyle" TargetType="ScrollView">
+                <Setter Property="VerticalScrollBarVisibility" Value="Never" />
+                <Setter Property="HorizontalScrollBarVisibility" Value="Never" />
+            </Style>
+
+            <Style x:Key="EntryHeaderLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+                <Setter Property="TextColor" Value="{DynamicResource MainColor}" />
+            </Style>
+
+            <Style x:Key="BoxViewStyle" TargetType="BoxView">
+                <Setter Property="HeightRequest" Value=".5" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="BackgroundColor" Value="#D1D1D1" />
+            </Style>
+
+            <Style x:Key="BorderlessEntry" TargetType="renderers:BorderlessEntry">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="PlaceholderColor" Value="LightGray" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+                <Setter Property="TextColor" Value="{DynamicResource EntryTextColor}" />
+            </Style>
+
+            <Style x:Key="BorderlessPicker" TargetType="renderers:BorderlessPicker">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="TextColor" Value="{DynamicResource DarkFontColor}" />
+                <Setter Property="TitleColor" Value="{DynamicResource DarkFontColor}" />
+            </Style>
+
+            <Style x:Key="ImageStyleEntryRegister" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFit" />
+                <Setter Property="HeightRequest" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="WidthRequest" Value="20" />
+            </Style>
+
+            <Style x:Key="ImageStyleEntry" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFit" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="WidthRequest" Value="40" />
+            </Style>
+
+            <Style x:Key="IconViewStyle" TargetType="customControl:IconView">
+                <Setter Property="Foreground" Value="{DynamicResource MainColor}" />
+                <Setter Property="HeightRequest" Value="30" />
+                <Setter Property="WidthRequest" Value="30" />
+                <Setter Property="Margin" Value="20,0,0,0" />
+            </Style>
+
+            <Style x:Key="ProfleLabelStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="{DynamicResource WhiteDarkFontColor}" />
+                <Setter Property="Margin" Value="15,0,0,0" />
+            </Style>
+
+            <Style x:Key="ButtonFrameStyle" TargetType="Frame">
+                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Padding" Value="8" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBackgroudColor}" />
+                <Setter Property="BorderColor" Value="{DynamicResource ButtonBorderColor}" />
+                <Setter Property="CornerRadius" Value="22" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="HeightRequest" Value="44" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style x:Key="ButtonLabelStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="{DynamicResource FontColor}" />
+            </Style>
+
+            <converters:CardNumberToImageConverter
+                x:Key="CardConverter"
+                Amex="ic_amex"
+                Dinners="ic_dinersclub"
+                Discover="ic_discover"
+                JCB="ic_jcb"
+                MasterCard="ic_mastercard"
+                NotRecognized="nocards"
+                Visa="ic_visa" />
+
+            <converters:CardNumberToImageConverter
+                x:Key="CardLightConverter"
+                Amex="americanexpresslogo"
+                Dinners="ic_dinersclub_white.png"
+                Discover="ic_discover_light"
+                JCB="ic_jcb"
+                MasterCard="ic_mastercard_white"
+                NotRecognized="ic_chip"
+                Visa="ic_visa_white" />
+
+            <converters:CardNumberToColorConverter
+                x:Key="CardColorConverter"
+                Amex="#3177CB"
+                Dinners="#1B4F8F"
+                Discover="#E9752F"
+                JCB="#9E2921"
+                MasterCard="#A52901"
+                NotRecognized="#E9752F"
+                Visa="#2867BA" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

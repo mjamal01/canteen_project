@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage
+    x:Class="DellyShopApp.Views.TabbedPages.BasketPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl;assembly=DellyShopApp"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:helpers="clr-namespace:DellyShopApp.Languages"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material">
+    <ContentPage.Content>
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+            <StackLayout
+                x:Name="MainStack"
+                Margin="10"
+                Padding="5"
+                Spacing="10">
+                <StackLayout
+                    Margin="0,10,0,0"
+                    HeightRequest="50"
+                    VerticalOptions="Start">
+                    <Label
+                        FontFamily="{DynamicResource VerdanaProRegular}"
+                        FontSize="25"
+                        HorizontalOptions="CenterAndExpand"
+                        LineBreakMode="TailTruncation"
+                        Text="{x:Static helpers:AppResources.MyBasket}"
+                        TextColor="{DynamicResource DarkLabelTextColor}"
+                        VerticalOptions="StartAndExpand"
+                        VerticalTextAlignment="Center" />
+                </StackLayout>
+                <customControl:RepeaterView x:Name="BasketItems">
+                    <customControl:RepeaterView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+
+                                <pancakeView:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
+                                    <pancakeView:PancakeView.GestureRecognizers>
+                                        <SwipeGestureRecognizer Direction="Left" Swiped="DeleteItemSwipe" />
+                                        <SwipeGestureRecognizer Direction="Right" Swiped="UndeleteItem" />
+                                        <TapGestureRecognizer Tapped="ClickItem" />
+                                    </pancakeView:PancakeView.GestureRecognizers>
+                                    <StackLayout
+                                        BackgroundColor="{DynamicResource ItemColor}"
+                                        Orientation="Horizontal"
+                                        VerticalOptions="FillAndExpand">
+                                        <pancakeView:PancakeView
+                                            Padding="0"
+                                            HorizontalOptions="Start"
+                                            Style="{DynamicResource PancakeFrameStyle}"
+                                            VerticalOptions="FillAndExpand">
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="50"
+                                                Source="{Binding Image}"
+                                                WidthRequest="50" />
+                                        </pancakeView:PancakeView>
+
+                                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand">
+                                            <Label
+                                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                                FontSize="15"
+                                                Text="{Binding Title}"
+                                                TextColor="{DynamicResource WhiteDarkFontColor}" />
+                                            <Label
+                                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                                FontSize="12"
+                                                Text="{Binding Brand}"
+                                                TextColor="{DynamicResource DescLabelColor}" />
+                                        </StackLayout>
+                                        <Label
+                                            Margin="0,0,10,0"
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="22"
+                                            HorizontalOptions="End"
+                                            Text="{Binding Price, StringFormat='{0}$'}"
+                                            TextColor="{DynamicResource PriceLabelColor}"
+                                            VerticalOptions="CenterAndExpand" />
+                                        <Frame
+                                            Margin="0,-5,0,-5"
+                                            Padding="5"
+                                            BackgroundColor="#FB5F5F"
+                                            CornerRadius="10"
+                                            HasShadow="False"
+                                            IsVisible="{Binding VisibleItemDelete}"
+                                            WidthRequest="40">
+                                            <Image
+                                                Aspect="AspectFit"
+                                                HeightRequest="30"
+                                                HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                WidthRequest="30">
+                                                <Image.Source>
+                                                    <FontImageSource
+                                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                                        Glyph="{x:Static font:FontAwesomeIcons.Close}"
+                                                        Size="30"
+                                                        Color="White" />
+                                                </Image.Source>
+                                            </Image>
+                                        </Frame>
+                                    </StackLayout>
+                                </pancakeView:PancakeView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </customControl:RepeaterView.ItemTemplate>
+                </customControl:RepeaterView>
+                <BoxView
+                    Margin="10"
+                    BackgroundColor="DarkGray"
+                    HeightRequest=".5"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center" />
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.TruckAlt}"
+                                    Size="50"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <StackLayout Spacing="0" VerticalOptions="CenterAndExpand">
+                            <Label
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{x:Static helpers:AppResources.ShippingCost}"
+                                TextColor="{DynamicResource WhiteDarkFontColor}"
+                                VerticalOptions="Center" />
+                            <Label
+                                FontAttributes="Bold"
+                                FontFamily="{DynamicResource VerdanaProLight}"
+                                FontSize="10"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Express"
+                                TextColor="{DynamicResource DescLabelColor}"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                        <Label
+                            Margin="0,0,10,0"
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            FontSize="22"
+                            HorizontalOptions="EndAndExpand"
+                            Text="12$"
+                            TextColor="{DynamicResource PriceLabelColor}"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Label
+                            FontAttributes="Bold"
+                            FontFamily="{DynamicResource VerdanaProRegular}"
+                            FontSize="15"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{x:Static helpers:AppResources.TotalPrice}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}"
+                            VerticalOptions="Center" />
+                        <Label
+                            x:Name="TotalPrice"
+                            Margin="0,0,10,0"
+                            FontAttributes="Bold"
+                            FontFamily="{DynamicResource VerdanaProSemiBold}"
+                            FontSize="22"
+                            HorizontalOptions="EndAndExpand"
+                            TextColor="{DynamicResource PriceLabelColor}"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </pancakeView:PancakeView>
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static helpers:AppResources.SelectAddress}" />
+                <StackLayout
+                    Padding="5"
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal">
+                    <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                        <StackLayout Orientation="Horizontal">
+                            <renderers:BorderlessPicker
+                                Title="{x:Static helpers:AppResources.SelectAddress}"
+                                Style="{DynamicResource BorderlessPicker}"
+                                TextColor="{DynamicResource WhiteDarkFontColor}"
+                                TitleColor="{DynamicResource WhiteDarkFontColor}" />
+                            <Image Style="{DynamicResource ImageStyleEntry}">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.ThinDown}"
+                                        Size="40"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                        </StackLayout>
+                    </pancakeView:PancakeView>
+                    <pancakeView:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                        <pancakeView:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="AddAddressClick" />
+                        </pancakeView:PancakeView.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Margin="5"
+                                FontFamily="{DynamicResource VerdanaProRegular}"
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{x:Static helpers:AppResources.AddAddress}"
+                                TextColor="{DynamicResource WhiteDarkFontColor}"
+                                VerticalOptions="Center" />
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="CenterAndExpand"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.Plus}"
+                                        Size="20"
+                                        Color="{DynamicResource IconBgColor}" />
+                                </Image.Source>
+                            </Image>
+                        </StackLayout>
+                    </pancakeView:PancakeView>
+                </StackLayout>
+                <Frame
+                    Margin="0,0,0,20"
+                    BackgroundColor="{DynamicResource MainColor}"
+                    Style="{DynamicResource ButtonFrameStyle}"
+                    VerticalOptions="EndAndExpand">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ContinueClick" />
+                    </Frame.GestureRecognizers>
+                    <Label
+                        Style="{DynamicResource ButtonLabelStyle}"
+                        Text="{x:Static helpers:AppResources.SelectCreditCard}"
+                        TextColor="{DynamicResource LabelTextColor}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ContinueClick" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</base:BasePage>
