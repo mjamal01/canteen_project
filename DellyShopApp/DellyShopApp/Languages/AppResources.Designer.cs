@@ -61,7 +61,7 @@ namespace DellyShopApp.Languages {
         
         internal static string Signin {
             get {
-                return ResourceManager.GetString("Signin", resourceCulture);
+                return ResourceManager.GetString( "Signin", resourceCulture);
             }
         }
         

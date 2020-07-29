@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage   
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:helpers="clr-namespace:DellyShopApp.Languages"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    iOsSpecific:Page.UseSafeArea="False"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False"
+    Visual="Material"
+    x:Class="DellyShopApp.Views.Pages.SplashScreen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</base:BasePage>

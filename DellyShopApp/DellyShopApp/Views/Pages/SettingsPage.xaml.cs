@@ -24,7 +24,7 @@ namespace DellyShopApp.Views.Pages
         {
             if (args.Value)
             {
-                ThemeManager.ChangeTheme(0);
+                ThemeManager.ChangeTheme( Themes.Dark);
             }
             else
             {

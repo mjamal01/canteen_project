@@ -26,6 +26,1821 @@ namespace DellyShopApp.Droid
 		public static void UpdateIdValues()
 		{
 			global::Microcharts.Droid.Resource.String.library_name = global::DellyShopApp.Droid.Resource.String.library_name;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_fade_in = global::DellyShopApp.Droid.Resource.Animation.abc_fade_in;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_fade_out = global::DellyShopApp.Droid.Resource.Animation.abc_fade_out;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::DellyShopApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_popup_enter = global::DellyShopApp.Droid.Resource.Animation.abc_popup_enter;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_popup_exit = global::DellyShopApp.Droid.Resource.Animation.abc_popup_exit;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::DellyShopApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_slide_in_bottom = global::DellyShopApp.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_slide_in_top = global::DellyShopApp.Droid.Resource.Animation.abc_slide_in_top;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_slide_out_bottom = global::DellyShopApp.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.abc_slide_out_top = global::DellyShopApp.Droid.Resource.Animation.abc_slide_out_top;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.design_bottom_sheet_slide_in = global::DellyShopApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.design_bottom_sheet_slide_out = global::DellyShopApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.design_snackbar_in = global::DellyShopApp.Droid.Resource.Animation.design_snackbar_in;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animation.design_snackbar_out = global::DellyShopApp.Droid.Resource.Animation.design_snackbar_out;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Animator.design_appbar_state_list_animator = global::DellyShopApp.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarDivider = global::DellyShopApp.Droid.Resource.Attribute.actionBarDivider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarItemBackground = global::DellyShopApp.Droid.Resource.Attribute.actionBarItemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarPopupTheme = global::DellyShopApp.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarSize = global::DellyShopApp.Droid.Resource.Attribute.actionBarSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarSplitStyle = global::DellyShopApp.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarStyle = global::DellyShopApp.Droid.Resource.Attribute.actionBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarTabBarStyle = global::DellyShopApp.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarTabStyle = global::DellyShopApp.Droid.Resource.Attribute.actionBarTabStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarTabTextStyle = global::DellyShopApp.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarTheme = global::DellyShopApp.Droid.Resource.Attribute.actionBarTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionBarWidgetTheme = global::DellyShopApp.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.actionButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionDropDownStyle = global::DellyShopApp.Droid.Resource.Attribute.actionDropDownStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionLayout = global::DellyShopApp.Droid.Resource.Attribute.actionLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionMenuTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionMenuTextColor = global::DellyShopApp.Droid.Resource.Attribute.actionMenuTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeBackground = global::DellyShopApp.Droid.Resource.Attribute.actionModeBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeCloseButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeCloseDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeCopyDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeCutDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeFindDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModePasteDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModePopupWindowStyle = global::DellyShopApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeSelectAllDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeShareDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeSplitBackground = global::DellyShopApp.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeStyle = global::DellyShopApp.Droid.Resource.Attribute.actionModeStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionModeWebSearchDrawable = global::DellyShopApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionOverflowButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionOverflowMenuStyle = global::DellyShopApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionProviderClass = global::DellyShopApp.Droid.Resource.Attribute.actionProviderClass;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.actionViewClass = global::DellyShopApp.Droid.Resource.Attribute.actionViewClass;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.activityChooserViewStyle = global::DellyShopApp.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::DellyShopApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.alertDialogCenterButtons = global::DellyShopApp.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.alertDialogStyle = global::DellyShopApp.Droid.Resource.Attribute.alertDialogStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.alertDialogTheme = global::DellyShopApp.Droid.Resource.Attribute.alertDialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.allowStacking = global::DellyShopApp.Droid.Resource.Attribute.allowStacking;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.alpha = global::DellyShopApp.Droid.Resource.Attribute.alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.arrowHeadLength = global::DellyShopApp.Droid.Resource.Attribute.arrowHeadLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.arrowShaftLength = global::DellyShopApp.Droid.Resource.Attribute.arrowShaftLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.autoCompleteTextViewStyle = global::DellyShopApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.background = global::DellyShopApp.Droid.Resource.Attribute.background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.backgroundSplit = global::DellyShopApp.Droid.Resource.Attribute.backgroundSplit;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.backgroundStacked = global::DellyShopApp.Droid.Resource.Attribute.backgroundStacked;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.backgroundTint = global::DellyShopApp.Droid.Resource.Attribute.backgroundTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.backgroundTintMode = global::DellyShopApp.Droid.Resource.Attribute.backgroundTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.barLength = global::DellyShopApp.Droid.Resource.Attribute.barLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.behavior_autoHide = global::DellyShopApp.Droid.Resource.Attribute.behavior_autoHide;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.behavior_hideable = global::DellyShopApp.Droid.Resource.Attribute.behavior_hideable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.behavior_overlapTop = global::DellyShopApp.Droid.Resource.Attribute.behavior_overlapTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.behavior_peekHeight = global::DellyShopApp.Droid.Resource.Attribute.behavior_peekHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.behavior_skipCollapsed = global::DellyShopApp.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.borderWidth = global::DellyShopApp.Droid.Resource.Attribute.borderWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.borderlessButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.bottomSheetDialogTheme = global::DellyShopApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.bottomSheetStyle = global::DellyShopApp.Droid.Resource.Attribute.bottomSheetStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonBarButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonBarStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonGravity = global::DellyShopApp.Droid.Resource.Attribute.buttonGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonPanelSideLayout = global::DellyShopApp.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonStyle = global::DellyShopApp.Droid.Resource.Attribute.buttonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonStyleSmall = global::DellyShopApp.Droid.Resource.Attribute.buttonStyleSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonTint = global::DellyShopApp.Droid.Resource.Attribute.buttonTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.buttonTintMode = global::DellyShopApp.Droid.Resource.Attribute.buttonTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardBackgroundColor = global::DellyShopApp.Droid.Resource.Attribute.cardBackgroundColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardCornerRadius = global::DellyShopApp.Droid.Resource.Attribute.cardCornerRadius;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardElevation = global::DellyShopApp.Droid.Resource.Attribute.cardElevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardMaxElevation = global::DellyShopApp.Droid.Resource.Attribute.cardMaxElevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardPreventCornerOverlap = global::DellyShopApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.cardUseCompatPadding = global::DellyShopApp.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.checkboxStyle = global::DellyShopApp.Droid.Resource.Attribute.checkboxStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.checkedTextViewStyle = global::DellyShopApp.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.closeIcon = global::DellyShopApp.Droid.Resource.Attribute.closeIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.closeItemLayout = global::DellyShopApp.Droid.Resource.Attribute.closeItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.collapseContentDescription = global::DellyShopApp.Droid.Resource.Attribute.collapseContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.collapseIcon = global::DellyShopApp.Droid.Resource.Attribute.collapseIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.collapsedTitleGravity = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.collapsedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.color = global::DellyShopApp.Droid.Resource.Attribute.color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorAccent = global::DellyShopApp.Droid.Resource.Attribute.colorAccent;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorBackgroundFloating = global::DellyShopApp.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorButtonNormal = global::DellyShopApp.Droid.Resource.Attribute.colorButtonNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorControlActivated = global::DellyShopApp.Droid.Resource.Attribute.colorControlActivated;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorControlHighlight = global::DellyShopApp.Droid.Resource.Attribute.colorControlHighlight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorControlNormal = global::DellyShopApp.Droid.Resource.Attribute.colorControlNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorPrimary = global::DellyShopApp.Droid.Resource.Attribute.colorPrimary;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorPrimaryDark = global::DellyShopApp.Droid.Resource.Attribute.colorPrimaryDark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.colorSwitchThumbNormal = global::DellyShopApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.commitIcon = global::DellyShopApp.Droid.Resource.Attribute.commitIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetEnd = global::DellyShopApp.Droid.Resource.Attribute.contentInsetEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetEndWithActions = global::DellyShopApp.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetLeft = global::DellyShopApp.Droid.Resource.Attribute.contentInsetLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetRight = global::DellyShopApp.Droid.Resource.Attribute.contentInsetRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetStart = global::DellyShopApp.Droid.Resource.Attribute.contentInsetStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentInsetStartWithNavigation = global::DellyShopApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentPadding = global::DellyShopApp.Droid.Resource.Attribute.contentPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentPaddingBottom = global::DellyShopApp.Droid.Resource.Attribute.contentPaddingBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentPaddingLeft = global::DellyShopApp.Droid.Resource.Attribute.contentPaddingLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentPaddingRight = global::DellyShopApp.Droid.Resource.Attribute.contentPaddingRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentPaddingTop = global::DellyShopApp.Droid.Resource.Attribute.contentPaddingTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.contentScrim = global::DellyShopApp.Droid.Resource.Attribute.contentScrim;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.controlBackground = global::DellyShopApp.Droid.Resource.Attribute.controlBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.counterEnabled = global::DellyShopApp.Droid.Resource.Attribute.counterEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.counterMaxLength = global::DellyShopApp.Droid.Resource.Attribute.counterMaxLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.counterOverflowTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.counterTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.counterTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.customNavigationLayout = global::DellyShopApp.Droid.Resource.Attribute.customNavigationLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.defaultQueryHint = global::DellyShopApp.Droid.Resource.Attribute.defaultQueryHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dialogPreferredPadding = global::DellyShopApp.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dialogTheme = global::DellyShopApp.Droid.Resource.Attribute.dialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.displayOptions = global::DellyShopApp.Droid.Resource.Attribute.displayOptions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.divider = global::DellyShopApp.Droid.Resource.Attribute.divider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dividerHorizontal = global::DellyShopApp.Droid.Resource.Attribute.dividerHorizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dividerPadding = global::DellyShopApp.Droid.Resource.Attribute.dividerPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dividerVertical = global::DellyShopApp.Droid.Resource.Attribute.dividerVertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.drawableSize = global::DellyShopApp.Droid.Resource.Attribute.drawableSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.drawerArrowStyle = global::DellyShopApp.Droid.Resource.Attribute.drawerArrowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dropDownListViewStyle = global::DellyShopApp.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::DellyShopApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.editTextBackground = global::DellyShopApp.Droid.Resource.Attribute.editTextBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.editTextColor = global::DellyShopApp.Droid.Resource.Attribute.editTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.editTextStyle = global::DellyShopApp.Droid.Resource.Attribute.editTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.elevation = global::DellyShopApp.Droid.Resource.Attribute.elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.errorEnabled = global::DellyShopApp.Droid.Resource.Attribute.errorEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.errorTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.errorTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::DellyShopApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expanded = global::DellyShopApp.Droid.Resource.Attribute.expanded;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleGravity = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleMargin = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleMargin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleMarginBottom = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleMarginEnd = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleMarginStart = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleMarginTop = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.expandedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.fabSize = global::DellyShopApp.Droid.Resource.Attribute.fabSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.foregroundInsidePadding = global::DellyShopApp.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.gapBetweenBars = global::DellyShopApp.Droid.Resource.Attribute.gapBetweenBars;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.goIcon = global::DellyShopApp.Droid.Resource.Attribute.goIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.headerLayout = global::DellyShopApp.Droid.Resource.Attribute.headerLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.height = global::DellyShopApp.Droid.Resource.Attribute.height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.hideOnContentScroll = global::DellyShopApp.Droid.Resource.Attribute.hideOnContentScroll;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.hintAnimationEnabled = global::DellyShopApp.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.hintEnabled = global::DellyShopApp.Droid.Resource.Attribute.hintEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.hintTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.hintTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.homeAsUpIndicator = global::DellyShopApp.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.homeLayout = global::DellyShopApp.Droid.Resource.Attribute.homeLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.icon = global::DellyShopApp.Droid.Resource.Attribute.icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.iconifiedByDefault = global::DellyShopApp.Droid.Resource.Attribute.iconifiedByDefault;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.imageButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.imageButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.indeterminateProgressStyle = global::DellyShopApp.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.initialActivityCount = global::DellyShopApp.Droid.Resource.Attribute.initialActivityCount;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.insetForeground = global::DellyShopApp.Droid.Resource.Attribute.insetForeground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.isLightTheme = global::DellyShopApp.Droid.Resource.Attribute.isLightTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.itemBackground = global::DellyShopApp.Droid.Resource.Attribute.itemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.itemIconTint = global::DellyShopApp.Droid.Resource.Attribute.itemIconTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.itemPadding = global::DellyShopApp.Droid.Resource.Attribute.itemPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.itemTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.itemTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.itemTextColor = global::DellyShopApp.Droid.Resource.Attribute.itemTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.keylines = global::DellyShopApp.Droid.Resource.Attribute.keylines;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout = global::DellyShopApp.Droid.Resource.Attribute.layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layoutManager = global::DellyShopApp.Droid.Resource.Attribute.layoutManager;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_anchor = global::DellyShopApp.Droid.Resource.Attribute.layout_anchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_anchorGravity = global::DellyShopApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_behavior = global::DellyShopApp.Droid.Resource.Attribute.layout_behavior;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_collapseMode = global::DellyShopApp.Droid.Resource.Attribute.layout_collapseMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::DellyShopApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_dodgeInsetEdges = global::DellyShopApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_insetEdge = global::DellyShopApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_keyline = global::DellyShopApp.Droid.Resource.Attribute.layout_keyline;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_scrollFlags = global::DellyShopApp.Droid.Resource.Attribute.layout_scrollFlags;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.layout_scrollInterpolator = global::DellyShopApp.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::DellyShopApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listDividerAlertDialog = global::DellyShopApp.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listItemLayout = global::DellyShopApp.Droid.Resource.Attribute.listItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listLayout = global::DellyShopApp.Droid.Resource.Attribute.listLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listMenuViewStyle = global::DellyShopApp.Droid.Resource.Attribute.listMenuViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPopupWindowStyle = global::DellyShopApp.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPreferredItemHeight = global::DellyShopApp.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPreferredItemHeightLarge = global::DellyShopApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPreferredItemHeightSmall = global::DellyShopApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::DellyShopApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.listPreferredItemPaddingRight = global::DellyShopApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.logo = global::DellyShopApp.Droid.Resource.Attribute.logo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.logoDescription = global::DellyShopApp.Droid.Resource.Attribute.logoDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.maxActionInlineWidth = global::DellyShopApp.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.maxButtonHeight = global::DellyShopApp.Droid.Resource.Attribute.maxButtonHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.measureWithLargestChild = global::DellyShopApp.Droid.Resource.Attribute.measureWithLargestChild;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.menu = global::DellyShopApp.Droid.Resource.Attribute.menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.multiChoiceItemLayout = global::DellyShopApp.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.navigationContentDescription = global::DellyShopApp.Droid.Resource.Attribute.navigationContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.navigationIcon = global::DellyShopApp.Droid.Resource.Attribute.navigationIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.navigationMode = global::DellyShopApp.Droid.Resource.Attribute.navigationMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.overlapAnchor = global::DellyShopApp.Droid.Resource.Attribute.overlapAnchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.paddingBottomNoButtons = global::DellyShopApp.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.paddingEnd = global::DellyShopApp.Droid.Resource.Attribute.paddingEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.paddingStart = global::DellyShopApp.Droid.Resource.Attribute.paddingStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.paddingTopNoTitle = global::DellyShopApp.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.panelBackground = global::DellyShopApp.Droid.Resource.Attribute.panelBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.panelMenuListTheme = global::DellyShopApp.Droid.Resource.Attribute.panelMenuListTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.panelMenuListWidth = global::DellyShopApp.Droid.Resource.Attribute.panelMenuListWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.passwordToggleContentDescription = global::DellyShopApp.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.passwordToggleDrawable = global::DellyShopApp.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.passwordToggleEnabled = global::DellyShopApp.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.passwordToggleTint = global::DellyShopApp.Droid.Resource.Attribute.passwordToggleTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.passwordToggleTintMode = global::DellyShopApp.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.popupMenuStyle = global::DellyShopApp.Droid.Resource.Attribute.popupMenuStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.popupTheme = global::DellyShopApp.Droid.Resource.Attribute.popupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.popupWindowStyle = global::DellyShopApp.Droid.Resource.Attribute.popupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.preserveIconSpacing = global::DellyShopApp.Droid.Resource.Attribute.preserveIconSpacing;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.pressedTranslationZ = global::DellyShopApp.Droid.Resource.Attribute.pressedTranslationZ;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.progressBarPadding = global::DellyShopApp.Droid.Resource.Attribute.progressBarPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.progressBarStyle = global::DellyShopApp.Droid.Resource.Attribute.progressBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.queryBackground = global::DellyShopApp.Droid.Resource.Attribute.queryBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.queryHint = global::DellyShopApp.Droid.Resource.Attribute.queryHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.radioButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.radioButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.ratingBarStyle = global::DellyShopApp.Droid.Resource.Attribute.ratingBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.ratingBarStyleIndicator = global::DellyShopApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.ratingBarStyleSmall = global::DellyShopApp.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.reverseLayout = global::DellyShopApp.Droid.Resource.Attribute.reverseLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.rippleColor = global::DellyShopApp.Droid.Resource.Attribute.rippleColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.scrimAnimationDuration = global::DellyShopApp.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::DellyShopApp.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.searchHintIcon = global::DellyShopApp.Droid.Resource.Attribute.searchHintIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.searchIcon = global::DellyShopApp.Droid.Resource.Attribute.searchIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.searchViewStyle = global::DellyShopApp.Droid.Resource.Attribute.searchViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.seekBarStyle = global::DellyShopApp.Droid.Resource.Attribute.seekBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.selectableItemBackground = global::DellyShopApp.Droid.Resource.Attribute.selectableItemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::DellyShopApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.showAsAction = global::DellyShopApp.Droid.Resource.Attribute.showAsAction;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.showDividers = global::DellyShopApp.Droid.Resource.Attribute.showDividers;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.showText = global::DellyShopApp.Droid.Resource.Attribute.showText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.showTitle = global::DellyShopApp.Droid.Resource.Attribute.showTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.singleChoiceItemLayout = global::DellyShopApp.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.spanCount = global::DellyShopApp.Droid.Resource.Attribute.spanCount;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.spinBars = global::DellyShopApp.Droid.Resource.Attribute.spinBars;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.spinnerDropDownItemStyle = global::DellyShopApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.spinnerStyle = global::DellyShopApp.Droid.Resource.Attribute.spinnerStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.splitTrack = global::DellyShopApp.Droid.Resource.Attribute.splitTrack;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.srcCompat = global::DellyShopApp.Droid.Resource.Attribute.srcCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.stackFromEnd = global::DellyShopApp.Droid.Resource.Attribute.stackFromEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.state_above_anchor = global::DellyShopApp.Droid.Resource.Attribute.state_above_anchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.state_collapsed = global::DellyShopApp.Droid.Resource.Attribute.state_collapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.state_collapsible = global::DellyShopApp.Droid.Resource.Attribute.state_collapsible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.statusBarBackground = global::DellyShopApp.Droid.Resource.Attribute.statusBarBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.statusBarScrim = global::DellyShopApp.Droid.Resource.Attribute.statusBarScrim;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.subMenuArrow = global::DellyShopApp.Droid.Resource.Attribute.subMenuArrow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.submitBackground = global::DellyShopApp.Droid.Resource.Attribute.submitBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.subtitle = global::DellyShopApp.Droid.Resource.Attribute.subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.subtitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.subtitleTextColor = global::DellyShopApp.Droid.Resource.Attribute.subtitleTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.subtitleTextStyle = global::DellyShopApp.Droid.Resource.Attribute.subtitleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.suggestionRowLayout = global::DellyShopApp.Droid.Resource.Attribute.suggestionRowLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.switchMinWidth = global::DellyShopApp.Droid.Resource.Attribute.switchMinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.switchPadding = global::DellyShopApp.Droid.Resource.Attribute.switchPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.switchStyle = global::DellyShopApp.Droid.Resource.Attribute.switchStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.switchTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.switchTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabBackground = global::DellyShopApp.Droid.Resource.Attribute.tabBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabContentStart = global::DellyShopApp.Droid.Resource.Attribute.tabContentStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabGravity = global::DellyShopApp.Droid.Resource.Attribute.tabGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabIndicatorColor = global::DellyShopApp.Droid.Resource.Attribute.tabIndicatorColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabIndicatorHeight = global::DellyShopApp.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabMaxWidth = global::DellyShopApp.Droid.Resource.Attribute.tabMaxWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabMinWidth = global::DellyShopApp.Droid.Resource.Attribute.tabMinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabMode = global::DellyShopApp.Droid.Resource.Attribute.tabMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabPadding = global::DellyShopApp.Droid.Resource.Attribute.tabPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabPaddingBottom = global::DellyShopApp.Droid.Resource.Attribute.tabPaddingBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabPaddingEnd = global::DellyShopApp.Droid.Resource.Attribute.tabPaddingEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabPaddingStart = global::DellyShopApp.Droid.Resource.Attribute.tabPaddingStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabPaddingTop = global::DellyShopApp.Droid.Resource.Attribute.tabPaddingTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabSelectedTextColor = global::DellyShopApp.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.tabTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tabTextColor = global::DellyShopApp.Droid.Resource.Attribute.tabTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAllCaps = global::DellyShopApp.Droid.Resource.Attribute.textAllCaps;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceListItem = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceListItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceListItemSecondary = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceListItemSmall = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::DellyShopApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::DellyShopApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textColorAlertDialogListItem = global::DellyShopApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.textColorSearchUrl = global::DellyShopApp.Droid.Resource.Attribute.textColorSearchUrl;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.theme = global::DellyShopApp.Droid.Resource.Attribute.theme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.thickness = global::DellyShopApp.Droid.Resource.Attribute.thickness;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.thumbTextPadding = global::DellyShopApp.Droid.Resource.Attribute.thumbTextPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.thumbTint = global::DellyShopApp.Droid.Resource.Attribute.thumbTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.thumbTintMode = global::DellyShopApp.Droid.Resource.Attribute.thumbTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tickMark = global::DellyShopApp.Droid.Resource.Attribute.tickMark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tickMarkTint = global::DellyShopApp.Droid.Resource.Attribute.tickMarkTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tickMarkTintMode = global::DellyShopApp.Droid.Resource.Attribute.tickMarkTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tint = global::DellyShopApp.Droid.Resource.Attribute.tint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.tintMode = global::DellyShopApp.Droid.Resource.Attribute.tintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.title = global::DellyShopApp.Droid.Resource.Attribute.title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleEnabled = global::DellyShopApp.Droid.Resource.Attribute.titleEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMargin = global::DellyShopApp.Droid.Resource.Attribute.titleMargin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMarginBottom = global::DellyShopApp.Droid.Resource.Attribute.titleMarginBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMarginEnd = global::DellyShopApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMarginStart = global::DellyShopApp.Droid.Resource.Attribute.titleMarginStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMarginTop = global::DellyShopApp.Droid.Resource.Attribute.titleMarginTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleMargins = global::DellyShopApp.Droid.Resource.Attribute.titleMargins;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.titleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleTextColor = global::DellyShopApp.Droid.Resource.Attribute.titleTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.titleTextStyle = global::DellyShopApp.Droid.Resource.Attribute.titleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.toolbarId = global::DellyShopApp.Droid.Resource.Attribute.toolbarId;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::DellyShopApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.toolbarStyle = global::DellyShopApp.Droid.Resource.Attribute.toolbarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.track = global::DellyShopApp.Droid.Resource.Attribute.track;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.trackTint = global::DellyShopApp.Droid.Resource.Attribute.trackTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.trackTintMode = global::DellyShopApp.Droid.Resource.Attribute.trackTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.useCompatPadding = global::DellyShopApp.Droid.Resource.Attribute.useCompatPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.voiceIcon = global::DellyShopApp.Droid.Resource.Attribute.voiceIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowActionBar = global::DellyShopApp.Droid.Resource.Attribute.windowActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowActionBarOverlay = global::DellyShopApp.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowActionModeOverlay = global::DellyShopApp.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowFixedHeightMajor = global::DellyShopApp.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowFixedHeightMinor = global::DellyShopApp.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowFixedWidthMajor = global::DellyShopApp.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowFixedWidthMinor = global::DellyShopApp.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowMinWidthMajor = global::DellyShopApp.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowMinWidthMinor = global::DellyShopApp.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Attribute.windowNoTitle = global::DellyShopApp.Droid.Resource.Attribute.windowNoTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::DellyShopApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::DellyShopApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::DellyShopApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::DellyShopApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::DellyShopApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::DellyShopApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_btn_colored_text_material = global::DellyShopApp.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_color_highlight_material = global::DellyShopApp.Droid.Resource.Color.abc_color_highlight_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_hint_foreground_material_dark = global::DellyShopApp.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_hint_foreground_material_light = global::DellyShopApp.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_input_method_navigation_guard = global::DellyShopApp.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::DellyShopApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::DellyShopApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_primary_text_material_dark = global::DellyShopApp.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_primary_text_material_light = global::DellyShopApp.Droid.Resource.Color.abc_primary_text_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_search_url_text = global::DellyShopApp.Droid.Resource.Color.abc_search_url_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_search_url_text_normal = global::DellyShopApp.Droid.Resource.Color.abc_search_url_text_normal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_search_url_text_pressed = global::DellyShopApp.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_search_url_text_selected = global::DellyShopApp.Droid.Resource.Color.abc_search_url_text_selected;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_secondary_text_material_dark = global::DellyShopApp.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_secondary_text_material_light = global::DellyShopApp.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_btn_checkable = global::DellyShopApp.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_default = global::DellyShopApp.Droid.Resource.Color.abc_tint_default;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_edittext = global::DellyShopApp.Droid.Resource.Color.abc_tint_edittext;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_seek_thumb = global::DellyShopApp.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_spinner = global::DellyShopApp.Droid.Resource.Color.abc_tint_spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.abc_tint_switch_track = global::DellyShopApp.Droid.Resource.Color.abc_tint_switch_track;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.accent_material_dark = global::DellyShopApp.Droid.Resource.Color.accent_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.accent_material_light = global::DellyShopApp.Droid.Resource.Color.accent_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.background_floating_material_dark = global::DellyShopApp.Droid.Resource.Color.background_floating_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.background_floating_material_light = global::DellyShopApp.Droid.Resource.Color.background_floating_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.background_material_dark = global::DellyShopApp.Droid.Resource.Color.background_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.background_material_light = global::DellyShopApp.Droid.Resource.Color.background_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_disabled_material_dark = global::DellyShopApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_disabled_material_light = global::DellyShopApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_inverse_material_dark = global::DellyShopApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_inverse_material_light = global::DellyShopApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_material_dark = global::DellyShopApp.Droid.Resource.Color.bright_foreground_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.bright_foreground_material_light = global::DellyShopApp.Droid.Resource.Color.bright_foreground_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.button_material_dark = global::DellyShopApp.Droid.Resource.Color.button_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.button_material_light = global::DellyShopApp.Droid.Resource.Color.button_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.cardview_dark_background = global::DellyShopApp.Droid.Resource.Color.cardview_dark_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.cardview_light_background = global::DellyShopApp.Droid.Resource.Color.cardview_light_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.cardview_shadow_end_color = global::DellyShopApp.Droid.Resource.Color.cardview_shadow_end_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.cardview_shadow_start_color = global::DellyShopApp.Droid.Resource.Color.cardview_shadow_start_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_bottom_navigation_shadow_color = global::DellyShopApp.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_error = global::DellyShopApp.Droid.Resource.Color.design_error;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_shadow_end_color = global::DellyShopApp.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_shadow_mid_color = global::DellyShopApp.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_shadow_start_color = global::DellyShopApp.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_stroke_end_inner_color = global::DellyShopApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_stroke_end_outer_color = global::DellyShopApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_stroke_top_inner_color = global::DellyShopApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_fab_stroke_top_outer_color = global::DellyShopApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_snackbar_background_color = global::DellyShopApp.Droid.Resource.Color.design_snackbar_background_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.design_tint_password_toggle = global::DellyShopApp.Droid.Resource.Color.design_tint_password_toggle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.dim_foreground_disabled_material_dark = global::DellyShopApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.dim_foreground_disabled_material_light = global::DellyShopApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.dim_foreground_material_dark = global::DellyShopApp.Droid.Resource.Color.dim_foreground_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.dim_foreground_material_light = global::DellyShopApp.Droid.Resource.Color.dim_foreground_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.foreground_material_dark = global::DellyShopApp.Droid.Resource.Color.foreground_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.foreground_material_light = global::DellyShopApp.Droid.Resource.Color.foreground_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.highlighted_text_material_dark = global::DellyShopApp.Droid.Resource.Color.highlighted_text_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.highlighted_text_material_light = global::DellyShopApp.Droid.Resource.Color.highlighted_text_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_blue_grey_800 = global::DellyShopApp.Droid.Resource.Color.material_blue_grey_800;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_blue_grey_900 = global::DellyShopApp.Droid.Resource.Color.material_blue_grey_900;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_blue_grey_950 = global::DellyShopApp.Droid.Resource.Color.material_blue_grey_950;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_deep_teal_200 = global::DellyShopApp.Droid.Resource.Color.material_deep_teal_200;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_deep_teal_500 = global::DellyShopApp.Droid.Resource.Color.material_deep_teal_500;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_100 = global::DellyShopApp.Droid.Resource.Color.material_grey_100;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_300 = global::DellyShopApp.Droid.Resource.Color.material_grey_300;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_50 = global::DellyShopApp.Droid.Resource.Color.material_grey_50;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_600 = global::DellyShopApp.Droid.Resource.Color.material_grey_600;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_800 = global::DellyShopApp.Droid.Resource.Color.material_grey_800;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_850 = global::DellyShopApp.Droid.Resource.Color.material_grey_850;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.material_grey_900 = global::DellyShopApp.Droid.Resource.Color.material_grey_900;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.notification_action_color_filter = global::DellyShopApp.Droid.Resource.Color.notification_action_color_filter;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.notification_icon_bg_color = global::DellyShopApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.notification_material_background_media_default_color = global::DellyShopApp.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_dark_material_dark = global::DellyShopApp.Droid.Resource.Color.primary_dark_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_dark_material_light = global::DellyShopApp.Droid.Resource.Color.primary_dark_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_material_dark = global::DellyShopApp.Droid.Resource.Color.primary_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_material_light = global::DellyShopApp.Droid.Resource.Color.primary_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_text_default_material_dark = global::DellyShopApp.Droid.Resource.Color.primary_text_default_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_text_default_material_light = global::DellyShopApp.Droid.Resource.Color.primary_text_default_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_text_disabled_material_dark = global::DellyShopApp.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.primary_text_disabled_material_light = global::DellyShopApp.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.ripple_material_dark = global::DellyShopApp.Droid.Resource.Color.ripple_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.ripple_material_light = global::DellyShopApp.Droid.Resource.Color.ripple_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.secondary_text_default_material_dark = global::DellyShopApp.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.secondary_text_default_material_light = global::DellyShopApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.secondary_text_disabled_material_dark = global::DellyShopApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.secondary_text_disabled_material_light = global::DellyShopApp.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_disabled_material_dark = global::DellyShopApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_disabled_material_light = global::DellyShopApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_material_dark = global::DellyShopApp.Droid.Resource.Color.switch_thumb_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_material_light = global::DellyShopApp.Droid.Resource.Color.switch_thumb_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_normal_material_dark = global::DellyShopApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Color.switch_thumb_normal_material_light = global::DellyShopApp.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_default_height_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_elevation_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_button_min_height_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_button_min_width_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::DellyShopApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::DellyShopApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::DellyShopApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_button_inset_vertical_material = global::DellyShopApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::DellyShopApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_button_padding_vertical_material = global::DellyShopApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::DellyShopApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_config_prefDialogWidth = global::DellyShopApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_control_corner_material = global::DellyShopApp.Droid.Resource.Dimension.abc_control_corner_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_control_inset_material = global::DellyShopApp.Droid.Resource.Dimension.abc_control_inset_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_control_padding_material = global::DellyShopApp.Droid.Resource.Dimension.abc_control_padding_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_min_width_major = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_min_width_minor = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_padding_material = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_padding_top_material = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dialog_title_divider_material = global::DellyShopApp.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::DellyShopApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::DellyShopApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::DellyShopApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::DellyShopApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::DellyShopApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::DellyShopApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::DellyShopApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::DellyShopApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_floating_window_z = global::DellyShopApp.Droid.Resource.Dimension.abc_floating_window_z;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::DellyShopApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_panel_menu_list_width = global::DellyShopApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_progress_bar_height_material = global::DellyShopApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_search_view_preferred_height = global::DellyShopApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_search_view_preferred_width = global::DellyShopApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::DellyShopApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::DellyShopApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::DellyShopApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_switch_padding = global::DellyShopApp.Droid.Resource.Dimension.abc_switch_padding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_body_1_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_body_2_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_button_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_caption_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_display_1_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_display_2_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_display_3_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_display_4_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_headline_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_large_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_medium_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_menu_header_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_menu_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_small_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_subhead_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_title_material = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::DellyShopApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.cardview_compat_inset_shadow = global::DellyShopApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.cardview_default_elevation = global::DellyShopApp.Droid.Resource.Dimension.cardview_default_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.cardview_default_radius = global::DellyShopApp.Droid.Resource.Dimension.cardview_default_radius;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_appbar_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_appbar_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_height = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_margin = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_navigation_text_size = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::DellyShopApp.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_border_width = global::DellyShopApp.Droid.Resource.Dimension.design_fab_border_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_fab_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_image_size = global::DellyShopApp.Droid.Resource.Dimension.design_fab_image_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_size_mini = global::DellyShopApp.Droid.Resource.Dimension.design_fab_size_mini;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_size_normal = global::DellyShopApp.Droid.Resource.Dimension.design_fab_size_normal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_fab_translation_z_pressed = global::DellyShopApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_icon_padding = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_icon_size = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_padding_bottom = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::DellyShopApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_elevation = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_min_width = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_padding_vertical = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_snackbar_text_size = global::DellyShopApp.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_tab_max_width = global::DellyShopApp.Droid.Resource.Dimension.design_tab_max_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_tab_scrollable_min_width = global::DellyShopApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_tab_text_size = global::DellyShopApp.Droid.Resource.Dimension.design_tab_text_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.design_tab_text_size_2line = global::DellyShopApp.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.disabled_alpha_material_dark = global::DellyShopApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.disabled_alpha_material_light = global::DellyShopApp.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.highlight_alpha_material_colored = global::DellyShopApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.highlight_alpha_material_dark = global::DellyShopApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.highlight_alpha_material_light = global::DellyShopApp.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.hint_alpha_material_dark = global::DellyShopApp.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.hint_alpha_material_light = global::DellyShopApp.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::DellyShopApp.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::DellyShopApp.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::DellyShopApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::DellyShopApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::DellyShopApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_action_icon_size = global::DellyShopApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_action_text_size = global::DellyShopApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_big_circle_margin = global::DellyShopApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_content_margin_start = global::DellyShopApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_large_icon_height = global::DellyShopApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_large_icon_width = global::DellyShopApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_main_column_padding_top = global::DellyShopApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_media_narrow_margin = global::DellyShopApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_right_icon_size = global::DellyShopApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_right_side_padding_top = global::DellyShopApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_small_icon_background_padding = global::DellyShopApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_small_icon_size_as_large = global::DellyShopApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_subtext_size = global::DellyShopApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_top_pad = global::DellyShopApp.Droid.Resource.Dimension.notification_top_pad;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Dimension.notification_top_pad_large_text = global::DellyShopApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_action_bar_item_background_material = global::DellyShopApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_borderless_material = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_check_material = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_check_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_colored_material = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_radio_material = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::DellyShopApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_cab_background_internal_bg = global::DellyShopApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_cab_background_top_material = global::DellyShopApp.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_control_background_material = global::DellyShopApp.Droid.Resource.Drawable.abc_control_background_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_dialog_material_background = global::DellyShopApp.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_edit_text_material = global::DellyShopApp.Droid.Resource.Drawable.abc_edit_text_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_ab_back_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_clear_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_go_search_api_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_search_api_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_black_16dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_black_36dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_black_48dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_item_background_holo_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_item_background_holo_light = global::DellyShopApp.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_focused_holo = global::DellyShopApp.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_longpressed_holo = global::DellyShopApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_pressed_holo_light = global::DellyShopApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_holo_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_list_selector_holo_light = global::DellyShopApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::DellyShopApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::DellyShopApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ratingbar_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_ratingbar_small_material = global::DellyShopApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::DellyShopApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::DellyShopApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_seekbar_thumb_material = global::DellyShopApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::DellyShopApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_seekbar_track_material = global::DellyShopApp.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::DellyShopApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_switch_thumb_material = global::DellyShopApp.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_tab_indicator_material = global::DellyShopApp.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_cursor_material = global::DellyShopApp.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::DellyShopApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::DellyShopApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_textfield_search_material = global::DellyShopApp.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.abc_vector_test = global::DellyShopApp.Droid.Resource.Drawable.abc_vector_test;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.avd_hide_password = global::DellyShopApp.Droid.Resource.Drawable.avd_hide_password;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.avd_show_password = global::DellyShopApp.Droid.Resource.Drawable.avd_show_password;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_bottom_navigation_item_background = global::DellyShopApp.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_fab_background = global::DellyShopApp.Droid.Resource.Drawable.design_fab_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_ic_visibility = global::DellyShopApp.Droid.Resource.Drawable.design_ic_visibility;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_ic_visibility_off = global::DellyShopApp.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_password_eye = global::DellyShopApp.Droid.Resource.Drawable.design_password_eye;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.design_snackbar_background = global::DellyShopApp.Droid.Resource.Drawable.design_snackbar_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.navigation_empty_icon = global::DellyShopApp.Droid.Resource.Drawable.navigation_empty_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_action_background = global::DellyShopApp.Droid.Resource.Drawable.notification_action_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg = global::DellyShopApp.Droid.Resource.Drawable.notification_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg_low = global::DellyShopApp.Droid.Resource.Drawable.notification_bg_low;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg_low_normal = global::DellyShopApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg_low_pressed = global::DellyShopApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg_normal = global::DellyShopApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_bg_normal_pressed = global::DellyShopApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_icon_background = global::DellyShopApp.Droid.Resource.Drawable.notification_icon_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_template_icon_bg = global::DellyShopApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_template_icon_low_bg = global::DellyShopApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notification_tile_bg = global::DellyShopApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::DellyShopApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action0 = global::DellyShopApp.Droid.Resource.Id.action0;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar = global::DellyShopApp.Droid.Resource.Id.action_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_activity_content = global::DellyShopApp.Droid.Resource.Id.action_bar_activity_content;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_container = global::DellyShopApp.Droid.Resource.Id.action_bar_container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_root = global::DellyShopApp.Droid.Resource.Id.action_bar_root;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_spinner = global::DellyShopApp.Droid.Resource.Id.action_bar_spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_subtitle = global::DellyShopApp.Droid.Resource.Id.action_bar_subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_bar_title = global::DellyShopApp.Droid.Resource.Id.action_bar_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_container = global::DellyShopApp.Droid.Resource.Id.action_container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_context_bar = global::DellyShopApp.Droid.Resource.Id.action_context_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_divider = global::DellyShopApp.Droid.Resource.Id.action_divider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_image = global::DellyShopApp.Droid.Resource.Id.action_image;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_menu_divider = global::DellyShopApp.Droid.Resource.Id.action_menu_divider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_menu_presenter = global::DellyShopApp.Droid.Resource.Id.action_menu_presenter;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_mode_bar = global::DellyShopApp.Droid.Resource.Id.action_mode_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_mode_bar_stub = global::DellyShopApp.Droid.Resource.Id.action_mode_bar_stub;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_mode_close_button = global::DellyShopApp.Droid.Resource.Id.action_mode_close_button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.action_text = global::DellyShopApp.Droid.Resource.Id.action_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.actions = global::DellyShopApp.Droid.Resource.Id.actions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.activity_chooser_view_content = global::DellyShopApp.Droid.Resource.Id.activity_chooser_view_content;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.add = global::DellyShopApp.Droid.Resource.Id.add;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.alertTitle = global::DellyShopApp.Droid.Resource.Id.alertTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.all = global::DellyShopApp.Droid.Resource.Id.all;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.always = global::DellyShopApp.Droid.Resource.Id.always;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.auto = global::DellyShopApp.Droid.Resource.Id.auto;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.beginning = global::DellyShopApp.Droid.Resource.Id.beginning;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.bottom = global::DellyShopApp.Droid.Resource.Id.bottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.buttonPanel = global::DellyShopApp.Droid.Resource.Id.buttonPanel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.cancel_action = global::DellyShopApp.Droid.Resource.Id.cancel_action;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.center = global::DellyShopApp.Droid.Resource.Id.center;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.center_horizontal = global::DellyShopApp.Droid.Resource.Id.center_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.center_vertical = global::DellyShopApp.Droid.Resource.Id.center_vertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.checkbox = global::DellyShopApp.Droid.Resource.Id.checkbox;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.chronometer = global::DellyShopApp.Droid.Resource.Id.chronometer;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.clip_horizontal = global::DellyShopApp.Droid.Resource.Id.clip_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.clip_vertical = global::DellyShopApp.Droid.Resource.Id.clip_vertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.collapseActionView = global::DellyShopApp.Droid.Resource.Id.collapseActionView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.container = global::DellyShopApp.Droid.Resource.Id.container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.contentPanel = global::DellyShopApp.Droid.Resource.Id.contentPanel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.coordinator = global::DellyShopApp.Droid.Resource.Id.coordinator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.custom = global::DellyShopApp.Droid.Resource.Id.custom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.customPanel = global::DellyShopApp.Droid.Resource.Id.customPanel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.decor_content_parent = global::DellyShopApp.Droid.Resource.Id.decor_content_parent;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.default_activity_button = global::DellyShopApp.Droid.Resource.Id.default_activity_button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.design_bottom_sheet = global::DellyShopApp.Droid.Resource.Id.design_bottom_sheet;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.design_menu_item_action_area = global::DellyShopApp.Droid.Resource.Id.design_menu_item_action_area;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.design_menu_item_action_area_stub = global::DellyShopApp.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.design_menu_item_text = global::DellyShopApp.Droid.Resource.Id.design_menu_item_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.design_navigation_view = global::DellyShopApp.Droid.Resource.Id.design_navigation_view;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.disableHome = global::DellyShopApp.Droid.Resource.Id.disableHome;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.edit_query = global::DellyShopApp.Droid.Resource.Id.edit_query;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.end = global::DellyShopApp.Droid.Resource.Id.end;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.end_padder = global::DellyShopApp.Droid.Resource.Id.end_padder;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.enterAlways = global::DellyShopApp.Droid.Resource.Id.enterAlways;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.enterAlwaysCollapsed = global::DellyShopApp.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.exitUntilCollapsed = global::DellyShopApp.Droid.Resource.Id.exitUntilCollapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.expand_activities_button = global::DellyShopApp.Droid.Resource.Id.expand_activities_button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.expanded_menu = global::DellyShopApp.Droid.Resource.Id.expanded_menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.fill = global::DellyShopApp.Droid.Resource.Id.fill;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.fill_horizontal = global::DellyShopApp.Droid.Resource.Id.fill_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.fill_vertical = global::DellyShopApp.Droid.Resource.Id.fill_vertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.@fixed = global::DellyShopApp.Droid.Resource.Id.@fixed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.home = global::DellyShopApp.Droid.Resource.Id.home;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.homeAsUp = global::DellyShopApp.Droid.Resource.Id.homeAsUp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.icon = global::DellyShopApp.Droid.Resource.Id.icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.icon_group = global::DellyShopApp.Droid.Resource.Id.icon_group;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.ifRoom = global::DellyShopApp.Droid.Resource.Id.ifRoom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.image = global::DellyShopApp.Droid.Resource.Id.image;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.info = global::DellyShopApp.Droid.Resource.Id.info;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.item_touch_helper_previous_elevation = global::DellyShopApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.largeLabel = global::DellyShopApp.Droid.Resource.Id.largeLabel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.left = global::DellyShopApp.Droid.Resource.Id.left;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.line1 = global::DellyShopApp.Droid.Resource.Id.line1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.line3 = global::DellyShopApp.Droid.Resource.Id.line3;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.listMode = global::DellyShopApp.Droid.Resource.Id.listMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.list_item = global::DellyShopApp.Droid.Resource.Id.list_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.masked = global::DellyShopApp.Droid.Resource.Id.masked;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.media_actions = global::DellyShopApp.Droid.Resource.Id.media_actions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.middle = global::DellyShopApp.Droid.Resource.Id.middle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.mini = global::DellyShopApp.Droid.Resource.Id.mini;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.multiply = global::DellyShopApp.Droid.Resource.Id.multiply;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.navigation_header_container = global::DellyShopApp.Droid.Resource.Id.navigation_header_container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.never = global::DellyShopApp.Droid.Resource.Id.never;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.none = global::DellyShopApp.Droid.Resource.Id.none;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.normal = global::DellyShopApp.Droid.Resource.Id.normal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.notification_background = global::DellyShopApp.Droid.Resource.Id.notification_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.notification_main_column = global::DellyShopApp.Droid.Resource.Id.notification_main_column;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.notification_main_column_container = global::DellyShopApp.Droid.Resource.Id.notification_main_column_container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.parallax = global::DellyShopApp.Droid.Resource.Id.parallax;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.parentPanel = global::DellyShopApp.Droid.Resource.Id.parentPanel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.pin = global::DellyShopApp.Droid.Resource.Id.pin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.progress_circular = global::DellyShopApp.Droid.Resource.Id.progress_circular;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.progress_horizontal = global::DellyShopApp.Droid.Resource.Id.progress_horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.radio = global::DellyShopApp.Droid.Resource.Id.radio;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.right = global::DellyShopApp.Droid.Resource.Id.right;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.right_icon = global::DellyShopApp.Droid.Resource.Id.right_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.right_side = global::DellyShopApp.Droid.Resource.Id.right_side;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.screen = global::DellyShopApp.Droid.Resource.Id.screen;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.scroll = global::DellyShopApp.Droid.Resource.Id.scroll;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.scrollIndicatorDown = global::DellyShopApp.Droid.Resource.Id.scrollIndicatorDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.scrollIndicatorUp = global::DellyShopApp.Droid.Resource.Id.scrollIndicatorUp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.scrollView = global::DellyShopApp.Droid.Resource.Id.scrollView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.scrollable = global::DellyShopApp.Droid.Resource.Id.scrollable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_badge = global::DellyShopApp.Droid.Resource.Id.search_badge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_bar = global::DellyShopApp.Droid.Resource.Id.search_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_button = global::DellyShopApp.Droid.Resource.Id.search_button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_close_btn = global::DellyShopApp.Droid.Resource.Id.search_close_btn;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_edit_frame = global::DellyShopApp.Droid.Resource.Id.search_edit_frame;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_go_btn = global::DellyShopApp.Droid.Resource.Id.search_go_btn;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_mag_icon = global::DellyShopApp.Droid.Resource.Id.search_mag_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_plate = global::DellyShopApp.Droid.Resource.Id.search_plate;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_src_text = global::DellyShopApp.Droid.Resource.Id.search_src_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.search_voice_btn = global::DellyShopApp.Droid.Resource.Id.search_voice_btn;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.select_dialog_listview = global::DellyShopApp.Droid.Resource.Id.select_dialog_listview;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.shortcut = global::DellyShopApp.Droid.Resource.Id.shortcut;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.showCustom = global::DellyShopApp.Droid.Resource.Id.showCustom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.showHome = global::DellyShopApp.Droid.Resource.Id.showHome;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.showTitle = global::DellyShopApp.Droid.Resource.Id.showTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.smallLabel = global::DellyShopApp.Droid.Resource.Id.smallLabel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.snackbar_action = global::DellyShopApp.Droid.Resource.Id.snackbar_action;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.snackbar_text = global::DellyShopApp.Droid.Resource.Id.snackbar_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.snap = global::DellyShopApp.Droid.Resource.Id.snap;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.spacer = global::DellyShopApp.Droid.Resource.Id.spacer;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.split_action_bar = global::DellyShopApp.Droid.Resource.Id.split_action_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.src_atop = global::DellyShopApp.Droid.Resource.Id.src_atop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.src_in = global::DellyShopApp.Droid.Resource.Id.src_in;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.src_over = global::DellyShopApp.Droid.Resource.Id.src_over;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.start = global::DellyShopApp.Droid.Resource.Id.start;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.status_bar_latest_event_content = global::DellyShopApp.Droid.Resource.Id.status_bar_latest_event_content;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.submenuarrow = global::DellyShopApp.Droid.Resource.Id.submenuarrow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.submit_area = global::DellyShopApp.Droid.Resource.Id.submit_area;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.tabMode = global::DellyShopApp.Droid.Resource.Id.tabMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.text = global::DellyShopApp.Droid.Resource.Id.text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.text2 = global::DellyShopApp.Droid.Resource.Id.text2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.textSpacerNoButtons = global::DellyShopApp.Droid.Resource.Id.textSpacerNoButtons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.textSpacerNoTitle = global::DellyShopApp.Droid.Resource.Id.textSpacerNoTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.text_input_password_toggle = global::DellyShopApp.Droid.Resource.Id.text_input_password_toggle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.textinput_counter = global::DellyShopApp.Droid.Resource.Id.textinput_counter;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.textinput_error = global::DellyShopApp.Droid.Resource.Id.textinput_error;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.time = global::DellyShopApp.Droid.Resource.Id.time;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.title = global::DellyShopApp.Droid.Resource.Id.title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.titleDividerNoCustom = global::DellyShopApp.Droid.Resource.Id.titleDividerNoCustom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.title_template = global::DellyShopApp.Droid.Resource.Id.title_template;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.top = global::DellyShopApp.Droid.Resource.Id.top;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.topPanel = global::DellyShopApp.Droid.Resource.Id.topPanel;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.touch_outside = global::DellyShopApp.Droid.Resource.Id.touch_outside;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.transition_current_scene = global::DellyShopApp.Droid.Resource.Id.transition_current_scene;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.transition_scene_layoutid_cache = global::DellyShopApp.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.up = global::DellyShopApp.Droid.Resource.Id.up;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.useLogo = global::DellyShopApp.Droid.Resource.Id.useLogo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.view_offset_helper = global::DellyShopApp.Droid.Resource.Id.view_offset_helper;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.visible = global::DellyShopApp.Droid.Resource.Id.visible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.withText = global::DellyShopApp.Droid.Resource.Id.withText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Id.wrap_content = global::DellyShopApp.Droid.Resource.Id.wrap_content;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.abc_config_activityDefaultDur = global::DellyShopApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.abc_config_activityShortDur = global::DellyShopApp.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.app_bar_elevation_anim_duration = global::DellyShopApp.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.bottom_sheet_slide_duration = global::DellyShopApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.cancel_button_image_alpha = global::DellyShopApp.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.design_snackbar_text_max_lines = global::DellyShopApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.hide_password_duration = global::DellyShopApp.Droid.Resource.Integer.hide_password_duration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.show_password_duration = global::DellyShopApp.Droid.Resource.Integer.show_password_duration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Integer.status_bar_notification_info_maxnum = global::DellyShopApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_bar_title_item = global::DellyShopApp.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_bar_up_container = global::DellyShopApp.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_menu_item_layout = global::DellyShopApp.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_menu_layout = global::DellyShopApp.Droid.Resource.Layout.abc_action_menu_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_mode_bar = global::DellyShopApp.Droid.Resource.Layout.abc_action_mode_bar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_action_mode_close_item_material = global::DellyShopApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_activity_chooser_view = global::DellyShopApp.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::DellyShopApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::DellyShopApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_alert_dialog_material = global::DellyShopApp.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_alert_dialog_title_material = global::DellyShopApp.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_dialog_title_material = global::DellyShopApp.Droid.Resource.Layout.abc_dialog_title_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_expanded_menu_layout = global::DellyShopApp.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_list_menu_item_checkbox = global::DellyShopApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_list_menu_item_icon = global::DellyShopApp.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_list_menu_item_layout = global::DellyShopApp.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_list_menu_item_radio = global::DellyShopApp.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::DellyShopApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_popup_menu_item_layout = global::DellyShopApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_screen_content_include = global::DellyShopApp.Droid.Resource.Layout.abc_screen_content_include;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_screen_simple = global::DellyShopApp.Droid.Resource.Layout.abc_screen_simple;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::DellyShopApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_screen_toolbar = global::DellyShopApp.Droid.Resource.Layout.abc_screen_toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::DellyShopApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_search_view = global::DellyShopApp.Droid.Resource.Layout.abc_search_view;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.abc_select_dialog_material = global::DellyShopApp.Droid.Resource.Layout.abc_select_dialog_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_bottom_navigation_item = global::DellyShopApp.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_bottom_sheet_dialog = global::DellyShopApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_layout_snackbar = global::DellyShopApp.Droid.Resource.Layout.design_layout_snackbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_layout_snackbar_include = global::DellyShopApp.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_layout_tab_icon = global::DellyShopApp.Droid.Resource.Layout.design_layout_tab_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_layout_tab_text = global::DellyShopApp.Droid.Resource.Layout.design_layout_tab_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_menu_item_action_area = global::DellyShopApp.Droid.Resource.Layout.design_menu_item_action_area;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_item = global::DellyShopApp.Droid.Resource.Layout.design_navigation_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_item_header = global::DellyShopApp.Droid.Resource.Layout.design_navigation_item_header;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_item_separator = global::DellyShopApp.Droid.Resource.Layout.design_navigation_item_separator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_item_subheader = global::DellyShopApp.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_menu = global::DellyShopApp.Droid.Resource.Layout.design_navigation_menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_navigation_menu_item = global::DellyShopApp.Droid.Resource.Layout.design_navigation_menu_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.design_text_input_password_icon = global::DellyShopApp.Droid.Resource.Layout.design_text_input_password_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_action = global::DellyShopApp.Droid.Resource.Layout.notification_action;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_action_tombstone = global::DellyShopApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_media_action = global::DellyShopApp.Droid.Resource.Layout.notification_media_action;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_media_cancel_action = global::DellyShopApp.Droid.Resource.Layout.notification_media_cancel_action;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_big_media = global::DellyShopApp.Droid.Resource.Layout.notification_template_big_media;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_big_media_custom = global::DellyShopApp.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_big_media_narrow = global::DellyShopApp.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::DellyShopApp.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_custom_big = global::DellyShopApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_icon_group = global::DellyShopApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_lines_media = global::DellyShopApp.Droid.Resource.Layout.notification_template_lines_media;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_media = global::DellyShopApp.Droid.Resource.Layout.notification_template_media;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_media_custom = global::DellyShopApp.Droid.Resource.Layout.notification_template_media_custom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_part_chronometer = global::DellyShopApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.notification_template_part_time = global::DellyShopApp.Droid.Resource.Layout.notification_template_part_time;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.select_dialog_item_material = global::DellyShopApp.Droid.Resource.Layout.select_dialog_item_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.select_dialog_multichoice_material = global::DellyShopApp.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.select_dialog_singlechoice_material = global::DellyShopApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::DellyShopApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_action_bar_home_description = global::DellyShopApp.Droid.Resource.String.abc_action_bar_home_description;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_action_bar_up_description = global::DellyShopApp.Droid.Resource.String.abc_action_bar_up_description;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_action_menu_overflow_description = global::DellyShopApp.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_action_mode_done = global::DellyShopApp.Droid.Resource.String.abc_action_mode_done;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_activity_chooser_view_see_all = global::DellyShopApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_activitychooserview_choose_application = global::DellyShopApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_capital_off = global::DellyShopApp.Droid.Resource.String.abc_capital_off;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_capital_on = global::DellyShopApp.Droid.Resource.String.abc_capital_on;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_body_1_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_body_1_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_body_2_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_body_2_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_button_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_button_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_caption_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_caption_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_display_1_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_display_1_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_display_2_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_display_2_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_display_3_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_display_3_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_display_4_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_display_4_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_headline_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_headline_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_menu_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_menu_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_subhead_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_subhead_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_font_family_title_material = global::DellyShopApp.Droid.Resource.String.abc_font_family_title_material;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_search_hint = global::DellyShopApp.Droid.Resource.String.abc_search_hint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_searchview_description_clear = global::DellyShopApp.Droid.Resource.String.abc_searchview_description_clear;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_searchview_description_query = global::DellyShopApp.Droid.Resource.String.abc_searchview_description_query;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_searchview_description_search = global::DellyShopApp.Droid.Resource.String.abc_searchview_description_search;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_searchview_description_submit = global::DellyShopApp.Droid.Resource.String.abc_searchview_description_submit;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_searchview_description_voice = global::DellyShopApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_shareactionprovider_share_with = global::DellyShopApp.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_shareactionprovider_share_with_application = global::DellyShopApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.abc_toolbar_collapse_description = global::DellyShopApp.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.appbar_scrolling_view_behavior = global::DellyShopApp.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.bottom_sheet_behavior = global::DellyShopApp.Droid.Resource.String.bottom_sheet_behavior;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.character_counter_pattern = global::DellyShopApp.Droid.Resource.String.character_counter_pattern;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.library_name = global::DellyShopApp.Droid.Resource.String.library_name;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.password_toggle_content_description = global::DellyShopApp.Droid.Resource.String.password_toggle_content_description;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.path_password_eye = global::DellyShopApp.Droid.Resource.String.path_password_eye;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.path_password_eye_mask_strike_through = global::DellyShopApp.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.path_password_eye_mask_visible = global::DellyShopApp.Droid.Resource.String.path_password_eye_mask_visible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.path_password_strike_through = global::DellyShopApp.Droid.Resource.String.path_password_strike_through;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.search_menu_title = global::DellyShopApp.Droid.Resource.String.search_menu_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.String.status_bar_notification_info_overflow = global::DellyShopApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.AlertDialog_AppCompat = global::DellyShopApp.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.AlertDialog_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Animation_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::DellyShopApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::DellyShopApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_AlertDialog_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::DellyShopApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_CardView = global::DellyShopApp.Droid.Resource.Style.Base_CardView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::DellyShopApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::DellyShopApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V21_Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V22_Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V23_Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::DellyShopApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::DellyShopApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::DellyShopApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Base_Widget_Design_TabLayout = global::DellyShopApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.CardView = global::DellyShopApp.Droid.Resource.Style.CardView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.CardView_Dark = global::DellyShopApp.Droid.Resource.Style.CardView_Dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.CardView_Light = global::DellyShopApp.Droid.Resource.Style.CardView_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::DellyShopApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_V21_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_V21_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_V25_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_V25_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::DellyShopApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::DellyShopApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::DellyShopApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::DellyShopApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Button = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Large = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Small = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::DellyShopApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Counter = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Error = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Hint = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Design_Tab = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::DellyShopApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design = global::DellyShopApp.Droid.Resource.Style.Theme_Design;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::DellyShopApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design_Light = global::DellyShopApp.Droid.Resource.Style.Theme_Design_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::DellyShopApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Theme_Design_NoActionBar = global::DellyShopApp.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::DellyShopApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionButton = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActionMode = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Button_Small = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_EditText = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ImageButton = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ListView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_RatingBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_SearchView = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_SeekBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Spinner = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Toolbar = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::DellyShopApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_AppBarLayout = global::DellyShopApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_BottomNavigationView = global::DellyShopApp.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::DellyShopApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::DellyShopApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_FloatingActionButton = global::DellyShopApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_NavigationView = global::DellyShopApp.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::DellyShopApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_Snackbar = global::DellyShopApp.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_TabLayout = global::DellyShopApp.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Style.Widget_Design_TextInputLayout = global::DellyShopApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar = global::DellyShopApp.Droid.Resource.Styleable.ActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_background = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_backgroundSplit = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_backgroundStacked = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetRight = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetStart = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_displayOptions = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_divider = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_divider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_elevation = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_height = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_homeLayout = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_icon = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_itemPadding = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_logo = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_logo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_navigationMode = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_popupTheme = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_progressBarPadding = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_progressBarStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_subtitle = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_title = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBar_titleTextStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBarLayout = global::DellyShopApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::DellyShopApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMenuItemView = global::DellyShopApp.Droid.Resource.Styleable.ActionMenuItemView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::DellyShopApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMenuView = global::DellyShopApp.Droid.Resource.Styleable.ActionMenuView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode = global::DellyShopApp.Droid.Resource.Styleable.ActionMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_background = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_backgroundSplit = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_closeItemLayout = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_height = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActionMode_titleTextStyle = global::DellyShopApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActivityChooserView = global::DellyShopApp.Droid.Resource.Styleable.ActivityChooserView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::DellyShopApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::DellyShopApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_android_layout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_listItemLayout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_listLayout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_showTitle = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::DellyShopApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_android_background = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_elevation = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_expanded = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayoutStates = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_Layout = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::DellyShopApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatImageView = global::DellyShopApp.Droid.Resource.Styleable.AppCompatImageView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatImageView_android_src = global::DellyShopApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::DellyShopApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatImageView_tint = global::DellyShopApp.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatImageView_tintMode = global::DellyShopApp.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatSeekBar = global::DellyShopApp.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::DellyShopApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::DellyShopApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::DellyShopApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::DellyShopApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextView = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::DellyShopApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView_elevation = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomNavigationView_menu = global::DellyShopApp.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::DellyShopApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::DellyShopApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::DellyShopApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::DellyShopApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ButtonBarLayout = global::DellyShopApp.Droid.Resource.Styleable.ButtonBarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::DellyShopApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView = global::DellyShopApp.Droid.Resource.Styleable.CardView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_android_minHeight = global::DellyShopApp.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_android_minWidth = global::DellyShopApp.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardBackgroundColor = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardCornerRadius = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardElevation = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardElevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardMaxElevation = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::DellyShopApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_contentPadding = global::DellyShopApp.Droid.Resource.Styleable.CardView_contentPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_contentPaddingBottom = global::DellyShopApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_contentPaddingLeft = global::DellyShopApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_contentPaddingRight = global::DellyShopApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CardView_contentPaddingTop = global::DellyShopApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::DellyShopApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ColorStateListItem = global::DellyShopApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ColorStateListItem_alpha = global::DellyShopApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::DellyShopApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ColorStateListItem_android_color = global::DellyShopApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CompoundButton = global::DellyShopApp.Droid.Resource.Styleable.CompoundButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CompoundButton_android_button = global::DellyShopApp.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CompoundButton_buttonTint = global::DellyShopApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::DellyShopApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_keylines = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::DellyShopApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DesignTheme = global::DellyShopApp.Droid.Resource.Styleable.DesignTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::DellyShopApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::DellyShopApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_color = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::DellyShopApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_elevation = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_fabSize = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::DellyShopApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ForegroundLinearLayout = global::DellyShopApp.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::DellyShopApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::DellyShopApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::DellyShopApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_divider = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ListPopupWindow = global::DellyShopApp.Droid.Resource.Styleable.ListPopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::DellyShopApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::DellyShopApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_enabled = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_id = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuGroup_android_visible = global::DellyShopApp.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem = global::DellyShopApp.Droid.Resource.Styleable.MenuItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_actionLayout = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_actionProviderClass = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_actionViewClass = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_checkable = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_checked = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_enabled = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_icon = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_id = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_id;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_menuCategory = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_onClick = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_title = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_android_visible = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuItem_showAsAction = global::DellyShopApp.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView = global::DellyShopApp.Droid.Resource.Styleable.MenuView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_headerBackground = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_itemBackground = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_verticalDivider = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::DellyShopApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::DellyShopApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.MenuView_subMenuArrow = global::DellyShopApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView = global::DellyShopApp.Droid.Resource.Styleable.NavigationView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_android_background = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_android_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_android_maxWidth = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_elevation = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_headerLayout = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_itemBackground = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_itemIconTint = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_itemTextColor = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.NavigationView_menu = global::DellyShopApp.Droid.Resource.Styleable.NavigationView_menu;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindow = global::DellyShopApp.Droid.Resource.Styleable.PopupWindow;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::DellyShopApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::DellyShopApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::DellyShopApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindowBackgroundState = global::DellyShopApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::DellyShopApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecycleListView = global::DellyShopApp.Droid.Resource.Styleable.RecycleListView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::DellyShopApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::DellyShopApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_android_orientation = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_layoutManager = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_reverseLayout = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_spanCount = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::DellyShopApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::DellyShopApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::DellyShopApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::DellyShopApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::DellyShopApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView = global::DellyShopApp.Droid.Resource.Styleable.SearchView;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_android_focusable = global::DellyShopApp.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_android_imeOptions = global::DellyShopApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_android_inputType = global::DellyShopApp.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_android_maxWidth = global::DellyShopApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_closeIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_commitIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_defaultQueryHint = global::DellyShopApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_goIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_goIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::DellyShopApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_layout = global::DellyShopApp.Droid.Resource.Styleable.SearchView_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_queryBackground = global::DellyShopApp.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_queryHint = global::DellyShopApp.Droid.Resource.Styleable.SearchView_queryHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_searchHintIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_searchIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_submitBackground = global::DellyShopApp.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::DellyShopApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SearchView_voiceIcon = global::DellyShopApp.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SnackbarLayout = global::DellyShopApp.Droid.Resource.Styleable.SnackbarLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::DellyShopApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SnackbarLayout_elevation = global::DellyShopApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::DellyShopApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner = global::DellyShopApp.Droid.Resource.Styleable.Spinner;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::DellyShopApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner_android_entries = global::DellyShopApp.Droid.Resource.Styleable.Spinner_android_entries;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner_android_popupBackground = global::DellyShopApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner_android_prompt = global::DellyShopApp.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Spinner_popupTheme = global::DellyShopApp.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_android_textOff = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_android_textOn = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_android_thumb = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_showText = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_splitTrack = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_switchPadding = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_thumbTint = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_track = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_track;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_trackTint = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::DellyShopApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabItem = global::DellyShopApp.Droid.Resource.Styleable.TabItem;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabItem_android_icon = global::DellyShopApp.Droid.Resource.Styleable.TabItem_android_icon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabItem_android_layout = global::DellyShopApp.Droid.Resource.Styleable.TabItem_android_layout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabItem_android_text = global::DellyShopApp.Droid.Resource.Styleable.TabItem_android_text;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout = global::DellyShopApp.Droid.Resource.Styleable.TabLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabBackground = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabContentStart = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabGravity = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabMinWidth = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabMode = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabPadding = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TabLayout_tabTextColor = global::DellyShopApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_textColor = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_textSize = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_textStyle = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_android_typeface = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextAppearance_textAllCaps = global::DellyShopApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_android_hint = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::DellyShopApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar = global::DellyShopApp.Droid.Resource.Styleable.Toolbar;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_android_gravity = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_android_minHeight = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_buttonGravity = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_collapseIcon = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetRight = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetStart = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_logo = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_logo;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_logoDescription = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_navigationIcon = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_popupTheme = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_subtitle = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_title = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_title;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMargin = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMarginStart = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMarginTop = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleMargins = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.Toolbar_titleTextColor = global::DellyShopApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View = global::DellyShopApp.Droid.Resource.Styleable.View;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View_android_focusable = global::DellyShopApp.Droid.Resource.Styleable.View_android_focusable;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View_android_theme = global::DellyShopApp.Droid.Resource.Styleable.View_android_theme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View_paddingEnd = global::DellyShopApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View_paddingStart = global::DellyShopApp.Droid.Resource.Styleable.View_paddingStart;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.View_theme = global::DellyShopApp.Droid.Resource.Styleable.View_theme;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewBackgroundHelper = global::DellyShopApp.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::DellyShopApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::DellyShopApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::DellyShopApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewStubCompat = global::DellyShopApp.Droid.Resource.Styleable.ViewStubCompat;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewStubCompat_android_id = global::DellyShopApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::DellyShopApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::ProgressRingControl.Forms.Plugin.Android.Resource.Styleable.ViewStubCompat_android_layout = global::DellyShopApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::DellyShopApp.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::DellyShopApp.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::DellyShopApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -187,6 +2002,7 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapsedTitleGravity = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapsedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapseIcon = global::DellyShopApp.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.collectionViewStyle = global::DellyShopApp.Droid.Resource.Attribute.collectionViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.color = global::DellyShopApp.Droid.Resource.Attribute.color;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.colorAccent = global::DellyShopApp.Droid.Resource.Attribute.colorAccent;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.colorBackgroundFloating = global::DellyShopApp.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -1545,7 +3361,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView = global::DellyShopApp.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView_Dark = global::DellyShopApp.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView_Light = global::DellyShopApp.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewStyle = global::DellyShopApp.Droid.Resource.Style.collectionViewStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewScrollBars = global::DellyShopApp.Droid.Resource.Style.collectionViewScrollBars;
+			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewTheme = global::DellyShopApp.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Style.MainTheme = global::DellyShopApp.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Style.MainTheme_Base = global::DellyShopApp.Droid.Resource.Style.MainTheme_Base;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Platform_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_AppCompat;
@@ -2285,6 +4102,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_startY = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_tileMode = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_type = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ItemsViewRendererTheme = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -2772,6 +4591,7 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::DellyShopApp.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collectionViewStyle = global::DellyShopApp.Droid.Resource.Attribute.collectionViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::DellyShopApp.Droid.Resource.Attribute.color;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::DellyShopApp.Droid.Resource.Attribute.colorAccent;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::DellyShopApp.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -4119,7 +5939,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::DellyShopApp.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::DellyShopApp.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::DellyShopApp.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::DellyShopApp.Droid.Resource.Style.collectionViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewScrollBars = global::DellyShopApp.Droid.Resource.Style.collectionViewScrollBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewTheme = global::DellyShopApp.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme = global::DellyShopApp.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme_Base = global::DellyShopApp.Droid.Resource.Style.MainTheme_Base;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_AppCompat;
@@ -4850,6 +6671,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_startY = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_tileMode = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_type = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ItemsViewRendererTheme = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -5337,6 +7160,7 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.collapsedTitleGravity = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Xamarin.Forms.Platform.Resource.Attribute.collapsedTitleTextAppearance = global::DellyShopApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
 			global::Xamarin.Forms.Platform.Resource.Attribute.collapseIcon = global::DellyShopApp.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Resource.Attribute.collectionViewStyle = global::DellyShopApp.Droid.Resource.Attribute.collectionViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.color = global::DellyShopApp.Droid.Resource.Attribute.color;
 			global::Xamarin.Forms.Platform.Resource.Attribute.colorAccent = global::DellyShopApp.Droid.Resource.Attribute.colorAccent;
 			global::Xamarin.Forms.Platform.Resource.Attribute.colorBackgroundFloating = global::DellyShopApp.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -6684,7 +8508,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.CardView = global::DellyShopApp.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Dark = global::DellyShopApp.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Light = global::DellyShopApp.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.collectionViewStyle = global::DellyShopApp.Droid.Resource.Style.collectionViewStyle;
+			global::Xamarin.Forms.Platform.Resource.Style.collectionViewScrollBars = global::DellyShopApp.Droid.Resource.Style.collectionViewScrollBars;
+			global::Xamarin.Forms.Platform.Resource.Style.collectionViewTheme = global::DellyShopApp.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme = global::DellyShopApp.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme_Base = global::DellyShopApp.Droid.Resource.Style.MainTheme_Base;
 			global::Xamarin.Forms.Platform.Resource.Style.Platform_AppCompat = global::DellyShopApp.Droid.Resource.Style.Platform_AppCompat;
@@ -7415,6 +9240,8 @@ namespace DellyShopApp.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColor_android_startY = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColor_android_tileMode = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColor_android_type = global::DellyShopApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ItemsViewRendererTheme = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::DellyShopApp.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::DellyShopApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -8256,1057 +10083,1060 @@ namespace DellyShopApp.Droid
 			public const int collapseIcon = 2130903168;
 			
 			// aapt resource value: 0x7F030083
-			public const int color = 2130903171;
+			public const int collectionViewStyle = 2130903171;
 			
 			// aapt resource value: 0x7F030084
-			public const int colorAccent = 2130903172;
+			public const int color = 2130903172;
 			
 			// aapt resource value: 0x7F030085
-			public const int colorBackgroundFloating = 2130903173;
+			public const int colorAccent = 2130903173;
 			
 			// aapt resource value: 0x7F030086
-			public const int colorButtonNormal = 2130903174;
+			public const int colorBackgroundFloating = 2130903174;
 			
 			// aapt resource value: 0x7F030087
-			public const int colorControlActivated = 2130903175;
+			public const int colorButtonNormal = 2130903175;
 			
 			// aapt resource value: 0x7F030088
-			public const int colorControlHighlight = 2130903176;
+			public const int colorControlActivated = 2130903176;
 			
 			// aapt resource value: 0x7F030089
-			public const int colorControlNormal = 2130903177;
+			public const int colorControlHighlight = 2130903177;
 			
 			// aapt resource value: 0x7F03008A
-			public const int colorError = 2130903178;
+			public const int colorControlNormal = 2130903178;
 			
 			// aapt resource value: 0x7F03008B
-			public const int colorPrimary = 2130903179;
+			public const int colorError = 2130903179;
 			
 			// aapt resource value: 0x7F03008C
-			public const int colorPrimaryDark = 2130903180;
+			public const int colorPrimary = 2130903180;
 			
 			// aapt resource value: 0x7F03008D
-			public const int colorSecondary = 2130903181;
+			public const int colorPrimaryDark = 2130903181;
 			
 			// aapt resource value: 0x7F03008E
-			public const int colorSwitchThumbNormal = 2130903182;
+			public const int colorSecondary = 2130903182;
 			
 			// aapt resource value: 0x7F03008F
-			public const int commitIcon = 2130903183;
+			public const int colorSwitchThumbNormal = 2130903183;
 			
 			// aapt resource value: 0x7F030090
-			public const int contentDescription = 2130903184;
+			public const int commitIcon = 2130903184;
 			
 			// aapt resource value: 0x7F030091
-			public const int contentInsetEnd = 2130903185;
+			public const int contentDescription = 2130903185;
 			
 			// aapt resource value: 0x7F030092
-			public const int contentInsetEndWithActions = 2130903186;
+			public const int contentInsetEnd = 2130903186;
 			
 			// aapt resource value: 0x7F030093
-			public const int contentInsetLeft = 2130903187;
+			public const int contentInsetEndWithActions = 2130903187;
 			
 			// aapt resource value: 0x7F030094
-			public const int contentInsetRight = 2130903188;
+			public const int contentInsetLeft = 2130903188;
 			
 			// aapt resource value: 0x7F030095
-			public const int contentInsetStart = 2130903189;
+			public const int contentInsetRight = 2130903189;
 			
 			// aapt resource value: 0x7F030096
-			public const int contentInsetStartWithNavigation = 2130903190;
+			public const int contentInsetStart = 2130903190;
 			
 			// aapt resource value: 0x7F030097
-			public const int contentPadding = 2130903191;
+			public const int contentInsetStartWithNavigation = 2130903191;
 			
 			// aapt resource value: 0x7F030098
-			public const int contentPaddingBottom = 2130903192;
+			public const int contentPadding = 2130903192;
 			
 			// aapt resource value: 0x7F030099
-			public const int contentPaddingLeft = 2130903193;
+			public const int contentPaddingBottom = 2130903193;
 			
 			// aapt resource value: 0x7F03009A
-			public const int contentPaddingRight = 2130903194;
+			public const int contentPaddingLeft = 2130903194;
 			
 			// aapt resource value: 0x7F03009B
-			public const int contentPaddingTop = 2130903195;
+			public const int contentPaddingRight = 2130903195;
 			
 			// aapt resource value: 0x7F03009C
-			public const int contentScrim = 2130903196;
+			public const int contentPaddingTop = 2130903196;
 			
 			// aapt resource value: 0x7F03009D
-			public const int controlBackground = 2130903197;
+			public const int contentScrim = 2130903197;
 			
 			// aapt resource value: 0x7F03009E
-			public const int coordinatorLayoutStyle = 2130903198;
+			public const int controlBackground = 2130903198;
 			
 			// aapt resource value: 0x7F03009F
-			public const int cornerRadius = 2130903199;
+			public const int coordinatorLayoutStyle = 2130903199;
 			
 			// aapt resource value: 0x7F0300A0
-			public const int counterEnabled = 2130903200;
+			public const int cornerRadius = 2130903200;
 			
 			// aapt resource value: 0x7F0300A1
-			public const int counterMaxLength = 2130903201;
+			public const int counterEnabled = 2130903201;
 			
 			// aapt resource value: 0x7F0300A2
-			public const int counterOverflowTextAppearance = 2130903202;
+			public const int counterMaxLength = 2130903202;
 			
 			// aapt resource value: 0x7F0300A3
-			public const int counterTextAppearance = 2130903203;
+			public const int counterOverflowTextAppearance = 2130903203;
 			
 			// aapt resource value: 0x7F0300A4
-			public const int customNavigationLayout = 2130903204;
+			public const int counterTextAppearance = 2130903204;
 			
 			// aapt resource value: 0x7F0300A5
-			public const int defaultQueryHint = 2130903205;
+			public const int customNavigationLayout = 2130903205;
 			
 			// aapt resource value: 0x7F0300A6
-			public const int dialogCornerRadius = 2130903206;
+			public const int defaultQueryHint = 2130903206;
 			
 			// aapt resource value: 0x7F0300A7
-			public const int dialogPreferredPadding = 2130903207;
+			public const int dialogCornerRadius = 2130903207;
 			
 			// aapt resource value: 0x7F0300A8
-			public const int dialogTheme = 2130903208;
+			public const int dialogPreferredPadding = 2130903208;
 			
 			// aapt resource value: 0x7F0300A9
-			public const int displayOptions = 2130903209;
+			public const int dialogTheme = 2130903209;
 			
 			// aapt resource value: 0x7F0300AA
-			public const int divider = 2130903210;
+			public const int displayOptions = 2130903210;
 			
 			// aapt resource value: 0x7F0300AB
-			public const int dividerHorizontal = 2130903211;
+			public const int divider = 2130903211;
 			
 			// aapt resource value: 0x7F0300AC
-			public const int dividerPadding = 2130903212;
+			public const int dividerHorizontal = 2130903212;
 			
 			// aapt resource value: 0x7F0300AD
-			public const int dividerVertical = 2130903213;
+			public const int dividerPadding = 2130903213;
 			
 			// aapt resource value: 0x7F0300AE
-			public const int drawableSize = 2130903214;
+			public const int dividerVertical = 2130903214;
 			
 			// aapt resource value: 0x7F0300AF
-			public const int drawerArrowStyle = 2130903215;
-			
-			// aapt resource value: 0x7F0300B1
-			public const int dropdownListPreferredItemHeight = 2130903217;
+			public const int drawableSize = 2130903215;
 			
 			// aapt resource value: 0x7F0300B0
-			public const int dropDownListViewStyle = 2130903216;
+			public const int drawerArrowStyle = 2130903216;
 			
 			// aapt resource value: 0x7F0300B2
-			public const int editTextBackground = 2130903218;
+			public const int dropdownListPreferredItemHeight = 2130903218;
+			
+			// aapt resource value: 0x7F0300B1
+			public const int dropDownListViewStyle = 2130903217;
 			
 			// aapt resource value: 0x7F0300B3
-			public const int editTextColor = 2130903219;
+			public const int editTextBackground = 2130903219;
 			
 			// aapt resource value: 0x7F0300B4
-			public const int editTextStyle = 2130903220;
+			public const int editTextColor = 2130903220;
 			
 			// aapt resource value: 0x7F0300B5
-			public const int elevation = 2130903221;
+			public const int editTextStyle = 2130903221;
 			
 			// aapt resource value: 0x7F0300B6
-			public const int enforceMaterialTheme = 2130903222;
+			public const int elevation = 2130903222;
 			
 			// aapt resource value: 0x7F0300B7
-			public const int enforceTextAppearance = 2130903223;
+			public const int enforceMaterialTheme = 2130903223;
 			
 			// aapt resource value: 0x7F0300B8
-			public const int errorEnabled = 2130903224;
+			public const int enforceTextAppearance = 2130903224;
 			
 			// aapt resource value: 0x7F0300B9
-			public const int errorTextAppearance = 2130903225;
+			public const int errorEnabled = 2130903225;
 			
 			// aapt resource value: 0x7F0300BA
-			public const int expandActivityOverflowButtonDrawable = 2130903226;
+			public const int errorTextAppearance = 2130903226;
 			
 			// aapt resource value: 0x7F0300BB
-			public const int expanded = 2130903227;
+			public const int expandActivityOverflowButtonDrawable = 2130903227;
 			
 			// aapt resource value: 0x7F0300BC
-			public const int expandedTitleGravity = 2130903228;
+			public const int expanded = 2130903228;
 			
 			// aapt resource value: 0x7F0300BD
-			public const int expandedTitleMargin = 2130903229;
+			public const int expandedTitleGravity = 2130903229;
 			
 			// aapt resource value: 0x7F0300BE
-			public const int expandedTitleMarginBottom = 2130903230;
+			public const int expandedTitleMargin = 2130903230;
 			
 			// aapt resource value: 0x7F0300BF
-			public const int expandedTitleMarginEnd = 2130903231;
+			public const int expandedTitleMarginBottom = 2130903231;
 			
 			// aapt resource value: 0x7F0300C0
-			public const int expandedTitleMarginStart = 2130903232;
+			public const int expandedTitleMarginEnd = 2130903232;
 			
 			// aapt resource value: 0x7F0300C1
-			public const int expandedTitleMarginTop = 2130903233;
+			public const int expandedTitleMarginStart = 2130903233;
 			
 			// aapt resource value: 0x7F0300C2
-			public const int expandedTitleTextAppearance = 2130903234;
+			public const int expandedTitleMarginTop = 2130903234;
 			
 			// aapt resource value: 0x7F0300C3
-			public const int fabAlignmentMode = 2130903235;
+			public const int expandedTitleTextAppearance = 2130903235;
 			
 			// aapt resource value: 0x7F0300C4
-			public const int fabCradleMargin = 2130903236;
+			public const int fabAlignmentMode = 2130903236;
 			
 			// aapt resource value: 0x7F0300C5
-			public const int fabCradleRoundedCornerRadius = 2130903237;
+			public const int fabCradleMargin = 2130903237;
 			
 			// aapt resource value: 0x7F0300C6
-			public const int fabCradleVerticalOffset = 2130903238;
+			public const int fabCradleRoundedCornerRadius = 2130903238;
 			
 			// aapt resource value: 0x7F0300C7
-			public const int fabCustomSize = 2130903239;
+			public const int fabCradleVerticalOffset = 2130903239;
 			
 			// aapt resource value: 0x7F0300C8
-			public const int fabSize = 2130903240;
+			public const int fabCustomSize = 2130903240;
 			
 			// aapt resource value: 0x7F0300C9
-			public const int fastScrollEnabled = 2130903241;
+			public const int fabSize = 2130903241;
 			
 			// aapt resource value: 0x7F0300CA
-			public const int fastScrollHorizontalThumbDrawable = 2130903242;
+			public const int fastScrollEnabled = 2130903242;
 			
 			// aapt resource value: 0x7F0300CB
-			public const int fastScrollHorizontalTrackDrawable = 2130903243;
+			public const int fastScrollHorizontalThumbDrawable = 2130903243;
 			
 			// aapt resource value: 0x7F0300CC
-			public const int fastScrollVerticalThumbDrawable = 2130903244;
+			public const int fastScrollHorizontalTrackDrawable = 2130903244;
 			
 			// aapt resource value: 0x7F0300CD
-			public const int fastScrollVerticalTrackDrawable = 2130903245;
+			public const int fastScrollVerticalThumbDrawable = 2130903245;
 			
 			// aapt resource value: 0x7F0300CE
-			public const int firstBaselineToTopHeight = 2130903246;
+			public const int fastScrollVerticalTrackDrawable = 2130903246;
 			
 			// aapt resource value: 0x7F0300CF
-			public const int floatingActionButtonStyle = 2130903247;
+			public const int firstBaselineToTopHeight = 2130903247;
 			
 			// aapt resource value: 0x7F0300D0
-			public const int font = 2130903248;
+			public const int floatingActionButtonStyle = 2130903248;
 			
 			// aapt resource value: 0x7F0300D1
-			public const int fontFamily = 2130903249;
+			public const int font = 2130903249;
 			
 			// aapt resource value: 0x7F0300D2
-			public const int fontProviderAuthority = 2130903250;
+			public const int fontFamily = 2130903250;
 			
 			// aapt resource value: 0x7F0300D3
-			public const int fontProviderCerts = 2130903251;
+			public const int fontProviderAuthority = 2130903251;
 			
 			// aapt resource value: 0x7F0300D4
-			public const int fontProviderFetchStrategy = 2130903252;
+			public const int fontProviderCerts = 2130903252;
 			
 			// aapt resource value: 0x7F0300D5
-			public const int fontProviderFetchTimeout = 2130903253;
+			public const int fontProviderFetchStrategy = 2130903253;
 			
 			// aapt resource value: 0x7F0300D6
-			public const int fontProviderPackage = 2130903254;
+			public const int fontProviderFetchTimeout = 2130903254;
 			
 			// aapt resource value: 0x7F0300D7
-			public const int fontProviderQuery = 2130903255;
+			public const int fontProviderPackage = 2130903255;
 			
 			// aapt resource value: 0x7F0300D8
-			public const int fontStyle = 2130903256;
+			public const int fontProviderQuery = 2130903256;
 			
 			// aapt resource value: 0x7F0300D9
-			public const int fontVariationSettings = 2130903257;
+			public const int fontStyle = 2130903257;
 			
 			// aapt resource value: 0x7F0300DA
-			public const int fontWeight = 2130903258;
+			public const int fontVariationSettings = 2130903258;
 			
 			// aapt resource value: 0x7F0300DB
-			public const int foregroundInsidePadding = 2130903259;
+			public const int fontWeight = 2130903259;
 			
 			// aapt resource value: 0x7F0300DC
-			public const int gapBetweenBars = 2130903260;
+			public const int foregroundInsidePadding = 2130903260;
 			
 			// aapt resource value: 0x7F0300DD
-			public const int goIcon = 2130903261;
+			public const int gapBetweenBars = 2130903261;
 			
 			// aapt resource value: 0x7F0300DE
-			public const int headerLayout = 2130903262;
+			public const int goIcon = 2130903262;
 			
 			// aapt resource value: 0x7F0300DF
-			public const int height = 2130903263;
+			public const int headerLayout = 2130903263;
 			
 			// aapt resource value: 0x7F0300E0
-			public const int helperText = 2130903264;
+			public const int height = 2130903264;
 			
 			// aapt resource value: 0x7F0300E1
-			public const int helperTextEnabled = 2130903265;
+			public const int helperText = 2130903265;
 			
 			// aapt resource value: 0x7F0300E2
-			public const int helperTextTextAppearance = 2130903266;
+			public const int helperTextEnabled = 2130903266;
 			
 			// aapt resource value: 0x7F0300E3
-			public const int hideMotionSpec = 2130903267;
+			public const int helperTextTextAppearance = 2130903267;
 			
 			// aapt resource value: 0x7F0300E4
-			public const int hideOnContentScroll = 2130903268;
+			public const int hideMotionSpec = 2130903268;
 			
 			// aapt resource value: 0x7F0300E5
-			public const int hideOnScroll = 2130903269;
+			public const int hideOnContentScroll = 2130903269;
 			
 			// aapt resource value: 0x7F0300E6
-			public const int hintAnimationEnabled = 2130903270;
+			public const int hideOnScroll = 2130903270;
 			
 			// aapt resource value: 0x7F0300E7
-			public const int hintEnabled = 2130903271;
+			public const int hintAnimationEnabled = 2130903271;
 			
 			// aapt resource value: 0x7F0300E8
-			public const int hintTextAppearance = 2130903272;
+			public const int hintEnabled = 2130903272;
 			
 			// aapt resource value: 0x7F0300E9
-			public const int homeAsUpIndicator = 2130903273;
+			public const int hintTextAppearance = 2130903273;
 			
 			// aapt resource value: 0x7F0300EA
-			public const int homeLayout = 2130903274;
+			public const int homeAsUpIndicator = 2130903274;
 			
 			// aapt resource value: 0x7F0300EB
-			public const int hoveredFocusedTranslationZ = 2130903275;
+			public const int homeLayout = 2130903275;
 			
 			// aapt resource value: 0x7F0300EC
-			public const int icon = 2130903276;
+			public const int hoveredFocusedTranslationZ = 2130903276;
 			
 			// aapt resource value: 0x7F0300ED
-			public const int iconEndPadding = 2130903277;
+			public const int icon = 2130903277;
 			
 			// aapt resource value: 0x7F0300EE
-			public const int iconGravity = 2130903278;
-			
-			// aapt resource value: 0x7F0300F4
-			public const int iconifiedByDefault = 2130903284;
+			public const int iconEndPadding = 2130903278;
 			
 			// aapt resource value: 0x7F0300EF
-			public const int iconPadding = 2130903279;
-			
-			// aapt resource value: 0x7F0300F0
-			public const int iconSize = 2130903280;
-			
-			// aapt resource value: 0x7F0300F1
-			public const int iconStartPadding = 2130903281;
-			
-			// aapt resource value: 0x7F0300F2
-			public const int iconTint = 2130903282;
-			
-			// aapt resource value: 0x7F0300F3
-			public const int iconTintMode = 2130903283;
+			public const int iconGravity = 2130903279;
 			
 			// aapt resource value: 0x7F0300F5
-			public const int imageButtonStyle = 2130903285;
+			public const int iconifiedByDefault = 2130903285;
+			
+			// aapt resource value: 0x7F0300F0
+			public const int iconPadding = 2130903280;
+			
+			// aapt resource value: 0x7F0300F1
+			public const int iconSize = 2130903281;
+			
+			// aapt resource value: 0x7F0300F2
+			public const int iconStartPadding = 2130903282;
+			
+			// aapt resource value: 0x7F0300F3
+			public const int iconTint = 2130903283;
+			
+			// aapt resource value: 0x7F0300F4
+			public const int iconTintMode = 2130903284;
 			
 			// aapt resource value: 0x7F0300F6
-			public const int indeterminateProgressStyle = 2130903286;
+			public const int imageButtonStyle = 2130903286;
 			
 			// aapt resource value: 0x7F0300F7
-			public const int initialActivityCount = 2130903287;
+			public const int indeterminateProgressStyle = 2130903287;
 			
 			// aapt resource value: 0x7F0300F8
-			public const int insetForeground = 2130903288;
+			public const int initialActivityCount = 2130903288;
 			
 			// aapt resource value: 0x7F0300F9
-			public const int isLightTheme = 2130903289;
+			public const int insetForeground = 2130903289;
 			
 			// aapt resource value: 0x7F0300FA
-			public const int itemBackground = 2130903290;
+			public const int isLightTheme = 2130903290;
 			
 			// aapt resource value: 0x7F0300FB
-			public const int itemHorizontalPadding = 2130903291;
+			public const int itemBackground = 2130903291;
 			
 			// aapt resource value: 0x7F0300FC
-			public const int itemHorizontalTranslationEnabled = 2130903292;
+			public const int itemHorizontalPadding = 2130903292;
 			
 			// aapt resource value: 0x7F0300FD
-			public const int itemIconPadding = 2130903293;
+			public const int itemHorizontalTranslationEnabled = 2130903293;
 			
 			// aapt resource value: 0x7F0300FE
-			public const int itemIconSize = 2130903294;
+			public const int itemIconPadding = 2130903294;
 			
 			// aapt resource value: 0x7F0300FF
-			public const int itemIconTint = 2130903295;
+			public const int itemIconSize = 2130903295;
 			
 			// aapt resource value: 0x7F030100
-			public const int itemPadding = 2130903296;
+			public const int itemIconTint = 2130903296;
 			
 			// aapt resource value: 0x7F030101
-			public const int itemSpacing = 2130903297;
+			public const int itemPadding = 2130903297;
 			
 			// aapt resource value: 0x7F030102
-			public const int itemTextAppearance = 2130903298;
+			public const int itemSpacing = 2130903298;
 			
 			// aapt resource value: 0x7F030103
-			public const int itemTextAppearanceActive = 2130903299;
+			public const int itemTextAppearance = 2130903299;
 			
 			// aapt resource value: 0x7F030104
-			public const int itemTextAppearanceInactive = 2130903300;
+			public const int itemTextAppearanceActive = 2130903300;
 			
 			// aapt resource value: 0x7F030105
-			public const int itemTextColor = 2130903301;
+			public const int itemTextAppearanceInactive = 2130903301;
 			
 			// aapt resource value: 0x7F030106
-			public const int keylines = 2130903302;
+			public const int itemTextColor = 2130903302;
 			
 			// aapt resource value: 0x7F030107
-			public const int labelVisibilityMode = 2130903303;
+			public const int keylines = 2130903303;
 			
 			// aapt resource value: 0x7F030108
-			public const int lastBaselineToBottomHeight = 2130903304;
+			public const int labelVisibilityMode = 2130903304;
 			
 			// aapt resource value: 0x7F030109
-			public const int layout = 2130903305;
+			public const int lastBaselineToBottomHeight = 2130903305;
 			
 			// aapt resource value: 0x7F03010A
-			public const int layoutManager = 2130903306;
+			public const int layout = 2130903306;
 			
 			// aapt resource value: 0x7F03010B
-			public const int layout_anchor = 2130903307;
+			public const int layoutManager = 2130903307;
 			
 			// aapt resource value: 0x7F03010C
-			public const int layout_anchorGravity = 2130903308;
+			public const int layout_anchor = 2130903308;
 			
 			// aapt resource value: 0x7F03010D
-			public const int layout_behavior = 2130903309;
+			public const int layout_anchorGravity = 2130903309;
 			
 			// aapt resource value: 0x7F03010E
-			public const int layout_collapseMode = 2130903310;
+			public const int layout_behavior = 2130903310;
 			
 			// aapt resource value: 0x7F03010F
-			public const int layout_collapseParallaxMultiplier = 2130903311;
+			public const int layout_collapseMode = 2130903311;
 			
 			// aapt resource value: 0x7F030110
-			public const int layout_dodgeInsetEdges = 2130903312;
+			public const int layout_collapseParallaxMultiplier = 2130903312;
 			
 			// aapt resource value: 0x7F030111
-			public const int layout_insetEdge = 2130903313;
+			public const int layout_dodgeInsetEdges = 2130903313;
 			
 			// aapt resource value: 0x7F030112
-			public const int layout_keyline = 2130903314;
+			public const int layout_insetEdge = 2130903314;
 			
 			// aapt resource value: 0x7F030113
-			public const int layout_scrollFlags = 2130903315;
+			public const int layout_keyline = 2130903315;
 			
 			// aapt resource value: 0x7F030114
-			public const int layout_scrollInterpolator = 2130903316;
+			public const int layout_scrollFlags = 2130903316;
 			
 			// aapt resource value: 0x7F030115
-			public const int liftOnScroll = 2130903317;
+			public const int layout_scrollInterpolator = 2130903317;
 			
 			// aapt resource value: 0x7F030116
-			public const int lineHeight = 2130903318;
+			public const int liftOnScroll = 2130903318;
 			
 			// aapt resource value: 0x7F030117
-			public const int lineSpacing = 2130903319;
+			public const int lineHeight = 2130903319;
 			
 			// aapt resource value: 0x7F030118
-			public const int listChoiceBackgroundIndicator = 2130903320;
+			public const int lineSpacing = 2130903320;
 			
 			// aapt resource value: 0x7F030119
-			public const int listDividerAlertDialog = 2130903321;
+			public const int listChoiceBackgroundIndicator = 2130903321;
 			
 			// aapt resource value: 0x7F03011A
-			public const int listItemLayout = 2130903322;
+			public const int listDividerAlertDialog = 2130903322;
 			
 			// aapt resource value: 0x7F03011B
-			public const int listLayout = 2130903323;
+			public const int listItemLayout = 2130903323;
 			
 			// aapt resource value: 0x7F03011C
-			public const int listMenuViewStyle = 2130903324;
+			public const int listLayout = 2130903324;
 			
 			// aapt resource value: 0x7F03011D
-			public const int listPopupWindowStyle = 2130903325;
+			public const int listMenuViewStyle = 2130903325;
 			
 			// aapt resource value: 0x7F03011E
-			public const int listPreferredItemHeight = 2130903326;
+			public const int listPopupWindowStyle = 2130903326;
 			
 			// aapt resource value: 0x7F03011F
-			public const int listPreferredItemHeightLarge = 2130903327;
+			public const int listPreferredItemHeight = 2130903327;
 			
 			// aapt resource value: 0x7F030120
-			public const int listPreferredItemHeightSmall = 2130903328;
+			public const int listPreferredItemHeightLarge = 2130903328;
 			
 			// aapt resource value: 0x7F030121
-			public const int listPreferredItemPaddingLeft = 2130903329;
+			public const int listPreferredItemHeightSmall = 2130903329;
 			
 			// aapt resource value: 0x7F030122
-			public const int listPreferredItemPaddingRight = 2130903330;
+			public const int listPreferredItemPaddingLeft = 2130903330;
 			
 			// aapt resource value: 0x7F030123
-			public const int logo = 2130903331;
+			public const int listPreferredItemPaddingRight = 2130903331;
 			
 			// aapt resource value: 0x7F030124
-			public const int logoDescription = 2130903332;
+			public const int logo = 2130903332;
 			
 			// aapt resource value: 0x7F030125
-			public const int materialButtonStyle = 2130903333;
+			public const int logoDescription = 2130903333;
 			
 			// aapt resource value: 0x7F030126
-			public const int materialCardViewStyle = 2130903334;
+			public const int materialButtonStyle = 2130903334;
 			
 			// aapt resource value: 0x7F030127
-			public const int materialCheckBoxStyle = 2130903335;
+			public const int materialCardViewStyle = 2130903335;
 			
 			// aapt resource value: 0x7F030128
-			public const int materialOutlinedButtonStyle = 2130903336;
+			public const int materialCheckBoxStyle = 2130903336;
 			
 			// aapt resource value: 0x7F030129
-			public const int materialProgressBarCircularStyle = 2130903337;
+			public const int materialOutlinedButtonStyle = 2130903337;
 			
 			// aapt resource value: 0x7F03012A
-			public const int materialProgressBarHorizontalStyle = 2130903338;
+			public const int materialProgressBarCircularStyle = 2130903338;
 			
 			// aapt resource value: 0x7F03012B
-			public const int materialSliderStyle = 2130903339;
+			public const int materialProgressBarHorizontalStyle = 2130903339;
 			
 			// aapt resource value: 0x7F03012C
-			public const int maxActionInlineWidth = 2130903340;
+			public const int materialSliderStyle = 2130903340;
 			
 			// aapt resource value: 0x7F03012D
-			public const int maxButtonHeight = 2130903341;
+			public const int maxActionInlineWidth = 2130903341;
 			
 			// aapt resource value: 0x7F03012E
-			public const int maxImageSize = 2130903342;
+			public const int maxButtonHeight = 2130903342;
 			
 			// aapt resource value: 0x7F03012F
-			public const int measureWithLargestChild = 2130903343;
+			public const int maxImageSize = 2130903343;
 			
 			// aapt resource value: 0x7F030130
-			public const int menu = 2130903344;
+			public const int measureWithLargestChild = 2130903344;
 			
 			// aapt resource value: 0x7F030131
-			public const int multiChoiceItemLayout = 2130903345;
+			public const int menu = 2130903345;
 			
 			// aapt resource value: 0x7F030132
-			public const int navigationContentDescription = 2130903346;
+			public const int multiChoiceItemLayout = 2130903346;
 			
 			// aapt resource value: 0x7F030133
-			public const int navigationIcon = 2130903347;
+			public const int navigationContentDescription = 2130903347;
 			
 			// aapt resource value: 0x7F030134
-			public const int navigationMode = 2130903348;
+			public const int navigationIcon = 2130903348;
 			
 			// aapt resource value: 0x7F030135
-			public const int navigationViewStyle = 2130903349;
+			public const int navigationMode = 2130903349;
 			
 			// aapt resource value: 0x7F030136
-			public const int numericModifiers = 2130903350;
+			public const int navigationViewStyle = 2130903350;
 			
 			// aapt resource value: 0x7F030137
-			public const int overlapAnchor = 2130903351;
+			public const int numericModifiers = 2130903351;
 			
 			// aapt resource value: 0x7F030138
-			public const int paddingBottomNoButtons = 2130903352;
+			public const int overlapAnchor = 2130903352;
 			
 			// aapt resource value: 0x7F030139
-			public const int paddingEnd = 2130903353;
+			public const int paddingBottomNoButtons = 2130903353;
 			
 			// aapt resource value: 0x7F03013A
-			public const int paddingStart = 2130903354;
+			public const int paddingEnd = 2130903354;
 			
 			// aapt resource value: 0x7F03013B
-			public const int paddingTopNoTitle = 2130903355;
+			public const int paddingStart = 2130903355;
 			
 			// aapt resource value: 0x7F03013C
-			public const int panelBackground = 2130903356;
+			public const int paddingTopNoTitle = 2130903356;
 			
 			// aapt resource value: 0x7F03013D
-			public const int panelMenuListTheme = 2130903357;
+			public const int panelBackground = 2130903357;
 			
 			// aapt resource value: 0x7F03013E
-			public const int panelMenuListWidth = 2130903358;
+			public const int panelMenuListTheme = 2130903358;
 			
 			// aapt resource value: 0x7F03013F
-			public const int passwordToggleContentDescription = 2130903359;
+			public const int panelMenuListWidth = 2130903359;
 			
 			// aapt resource value: 0x7F030140
-			public const int passwordToggleDrawable = 2130903360;
+			public const int passwordToggleContentDescription = 2130903360;
 			
 			// aapt resource value: 0x7F030141
-			public const int passwordToggleEnabled = 2130903361;
+			public const int passwordToggleDrawable = 2130903361;
 			
 			// aapt resource value: 0x7F030142
-			public const int passwordToggleTint = 2130903362;
+			public const int passwordToggleEnabled = 2130903362;
 			
 			// aapt resource value: 0x7F030143
-			public const int passwordToggleTintMode = 2130903363;
+			public const int passwordToggleTint = 2130903363;
 			
 			// aapt resource value: 0x7F030144
-			public const int popupMenuStyle = 2130903364;
+			public const int passwordToggleTintMode = 2130903364;
 			
 			// aapt resource value: 0x7F030145
-			public const int popupTheme = 2130903365;
+			public const int popupMenuStyle = 2130903365;
 			
 			// aapt resource value: 0x7F030146
-			public const int popupWindowStyle = 2130903366;
+			public const int popupTheme = 2130903366;
 			
 			// aapt resource value: 0x7F030147
-			public const int preserveIconSpacing = 2130903367;
+			public const int popupWindowStyle = 2130903367;
 			
 			// aapt resource value: 0x7F030148
-			public const int pressedTranslationZ = 2130903368;
+			public const int preserveIconSpacing = 2130903368;
 			
 			// aapt resource value: 0x7F030149
-			public const int progressBarPadding = 2130903369;
+			public const int pressedTranslationZ = 2130903369;
 			
 			// aapt resource value: 0x7F03014A
-			public const int progressBarStyle = 2130903370;
+			public const int progressBarPadding = 2130903370;
 			
 			// aapt resource value: 0x7F03014B
-			public const int queryBackground = 2130903371;
+			public const int progressBarStyle = 2130903371;
 			
 			// aapt resource value: 0x7F03014C
-			public const int queryHint = 2130903372;
+			public const int queryBackground = 2130903372;
 			
 			// aapt resource value: 0x7F03014D
-			public const int radioButtonStyle = 2130903373;
+			public const int queryHint = 2130903373;
 			
 			// aapt resource value: 0x7F03014E
-			public const int ratingBarStyle = 2130903374;
+			public const int radioButtonStyle = 2130903374;
 			
 			// aapt resource value: 0x7F03014F
-			public const int ratingBarStyleIndicator = 2130903375;
+			public const int ratingBarStyle = 2130903375;
 			
 			// aapt resource value: 0x7F030150
-			public const int ratingBarStyleSmall = 2130903376;
+			public const int ratingBarStyleIndicator = 2130903376;
 			
 			// aapt resource value: 0x7F030151
-			public const int reverseLayout = 2130903377;
+			public const int ratingBarStyleSmall = 2130903377;
 			
 			// aapt resource value: 0x7F030152
-			public const int rippleColor = 2130903378;
+			public const int reverseLayout = 2130903378;
 			
 			// aapt resource value: 0x7F030153
-			public const int scrimAnimationDuration = 2130903379;
+			public const int rippleColor = 2130903379;
 			
 			// aapt resource value: 0x7F030154
-			public const int scrimBackground = 2130903380;
+			public const int scrimAnimationDuration = 2130903380;
 			
 			// aapt resource value: 0x7F030155
-			public const int scrimVisibleHeightTrigger = 2130903381;
+			public const int scrimBackground = 2130903381;
 			
 			// aapt resource value: 0x7F030156
-			public const int searchHintIcon = 2130903382;
+			public const int scrimVisibleHeightTrigger = 2130903382;
 			
 			// aapt resource value: 0x7F030157
-			public const int searchIcon = 2130903383;
+			public const int searchHintIcon = 2130903383;
 			
 			// aapt resource value: 0x7F030158
-			public const int searchViewStyle = 2130903384;
+			public const int searchIcon = 2130903384;
 			
 			// aapt resource value: 0x7F030159
-			public const int seekBarStyle = 2130903385;
+			public const int searchViewStyle = 2130903385;
 			
 			// aapt resource value: 0x7F03015A
-			public const int selectableItemBackground = 2130903386;
+			public const int seekBarStyle = 2130903386;
 			
 			// aapt resource value: 0x7F03015B
-			public const int selectableItemBackgroundBorderless = 2130903387;
+			public const int selectableItemBackground = 2130903387;
 			
 			// aapt resource value: 0x7F03015C
-			public const int showAsAction = 2130903388;
+			public const int selectableItemBackgroundBorderless = 2130903388;
 			
 			// aapt resource value: 0x7F03015D
-			public const int showDividers = 2130903389;
+			public const int showAsAction = 2130903389;
 			
 			// aapt resource value: 0x7F03015E
-			public const int showMotionSpec = 2130903390;
+			public const int showDividers = 2130903390;
 			
 			// aapt resource value: 0x7F03015F
-			public const int showText = 2130903391;
+			public const int showMotionSpec = 2130903391;
 			
 			// aapt resource value: 0x7F030160
-			public const int showTitle = 2130903392;
+			public const int showText = 2130903392;
 			
 			// aapt resource value: 0x7F030161
-			public const int singleChoiceItemLayout = 2130903393;
+			public const int showTitle = 2130903393;
 			
 			// aapt resource value: 0x7F030162
-			public const int singleLine = 2130903394;
+			public const int singleChoiceItemLayout = 2130903394;
 			
 			// aapt resource value: 0x7F030163
-			public const int singleSelection = 2130903395;
+			public const int singleLine = 2130903395;
 			
 			// aapt resource value: 0x7F030164
-			public const int snackbarButtonStyle = 2130903396;
+			public const int singleSelection = 2130903396;
 			
 			// aapt resource value: 0x7F030165
-			public const int snackbarStyle = 2130903397;
+			public const int snackbarButtonStyle = 2130903397;
 			
 			// aapt resource value: 0x7F030166
-			public const int spanCount = 2130903398;
+			public const int snackbarStyle = 2130903398;
 			
 			// aapt resource value: 0x7F030167
-			public const int spinBars = 2130903399;
+			public const int spanCount = 2130903399;
 			
 			// aapt resource value: 0x7F030168
-			public const int spinnerDropDownItemStyle = 2130903400;
+			public const int spinBars = 2130903400;
 			
 			// aapt resource value: 0x7F030169
-			public const int spinnerStyle = 2130903401;
+			public const int spinnerDropDownItemStyle = 2130903401;
 			
 			// aapt resource value: 0x7F03016A
-			public const int splitTrack = 2130903402;
+			public const int spinnerStyle = 2130903402;
 			
 			// aapt resource value: 0x7F03016B
-			public const int srcCompat = 2130903403;
+			public const int splitTrack = 2130903403;
 			
 			// aapt resource value: 0x7F03016C
-			public const int stackFromEnd = 2130903404;
+			public const int srcCompat = 2130903404;
 			
 			// aapt resource value: 0x7F03016D
-			public const int state_above_anchor = 2130903405;
+			public const int stackFromEnd = 2130903405;
 			
 			// aapt resource value: 0x7F03016E
-			public const int state_collapsed = 2130903406;
+			public const int state_above_anchor = 2130903406;
 			
 			// aapt resource value: 0x7F03016F
-			public const int state_collapsible = 2130903407;
+			public const int state_collapsed = 2130903407;
 			
 			// aapt resource value: 0x7F030170
-			public const int state_liftable = 2130903408;
+			public const int state_collapsible = 2130903408;
 			
 			// aapt resource value: 0x7F030171
-			public const int state_lifted = 2130903409;
+			public const int state_liftable = 2130903409;
 			
 			// aapt resource value: 0x7F030172
-			public const int statusBarBackground = 2130903410;
+			public const int state_lifted = 2130903410;
 			
 			// aapt resource value: 0x7F030173
-			public const int statusBarScrim = 2130903411;
+			public const int statusBarBackground = 2130903411;
 			
 			// aapt resource value: 0x7F030174
-			public const int strokeColor = 2130903412;
+			public const int statusBarScrim = 2130903412;
 			
 			// aapt resource value: 0x7F030175
-			public const int strokeWidth = 2130903413;
+			public const int strokeColor = 2130903413;
 			
 			// aapt resource value: 0x7F030176
-			public const int subMenuArrow = 2130903414;
+			public const int strokeWidth = 2130903414;
 			
 			// aapt resource value: 0x7F030177
-			public const int submitBackground = 2130903415;
+			public const int subMenuArrow = 2130903415;
 			
 			// aapt resource value: 0x7F030178
-			public const int subtitle = 2130903416;
+			public const int submitBackground = 2130903416;
 			
 			// aapt resource value: 0x7F030179
-			public const int subtitleTextAppearance = 2130903417;
+			public const int subtitle = 2130903417;
 			
 			// aapt resource value: 0x7F03017A
-			public const int subtitleTextColor = 2130903418;
+			public const int subtitleTextAppearance = 2130903418;
 			
 			// aapt resource value: 0x7F03017B
-			public const int subtitleTextStyle = 2130903419;
+			public const int subtitleTextColor = 2130903419;
 			
 			// aapt resource value: 0x7F03017C
-			public const int suggestionRowLayout = 2130903420;
+			public const int subtitleTextStyle = 2130903420;
 			
 			// aapt resource value: 0x7F03017D
-			public const int switchMinWidth = 2130903421;
+			public const int suggestionRowLayout = 2130903421;
 			
 			// aapt resource value: 0x7F03017E
-			public const int switchPadding = 2130903422;
+			public const int switchMinWidth = 2130903422;
 			
 			// aapt resource value: 0x7F03017F
-			public const int switchStyle = 2130903423;
+			public const int switchPadding = 2130903423;
 			
 			// aapt resource value: 0x7F030180
-			public const int switchTextAppearance = 2130903424;
+			public const int switchStyle = 2130903424;
 			
 			// aapt resource value: 0x7F030181
-			public const int tabBackground = 2130903425;
+			public const int switchTextAppearance = 2130903425;
 			
 			// aapt resource value: 0x7F030182
-			public const int tabContentStart = 2130903426;
+			public const int tabBackground = 2130903426;
 			
 			// aapt resource value: 0x7F030183
-			public const int tabGravity = 2130903427;
+			public const int tabContentStart = 2130903427;
 			
 			// aapt resource value: 0x7F030184
-			public const int tabIconTint = 2130903428;
+			public const int tabGravity = 2130903428;
 			
 			// aapt resource value: 0x7F030185
-			public const int tabIconTintMode = 2130903429;
+			public const int tabIconTint = 2130903429;
 			
 			// aapt resource value: 0x7F030186
-			public const int tabIndicator = 2130903430;
+			public const int tabIconTintMode = 2130903430;
 			
 			// aapt resource value: 0x7F030187
-			public const int tabIndicatorAnimationDuration = 2130903431;
+			public const int tabIndicator = 2130903431;
 			
 			// aapt resource value: 0x7F030188
-			public const int tabIndicatorColor = 2130903432;
+			public const int tabIndicatorAnimationDuration = 2130903432;
 			
 			// aapt resource value: 0x7F030189
-			public const int tabIndicatorFullWidth = 2130903433;
+			public const int tabIndicatorColor = 2130903433;
 			
 			// aapt resource value: 0x7F03018A
-			public const int tabIndicatorGravity = 2130903434;
+			public const int tabIndicatorFullWidth = 2130903434;
 			
 			// aapt resource value: 0x7F03018B
-			public const int tabIndicatorHeight = 2130903435;
+			public const int tabIndicatorGravity = 2130903435;
 			
 			// aapt resource value: 0x7F03018C
-			public const int tabInlineLabel = 2130903436;
+			public const int tabIndicatorHeight = 2130903436;
 			
 			// aapt resource value: 0x7F03018D
-			public const int tabMaxWidth = 2130903437;
+			public const int tabInlineLabel = 2130903437;
 			
 			// aapt resource value: 0x7F03018E
-			public const int tabMinWidth = 2130903438;
+			public const int tabMaxWidth = 2130903438;
 			
 			// aapt resource value: 0x7F03018F
-			public const int tabMode = 2130903439;
+			public const int tabMinWidth = 2130903439;
 			
 			// aapt resource value: 0x7F030190
-			public const int tabPadding = 2130903440;
+			public const int tabMode = 2130903440;
 			
 			// aapt resource value: 0x7F030191
-			public const int tabPaddingBottom = 2130903441;
+			public const int tabPadding = 2130903441;
 			
 			// aapt resource value: 0x7F030192
-			public const int tabPaddingEnd = 2130903442;
+			public const int tabPaddingBottom = 2130903442;
 			
 			// aapt resource value: 0x7F030193
-			public const int tabPaddingStart = 2130903443;
+			public const int tabPaddingEnd = 2130903443;
 			
 			// aapt resource value: 0x7F030194
-			public const int tabPaddingTop = 2130903444;
+			public const int tabPaddingStart = 2130903444;
 			
 			// aapt resource value: 0x7F030195
-			public const int tabRippleColor = 2130903445;
+			public const int tabPaddingTop = 2130903445;
 			
 			// aapt resource value: 0x7F030196
-			public const int tabSelectedTextColor = 2130903446;
+			public const int tabRippleColor = 2130903446;
 			
 			// aapt resource value: 0x7F030197
-			public const int tabStyle = 2130903447;
+			public const int tabSelectedTextColor = 2130903447;
 			
 			// aapt resource value: 0x7F030198
-			public const int tabTextAppearance = 2130903448;
+			public const int tabStyle = 2130903448;
 			
 			// aapt resource value: 0x7F030199
-			public const int tabTextColor = 2130903449;
+			public const int tabTextAppearance = 2130903449;
 			
 			// aapt resource value: 0x7F03019A
-			public const int tabUnboundedRipple = 2130903450;
+			public const int tabTextColor = 2130903450;
 			
 			// aapt resource value: 0x7F03019B
-			public const int textAllCaps = 2130903451;
+			public const int tabUnboundedRipple = 2130903451;
 			
 			// aapt resource value: 0x7F03019C
-			public const int textAppearanceBody1 = 2130903452;
+			public const int textAllCaps = 2130903452;
 			
 			// aapt resource value: 0x7F03019D
-			public const int textAppearanceBody2 = 2130903453;
+			public const int textAppearanceBody1 = 2130903453;
 			
 			// aapt resource value: 0x7F03019E
-			public const int textAppearanceButton = 2130903454;
+			public const int textAppearanceBody2 = 2130903454;
 			
 			// aapt resource value: 0x7F03019F
-			public const int textAppearanceCaption = 2130903455;
+			public const int textAppearanceButton = 2130903455;
 			
 			// aapt resource value: 0x7F0301A0
-			public const int textAppearanceHeadline1 = 2130903456;
+			public const int textAppearanceCaption = 2130903456;
 			
 			// aapt resource value: 0x7F0301A1
-			public const int textAppearanceHeadline2 = 2130903457;
+			public const int textAppearanceHeadline1 = 2130903457;
 			
 			// aapt resource value: 0x7F0301A2
-			public const int textAppearanceHeadline3 = 2130903458;
+			public const int textAppearanceHeadline2 = 2130903458;
 			
 			// aapt resource value: 0x7F0301A3
-			public const int textAppearanceHeadline4 = 2130903459;
+			public const int textAppearanceHeadline3 = 2130903459;
 			
 			// aapt resource value: 0x7F0301A4
-			public const int textAppearanceHeadline5 = 2130903460;
+			public const int textAppearanceHeadline4 = 2130903460;
 			
 			// aapt resource value: 0x7F0301A5
-			public const int textAppearanceHeadline6 = 2130903461;
+			public const int textAppearanceHeadline5 = 2130903461;
 			
 			// aapt resource value: 0x7F0301A6
-			public const int textAppearanceLargePopupMenu = 2130903462;
+			public const int textAppearanceHeadline6 = 2130903462;
 			
 			// aapt resource value: 0x7F0301A7
-			public const int textAppearanceListItem = 2130903463;
+			public const int textAppearanceLargePopupMenu = 2130903463;
 			
 			// aapt resource value: 0x7F0301A8
-			public const int textAppearanceListItemSecondary = 2130903464;
+			public const int textAppearanceListItem = 2130903464;
 			
 			// aapt resource value: 0x7F0301A9
-			public const int textAppearanceListItemSmall = 2130903465;
+			public const int textAppearanceListItemSecondary = 2130903465;
 			
 			// aapt resource value: 0x7F0301AA
-			public const int textAppearanceOverline = 2130903466;
+			public const int textAppearanceListItemSmall = 2130903466;
 			
 			// aapt resource value: 0x7F0301AB
-			public const int textAppearancePopupMenuHeader = 2130903467;
+			public const int textAppearanceOverline = 2130903467;
 			
 			// aapt resource value: 0x7F0301AC
-			public const int textAppearanceSearchResultSubtitle = 2130903468;
+			public const int textAppearancePopupMenuHeader = 2130903468;
 			
 			// aapt resource value: 0x7F0301AD
-			public const int textAppearanceSearchResultTitle = 2130903469;
+			public const int textAppearanceSearchResultSubtitle = 2130903469;
 			
 			// aapt resource value: 0x7F0301AE
-			public const int textAppearanceSmallPopupMenu = 2130903470;
+			public const int textAppearanceSearchResultTitle = 2130903470;
 			
 			// aapt resource value: 0x7F0301AF
-			public const int textAppearanceSubtitle1 = 2130903471;
+			public const int textAppearanceSmallPopupMenu = 2130903471;
 			
 			// aapt resource value: 0x7F0301B0
-			public const int textAppearanceSubtitle2 = 2130903472;
+			public const int textAppearanceSubtitle1 = 2130903472;
 			
 			// aapt resource value: 0x7F0301B1
-			public const int textColorAlertDialogListItem = 2130903473;
+			public const int textAppearanceSubtitle2 = 2130903473;
 			
 			// aapt resource value: 0x7F0301B2
-			public const int textColorSearchUrl = 2130903474;
+			public const int textColorAlertDialogListItem = 2130903474;
 			
 			// aapt resource value: 0x7F0301B3
-			public const int textEndPadding = 2130903475;
+			public const int textColorSearchUrl = 2130903475;
 			
 			// aapt resource value: 0x7F0301B4
-			public const int textInputStyle = 2130903476;
+			public const int textEndPadding = 2130903476;
 			
 			// aapt resource value: 0x7F0301B5
-			public const int textStartPadding = 2130903477;
+			public const int textInputStyle = 2130903477;
 			
 			// aapt resource value: 0x7F0301B6
-			public const int theme = 2130903478;
+			public const int textStartPadding = 2130903478;
 			
 			// aapt resource value: 0x7F0301B7
-			public const int thickness = 2130903479;
+			public const int theme = 2130903479;
 			
 			// aapt resource value: 0x7F0301B8
-			public const int thumbTextPadding = 2130903480;
+			public const int thickness = 2130903480;
 			
 			// aapt resource value: 0x7F0301B9
-			public const int thumbTint = 2130903481;
+			public const int thumbTextPadding = 2130903481;
 			
 			// aapt resource value: 0x7F0301BA
-			public const int thumbTintMode = 2130903482;
+			public const int thumbTint = 2130903482;
 			
 			// aapt resource value: 0x7F0301BB
-			public const int tickMark = 2130903483;
+			public const int thumbTintMode = 2130903483;
 			
 			// aapt resource value: 0x7F0301BC
-			public const int tickMarkTint = 2130903484;
+			public const int tickMark = 2130903484;
 			
 			// aapt resource value: 0x7F0301BD
-			public const int tickMarkTintMode = 2130903485;
+			public const int tickMarkTint = 2130903485;
 			
 			// aapt resource value: 0x7F0301BE
-			public const int tint = 2130903486;
+			public const int tickMarkTintMode = 2130903486;
 			
 			// aapt resource value: 0x7F0301BF
-			public const int tintMode = 2130903487;
+			public const int tint = 2130903487;
 			
 			// aapt resource value: 0x7F0301C0
-			public const int title = 2130903488;
+			public const int tintMode = 2130903488;
 			
 			// aapt resource value: 0x7F0301C1
-			public const int titleEnabled = 2130903489;
+			public const int title = 2130903489;
 			
 			// aapt resource value: 0x7F0301C2
-			public const int titleMargin = 2130903490;
+			public const int titleEnabled = 2130903490;
 			
 			// aapt resource value: 0x7F0301C3
-			public const int titleMarginBottom = 2130903491;
+			public const int titleMargin = 2130903491;
 			
 			// aapt resource value: 0x7F0301C4
-			public const int titleMarginEnd = 2130903492;
-			
-			// aapt resource value: 0x7F0301C7
-			public const int titleMargins = 2130903495;
+			public const int titleMarginBottom = 2130903492;
 			
 			// aapt resource value: 0x7F0301C5
-			public const int titleMarginStart = 2130903493;
-			
-			// aapt resource value: 0x7F0301C6
-			public const int titleMarginTop = 2130903494;
+			public const int titleMarginEnd = 2130903493;
 			
 			// aapt resource value: 0x7F0301C8
-			public const int titleTextAppearance = 2130903496;
+			public const int titleMargins = 2130903496;
+			
+			// aapt resource value: 0x7F0301C6
+			public const int titleMarginStart = 2130903494;
+			
+			// aapt resource value: 0x7F0301C7
+			public const int titleMarginTop = 2130903495;
 			
 			// aapt resource value: 0x7F0301C9
-			public const int titleTextColor = 2130903497;
+			public const int titleTextAppearance = 2130903497;
 			
 			// aapt resource value: 0x7F0301CA
-			public const int titleTextStyle = 2130903498;
+			public const int titleTextColor = 2130903498;
 			
 			// aapt resource value: 0x7F0301CB
-			public const int toolbarId = 2130903499;
+			public const int titleTextStyle = 2130903499;
 			
 			// aapt resource value: 0x7F0301CC
-			public const int toolbarNavigationButtonStyle = 2130903500;
+			public const int toolbarId = 2130903500;
 			
 			// aapt resource value: 0x7F0301CD
-			public const int toolbarStyle = 2130903501;
+			public const int toolbarNavigationButtonStyle = 2130903501;
 			
 			// aapt resource value: 0x7F0301CE
-			public const int tooltipForegroundColor = 2130903502;
+			public const int toolbarStyle = 2130903502;
 			
 			// aapt resource value: 0x7F0301CF
-			public const int tooltipFrameBackground = 2130903503;
+			public const int tooltipForegroundColor = 2130903503;
 			
 			// aapt resource value: 0x7F0301D0
-			public const int tooltipText = 2130903504;
+			public const int tooltipFrameBackground = 2130903504;
 			
 			// aapt resource value: 0x7F0301D1
-			public const int track = 2130903505;
+			public const int tooltipText = 2130903505;
 			
 			// aapt resource value: 0x7F0301D2
-			public const int trackTint = 2130903506;
+			public const int track = 2130903506;
 			
 			// aapt resource value: 0x7F0301D3
-			public const int trackTintMode = 2130903507;
+			public const int trackTint = 2130903507;
 			
 			// aapt resource value: 0x7F0301D4
-			public const int ttcIndex = 2130903508;
+			public const int trackTintMode = 2130903508;
 			
 			// aapt resource value: 0x7F0301D5
-			public const int useCompatPadding = 2130903509;
+			public const int ttcIndex = 2130903509;
 			
 			// aapt resource value: 0x7F0301D6
-			public const int viewInflaterClass = 2130903510;
+			public const int useCompatPadding = 2130903510;
 			
 			// aapt resource value: 0x7F0301D7
-			public const int voiceIcon = 2130903511;
+			public const int viewInflaterClass = 2130903511;
 			
 			// aapt resource value: 0x7F0301D8
-			public const int windowActionBar = 2130903512;
+			public const int voiceIcon = 2130903512;
 			
 			// aapt resource value: 0x7F0301D9
-			public const int windowActionBarOverlay = 2130903513;
+			public const int windowActionBar = 2130903513;
 			
 			// aapt resource value: 0x7F0301DA
-			public const int windowActionModeOverlay = 2130903514;
+			public const int windowActionBarOverlay = 2130903514;
 			
 			// aapt resource value: 0x7F0301DB
-			public const int windowFixedHeightMajor = 2130903515;
+			public const int windowActionModeOverlay = 2130903515;
 			
 			// aapt resource value: 0x7F0301DC
-			public const int windowFixedHeightMinor = 2130903516;
+			public const int windowFixedHeightMajor = 2130903516;
 			
 			// aapt resource value: 0x7F0301DD
-			public const int windowFixedWidthMajor = 2130903517;
+			public const int windowFixedHeightMinor = 2130903517;
 			
 			// aapt resource value: 0x7F0301DE
-			public const int windowFixedWidthMinor = 2130903518;
+			public const int windowFixedWidthMajor = 2130903518;
 			
 			// aapt resource value: 0x7F0301DF
-			public const int windowMinWidthMajor = 2130903519;
+			public const int windowFixedWidthMinor = 2130903519;
 			
 			// aapt resource value: 0x7F0301E0
-			public const int windowMinWidthMinor = 2130903520;
+			public const int windowMinWidthMajor = 2130903520;
 			
 			// aapt resource value: 0x7F0301E1
-			public const int windowNoTitle = 2130903521;
+			public const int windowMinWidthMinor = 2130903521;
+			
+			// aapt resource value: 0x7F0301E2
+			public const int windowNoTitle = 2130903522;
 			
 			static Attribute()
 			{
@@ -9719,49 +11549,55 @@ namespace DellyShopApp.Droid
 			public const int primary_text_disabled_material_light = 2131034235;
 			
 			// aapt resource value: 0x7F05007C
-			public const int ripple_material_dark = 2131034236;
+			public const int progress_end = 2131034236;
 			
 			// aapt resource value: 0x7F05007D
-			public const int ripple_material_light = 2131034237;
+			public const int progress_start = 2131034237;
 			
 			// aapt resource value: 0x7F05007E
-			public const int secondary_text_default_material_dark = 2131034238;
+			public const int ripple_material_dark = 2131034238;
 			
 			// aapt resource value: 0x7F05007F
-			public const int secondary_text_default_material_light = 2131034239;
+			public const int ripple_material_light = 2131034239;
 			
 			// aapt resource value: 0x7F050080
-			public const int secondary_text_disabled_material_dark = 2131034240;
+			public const int secondary_text_default_material_dark = 2131034240;
 			
 			// aapt resource value: 0x7F050081
-			public const int secondary_text_disabled_material_light = 2131034241;
+			public const int secondary_text_default_material_light = 2131034241;
 			
 			// aapt resource value: 0x7F050082
-			public const int switch_thumb_disabled_material_dark = 2131034242;
+			public const int secondary_text_disabled_material_dark = 2131034242;
 			
 			// aapt resource value: 0x7F050083
-			public const int switch_thumb_disabled_material_light = 2131034243;
+			public const int secondary_text_disabled_material_light = 2131034243;
 			
 			// aapt resource value: 0x7F050084
-			public const int switch_thumb_material_dark = 2131034244;
+			public const int switch_thumb_disabled_material_dark = 2131034244;
 			
 			// aapt resource value: 0x7F050085
-			public const int switch_thumb_material_light = 2131034245;
+			public const int switch_thumb_disabled_material_light = 2131034245;
 			
 			// aapt resource value: 0x7F050086
-			public const int switch_thumb_normal_material_dark = 2131034246;
+			public const int switch_thumb_material_dark = 2131034246;
 			
 			// aapt resource value: 0x7F050087
-			public const int switch_thumb_normal_material_light = 2131034247;
+			public const int switch_thumb_material_light = 2131034247;
 			
 			// aapt resource value: 0x7F050088
-			public const int tooltip_background_dark = 2131034248;
+			public const int switch_thumb_normal_material_dark = 2131034248;
 			
 			// aapt resource value: 0x7F050089
-			public const int tooltip_background_light = 2131034249;
+			public const int switch_thumb_normal_material_light = 2131034249;
 			
 			// aapt resource value: 0x7F05008A
-			public const int white_disabled_material = 2131034250;
+			public const int tooltip_background_dark = 2131034250;
+			
+			// aapt resource value: 0x7F05008B
+			public const int tooltip_background_light = 2131034251;
+			
+			// aapt resource value: 0x7F05008C
+			public const int white_disabled_material = 2131034252;
 			
 			static Color()
 			{
@@ -10828,100 +12664,103 @@ namespace DellyShopApp.Droid
 			public const int iphone = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int masterCard = 2131165315;
+			public const int loading_animation = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int MaterialActivityIndicatorBackground = 2131165316;
+			public const int masterCard = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int MaterialProgressBar = 2131165317;
+			public const int MaterialActivityIndicatorBackground = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int mtrl_snackbar_background = 2131165318;
+			public const int MaterialProgressBar = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int mtrl_tabs_default_indicator = 2131165319;
+			public const int mtrl_snackbar_background = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int navigation_empty_icon = 2131165320;
+			public const int mtrl_tabs_default_indicator = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int nocards = 2131165321;
+			public const int navigation_empty_icon = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int notification_action_background = 2131165322;
+			public const int nocards = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int notification_bg = 2131165323;
+			public const int notification_action_background = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int notification_bg_low = 2131165324;
+			public const int notification_bg = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int notification_bg_low_normal = 2131165325;
+			public const int notification_bg_low = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int notification_bg_low_pressed = 2131165326;
+			public const int notification_bg_low_normal = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int notification_bg_normal = 2131165327;
+			public const int notification_bg_low_pressed = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int notification_bg_normal_pressed = 2131165328;
+			public const int notification_bg_normal = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int notification_icon_background = 2131165329;
+			public const int notification_bg_normal_pressed = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int notification_template_icon_bg = 2131165330;
+			public const int notification_icon_background = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int notification_template_icon_low_bg = 2131165331;
+			public const int notification_template_icon_bg = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int notification_tile_bg = 2131165332;
+			public const int notification_template_icon_low_bg = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int notify_panel_notification_icon_bg = 2131165333;
+			public const int notification_tile_bg = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int pp = 2131165334;
+			public const int notify_panel_notification_icon_bg = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int Profile = 2131165335;
+			public const int pp = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int py_1 = 2131165336;
+			public const int Profile = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int red1 = 2131165337;
+			public const int py_1 = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int shoes = 2131165338;
+			public const int red1 = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int shoesBlack = 2131165339;
+			public const int shoes = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int shoesblack2 = 2131165340;
+			public const int shoesBlack = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int shoesCategory = 2131165341;
+			public const int shoesblack2 = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int shoesyellow = 2131165342;
+			public const int shoesCategory = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int splash_screen_dark = 2131165343;
+			public const int shoesyellow = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int splash_screen_light = 2131165344;
+			public const int splash_screen_dark = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int tooltip_frame_dark = 2131165345;
+			public const int splash_screen_light = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int tooltip_frame_light = 2131165346;
+			public const int tooltip_frame_dark = 2131165346;
+			
+			// aapt resource value: 0x7F0700A3
+			public const int tooltip_frame_light = 2131165347;
 			
 			static Drawable()
 			{
@@ -11429,136 +13268,139 @@ namespace DellyShopApp.Droid
 			public const int spacer = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int split_action_bar = 2131230885;
+			public const int splashProgressBar = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int src_atop = 2131230886;
+			public const int split_action_bar = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int src_in = 2131230887;
+			public const int src_atop = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int src_over = 2131230888;
+			public const int src_in = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int start = 2131230889;
+			public const int src_over = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int status_bar_latest_event_content = 2131230890;
+			public const int start = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int stretch = 2131230891;
+			public const int status_bar_latest_event_content = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int submenuarrow = 2131230892;
+			public const int stretch = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int submit_area = 2131230893;
+			public const int submenuarrow = 2131230893;
+			
+			// aapt resource value: 0x7F0800AE
+			public const int submit_area = 2131230894;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
-			// aapt resource value: 0x7F0800AE
-			public const int tabMode = 2131230894;
-			
 			// aapt resource value: 0x7F0800AF
-			public const int tag_transition_group = 2131230895;
+			public const int tabMode = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int tag_unhandled_key_event_manager = 2131230896;
+			public const int tag_transition_group = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int tag_unhandled_key_listeners = 2131230897;
+			public const int tag_unhandled_key_event_manager = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int text = 2131230898;
+			public const int tag_unhandled_key_listeners = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int text2 = 2131230899;
-			
-			// aapt resource value: 0x7F0800B8
-			public const int textinput_counter = 2131230904;
-			
-			// aapt resource value: 0x7F0800B9
-			public const int textinput_error = 2131230905;
-			
-			// aapt resource value: 0x7F0800BA
-			public const int textinput_helper_text = 2131230906;
+			public const int text = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int textSpacerNoButtons = 2131230900;
+			public const int text2 = 2131230900;
 			
-			// aapt resource value: 0x7F0800B5
-			public const int textSpacerNoTitle = 2131230901;
+			// aapt resource value: 0x7F0800B9
+			public const int textinput_counter = 2131230905;
 			
-			// aapt resource value: 0x7F0800B6
-			public const int textStart = 2131230902;
-			
-			// aapt resource value: 0x7F0800B7
-			public const int text_input_password_toggle = 2131230903;
+			// aapt resource value: 0x7F0800BA
+			public const int textinput_error = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int time = 2131230907;
+			public const int textinput_helper_text = 2131230907;
+			
+			// aapt resource value: 0x7F0800B5
+			public const int textSpacerNoButtons = 2131230901;
+			
+			// aapt resource value: 0x7F0800B6
+			public const int textSpacerNoTitle = 2131230902;
+			
+			// aapt resource value: 0x7F0800B7
+			public const int textStart = 2131230903;
+			
+			// aapt resource value: 0x7F0800B8
+			public const int text_input_password_toggle = 2131230904;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int title = 2131230908;
+			public const int time = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int titleDividerNoCustom = 2131230909;
+			public const int title = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int title_template = 2131230910;
+			public const int titleDividerNoCustom = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int toolbar = 2131230911;
+			public const int title_template = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int top = 2131230912;
+			public const int toolbar = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int topPanel = 2131230913;
+			public const int top = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int touch_outside = 2131230914;
+			public const int topPanel = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int transition_current_scene = 2131230915;
+			public const int touch_outside = 2131230915;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int transition_layout_save = 2131230916;
+			public const int transition_current_scene = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int transition_position = 2131230917;
+			public const int transition_layout_save = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int transition_scene_layoutid_cache = 2131230918;
+			public const int transition_position = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int transition_transform = 2131230919;
+			public const int transition_scene_layoutid_cache = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int uniform = 2131230920;
+			public const int transition_transform = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int unlabeled = 2131230921;
+			public const int uniform = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int up = 2131230922;
+			public const int unlabeled = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int useLogo = 2131230923;
+			public const int up = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int view_offset_helper = 2131230924;
+			public const int useLogo = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int visible = 2131230925;
+			public const int view_offset_helper = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int withText = 2131230926;
+			public const int visible = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int wrap_content = 2131230927;
+			public const int withText = 2131230927;
+			
+			// aapt resource value: 0x7F0800D0
+			public const int wrap_content = 2131230928;
 			
 			static Id()
 			{
@@ -11864,16 +13706,19 @@ namespace DellyShopApp.Droid
 			public const int ShellContent = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int support_simple_spinner_dropdown_item = 2131427397;
+			public const int SplashScreen = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int Tabbar = 2131427398;
+			public const int support_simple_spinner_dropdown_item = 2131427398;
 			
 			// aapt resource value: 0x7F0B0047
-			public const int TextInputLayoutFilledBox = 2131427399;
+			public const int Tabbar = 2131427399;
 			
 			// aapt resource value: 0x7F0B0048
-			public const int Toolbar = 2131427400;
+			public const int TextInputLayoutFilledBox = 2131427400;
+			
+			// aapt resource value: 0x7F0B0049
+			public const int Toolbar = 2131427401;
 			
 			static Layout()
 			{
@@ -12683,7 +14528,10 @@ namespace DellyShopApp.Droid
 			public const int CardView_Light = 2131624133;
 			
 			// aapt resource value: 0x7F0E0201
-			public const int collectionViewStyle = 2131624449;
+			public const int collectionViewScrollBars = 2131624449;
+			
+			// aapt resource value: 0x7F0E0202
+			public const int collectionViewTheme = 2131624450;
 			
 			// aapt resource value: 0x7F0E00C6
 			public const int MainTheme = 2131624134;
@@ -13643,37 +15491,37 @@ namespace DellyShopApp.Droid
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030033,0x7F030091,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F0300A4,0x7F0300A9,0x7F0300AA,0x7F0300B5,0x7F0300DF,0x7F0300E4,0x7F0300E9,0x7F0300EA,0x7F0300EC,0x7F0300F6,0x7F030100,0x7F030123,0x7F030134,0x7F030145,0x7F030149,0x7F03014A,0x7F030178,0x7F03017B,0x7F0301C0,0x7F0301CA }
+			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030033,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F0300A5,0x7F0300AA,0x7F0300AB,0x7F0300B6,0x7F0300E0,0x7F0300E5,0x7F0300EA,0x7F0300EB,0x7F0300ED,0x7F0300F7,0x7F030101,0x7F030124,0x7F030135,0x7F030146,0x7F03014A,0x7F03014B,0x7F030179,0x7F03017C,0x7F0301C1,0x7F0301CB }
 			public static int[] ActionBar = new int[] {
 					2130903089,
 					2130903090,
 					2130903091,
-					2130903185,
 					2130903186,
 					2130903187,
 					2130903188,
 					2130903189,
 					2130903190,
-					2130903204,
-					2130903209,
+					2130903191,
+					2130903205,
 					2130903210,
-					2130903221,
-					2130903263,
-					2130903268,
-					2130903273,
+					2130903211,
+					2130903222,
+					2130903264,
+					2130903269,
 					2130903274,
-					2130903276,
-					2130903286,
-					2130903296,
-					2130903331,
-					2130903348,
-					2130903365,
-					2130903369,
+					2130903275,
+					2130903277,
+					2130903287,
+					2130903297,
+					2130903332,
+					2130903349,
+					2130903366,
 					2130903370,
-					2130903416,
-					2130903419,
-					2130903488,
-					2130903498};
+					2130903371,
+					2130903417,
+					2130903420,
+					2130903489,
+					2130903499};
 			
 			// aapt resource value: { 0x10100B3 }
 			public static int[] ActionBarLayout = new int[] {
@@ -13780,14 +15628,14 @@ namespace DellyShopApp.Droid
 			public static int[] ActionMenuView = new int[] {
 					-1};
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F03007E,0x7F0300DF,0x7F03017B,0x7F0301CA }
+			// aapt resource value: { 0x7F030031,0x7F030032,0x7F03007E,0x7F0300E0,0x7F03017C,0x7F0301CB }
 			public static int[] ActionMode = new int[] {
 					2130903089,
 					2130903090,
 					2130903166,
-					2130903263,
-					2130903419,
-					2130903498};
+					2130903264,
+					2130903420,
+					2130903499};
 			
 			// aapt resource value: 0
 			public const int ActionMode_background = 0;
@@ -13807,10 +15655,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 5
 			public const int ActionMode_titleTextStyle = 5;
 			
-			// aapt resource value: { 0x7F0300BA,0x7F0300F7 }
+			// aapt resource value: { 0x7F0300BB,0x7F0300F8 }
 			public static int[] ActivityChooserView = new int[] {
-					2130903226,
-					2130903287};
+					2130903227,
+					2130903288};
 			
 			// aapt resource value: 0
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 0;
@@ -13818,16 +15666,16 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
-			// aapt resource value: { 0x10100F2,0x7F030052,0x7F030053,0x7F03011A,0x7F03011B,0x7F030131,0x7F030160,0x7F030161 }
+			// aapt resource value: { 0x10100F2,0x7F030052,0x7F030053,0x7F03011B,0x7F03011C,0x7F030132,0x7F030161,0x7F030162 }
 			public static int[] AlertDialog = new int[] {
 					16842994,
 					2130903122,
 					2130903123,
-					2130903322,
 					2130903323,
-					2130903345,
-					2130903392,
-					2130903393};
+					2130903324,
+					2130903346,
+					2130903393,
+					2130903394};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -13910,21 +15758,21 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int AnimatedStateListDrawableTransition_android_toId = 1;
 			
-			// aapt resource value: { 0x10100D4,0x101048F,0x1010540,0x7F0300B5,0x7F0300BB,0x7F030115 }
+			// aapt resource value: { 0x10100D4,0x101048F,0x1010540,0x7F0300B6,0x7F0300BC,0x7F030116 }
 			public static int[] AppBarLayout = new int[] {
 					16842964,
 					16843919,
 					16844096,
-					2130903221,
-					2130903227,
-					2130903317};
+					2130903222,
+					2130903228,
+					2130903318};
 			
-			// aapt resource value: { 0x7F03016E,0x7F03016F,0x7F030170,0x7F030171 }
+			// aapt resource value: { 0x7F03016F,0x7F030170,0x7F030171,0x7F030172 }
 			public static int[] AppBarLayoutStates = new int[] {
-					2130903406,
 					2130903407,
 					2130903408,
-					2130903409};
+					2130903409,
+					2130903410};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -13953,10 +15801,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 4
 			public const int AppBarLayout_expanded = 4;
 			
-			// aapt resource value: { 0x7F030113,0x7F030114 }
+			// aapt resource value: { 0x7F030114,0x7F030115 }
 			public static int[] AppBarLayout_Layout = new int[] {
-					2130903315,
-					2130903316};
+					2130903316,
+					2130903317};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -13967,12 +15815,12 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 5
 			public const int AppBarLayout_liftOnScroll = 5;
 			
-			// aapt resource value: { 0x1010119,0x7F03016B,0x7F0301BE,0x7F0301BF }
+			// aapt resource value: { 0x1010119,0x7F03016C,0x7F0301BF,0x7F0301C0 }
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130903403,
-					2130903486,
-					2130903487};
+					2130903404,
+					2130903487,
+					2130903488};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -13986,12 +15834,12 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
-			// aapt resource value: { 0x1010142,0x7F0301BB,0x7F0301BC,0x7F0301BD }
+			// aapt resource value: { 0x1010142,0x7F0301BC,0x7F0301BD,0x7F0301BE }
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130903483,
 					2130903484,
-					2130903485};
+					2130903485,
+					2130903486};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -14036,7 +15884,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			// aapt resource value: { 0x1010034,0x7F03002C,0x7F03002D,0x7F03002E,0x7F03002F,0x7F030030,0x7F0300CE,0x7F0300D1,0x7F030108,0x7F030116,0x7F03019B }
+			// aapt resource value: { 0x1010034,0x7F03002C,0x7F03002D,0x7F03002E,0x7F03002F,0x7F030030,0x7F0300CF,0x7F0300D2,0x7F030109,0x7F030117,0x7F03019C }
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
 					2130903084,
@@ -14044,11 +15892,11 @@ namespace DellyShopApp.Droid
 					2130903086,
 					2130903087,
 					2130903088,
-					2130903246,
-					2130903249,
-					2130903304,
-					2130903318,
-					2130903451};
+					2130903247,
+					2130903250,
+					2130903305,
+					2130903319,
+					2130903452};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -14083,7 +15931,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 10
 			public const int AppCompatTextView_textAllCaps = 10;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F03002B,0x7F03003E,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F030054,0x7F030055,0x7F03005F,0x7F030064,0x7F030084,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F03008A,0x7F03008B,0x7F03008C,0x7F03008E,0x7F03009D,0x7F0300A6,0x7F0300A7,0x7F0300A8,0x7F0300AB,0x7F0300AD,0x7F0300B0,0x7F0300B1,0x7F0300B2,0x7F0300B3,0x7F0300B4,0x7F0300E9,0x7F0300F5,0x7F030118,0x7F030119,0x7F03011C,0x7F03011D,0x7F03011E,0x7F03011F,0x7F030120,0x7F030121,0x7F030122,0x7F03013C,0x7F03013D,0x7F03013E,0x7F030144,0x7F030146,0x7F03014D,0x7F03014E,0x7F03014F,0x7F030150,0x7F030158,0x7F030159,0x7F03015A,0x7F03015B,0x7F030168,0x7F030169,0x7F03017F,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AB,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301B1,0x7F0301B2,0x7F0301CC,0x7F0301CD,0x7F0301CE,0x7F0301CF,0x7F0301D6,0x7F0301D8,0x7F0301D9,0x7F0301DA,0x7F0301DB,0x7F0301DC,0x7F0301DD,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E1 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F03002B,0x7F03003E,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F030054,0x7F030055,0x7F03005F,0x7F030064,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F03008A,0x7F03008B,0x7F03008C,0x7F03008D,0x7F03008F,0x7F03009E,0x7F0300A7,0x7F0300A8,0x7F0300A9,0x7F0300AC,0x7F0300AE,0x7F0300B1,0x7F0300B2,0x7F0300B3,0x7F0300B4,0x7F0300B5,0x7F0300EA,0x7F0300F6,0x7F030119,0x7F03011A,0x7F03011D,0x7F03011E,0x7F03011F,0x7F030120,0x7F030121,0x7F030122,0x7F030123,0x7F03013D,0x7F03013E,0x7F03013F,0x7F030145,0x7F030147,0x7F03014E,0x7F03014F,0x7F030150,0x7F030151,0x7F030159,0x7F03015A,0x7F03015B,0x7F03015C,0x7F030169,0x7F03016A,0x7F030180,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AA,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B2,0x7F0301B3,0x7F0301CD,0x7F0301CE,0x7F0301CF,0x7F0301D0,0x7F0301D7,0x7F0301D9,0x7F0301DA,0x7F0301DB,0x7F0301DC,0x7F0301DD,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E1,0x7F0301E2 }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -14133,7 +15981,6 @@ namespace DellyShopApp.Droid
 					2130903125,
 					2130903135,
 					2130903140,
-					2130903172,
 					2130903173,
 					2130903174,
 					2130903175,
@@ -14142,61 +15989,61 @@ namespace DellyShopApp.Droid
 					2130903178,
 					2130903179,
 					2130903180,
-					2130903182,
-					2130903197,
-					2130903206,
+					2130903181,
+					2130903183,
+					2130903198,
 					2130903207,
 					2130903208,
-					2130903211,
-					2130903213,
-					2130903216,
+					2130903209,
+					2130903212,
+					2130903214,
 					2130903217,
 					2130903218,
 					2130903219,
 					2130903220,
-					2130903273,
-					2130903285,
-					2130903320,
+					2130903221,
+					2130903274,
+					2130903286,
 					2130903321,
-					2130903324,
+					2130903322,
 					2130903325,
 					2130903326,
 					2130903327,
 					2130903328,
 					2130903329,
 					2130903330,
-					2130903356,
+					2130903331,
 					2130903357,
 					2130903358,
-					2130903364,
-					2130903366,
-					2130903373,
+					2130903359,
+					2130903365,
+					2130903367,
 					2130903374,
 					2130903375,
 					2130903376,
-					2130903384,
+					2130903377,
 					2130903385,
 					2130903386,
 					2130903387,
-					2130903400,
+					2130903388,
 					2130903401,
-					2130903423,
-					2130903462,
+					2130903402,
+					2130903424,
 					2130903463,
 					2130903464,
 					2130903465,
-					2130903467,
+					2130903466,
 					2130903468,
 					2130903469,
 					2130903470,
-					2130903473,
+					2130903471,
 					2130903474,
-					2130903500,
+					2130903475,
 					2130903501,
 					2130903502,
 					2130903503,
-					2130903510,
-					2130903512,
+					2130903504,
+					2130903511,
 					2130903513,
 					2130903514,
 					2130903515,
@@ -14205,7 +16052,8 @@ namespace DellyShopApp.Droid
 					2130903518,
 					2130903519,
 					2130903520,
-					2130903521};
+					2130903521,
+					2130903522};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -14570,14 +16418,14 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 120
 			public const int AppCompatTheme_windowNoTitle = 120;
 			
-			// aapt resource value: { 0x7F030034,0x7F0300C3,0x7F0300C4,0x7F0300C5,0x7F0300C6,0x7F0300E5 }
+			// aapt resource value: { 0x7F030034,0x7F0300C4,0x7F0300C5,0x7F0300C6,0x7F0300C7,0x7F0300E6 }
 			public static int[] BottomAppBar = new int[] {
 					2130903092,
-					2130903235,
 					2130903236,
 					2130903237,
 					2130903238,
-					2130903269};
+					2130903239,
+					2130903270};
 			
 			// aapt resource value: 0
 			public const int BottomAppBar_backgroundTint = 0;
@@ -14597,18 +16445,18 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 5
 			public const int BottomAppBar_hideOnScroll = 5;
 			
-			// aapt resource value: { 0x7F0300B5,0x7F0300FA,0x7F0300FC,0x7F0300FE,0x7F0300FF,0x7F030103,0x7F030104,0x7F030105,0x7F030107,0x7F030130 }
+			// aapt resource value: { 0x7F0300B6,0x7F0300FB,0x7F0300FD,0x7F0300FF,0x7F030100,0x7F030104,0x7F030105,0x7F030106,0x7F030108,0x7F030131 }
 			public static int[] BottomNavigationView = new int[] {
-					2130903221,
-					2130903290,
-					2130903292,
-					2130903294,
+					2130903222,
+					2130903291,
+					2130903293,
 					2130903295,
-					2130903299,
+					2130903296,
 					2130903300,
 					2130903301,
-					2130903303,
-					2130903344};
+					2130903302,
+					2130903304,
+					2130903345};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -14666,7 +16514,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
-			// aapt resource value: { 0x101013F,0x1010140,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F03005D,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B }
+			// aapt resource value: { 0x101013F,0x1010140,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F03005D,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F03009C }
 			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
@@ -14676,11 +16524,11 @@ namespace DellyShopApp.Droid
 					2130903131,
 					2130903132,
 					2130903133,
-					2130903191,
 					2130903192,
 					2130903193,
 					2130903194,
-					2130903195};
+					2130903195,
+					2130903196};
 			
 			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
@@ -14721,7 +16569,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 12
 			public const int CardView_contentPaddingTop = 12;
 			
-			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F030061,0x7F030062,0x7F030063,0x7F030065,0x7F030066,0x7F030067,0x7F030069,0x7F03006A,0x7F03006B,0x7F03006C,0x7F03006D,0x7F03006E,0x7F030073,0x7F030074,0x7F030075,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F0300E3,0x7F0300ED,0x7F0300F1,0x7F030152,0x7F03015E,0x7F0301B3,0x7F0301B5 }
+			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F030061,0x7F030062,0x7F030063,0x7F030065,0x7F030066,0x7F030067,0x7F030069,0x7F03006A,0x7F03006B,0x7F03006C,0x7F03006D,0x7F03006E,0x7F030073,0x7F030074,0x7F030075,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F0300E4,0x7F0300EE,0x7F0300F2,0x7F030153,0x7F03015F,0x7F0301B4,0x7F0301B6 }
 			public static int[] Chip = new int[] {
 					16842804,
 					16842923,
@@ -14750,22 +16598,22 @@ namespace DellyShopApp.Droid
 					2130903163,
 					2130903164,
 					2130903165,
-					2130903267,
-					2130903277,
-					2130903281,
-					2130903378,
-					2130903390,
-					2130903475,
-					2130903477};
+					2130903268,
+					2130903278,
+					2130903282,
+					2130903379,
+					2130903391,
+					2130903476,
+					2130903478};
 			
-			// aapt resource value: { 0x7F030060,0x7F03006F,0x7F030070,0x7F030071,0x7F030162,0x7F030163 }
+			// aapt resource value: { 0x7F030060,0x7F03006F,0x7F030070,0x7F030071,0x7F030163,0x7F030164 }
 			public static int[] ChipGroup = new int[] {
 					2130903136,
 					2130903151,
 					2130903152,
 					2130903153,
-					2130903394,
-					2130903395};
+					2130903395,
+					2130903396};
 			
 			// aapt resource value: 0
 			public const int ChipGroup_checkedChip = 0;
@@ -14887,24 +16735,24 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 33
 			public const int Chip_textStartPadding = 33;
 			
-			// aapt resource value: { 0x7F030081,0x7F030082,0x7F03009C,0x7F0300BC,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300C2,0x7F030153,0x7F030155,0x7F030173,0x7F0301C0,0x7F0301C1,0x7F0301CB }
+			// aapt resource value: { 0x7F030081,0x7F030082,0x7F03009D,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300C2,0x7F0300C3,0x7F030154,0x7F030156,0x7F030174,0x7F0301C1,0x7F0301C2,0x7F0301CC }
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130903169,
 					2130903170,
-					2130903196,
-					2130903228,
+					2130903197,
 					2130903229,
 					2130903230,
 					2130903231,
 					2130903232,
 					2130903233,
 					2130903234,
-					2130903379,
-					2130903381,
-					2130903411,
-					2130903488,
+					2130903235,
+					2130903380,
+					2130903382,
+					2130903412,
 					2130903489,
-					2130903499};
+					2130903490,
+					2130903500};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
@@ -14936,10 +16784,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 9
 			public const int CollapsingToolbarLayout_expandedTitleTextAppearance = 9;
 			
-			// aapt resource value: { 0x7F03010E,0x7F03010F }
+			// aapt resource value: { 0x7F03010F,0x7F030110 }
 			public static int[] CollapsingToolbarLayout_Layout = new int[] {
-					2130903310,
-					2130903311};
+					2130903311,
+					2130903312};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -14995,23 +16843,23 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
 			
-			// aapt resource value: { 0x7F030106,0x7F030172 }
+			// aapt resource value: { 0x7F030107,0x7F030173 }
 			public static int[] CoordinatorLayout = new int[] {
-					2130903302,
-					2130903410};
+					2130903303,
+					2130903411};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
 			
-			// aapt resource value: { 0x10100B3,0x7F03010B,0x7F03010C,0x7F03010D,0x7F030110,0x7F030111,0x7F030112 }
+			// aapt resource value: { 0x10100B3,0x7F03010C,0x7F03010D,0x7F03010E,0x7F030111,0x7F030112,0x7F030113 }
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
-					2130903307,
 					2130903308,
 					2130903309,
-					2130903312,
+					2130903310,
 					2130903313,
-					2130903314};
+					2130903314,
+					2130903315};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -15048,16 +16896,16 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
-			// aapt resource value: { 0x7F030029,0x7F03002A,0x7F030036,0x7F030083,0x7F0300AE,0x7F0300DC,0x7F030167,0x7F0301B7 }
+			// aapt resource value: { 0x7F030029,0x7F03002A,0x7F030036,0x7F030084,0x7F0300AF,0x7F0300DD,0x7F030168,0x7F0301B8 }
 			public static int[] DrawerArrowToggle = new int[] {
 					2130903081,
 					2130903082,
 					2130903094,
-					2130903171,
-					2130903214,
-					2130903260,
-					2130903399,
-					2130903479};
+					2130903172,
+					2130903215,
+					2130903261,
+					2130903400,
+					2130903480};
 			
 			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
@@ -15083,21 +16931,21 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			// aapt resource value: { 0x7F030034,0x7F030035,0x7F03003D,0x7F0300B5,0x7F0300C7,0x7F0300C8,0x7F0300E3,0x7F0300EB,0x7F03012E,0x7F030148,0x7F030152,0x7F03015E,0x7F0301D5 }
+			// aapt resource value: { 0x7F030034,0x7F030035,0x7F03003D,0x7F0300B6,0x7F0300C8,0x7F0300C9,0x7F0300E4,0x7F0300EC,0x7F03012F,0x7F030149,0x7F030153,0x7F03015F,0x7F0301D6 }
 			public static int[] FloatingActionButton = new int[] {
 					2130903092,
 					2130903093,
 					2130903101,
-					2130903221,
-					2130903239,
+					2130903222,
 					2130903240,
-					2130903267,
-					2130903275,
-					2130903342,
-					2130903368,
-					2130903378,
-					2130903390,
-					2130903509};
+					2130903241,
+					2130903268,
+					2130903276,
+					2130903343,
+					2130903369,
+					2130903379,
+					2130903391,
+					2130903510};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -15145,10 +16993,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 12
 			public const int FloatingActionButton_useCompatPadding = 12;
 			
-			// aapt resource value: { 0x7F030101,0x7F030117 }
+			// aapt resource value: { 0x7F030102,0x7F030118 }
 			public static int[] FlowLayout = new int[] {
-					2130903297,
-					2130903319};
+					2130903298,
+					2130903320};
 			
 			// aapt resource value: 0
 			public const int FlowLayout_itemSpacing = 0;
@@ -15156,27 +17004,27 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int FlowLayout_lineSpacing = 1;
 			
-			// aapt resource value: { 0x7F0300D2,0x7F0300D3,0x7F0300D4,0x7F0300D5,0x7F0300D6,0x7F0300D7 }
+			// aapt resource value: { 0x7F0300D3,0x7F0300D4,0x7F0300D5,0x7F0300D6,0x7F0300D7,0x7F0300D8 }
 			public static int[] FontFamily = new int[] {
-					2130903250,
 					2130903251,
 					2130903252,
 					2130903253,
 					2130903254,
-					2130903255};
+					2130903255,
+					2130903256};
 			
-			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300D0,0x7F0300D8,0x7F0300D9,0x7F0300DA,0x7F0301D4 }
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300D1,0x7F0300D9,0x7F0300DA,0x7F0300DB,0x7F0301D5 }
 			public static int[] FontFamilyFont = new int[] {
 					16844082,
 					16844083,
 					16844095,
 					16844143,
 					16844144,
-					2130903248,
-					2130903256,
+					2130903249,
 					2130903257,
 					2130903258,
-					2130903508};
+					2130903259,
+					2130903509};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -15226,11 +17074,11 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 5
 			public const int FontFamily_fontProviderQuery = 5;
 			
-			// aapt resource value: { 0x1010109,0x1010200,0x7F0300DB }
+			// aapt resource value: { 0x1010109,0x1010200,0x7F0300DC }
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130903259};
+					2130903260};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -15303,17 +17151,24 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int GradientColor_android_type = 2;
 			
-			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300AA,0x7F0300AC,0x7F03012F,0x7F03015D }
+			// aapt resource value: { 0x7F030083 }
+			public static int[] ItemsViewRendererTheme = new int[] {
+					2130903171};
+			
+			// aapt resource value: 0
+			public const int ItemsViewRendererTheme_collectionViewStyle = 0;
+			
+			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300AB,0x7F0300AD,0x7F030130,0x7F03015E }
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
 					16843046,
 					16843047,
 					16843048,
-					2130903210,
-					2130903212,
-					2130903343,
-					2130903389};
+					2130903211,
+					2130903213,
+					2130903344,
+					2130903390};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -15372,7 +17227,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
-			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030034,0x7F030035,0x7F03009F,0x7F0300EC,0x7F0300EE,0x7F0300EF,0x7F0300F0,0x7F0300F2,0x7F0300F3,0x7F030152,0x7F030174,0x7F030175 }
+			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030034,0x7F030035,0x7F0300A0,0x7F0300ED,0x7F0300EF,0x7F0300F0,0x7F0300F1,0x7F0300F3,0x7F0300F4,0x7F030153,0x7F030175,0x7F030176 }
 			public static int[] MaterialButton = new int[] {
 					16843191,
 					16843192,
@@ -15380,16 +17235,16 @@ namespace DellyShopApp.Droid
 					16843194,
 					2130903092,
 					2130903093,
-					2130903199,
-					2130903276,
-					2130903278,
+					2130903200,
+					2130903277,
 					2130903279,
 					2130903280,
-					2130903282,
+					2130903281,
 					2130903283,
-					2130903378,
-					2130903412,
-					2130903413};
+					2130903284,
+					2130903379,
+					2130903413,
+					2130903414};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -15439,10 +17294,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 15
 			public const int MaterialButton_strokeWidth = 15;
 			
-			// aapt resource value: { 0x7F030174,0x7F030175 }
+			// aapt resource value: { 0x7F030175,0x7F030176 }
 			public static int[] MaterialCardView = new int[] {
-					2130903412,
-					2130903413};
+					2130903413,
+					2130903414};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -15450,27 +17305,26 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int MaterialCardView_strokeWidth = 1;
 			
-			// aapt resource value: { 0x7F030041,0x7F030042,0x7F030068,0x7F030072,0x7F030076,0x7F030084,0x7F030085,0x7F03008B,0x7F03008C,0x7F03008D,0x7F0300B4,0x7F0300CF,0x7F030125,0x7F030126,0x7F030135,0x7F030154,0x7F030164,0x7F030197,0x7F03019C,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301AA,0x7F0301AF,0x7F0301B0,0x7F0301B4 }
+			// aapt resource value: { 0x7F030041,0x7F030042,0x7F030068,0x7F030072,0x7F030076,0x7F030085,0x7F030086,0x7F03008C,0x7F03008D,0x7F03008E,0x7F0300B5,0x7F0300D0,0x7F030126,0x7F030127,0x7F030136,0x7F030155,0x7F030165,0x7F030198,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301AB,0x7F0301B0,0x7F0301B1,0x7F0301B5 }
 			public static int[] MaterialComponentsTheme = new int[] {
 					2130903105,
 					2130903106,
 					2130903144,
 					2130903154,
 					2130903158,
-					2130903172,
 					2130903173,
-					2130903179,
+					2130903174,
 					2130903180,
 					2130903181,
-					2130903220,
-					2130903247,
-					2130903333,
+					2130903182,
+					2130903221,
+					2130903248,
 					2130903334,
-					2130903349,
-					2130903380,
-					2130903396,
-					2130903447,
-					2130903452,
+					2130903335,
+					2130903350,
+					2130903381,
+					2130903397,
+					2130903448,
 					2130903453,
 					2130903454,
 					2130903455,
@@ -15480,10 +17334,11 @@ namespace DellyShopApp.Droid
 					2130903459,
 					2130903460,
 					2130903461,
-					2130903466,
-					2130903471,
+					2130903462,
+					2130903467,
 					2130903472,
-					2130903476};
+					2130903473,
+					2130903477};
 			
 			// aapt resource value: 0
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 0;
@@ -15608,7 +17463,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030028,0x7F030090,0x7F0300F2,0x7F0300F3,0x7F030136,0x7F03015C,0x7F0301D0 }
+			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030028,0x7F030091,0x7F0300F3,0x7F0300F4,0x7F030137,0x7F03015D,0x7F0301D1 }
 			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
@@ -15627,12 +17482,12 @@ namespace DellyShopApp.Droid
 					2130903071,
 					2130903072,
 					2130903080,
-					2130903184,
-					2130903282,
+					2130903185,
 					2130903283,
-					2130903350,
-					2130903388,
-					2130903504};
+					2130903284,
+					2130903351,
+					2130903389,
+					2130903505};
 			
 			// aapt resource value: 13
 			public const int MenuItem_actionLayout = 13;
@@ -15703,7 +17558,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 22
 			public const int MenuItem_tooltipText = 22;
 			
-			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030147,0x7F030176 }
+			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030148,0x7F030177 }
 			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
@@ -15712,8 +17567,8 @@ namespace DellyShopApp.Droid
 					16843055,
 					16843056,
 					16843057,
-					2130903367,
-					2130903414};
+					2130903368,
+					2130903415};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -15742,20 +17597,20 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 8
 			public const int MenuView_subMenuArrow = 8;
 			
-			// aapt resource value: { 0x10100D4,0x10100DD,0x101011F,0x7F0300B5,0x7F0300DE,0x7F0300FA,0x7F0300FB,0x7F0300FD,0x7F0300FF,0x7F030102,0x7F030105,0x7F030130 }
+			// aapt resource value: { 0x10100D4,0x10100DD,0x101011F,0x7F0300B6,0x7F0300DF,0x7F0300FB,0x7F0300FC,0x7F0300FE,0x7F030100,0x7F030103,0x7F030106,0x7F030131 }
 			public static int[] NavigationView = new int[] {
 					16842964,
 					16842973,
 					16843039,
-					2130903221,
-					2130903262,
-					2130903290,
+					2130903222,
+					2130903263,
 					2130903291,
-					2130903293,
-					2130903295,
-					2130903298,
-					2130903301,
-					2130903344};
+					2130903292,
+					2130903294,
+					2130903296,
+					2130903299,
+					2130903302,
+					2130903345};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -15793,15 +17648,15 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 11
 			public const int NavigationView_menu = 11;
 			
-			// aapt resource value: { 0x1010176,0x10102C9,0x7F030137 }
+			// aapt resource value: { 0x1010176,0x10102C9,0x7F030138 }
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130903351};
+					2130903352};
 			
-			// aapt resource value: { 0x7F03016D }
+			// aapt resource value: { 0x7F03016E }
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130903405};
+					2130903406};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -15815,10 +17670,10 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int PopupWindow_overlapAnchor = 2;
 			
-			// aapt resource value: { 0x7F030138,0x7F03013B }
+			// aapt resource value: { 0x7F030139,0x7F03013C }
 			public static int[] RecycleListView = new int[] {
-					2130903352,
-					2130903355};
+					2130903353,
+					2130903356};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -15826,19 +17681,19 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300C9,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F03010A,0x7F030151,0x7F030166,0x7F03016C }
+			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F03010B,0x7F030152,0x7F030167,0x7F03016D }
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842993,
-					2130903241,
 					2130903242,
 					2130903243,
 					2130903244,
 					2130903245,
-					2130903306,
-					2130903377,
-					2130903398,
-					2130903404};
+					2130903246,
+					2130903307,
+					2130903378,
+					2130903399,
+					2130903405};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
@@ -15873,9 +17728,9 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 10
 			public const int RecyclerView_stackFromEnd = 10;
 			
-			// aapt resource value: { 0x7F0300F8 }
+			// aapt resource value: { 0x7F0300F9 }
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130903288};
+					2130903289};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
@@ -15887,25 +17742,25 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030077,0x7F03008F,0x7F0300A5,0x7F0300DD,0x7F0300F4,0x7F030109,0x7F03014B,0x7F03014C,0x7F030156,0x7F030157,0x7F030177,0x7F03017C,0x7F0301D7 }
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030077,0x7F030090,0x7F0300A6,0x7F0300DE,0x7F0300F5,0x7F03010A,0x7F03014C,0x7F03014D,0x7F030157,0x7F030158,0x7F030178,0x7F03017D,0x7F0301D8 }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
 					16843296,
 					16843364,
 					2130903159,
-					2130903183,
-					2130903205,
-					2130903261,
-					2130903284,
-					2130903305,
-					2130903371,
+					2130903184,
+					2130903206,
+					2130903262,
+					2130903285,
+					2130903306,
 					2130903372,
-					2130903382,
+					2130903373,
 					2130903383,
-					2130903415,
-					2130903420,
-					2130903511};
+					2130903384,
+					2130903416,
+					2130903421,
+					2130903512};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -15958,16 +17813,16 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 16
 			public const int SearchView_voiceIcon = 16;
 			
-			// aapt resource value: { 0x7F030164,0x7F030165 }
+			// aapt resource value: { 0x7F030165,0x7F030166 }
 			public static int[] Snackbar = new int[] {
-					2130903396,
-					2130903397};
+					2130903397,
+					2130903398};
 			
-			// aapt resource value: { 0x101011F,0x7F0300B5,0x7F03012C }
+			// aapt resource value: { 0x101011F,0x7F0300B6,0x7F03012D }
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130903221,
-					2130903340};
+					2130903222,
+					2130903341};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -15984,13 +17839,13 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int Snackbar_snackbarStyle = 1;
 			
-			// aapt resource value: { 0x10100B2,0x1010176,0x101017B,0x1010262,0x7F030145 }
+			// aapt resource value: { 0x10100B2,0x1010176,0x101017B,0x1010262,0x7F030146 }
 			public static int[] Spinner = new int[] {
 					16842930,
 					16843126,
 					16843131,
 					16843362,
-					2130903365};
+					2130903366};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -16041,22 +17896,22 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 1
 			public const int StateListDrawable_android_visible = 1;
 			
-			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F03015F,0x7F03016A,0x7F03017D,0x7F03017E,0x7F030180,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301D1,0x7F0301D2,0x7F0301D3 }
+			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030160,0x7F03016B,0x7F03017E,0x7F03017F,0x7F030181,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301D2,0x7F0301D3,0x7F0301D4 }
 			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
-					2130903391,
-					2130903402,
-					2130903421,
+					2130903392,
+					2130903403,
 					2130903422,
-					2130903424,
-					2130903480,
+					2130903423,
+					2130903425,
 					2130903481,
 					2130903482,
-					2130903505,
+					2130903483,
 					2130903506,
-					2130903507};
+					2130903507,
+					2130903508};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -16115,9 +17970,8 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			// aapt resource value: { 0x7F030181,0x7F030182,0x7F030183,0x7F030184,0x7F030185,0x7F030186,0x7F030187,0x7F030188,0x7F030189,0x7F03018A,0x7F03018B,0x7F03018C,0x7F03018D,0x7F03018E,0x7F03018F,0x7F030190,0x7F030191,0x7F030192,0x7F030193,0x7F030194,0x7F030195,0x7F030196,0x7F030198,0x7F030199,0x7F03019A }
+			// aapt resource value: { 0x7F030182,0x7F030183,0x7F030184,0x7F030185,0x7F030186,0x7F030187,0x7F030188,0x7F030189,0x7F03018A,0x7F03018B,0x7F03018C,0x7F03018D,0x7F03018E,0x7F03018F,0x7F030190,0x7F030191,0x7F030192,0x7F030193,0x7F030194,0x7F030195,0x7F030196,0x7F030197,0x7F030199,0x7F03019A,0x7F03019B }
 			public static int[] TabLayout = new int[] {
-					2130903425,
 					2130903426,
 					2130903427,
 					2130903428,
@@ -16139,9 +17993,10 @@ namespace DellyShopApp.Droid
 					2130903444,
 					2130903445,
 					2130903446,
-					2130903448,
+					2130903447,
 					2130903449,
-					2130903450};
+					2130903450,
+					2130903451};
 			
 			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
@@ -16218,7 +18073,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 24
 			public const int TabLayout_tabUnboundedRipple = 24;
 			
-			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300D1,0x7F03019B }
+			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300D2,0x7F03019C }
 			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
@@ -16231,8 +18086,8 @@ namespace DellyShopApp.Droid
 					16843107,
 					16843108,
 					16843692,
-					2130903249,
-					2130903451};
+					2130903250,
+					2130903452};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -16273,7 +18128,7 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 12
 			public const int TextAppearance_textAllCaps = 12;
 			
-			// aapt resource value: { 0x101009A,0x1010150,0x7F030043,0x7F030044,0x7F030045,0x7F030046,0x7F030047,0x7F030048,0x7F030049,0x7F03004A,0x7F03004B,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300B8,0x7F0300B9,0x7F0300E0,0x7F0300E1,0x7F0300E2,0x7F0300E6,0x7F0300E7,0x7F0300E8,0x7F03013F,0x7F030140,0x7F030141,0x7F030142,0x7F030143 }
+			// aapt resource value: { 0x101009A,0x1010150,0x7F030043,0x7F030044,0x7F030045,0x7F030046,0x7F030047,0x7F030048,0x7F030049,0x7F03004A,0x7F03004B,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F0300B9,0x7F0300BA,0x7F0300E1,0x7F0300E2,0x7F0300E3,0x7F0300E7,0x7F0300E8,0x7F0300E9,0x7F030140,0x7F030141,0x7F030142,0x7F030143,0x7F030144 }
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
@@ -16286,23 +18141,23 @@ namespace DellyShopApp.Droid
 					2130903113,
 					2130903114,
 					2130903115,
-					2130903200,
 					2130903201,
 					2130903202,
 					2130903203,
-					2130903224,
+					2130903204,
 					2130903225,
-					2130903264,
+					2130903226,
 					2130903265,
 					2130903266,
-					2130903270,
+					2130903267,
 					2130903271,
 					2130903272,
-					2130903359,
+					2130903273,
 					2130903360,
 					2130903361,
 					2130903362,
-					2130903363};
+					2130903363,
+					2130903364};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -16388,11 +18243,11 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 27
 			public const int TextInputLayout_passwordToggleTintMode = 27;
 			
-			// aapt resource value: { 0x1010034,0x7F0300B6,0x7F0300B7 }
+			// aapt resource value: { 0x1010034,0x7F0300B7,0x7F0300B8 }
 			public static int[] ThemeEnforcement = new int[] {
 					16842804,
-					2130903222,
-					2130903223};
+					2130903223,
+					2130903224};
 			
 			// aapt resource value: 0
 			public const int ThemeEnforcement_android_textAppearance = 0;
@@ -16403,37 +18258,37 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 2
 			public const int ThemeEnforcement_enforceTextAppearance = 2;
 			
-			// aapt resource value: { 0x10100AF,0x1010140,0x7F030051,0x7F03007F,0x7F030080,0x7F030091,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030123,0x7F030124,0x7F03012D,0x7F030132,0x7F030133,0x7F030145,0x7F030178,0x7F030179,0x7F03017A,0x7F0301C0,0x7F0301C2,0x7F0301C3,0x7F0301C4,0x7F0301C5,0x7F0301C6,0x7F0301C7,0x7F0301C8,0x7F0301C9 }
+			// aapt resource value: { 0x10100AF,0x1010140,0x7F030051,0x7F03007F,0x7F030080,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F030124,0x7F030125,0x7F03012E,0x7F030133,0x7F030134,0x7F030146,0x7F030179,0x7F03017A,0x7F03017B,0x7F0301C1,0x7F0301C3,0x7F0301C4,0x7F0301C5,0x7F0301C6,0x7F0301C7,0x7F0301C8,0x7F0301C9,0x7F0301CA }
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
 					2130903121,
 					2130903167,
 					2130903168,
-					2130903185,
 					2130903186,
 					2130903187,
 					2130903188,
 					2130903189,
 					2130903190,
-					2130903331,
+					2130903191,
 					2130903332,
-					2130903341,
-					2130903346,
+					2130903333,
+					2130903342,
 					2130903347,
-					2130903365,
-					2130903416,
+					2130903348,
+					2130903366,
 					2130903417,
 					2130903418,
-					2130903488,
-					2130903490,
+					2130903419,
+					2130903489,
 					2130903491,
 					2130903492,
 					2130903493,
 					2130903494,
 					2130903495,
 					2130903496,
-					2130903497};
+					2130903497,
+					2130903498};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -16522,13 +18377,13 @@ namespace DellyShopApp.Droid
 			// aapt resource value: 28
 			public const int Toolbar_titleTextColor = 28;
 			
-			// aapt resource value: { 0x1010000,0x10100DA,0x7F030139,0x7F03013A,0x7F0301B6 }
+			// aapt resource value: { 0x1010000,0x10100DA,0x7F03013A,0x7F03013B,0x7F0301B7 }
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130903353,
 					2130903354,
-					2130903478};
+					2130903355,
+					2130903479};
 			
 			// aapt resource value: { 0x10100D4,0x7F030034,0x7F030035 }
 			public static int[] ViewBackgroundHelper = new int[] {

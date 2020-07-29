@@ -9,45 +9,46 @@
     xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
     xmlns:pancakeView="clr-namespace:DellyShopApp.Views.PartialViews"
     xmlns:pancakeView1="clr-namespace:DellyShopApp.Views.CustomView"
-    xmlns:renderers="clr-namespace:DellyShopApp.Renderers" xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers" 
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
     BackgroundColor="{DynamicResource BackgroundColor}">
-<StackLayout Margin="20">
-    <pancakeView:NavigationBarPartialView
+    <StackLayout Margin="20">
+        <pancakeView:NavigationBarPartialView
         BackButtonVisibler="False"
         FavVisible="False"
         IsModalpage="False"
         NavigationTitle="{x:Static languages:AppResources.ChildrenDetails}" />
-        
-    <customControl:RepeaterView x:Name="ChildrenList">
-        <customControl:RepeaterView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
+
+        <customControl:RepeaterView x:Name="ChildrenList">
+            <customControl:RepeaterView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
                         <pancakeView1:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
-                    <pancakeView1:PancakeView.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TransSummaryButtonClick" />
-                    </pancakeView1:PancakeView.GestureRecognizers>
-                    <StackLayout
+                            <pancakeView1:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TransSummaryButtonClick" />
+                            </pancakeView1:PancakeView.GestureRecognizers>
+                            <StackLayout
                         BackgroundColor="{DynamicResource ItemColor}"
                         Orientation="Horizontal"
                         VerticalOptions="FillAndExpand">
-                        <pancakeView1:PancakeView Padding="0" 
+                                <pancakeView1:PancakeView Padding="0" 
                             HorizontalOptions="Start" 
                             VerticalOptions="FillAndExpand" 
                             Style="{DynamicResource PancakeFrameStyle}">
-                            <Image
+                                    <Image
                                 Aspect="AspectFill" 
                                 HeightRequest="50"
                                 Source="{Binding customer_image}"
                                 WidthRequest="50" />
-                        </pancakeView1:PancakeView>
-                        <StackLayout VerticalOptions="CenterAndExpand">
-                            <Label
+                                </pancakeView1:PancakeView>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label
                                 FontFamily="{DynamicResource VerdanaProRegular}"
                                 FontSize="15"
                                 Text="{Binding name}"
                                 TextColor="{DynamicResource WhiteDarkFontColor}" />
-                        </StackLayout>
-                        <Label
+                                </StackLayout>
+                                <Label
                                 Margin="0,0,10,0"
                                 FontAttributes="Bold"
                                 FontFamily="{DynamicResource VerdanaProRegular}"
@@ -56,11 +57,11 @@
                                 Text="{Binding UniqueRef}"
                                 TextColor="{DynamicResource PriceLabelColor}"
                                 VerticalOptions="CenterAndExpand" />
-                    </StackLayout>
-                </pancakeView1:PancakeView>
-                </ViewCell>
-            </DataTemplate>
-        </customControl:RepeaterView.ItemTemplate>
-    </customControl:RepeaterView>
-</StackLayout>
+                            </StackLayout>
+                        </pancakeView1:PancakeView>
+                    </ViewCell>
+                </DataTemplate>
+            </customControl:RepeaterView.ItemTemplate>
+        </customControl:RepeaterView>
+    </StackLayout>
 </base:BasePage>

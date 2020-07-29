@@ -10,6 +10,9 @@
     xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="MainHeading">#000c55</Color>
+            <Color x:Key="SubHeading">#4569ff</Color>
+            <Color x:Key="LightHeading">#A25E5E5E</Color>
             <!--<Color x:Key="FontColor">White</Color>
             <Color x:Key="MainColor">#F16A38</Color>
             <Color x:Key="DarkFontColor">#252525</Color>
@@ -19,7 +22,7 @@
             <Color x:Key="Secondary">#B5BBC2</Color>
             <Color x:Key="Accent">White</Color>
             <Color x:Key="LightColor">LightGray</Color>-->
-             <Style x:Key="ActiveIndicator" TargetType="Frame">
+            <Style x:Key="ActiveIndicator" TargetType="Frame">
                 <Setter Property="HasShadow" Value="False" />
                 <Setter Property="BackgroundColor" Value="{x:DynamicResource LightColor}" />
             </Style>
@@ -94,7 +97,7 @@
                 <Setter Property="FontSize" Value="{DynamicResource ButtonFont}"/>
                 <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBackgroudColor}" />
                 <Setter Property="FontFamily" Value="{DynamicResource VerdanaProRegular}" />
-                <Setter Property="HeightRequest" Value="57" />
+                <Setter Property="HeightRequest" Value="50" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="TextColor" Value="{x:DynamicResource ButtonTextColor}" />
             </Style>
@@ -115,7 +118,7 @@
                 <Setter Property="HasShadow" Value="False" />
                 <Setter Property="HeightRequest" Value="50" />
                 <Setter Property="Padding" Value="{x:OnPlatform Android=5, iOS=8}" />
-                <Setter Property="CornerRadius" Value="{x:OnPlatform Android=25, iOS=25}" />
+                <Setter Property="CornerRadius" Value="{x:OnPlatform Android=10, iOS=10}" />
                 <Setter Property="BackgroundColor" Value="{DynamicResource ItemColor}" />
                 <Setter Property="BackgroundColor" Value="#F7F7F7" />
             </Style>

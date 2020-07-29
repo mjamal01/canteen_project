@@ -1,7 +1,5 @@
-﻿namespace DellyShopApp.Helpers
-{
-    internal class FontAwesomeIcons
-    {
+﻿namespace DellyShopApp.Helpers {
+    internal class FontAwesomeIcons {
         public const string AngryMonster = "\ue800";
         public const string Bathtub = "\ue801";
         public const string BirdWings = "\ue802";
@@ -2095,5 +2093,6 @@
         public const string World = "\uf02c";
         public const string Zigzag = "\uf02d";
         public const string Zipped = "\uf02e";
+
     }
 }

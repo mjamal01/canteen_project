@@ -3,8 +3,11 @@
     x:Class="DellyShopApp.Views.Pages.HomeTabbedPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:tabbedPages="clr-namespace:DellyShopApp.Views.TabbedPages;assembly=DellyShopApp"
+    xmlns:Pages="clr-namespace:DellyShopApp.Views.Pages"
+    android:TabbedPage.ToolbarPlacement="Bottom"
     android:TabbedPage.IsSwipePagingEnabled="False"
     
     BarBackgroundColor="{DynamicResource ItemColor}"
@@ -16,11 +19,38 @@
 
     <!--<tabbedPages:HomePage IconImageSource="Home" />
     <tabbedPages:BasketPage IconImageSource="Basket" />-->
-    <tabbedPages:TransSummaryConfig IconImageSource="Home" />
-    <tabbedPages:ControlChildrenProducts IconImageSource="Profile" />
-    <tabbedPages:AddMoney1 IconImageSource="Basket" />
-    <tabbedPages:ProfilePage IconImageSource="Profile" />
-    
+    <Pages:CustHomePage >
+        <Pages:CustHomePage.IconImageSource>
+            <FontImageSource
+                FontFamily="LineIcons"
+                Glyph="{x:Static font:LineIcon.Home}" />
+        </Pages:CustHomePage.IconImageSource>
+    </Pages:CustHomePage>
+    <!--<tabbedPages:TransSummaryConfig IconImageSource="Home" />-->
+
+    <tabbedPages:ControlChildrenProducts >
+        <tabbedPages:ControlChildrenProducts.IconImageSource>
+            <FontImageSource
+                FontFamily="LineIcons"
+                Glyph="{x:Static font:LineIcon.People}" />
+        </tabbedPages:ControlChildrenProducts.IconImageSource>
+    </tabbedPages:ControlChildrenProducts>
+
+    <tabbedPages:AddMoney1>
+        <tabbedPages:AddMoney1.IconImageSource>
+            <FontImageSource
+                FontFamily="LineIcons"
+                Glyph="{x:Static font:LineIcon.Handbag}" />
+        </tabbedPages:AddMoney1.IconImageSource>
+    </tabbedPages:AddMoney1>
+    <tabbedPages:ProfilePage>
+        <tabbedPages:ProfilePage.IconImageSource>
+            <FontImageSource
+                FontFamily="LineIcons"
+                Glyph="{x:Static font:LineIcon.User}" />
+        </tabbedPages:ProfilePage.IconImageSource>
+    </tabbedPages:ProfilePage>
+
 </TabbedPage>
 
 <!--android:TabbedPage.ToolbarPlacement="Bottom"-->
