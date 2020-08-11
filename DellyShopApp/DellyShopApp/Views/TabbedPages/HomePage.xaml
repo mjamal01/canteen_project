@@ -52,6 +52,7 @@
                     FontFamily="{DynamicResource VerdanaProRegular}"
                     TextColor="{DynamicResource EntryTextColor}" />
             </Frame>
+            
             <Label
                 Margin="0"
                 Padding="5,5,0,0"
@@ -62,6 +63,7 @@
                 Text="{x:Static helpers:AppResources.Categories}"
                 TextColor="{DynamicResource TitleLabelColor}"
                 VerticalOptions="Start" />
+            
             <ScrollView Orientation="Horizontal" Style="{DynamicResource ScrollViewStyle}">
                 <customControl:RepeaterView
                     x:Name="CategoryList"
@@ -134,6 +136,7 @@
                                               Phone=200}"
                     SelectedIndex="0"
                     WidthRequest="300">
+                    
                     <x:Arguments>
                         <proc:BaseCarouselFrontViewProcessor
                             OpacityFactor="0.5"
@@ -144,6 +147,7 @@
                             RotationFactor="0"
                             ScaleFactor=".8" />
                     </x:Arguments>
+                    
                     <customControl:IndicatorsControl SelectedIndicatorStyle="{StaticResource ActiveIndicator}" UnselectedIndicatorStyle="{DynamicResource InactiveIndicator}" />
                     <controls:CarouselView.ItemTemplate>
                         <DataTemplate>

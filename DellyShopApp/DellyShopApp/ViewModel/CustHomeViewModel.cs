@@ -1,5 +1,6 @@
 ﻿using DellyShopApp.Helpers;
 using DellyShopApp.Models;
+using DellyShopApp.Views.Pages;
 using DellyShopApp.Views.Pages.Base;
 using Microcharts;
 using SkiaSharp;
@@ -57,6 +58,7 @@ namespace DellyShopApp.ViewModel {
         public ICommand ChartRefreshCommand { get; set; }
 
         public ICommand CreditLimitCommand { get; set; }
+        public ICommand NavigateToDetailPageCommand { get; set; }
 
         private static readonly SKColor AccentColor = SKColor.Parse( "#2C5DF9" );
 
@@ -68,29 +70,7 @@ namespace DellyShopApp.ViewModel {
 
         private static readonly SKColor PinkColor = SKColor.Parse( "#FA6978" );
 
-        //return new Entry((float) ride.TotalTime.TotalMinutes) {
-        //  ValueLabel = $"{( int ) ride.TotalTime.TotalHours}:{( int ) ride.TotalTime.Minutes}",
-        ChartEntry[] entries = new[]
- {
-             new ChartEntry(170)
-             {
-                 Label = "Ali",
-                 ValueLabel= "170",
-                 Color = SKColor.Parse("#8349f5")
-             },
-             new ChartEntry(120)
-             {
-                 Label = "Hamza",
-                 ValueLabel= "648",
-                 Color = SKColor.Parse("#8349f5")
-             },
-             new ChartEntry(128)
-             {
-                 Label = "Jamal",
-                 ValueLabel= "5",
-                 Color = SKColor.Parse("#4569ff")
-             }
-        };
+
         private Chart _AltitudeChart;
         public Chart AltitudeChart {
             get => _AltitudeChart;
@@ -111,11 +91,13 @@ namespace DellyShopApp.ViewModel {
             Currenncy = "SR";
             ChartRefreshCommand = new Command( OnChartRefresh );
             CreditLimitCommand = new Command( OnCreditLimit );
+            NavigateToDetailPageCommand = new Command<IndividualChildDetail>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
             SetCreditLimit();
-            //Categories.Add( new ShopCategory { Id = "2", Image = FontAwesomeIcons.Cab, CategoryName = "Load Summary", Amount = 388073 } );
-            //Categories.Add( new ShopCategory { Id = "3", Image = FontAwesomeIcons.ShoppingCart, CategoryName = "Load Sample", Amount = 944073 } );
-            //Categories.Add( new ShopCategory { Id = "4", Image = FontAwesomeIcons.CoffeeMug, CategoryName = "Refresh Balance", Amount = 73473 } );
+        }
+
+        private void OnNavigateToDetailPage(IndividualChildDetail vm) {
+            App.Current.MainPage.Navigation.PushAsync( new ChildrenProductsPage( vm ) );
         }
 
         private async void SetCreditLimit() {

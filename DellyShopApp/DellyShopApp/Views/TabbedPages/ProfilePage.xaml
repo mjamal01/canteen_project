@@ -8,12 +8,14 @@
     xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
     xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:app="clr-namespace:DellyShopApp"
     BackgroundColor="{DynamicResource BackgroundColor}">
     <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
         <StackLayout
             Margin="10"
             Padding="5"
             Spacing="10">
+
             <StackLayout
                 Margin="0,10,0,0"
                 HeightRequest="50"
@@ -28,29 +30,39 @@
                     VerticalOptions="StartAndExpand"
                     VerticalTextAlignment="Center" />
             </StackLayout>
+
             <StackLayout x:Name="MainStack">
                 <StackLayout
                     HorizontalOptions="FillAndExpand"
                     Orientation="Horizontal"
                     Spacing="20">
+
                     <pancakeView:PancakeView
                         Padding="0"
                         HeightRequest="120"
                         HorizontalOptions="Start"
                         Style="{DynamicResource PancakeFrameStyle}"
                         WidthRequest="120">
-                        <forms:CachedImage
-                            Margin="0"
-                            Aspect="AspectFill"
-                            Source="pp" />
+                        <Image
+                            Margin="20"
+                            Aspect="AspectFit"  >
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="LineIcons"
+                                    Color="#4C000000" 
+                                    Size="120"
+                                    Glyph="{x:Static font:LineIcon.User}" />
+                            </Image.Source>
+                        </Image>
                     </pancakeView:PancakeView>
+
                     <StackLayout>
                         <Label
                             FontFamily="{DynamicResource VerdanaProRegular}"
                             FontSize="20"
                             HorizontalOptions="Start"
                             LineBreakMode="TailTruncation"
-                            Text="XamDesign"
+                            Text="{x:Static app:Global.ParentName}"
                             TextColor="{DynamicResource WhiteDarkFontColor}"
                             VerticalOptions="Start"
                             VerticalTextAlignment="Center" />
@@ -59,13 +71,16 @@
                             FontSize="16"
                             HorizontalOptions="Start"
                             LineBreakMode="TailTruncation"
-                            Text="XamAppDesign@gmail.com"
+                            Text="{x:Static app:Global.Username}"
                             TextColor="{DynamicResource WhiteDarkFontColor}"
                             VerticalOptions="Start"
                             VerticalTextAlignment="Center" />
                         <pancakeView:PancakeView HorizontalOptions="FillAndExpand" Style="{DynamicResource PancakeFrameStyle}">
-                            <StackLayout Orientation="Horizontal">
-                                <Image
+                            <StackLayout Orientation="Horizontal" Padding="20, 0, 20, 0">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnLogout" />
+                                </StackLayout.GestureRecognizers>
+                                <!--<Image
                                     Margin="10,0,0,0"
                                     HeightRequest="25"
                                     Style="{DynamicResource ImageStyleEntry}"
@@ -77,16 +92,17 @@
                                             Size="25"
                                             Color="{DynamicResource IconBgColor}" />
                                     </Image.Source>
-                                </Image>
+                                </Image>-->
                                 <Label
                                     FontFamily="{DynamicResource VerdanaProRegular}"
                                     FontSize="20"
                                     HorizontalOptions="CenterAndExpand"
                                     LineBreakMode="TailTruncation"
-                                    Text="{x:Static languages:AppResources.EditProfile}"
+                                    Text="{x:Static languages:AppResources.Logout}"
                                     TextColor="{DynamicResource WhiteDarkFontColor}"
                                     VerticalOptions="CenterAndExpand"
                                     VerticalTextAlignment="Center" />
+
                             </StackLayout>
                         </pancakeView:PancakeView>
                     </StackLayout>

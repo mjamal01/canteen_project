@@ -218,6 +218,11 @@
                 <Setter Property="TextColor" Value="{DynamicResource FontColor}" />
             </Style>
 
+            <converters:InverseBoolConverter
+                x:Key="InverseBoolConverter" />
+
+
+
             <converters:CardNumberToImageConverter
                 x:Key="CardConverter"
                 Amex="ic_amex"

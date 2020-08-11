@@ -34,6 +34,7 @@ namespace DellyShopApp.Views.Pages
                 Image = item.image,
                 Price = (double)item.price,
             };
+
             CurrentProductId = productListModel.Id;
             await Navigation.PushAsync(new IndividualProductDetail(productListModel));
         }

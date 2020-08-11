@@ -8,6 +8,7 @@
     xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
     mc:Ignorable="d"
     xmlns:shadows="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
     xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
@@ -15,10 +16,11 @@
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     NavigationPage.HasNavigationBar="False"
     xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="{DynamicResource BackgroundColor}"
     x:Class="DellyShopApp.Views.Pages.CustHomePage">
 
     <ScrollView>
-        <Grid BackgroundColor="White" RowSpacing="0">
+        <Grid RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0"/>
                 <RowDefinition Height="*"/>
@@ -65,26 +67,34 @@
                     <Label  
                             HorizontalOptions="CenterAndExpand" 
                             VerticalOptions="Start"  
-                            Text="Total Balance" 
-                            TextColor="{DynamicResource LightHeading}"></Label>
-                    <Label  
-                            HorizontalOptions="CenterAndExpand" 
-                            VerticalOptions="Start" 
-                            FontSize="36"
-                            FontAttributes="Bold"
-                            Text="{Binding TotalBalance, StringFormat='SAR{0}'}" 
-                            TextColor="{DynamicResource MainHeading}"></Label>
+                            Text="{x:Static languages:AppResources.Balance}" 
+                            TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
+
+                    <Label 
+                        HorizontalOptions="CenterAndExpand" 
+                        VerticalOptions="Start" 
+                        FontSize="36"
+                        FontAttributes="Bold" 
+                        TextColor="{DynamicResource WhiteDarkFontColor}">
+                        
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding TotalBalance, StringFormat='{0:0}'}" />
+                                <Span Text="{x:Static languages:AppResources.SAR}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Padding="20,0,20,0"  Margin="10,0,10,0"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
                     <Label  
-                            Text="Today's Report" 
+                            Text="{x:Static languages:AppResources.TodaysReport}" 
                             HorizontalOptions="StartAndExpand" 
                             VerticalOptions="Center"  
                             FontSize="22"
                             FontAttributes="Bold" 
-                            TextColor="{DynamicResource MainHeading}"></Label>
+                            TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
 
                 </StackLayout>
 
@@ -144,8 +154,21 @@
                         </Grid.GestureRecognizers>
 
                         <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
-                            <Label Text="Total spent" HorizontalTextAlignment="Center" FontSize="10" TextColor="#A4FFFFFF"></Label>
-                            <Label Text="SAR500" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="White"></Label>
+                            <Label Text="{x:Static languages:AppResources.TotalSpent}" HorizontalTextAlignment="Center" FontSize="10" TextColor="#A4FFFFFF"></Label> 
+                            
+                            <Label 
+                                HorizontalTextAlignment="Center" 
+                                FontAttributes="Bold" 
+                                FontSize="18" 
+                                TextColor="White">
+
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="500" />
+                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
                         </StackLayout>
 
                         <BoxView Grid.Column="1" BackgroundColor="#65FFFFFF" ></BoxView>
@@ -170,8 +193,20 @@
                                 Progress="{Binding CreditLimitPercent}"/>-->
 
                         <StackLayout Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
-                            <Label Text="Todays spent"  HorizontalTextAlignment="Center" TextColor="#A4FFFFFF" FontSize="10" ></Label>
-                            <Label Text="SAR500"  HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="White"></Label>
+                            <Label Text="{x:Static languages:AppResources.TodaysSpent}"  HorizontalTextAlignment="Center" TextColor="#A4FFFFFF" FontSize="10" ></Label>
+                            <Label 
+                                HorizontalTextAlignment="Center" 
+                                FontAttributes="Bold" 
+                                FontSize="18" 
+                                TextColor="White">
+
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="500" />
+                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
                         </StackLayout>
 
                         <BoxView Grid.Column="3" BackgroundColor="#65FFFFFF" ></BoxView>
@@ -182,7 +217,12 @@
                         </StackLayout>-->
                         <Grid Grid.Column="4" ColumnDefinitions="2*,*" BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
-                            <Label Grid.Column="0" Text="Top up"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#A4FFFFFF" FontSize="12" ></Label>
+                            <Label 
+                                Grid.Column="0" 
+                                Text="{x:Static languages:AppResources.Topup}"  
+                                HorizontalTextAlignment="Center" 
+                                VerticalTextAlignment="Center" 
+                                TextColor="#A4FFFFFF" FontSize="12" ></Label>
                             <ImageButton Grid.Column="1" HorizontalOptions="End"  BackgroundColor="Transparent">
                                 <ImageButton.Source>
                                     <FontImageSource
@@ -199,12 +239,12 @@
                 <StackLayout Grid.Row="4"  Padding="20,10,20,0"  Margin="10,20,10,0"   HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
                     <Label  
-                            Text="Childrens" 
+                            Text="{x:Static languages:AppResources.Childrens}" 
                             HorizontalOptions="StartAndExpand" 
                             VerticalOptions="Center"  
                             FontSize="22"
                             FontAttributes="Bold" 
-                            TextColor="{DynamicResource MainHeading}"></Label>
+                            TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
                 </StackLayout>
 
                 <CollectionView
@@ -259,6 +299,7 @@
                                                 CornerRadius="25"   
                                                 VerticalOptions="CenterAndExpand"
                                                 HorizontalOptions="CenterAndExpand" >
+
                                             <Image
                                                     Aspect="AspectFill" 
                                                     VerticalOptions="CenterAndExpand"
@@ -298,15 +339,22 @@
                                                 TextColor="{DynamicResource MainHeading}"
                                                 Text="{Binding name}" 
                                                 FontAttributes="Bold"
-                                                VerticalOptions="Center" />
-                                            <Label
+                                                VerticalOptions="Center" /> 
+                                            <Label 
                                                 Margin="0"
                                                 FontFamily="FontRobotoRegular"
                                                 FontSize="13"
                                                 HorizontalTextAlignment="Center"
-                                                TextColor="{DynamicResource MainHeading}"
-                                                Text="{Binding DailyCashLimit, StringFormat='SAR{0}'}" 
-                                                VerticalOptions="Center" />
+                                                TextColor="{DynamicResource MainHeading}" 
+                                                VerticalOptions="Center">
+
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding DailyCashLimit, StringFormat='{0}'}" />
+                                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
                                         </StackLayout>
                                     </Grid>
                                     <yummy:PancakeView.GestureRecognizers>

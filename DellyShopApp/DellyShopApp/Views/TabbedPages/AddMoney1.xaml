@@ -12,7 +12,7 @@
     xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
     BackgroundColor="{DynamicResource BackgroundColor}">
     <StackLayout Padding="20">
-         <!--<pancakeView:NavigationBarPartialView
+        <!--<pancakeView:NavigationBarPartialView
             BackButtonVisibler="False"
             FavVisible="False"
              IsModalpage="False"
@@ -21,8 +21,8 @@
             BackButtonVisibler="False"
             FavVisible="False"
              IsModalpage="False"
-            NavigationTitle="Add Money" />
-       
+            NavigationTitle="{x:Static languages:AppResources.AddMoney}" />
+
 
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
             <StackLayout
@@ -30,7 +30,7 @@
                 Padding="5"
                 Spacing="10">
                 <!--<Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.TotalCurrentBalance}" />-->
-                <Label Style="{DynamicResource EntryHeaderLabel}" Text="Enter Amount" />
+                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.EnterAmount}" />
                 <pancakeView1:PancakeView Style="{DynamicResource PancakeFrameStyle}">
                     <renderers:BorderlessEntry
                         Keyboard="Text"

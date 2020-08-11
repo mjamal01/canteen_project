@@ -28,35 +28,35 @@
                                 <TapGestureRecognizer Tapped="TransSummaryButtonClick" />
                             </pancakeView1:PancakeView.GestureRecognizers>
                             <StackLayout
-                        BackgroundColor="{DynamicResource ItemColor}"
-                        Orientation="Horizontal"
-                        VerticalOptions="FillAndExpand">
+                                BackgroundColor="{DynamicResource ItemColor}"
+                                Orientation="Horizontal"
+                                VerticalOptions="FillAndExpand">
                                 <pancakeView1:PancakeView Padding="0" 
-                            HorizontalOptions="Start" 
-                            VerticalOptions="FillAndExpand" 
-                            Style="{DynamicResource PancakeFrameStyle}">
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="FillAndExpand" 
+                                    Style="{DynamicResource PancakeFrameStyle}">
                                     <Image
-                                Aspect="AspectFill" 
-                                HeightRequest="50"
-                                Source="{Binding customer_image}"
-                                WidthRequest="50" />
+                                        Aspect="AspectFill" 
+                                        HeightRequest="50"
+                                        Source="{Binding customer_image}"
+                                        WidthRequest="50" />
                                 </pancakeView1:PancakeView>
                                 <StackLayout VerticalOptions="CenterAndExpand">
                                     <Label
-                                FontFamily="{DynamicResource VerdanaProRegular}"
-                                FontSize="15"
-                                Text="{Binding name}"
-                                TextColor="{DynamicResource WhiteDarkFontColor}" />
+                                        FontFamily="{DynamicResource VerdanaProRegular}"
+                                        FontSize="15"
+                                        Text="{Binding name}"
+                                        TextColor="{DynamicResource WhiteDarkFontColor}" />
                                 </StackLayout>
                                 <Label
-                                Margin="0,0,10,0"
-                                FontAttributes="Bold"
-                                FontFamily="{DynamicResource VerdanaProRegular}"
-                                FontSize="22"
-                                HorizontalOptions="EndAndExpand"
-                                Text="{Binding UniqueRef}"
-                                TextColor="{DynamicResource PriceLabelColor}"
-                                VerticalOptions="CenterAndExpand" />
+                                    Margin="0,0,10,0"
+                                    FontAttributes="Bold"
+                                    FontFamily="{DynamicResource VerdanaProRegular}"
+                                    FontSize="22"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="{Binding UniqueRef}"
+                                    TextColor="{DynamicResource PriceLabelColor}"
+                                    VerticalOptions="CenterAndExpand" />
                             </StackLayout>
                         </pancakeView1:PancakeView>
                     </ViewCell>

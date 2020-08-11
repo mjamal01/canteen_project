@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <base:BasePage
-x:Class="DellyShopApp.Views.Pages.SingleChildDetail"
-xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
-xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
-xmlns:languages="clr-namespace:DellyShopApp.Languages"
-xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
-xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
-xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
-xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
-iOsSpecific:Page.UseSafeArea="True"
-BackgroundColor="{DynamicResource BackgroundColor}"
-NavigationPage.HasNavigationBar="False">
-<StackLayout Padding="20">
+    x:Class="DellyShopApp.Views.Pages.SingleChildDetail"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout Padding="20">
          <partialViews:NavigationBarPartialView
             BackButtonVisibler="True"
             FavVisible="False"

@@ -24,7 +24,7 @@ namespace DellyShopApp {
             }
 
             //MainPage navigation = new MainPage();
-            var navigation = new LoginPage(); // new CustHomePage(); //new LoginPage(); 
+            var navigation = new LoginPage();  //new HomeTabbedPage(); // new CustHomePage(); //new LoginPage(); //
             NavigationPage navpage = new NavigationPage( navigation );
             NavigationPage.SetHasNavigationBar( navpage, false );
             NavigationPage.SetHasNavigationBar( navigation, false );

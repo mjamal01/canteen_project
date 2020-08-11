@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MasrofieApp" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-	<application android:label="Masrofie.Android" android:allowBackup="false" android:supportsRtl="true" android:hardwareAccelerated="true" android:icon="@mipmap/icon"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.masrofee.app" android:installLocation="auto" android:versionCode="10" android:versionName="0.0.2">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
+	<application android:label="Masrofee" android:allowBackup="false" android:supportsRtl="true" android:hardwareAccelerated="true" android:icon="@mipmap/icon"></application>
 </manifest>

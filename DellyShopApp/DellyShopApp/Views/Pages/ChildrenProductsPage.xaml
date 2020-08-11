@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage  
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:converters="clr-namespace:DellyShopApp.Converters"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="DellyShopApp.Views.Pages.ChildrenProductsPage">
+
+
+    <Grid RowDefinitions="Auto, *">
+        <partialViews:NavigationBarPartialView
+            Grid.Row="0"
+            BackButtonVisibler="True"
+            FavVisible="False"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.AllowedProducts}" />
+
+
+
+        <Grid  
+            Grid.Row="1" 
+            RowDefinitions="Auto, Auto, Auto, Auto, Auto">
+
+
+            <yummy:PancakeView
+                    Grid.Row="0" 
+                    BackgroundColor="Transparent" 
+                    Margin="20,0,20,0"    
+                    Padding="12"   
+                    HasShadow="True"
+                    CornerRadius="10,10,10,10"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+
+                <yummy:PancakeView.Border>
+                    <yummy:Border Color="#24000000" Thickness="1" />
+                </yummy:PancakeView.Border>
+                <yummy:PancakeView.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Command="{Binding ChartRefreshCommand}"
+                            NumberOfTapsRequired="1" />
+                </yummy:PancakeView.GestureRecognizers>
+
+                <Grid ColumnDefinitions="Auto, *, *">
+                    <Image 
+                        Grid.Column="0"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        Source="{Binding ChildDetail.customer_image}"/>
+
+                    <StackLayout 
+                        Grid.Column="1">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Grid.Row="0" Grid.Column="0" FontSize="12" Text="{x:Static languages:AppResources.MasroofiNumber}"/>
+                            <Label Grid.Row="0" Grid.Column="1" FontSize="12" Text="21" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}"/>
+                        </StackLayout>
+
+                        <Label FontAttributes="Bold"  Text="{Binding ChildDetail.name}"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{x:Static languages:AppResources.Balance}" FontSize="12"/>
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding ChildDetail.DailyCashLimit}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                        <Span Text="{x:Static languages:AppResources.SAR}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                    </FormattedString>
+                                </Label.FormattedText> 
+                            </Label>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout  
+                        Grid.Column="2">
+
+                        <!--<StackLayout VerticalOptions="Start" HorizontalOptions="EndAndExpand">
+                            <yummy:PancakeView   
+                                Padding="0"   
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                BackgroundColor="#e6e6fe"
+                                CornerRadius="15"   
+                                VerticalOptions="Start"
+                                HorizontalOptions="End" >
+
+                                <Image
+                                    Aspect="AspectFill" 
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="CenterAndExpand" >
+                                    <Image.Source>
+                                        <FontImageSource
+                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                            Glyph="{x:Static font:FontAwesomeIcons.UiEdit}"
+                                            Size="15"
+                                            Color="{DynamicResource IconBgColor}" />
+                                    </Image.Source>
+                                </Image>
+                            </yummy:PancakeView>
+                        </StackLayout>-->
+
+                        <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Label HorizontalTextAlignment="End" FontSize="12" Text="{x:Static languages:AppResources.Dailylimit}"/>
+                            <Label HorizontalTextAlignment="End" FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span  Text="{Binding DialyLimit, StringFormat='{0:N0}'}"  />
+                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+                </Grid>
+
+
+            </yummy:PancakeView>
+
+            <Grid Margin="20,10,20,0" ColumnSpacing="20" Grid.Row="1" ColumnDefinitions="*,*">
+                <yummy:PancakeView
+                    Grid.Column="0" 
+                    BackgroundColor="Transparent" 
+                    Margin="0"    
+                    Padding="16"   
+                    HasShadow="True"
+                    CornerRadius="5,5,5,5"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <yummy:PancakeView.Border>
+                        <yummy:Border Color="{StaticResource ButtonBackgroudColor}" Thickness="1" />
+                    </yummy:PancakeView.Border>
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding ChartRefreshCommand}"
+                            NumberOfTapsRequired="1" />
+                    </yummy:PancakeView.GestureRecognizers>
+                    <Label 
+                        TextColor="{DynamicResource LightLabelTextColor}" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Text="{x:Static languages:AppResources.SendBalance}"></Label>
+                </yummy:PancakeView>
+
+
+                <yummy:PancakeView
+                    Grid.Column="1" 
+                    BackgroundColor="Transparent" 
+                    Margin="0"    
+                    Padding="16"   
+                    HasShadow="True" 
+                    CornerRadius="5,5,5,5"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <yummy:PancakeView.Border>
+                        <yummy:Border Color="{StaticResource ButtonBackgroudColor}" Thickness="1" />
+                    </yummy:PancakeView.Border>
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding EditDialyLimitCommand}"
+                            NumberOfTapsRequired="1" />
+                    </yummy:PancakeView.GestureRecognizers>
+
+                    <Label 
+                        TextColor="{DynamicResource LightLabelTextColor}" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Text="{x:Static languages:AppResources.EditDailylimit}"></Label>
+                </yummy:PancakeView>
+
+
+            </Grid>
+            <StackLayout Grid.Row="3" Margin="20,0,20,5" Orientation="Horizontal">
+                <Label Text="{x:Static languages:AppResources.CanteenStatus}" TextColor="Black" FontAttributes="Bold" FontSize="16" VerticalTextAlignment="Center"></Label>
+                <yummy:PancakeView
+                    Grid.Column="0" 
+                    BackgroundColor="Green" 
+                    Margin="0"    
+                    Padding="10,3,10,5"    
+                    CornerRadius="0">
+                    <Label Text="{x:Static languages:AppResources.Active}" FontSize="17" VerticalTextAlignment="Center" TextColor="White"></Label>
+                </yummy:PancakeView>
+            </StackLayout>
+
+            <Grid Margin="20,0,20,0" ColumnSpacing="0"  Grid.Row="4" ColumnDefinitions="*,*">
+                <yummy:PancakeView
+                    Grid.Column="0" 
+                    BackgroundColor="{Binding CanteenProductBtnColor}" 
+                    Margin="0"    
+                    Padding="18"   
+                    HasShadow="True"
+                    CornerRadius="5,0,5,0"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <yummy:PancakeView.Border>
+                        <yummy:Border Color="{StaticResource ButtonBackgroudColor}" Thickness="1" />
+                    </yummy:PancakeView.Border>
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding CanteenProductsCommand}"
+                            NumberOfTapsRequired="1" />
+                    </yummy:PancakeView.GestureRecognizers>
+                    <Label 
+                        TextColor="{Binding CanteenProductBtnTextColor}" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Text="{x:Static languages:AppResources.CanteenProducts}"></Label>
+                </yummy:PancakeView>
+
+
+                <yummy:PancakeView
+                    Grid.Column="1" 
+                    BackgroundColor="{Binding SonsPurchasesBtnColor}" 
+                    Margin="0"    
+                    Padding="12"   
+                    HasShadow="True" 
+                    CornerRadius="0,5,0,5"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <yummy:PancakeView.Border>
+                        <yummy:Border Color="{StaticResource ButtonBackgroudColor}" Thickness="1" />
+                    </yummy:PancakeView.Border>
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SonsPurchasesCommand}"
+                            NumberOfTapsRequired="1" />
+                    </yummy:PancakeView.GestureRecognizers>
+                    <Label 
+                        TextColor="{Binding SonsPurchasesBtnTextColor}" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Text="{x:Static languages:AppResources.SonsPurchases}"></Label>
+                </yummy:PancakeView>
+
+
+
+            </Grid>
+
+            <CollectionView 
+                x:Name="listItems"
+                Grid.Row="5" 
+                IsVisible="{Binding ShowCanteenProduct}"
+                Margin="20,20,20,0"
+                HorizontalScrollBarVisibility="Never"
+                ItemsSource="{Binding ProductsWithLimit}"
+                SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <yummy:PancakeView 
+                            BackgroundColor="Transparent" 
+                            Padding="12" 
+                            CornerRadius="10"
+                            HasShadow="True" >
+                            <yummy:PancakeView.Border>
+                                <yummy:Border Color="#24000000" Thickness="1" />
+                            </yummy:PancakeView.Border>
+
+                            <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
+                                <Image 
+                                    Grid.Column="0"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Source="{Binding image}"/>
+                                <StackLayout  Grid.Column="1">
+                                    <Label Text="{Binding name}"/>
+                                    <Label 
+                                        BindingContext="{x:Static languages:AppResources.Calories}" 
+                                        Text="{Binding ., StringFormat='{0} : 0'}"></Label>
+                                </StackLayout>
+
+                                <StackLayout  Grid.Column="2"> 
+                                    <Label HorizontalTextAlignment="Center">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding price, StringFormat='{0:0}'}" />
+                                                <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <!--<Label HorizontalTextAlignment="End">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding DialyLimit, StringFormat='{0}'}" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                                <Span Text="{x:Static languages:AppResources.SAR}" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>-->
+                                    <yummy:PancakeView          
+                                        CornerRadius="10"   >
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFit" 
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="CenterAndExpand"
+                                                WidthRequest="20">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer
+                                                        Command="{Binding Path=BindingContext.DeductItemCommand, Source={x:Reference listItems}}" 
+                                                        CommandParameter="{Binding .}"  />
+                                                </Image.GestureRecognizers>
+                                                <Image.Source>
+                                                    <FontImageSource
+                                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                                        Glyph="{x:Static font:FontAwesomeIcons.Minus}"
+                                                        Size="30"
+                                                        Color="{DynamicResource DarkLabelTextColor}" />
+                                                </Image.Source>
+                                            </Image>
+                                            <Label
+                                                x:Name="ProductCountLabel"
+                                                FontFamily="{DynamicResource VerdanaProLight}"
+                                                FontSize="20"
+                                                HorizontalOptions="Center"
+                                                Text="{Binding Count}"
+                                                TextColor="{DynamicResource WhiteDarkFontColor}"
+                                                VerticalOptions="CenterAndExpand" />
+                                            <Image
+                                                Aspect="AspectFit" 
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="CenterAndExpand"
+                                                WidthRequest="15">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer  
+                                                        Command="{Binding Path=BindingContext.AddItemCommand, Source={x:Reference listItems}}" 
+                                                        CommandParameter="{Binding .}" />
+                                                </Image.GestureRecognizers>
+                                                <Image.Source>
+                                                    <FontImageSource
+                                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                                        Glyph="{x:Static font:FontAwesomeIcons.Plus}"
+                                                        Size="30"
+                                                        Color="{DynamicResource DarkLabelTextColor}" />
+                                                </Image.Source>
+                                            </Image>
+                                        </StackLayout>
+                                        <!--<Label Text="Allow" TextColor="White" HorizontalTextAlignment="Center" ></Label>-->
+                                        <!--<yummy:PancakeView.BackgroundColor>
+                                            <Binding Source="{Binding Allowed}" ConverterParameter="{Binding Allowed}">
+                                                <Binding.Converter>
+                                                    <converters:BoolToObjectConverter 
+                                                        x:TypeArguments="x:String" 
+                                                        TrueObject="#4070b8"
+                                                        FalseObject="#df5054" />
+                                                </Binding.Converter>
+                                            </Binding>
+
+                                        </yummy:PancakeView.BackgroundColor>-->
+
+                                    </yummy:PancakeView>
+                                </StackLayout>
+
+                            </Grid>
+                            <yummy:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer
+                                        Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference listItems}}"
+                                        CommandParameter="{Binding .}"
+                                        NumberOfTapsRequired="1" />
+                            </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+
+            <!--<converters:BoolToObjectConverter
+                x:Key="BoolToColorConverter"
+                x:TypeArguments="x:String"
+                TrueObject="#4070b8"
+                FalseObject="#df5054"
+                />-->
+
+            <CollectionView 
+                x:Name="purchaseList"
+                Grid.Row="5" 
+                Margin="20,20,20,0"
+                IsVisible="{Binding ShowCanteenProduct, Converter={StaticResource InverseBoolConverter}}"
+                HorizontalScrollBarVisibility="Never" 
+                ItemsSource="{Binding SonsPurchases}"
+                SelectionMode="Single">
+                <CollectionView.EmptyView>
+                    <Grid HorizontalOptions="Center" Padding="0,30,0,0" RowDefinitions="auto, auto, auto" VerticalOptions="Center">
+                        <Image Grid.Row="0" HeightRequest="50">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.Database}"  
+                                    Color="Gray" />
+                            </Image.Source>
+                        </Image>
+                        <Label 
+                            Grid.Row="1"
+                            Text="{x:Static languages:AppResources.NoFinancialOperations}" 
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center"></Label>
+                        <Label 
+                            Grid.Row="2"
+                            Text="{x:Static languages:AppResources.NoResults}" 
+                             FontSize="13"
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center"></Label>
+
+                    </Grid>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <yummy:PancakeView 
+                            Padding="15,20" 
+                            CornerRadius="18"
+                            HasShadow="False" >
+                            <yummy:PancakeView.Border>
+                                <yummy:Border Color="#24000000" Thickness="1" />
+                            </yummy:PancakeView.Border>
+
+                            <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
+                                <Image 
+                                    Grid.Column="0"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Source="{Binding image}"/>
+                                <StackLayout  Grid.Column="1">
+                                    <Label Text="{Binding name}"/>
+                                    <Label Text="Calories : 0"/>
+                                </StackLayout>
+                                <StackLayout  Grid.Column="2"> 
+                                    <Label HorizontalTextAlignment="Center">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding price, StringFormat='{0:0}'}" />
+                                                <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <yummy:PancakeView 
+                                        BackgroundColor="{Binding Allowed, Converter={StaticResource BoolToColorConverter}}"  
+                                        Padding="20,5,20,5"     
+                                        CornerRadius="10"   >
+                                        <Label 
+                                            Text="Allow"  
+                                            TextColor="White" 
+                                            HorizontalTextAlignment="Center" ></Label>
+                                    </yummy:PancakeView>
+                                </StackLayout>
+
+                            </Grid>
+                            <yummy:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer
+                                        Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference purchaseList}}"
+                                        CommandParameter="{Binding .}"
+                                        NumberOfTapsRequired="1" />
+                            </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+        </Grid>
+
+
+        <BoxView 
+            Color="Black" 
+            Grid.RowSpan="2" 
+            Opacity=".3"
+            IsVisible="{Binding ShowDialyLimitDialoge}"
+            HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand"></BoxView>
+
+        <yummy:PancakeView
+            Grid.RowSpan="2" 
+            BackgroundColor="White" 
+            IsVisible="{Binding ShowDialyLimitDialoge}"
+            Margin="20"    
+            Padding="20,30,20,20"   
+            HasShadow="True"
+            CornerRadius="10"  
+            WidthRequest="330"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" >
+
+            <!--<yummy:PancakeView.Border>
+                <yummy:Border Color="{StaticResource ButtonBackgroudColor}" Thickness="1" />
+            </yummy:PancakeView.Border>-->
+
+            <yummy:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer
+                            Command="{Binding ChartRefreshCommand}"
+                            NumberOfTapsRequired="1" />
+            </yummy:PancakeView.GestureRecognizers>
+            <StackLayout>
+                <Label 
+                    TextColor="Black" 
+                    HorizontalTextAlignment="Center" 
+                    VerticalTextAlignment="Center" 
+                    FontAttributes="Bold"
+                    FontSize="23"
+                    Text="{x:Static languages:AppResources.EditDailylimit}"></Label>
+                <!--/SelectedItem="{Binding SelectedDay, Mode=TwoWay}"-->
+
+                <Frame Style="{DynamicResource FrameStyle}" BackgroundColor="#166FA9FF" CornerRadius="5" Margin="0,20,0,0" Padding="10,0,0,0" BorderColor="#B3B3B3">
+                    <renderers:BorderlessPicker 
+                        ItemsSource="{Binding WeekDays}" 
+                        Title="Select day" 
+                        TextColor="{DynamicResource EntryTextColor}" 
+                        TitleColor="Gray" 
+                        SelectedIndex="{Binding SelectedDay, Mode=TwoWay}"  ></renderers:BorderlessPicker>
+                </Frame>
+
+                <!---->
+                <Frame Style="{DynamicResource FrameStyle}" CornerRadius="5"  Padding="10,0,0,0"  BackgroundColor="#166FA9FF" BorderColor="#B3B3B3">
+                    <renderers:BorderlessEntry
+                        HorizontalOptions="FillAndExpand"
+                        Text="{Binding DialyLimit}"
+                        Placeholder="Daily limit"  
+                        TextColor="{DynamicResource EntryTextColor}" />
+                </Frame>
+
+                <Grid Margin="20,20,20,0" ColumnSpacing="20" ColumnDefinitions="*,*">
+                    <yummy:PancakeView
+                        Grid.Column="0" 
+                        BackgroundColor="{DynamicResource LightLabelTextColor}" 
+                        Margin="0"    
+                        Padding="15"   
+                        HasShadow="True"
+                        CornerRadius="5"  
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand" >
+                        <yummy:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding UpdateDialyLimitCommand}"
+                                NumberOfTapsRequired="1" />
+                        </yummy:PancakeView.GestureRecognizers>
+                        <Label 
+                            TextColor="White" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center" 
+                            Text="{x:Static languages:AppResources.Edit}"></Label>
+                    </yummy:PancakeView>
+
+
+                    <yummy:PancakeView
+                        Grid.Column="1" 
+                        BackgroundColor="#df5054" 
+                        Margin="0"    
+                        Padding="15"   
+                        HasShadow="True" 
+                        CornerRadius="5"  
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand" >
+
+                        <yummy:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding HideDialogeBoxCommand}"
+                            NumberOfTapsRequired="1" />
+                        </yummy:PancakeView.GestureRecognizers>
+                        <Label 
+                            TextColor="White" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center" 
+                            Text="{x:Static languages:AppResources.Cancel}"></Label>
+                    </yummy:PancakeView>
+
+
+
+                </Grid>
+            </StackLayout>
+        </yummy:PancakeView>
+
+    </Grid>
+</base:BasePage>

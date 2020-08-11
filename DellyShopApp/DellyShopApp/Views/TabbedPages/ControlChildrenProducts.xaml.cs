@@ -8,13 +8,10 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DellyShopApp.Views.TabbedPages
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ControlChildrenProducts
-    {
-        public ControlChildrenProducts()
-        {
+namespace DellyShopApp.Views.TabbedPages {
+    [XamlCompilation( XamlCompilationOptions.Compile )]
+    public partial class ControlChildrenProducts {
+        public ControlChildrenProducts() {
             InitializeComponent();
             InitializeChildrenData();
             ChildrenList.ItemsSource = ChildrenDetailList;
@@ -23,19 +20,18 @@ namespace DellyShopApp.Views.TabbedPages
             //decimal balance = JsonConvert.DeserializeObject<decimal>(result);
             //entryBalance.Text = string.Format("{0:0.0}", balance);
         }
-        private async void TransSummaryButtonClick(object sender, EventArgs e)
-        {
-            if (!(sender is PancakeView pancake)) return;
-            if (!(pancake.BindingContext is IndividualChildDetail item)) return;
-            {
-                CurrentChildId = (int)item.customer_id;
-                //await Navigation.PushAsync(new ProductDetail(item));
-                await Navigation.PushAsync(new SingleChildDetail(item));
-            }
+        private async void TransSummaryButtonClick(object sender, EventArgs e) {
+            if ( !( sender is PancakeView pancake ) )
+                return;
+            if ( !( pancake.BindingContext is IndividualChildDetail item ) )
+                return;
+
+            CurrentChildId = ( int ) item.customer_id;
+            //await Navigation.PushAsync(new ProductDetail(item));
+            await Navigation.PushAsync( new ChildrenProductsPage( item ) );
         }
 
-        private async void TransSummarySimpleButtonClick(System.Object sender, System.EventArgs e)
-        {
+        private async void TransSummarySimpleButtonClick(System.Object sender, System.EventArgs e) {
         }
     }
 }

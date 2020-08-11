@@ -52,6 +52,7 @@ namespace DellyShopApp.Views.Pages {
 
                     userinfo_mobile_v userinfo = JsonConvert.DeserializeObject<userinfo_mobile_v>( result );
 
+                    Global.Username = userinfo.username;
                     Global.LoggedInUserId = userinfo.UserId;
                     Global.GroupId = userinfo.group_id;
                     Global.ParentId = userinfo.parent_id;
