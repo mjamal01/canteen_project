@@ -42,14 +42,16 @@ namespace DellyShopApp.Views.Pages.Base {
         public List<CommentModel> CommentList = new List<CommentModel>();
 
         public double BaseTotalPrice = 0;
-        public void InitializeChildrenData() {
+        public static void InitializeChildrenData() {
             string url = $"{Global.WebApiUrl}/api/parent/GetChildrenMoneyAndProductsDetail?parentId={Global.ParentId}";
             var result = HelperClass.GetStringRecord( url );
 
             ChildrenDetailList = JsonConvert.DeserializeObject<ObservableCollection<IndividualChildDetail>>( result );
         }
+
         public BasePage() {
-            //InitializeChildrenData();
+            //InitializeChildrenData(); 
+
             Xamarin.Forms.NavigationPage.SetHasNavigationBar( this, false );
             this.FlowDirection = Settings.SelectLanguage == "ar" ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 

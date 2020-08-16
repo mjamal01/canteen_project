@@ -47,16 +47,23 @@ namespace DellyShopApp.Views.Pages {
         }
         private async void ClickSave(System.Object sender, System.EventArgs e) {
             //var data = ParentsHome2ViewModel.list_productsWithQtyLmtMob_light;
+
             StudentLimitsUpdateByParent studentLimitsUpdateByParent = new StudentLimitsUpdateByParent();
             studentLimitsUpdateByParent.CustomerId = CurrentChildId;
             studentLimitsUpdateByParent.DailyAllowedMoney = decimal.Parse( MaxAmountPerDay.Text );
 
             var studentRec = ChildrenDetailList.Where( item => item.customer_id == CurrentChildId ).ToList().FirstOrDefault();
             studentRec.ProductsList.ForEach( item => {
-                studentLimitsUpdateByParent.listOfQtyLimits.Add( new ProductLimitsByParent() { ProductId = item.id, QtyLimit = 0, DailyQty7Days = item.DailyQty7Days } );
+                studentLimitsUpdateByParent.listOfQtyLimits.Add( new ProductLimitsByParent() {
+                    ProductId = item.id,
+                    QtyLimit = 0,
+                    DailyQty7Days = item.DailyQty7Days
+                } );
             } );
             studentRec.DailyCashLimit = decimal.Parse( MaxAmountPerDay.Text );
+
             string limitData = JsonConvert.SerializeObject( studentLimitsUpdateByParent );
+
             List<KeyValuePair<string, string>> pairs = new List<KeyValuePair<string, string>>()
             {
                 new KeyValuePair<string, string>("data",limitData)

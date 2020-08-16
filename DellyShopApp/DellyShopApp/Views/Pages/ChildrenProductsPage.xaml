@@ -77,7 +77,7 @@
                                         <Span Text="{Binding ChildDetail.DailyCashLimit}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
                                         <Span Text="{x:Static languages:AppResources.SAR}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
                                     </FormattedString>
-                                </Label.FormattedText> 
+                                </Label.FormattedText>
                             </Label>
                         </StackLayout>
                     </StackLayout>
@@ -110,7 +110,32 @@
                             </yummy:PancakeView>
                         </StackLayout>-->
 
+                        <yummy:PancakeView
+                            Margin="0" 
+                            Grid.Column="1"  
+                            HorizontalOptions="End"
+                            BackgroundColor="#2400FF00"
+                            Padding="10,5,10,5"
+                            CornerRadius="10">
+                            
+                            <Label 
+                                Text="{x:Static languages:AppResources.Save}" 
+                                HorizontalOptions="End" 
+                                FontSize="12" 
+                                VerticalTextAlignment="Center" 
+                                TextColor="Green"></Label>
+                            
+                            <yummy:PancakeView.GestureRecognizers>
+                                
+                                <TapGestureRecognizer
+                                    Command="{Binding UploadChildDialyLimitCommand}"
+                                    NumberOfTapsRequired="1" />
+                                
+                            </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView>
+                        
                         <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+
                             <Label HorizontalTextAlignment="End" FontSize="12" Text="{x:Static languages:AppResources.Dailylimit}"/>
                             <Label HorizontalTextAlignment="End" FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}">
                                 <Label.FormattedText>
@@ -182,17 +207,34 @@
 
 
             </Grid>
-            <StackLayout Grid.Row="3" Margin="20,0,20,5" Orientation="Horizontal">
-                <Label Text="{x:Static languages:AppResources.CanteenStatus}" TextColor="Black" FontAttributes="Bold" FontSize="16" VerticalTextAlignment="Center"></Label>
-                <yummy:PancakeView
-                    Grid.Column="0" 
-                    BackgroundColor="Green" 
-                    Margin="0"    
+
+            <Grid Margin="20,0,20,5" ColumnSpacing="0"  Grid.Row="3" ColumnDefinitions="*,*">
+                <StackLayout Grid.Row="0" Margin="0" Orientation="Horizontal">
+                    <Label 
+                        Text="{x:Static languages:AppResources.CanteenStatus}" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="16" 
+                        VerticalTextAlignment="Center"></Label>
+                    <yummy:PancakeView
+                        Grid.Column="0" 
+                        BackgroundColor="Green" 
+                        Margin="0"    
+                        Padding="10,3,10,5"    
+                        CornerRadius="0">
+                        <Label Text="{x:Static languages:AppResources.Active}" FontSize="17" VerticalTextAlignment="Center" TextColor="White"></Label>
+                    </yummy:PancakeView>
+                </StackLayout>
+
+                <!--<yummy:PancakeView
+                    Margin="0" 
+                    Grid.Column="1"    
                     Padding="10,3,10,5"    
                     CornerRadius="0">
-                    <Label Text="{x:Static languages:AppResources.Active}" FontSize="17" VerticalTextAlignment="Center" TextColor="White"></Label>
-                </yummy:PancakeView>
-            </StackLayout>
+                    <Label Text="{x:Static languages:AppResources.Save}" HorizontalOptions="End" FontSize="17" VerticalTextAlignment="Center" TextColor="Green"></Label>
+                </yummy:PancakeView>-->
+
+            </Grid>
 
             <Grid Margin="20,0,20,0" ColumnSpacing="0"  Grid.Row="4" ColumnDefinitions="*,*">
                 <yummy:PancakeView
@@ -283,7 +325,7 @@
                                         Text="{Binding ., StringFormat='{0} : 0'}"></Label>
                                 </StackLayout>
 
-                                <StackLayout  Grid.Column="2"> 
+                                <StackLayout  Grid.Column="2">
                                     <Label HorizontalTextAlignment="Center">
                                         <Label.FormattedText>
                                             <FormattedString>
@@ -443,7 +485,7 @@
                                     <Label Text="{Binding name}"/>
                                     <Label Text="Calories : 0"/>
                                 </StackLayout>
-                                <StackLayout  Grid.Column="2"> 
+                                <StackLayout  Grid.Column="2">
                                     <Label HorizontalTextAlignment="Center">
                                         <Label.FormattedText>
                                             <FormattedString>

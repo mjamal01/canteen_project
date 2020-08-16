@@ -94,6 +94,14 @@ namespace DellyShopApp.ViewModel {
             NavigateToDetailPageCommand = new Command<IndividualChildDetail>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
             SetCreditLimit();
+            SetMessagingCenter();
+        }
+
+        private void SetMessagingCenter() {
+            MessagingCenter.Subscribe<ChildrenProductsViewModel>( this, "LoadChildrenDetailList", (sender) => {
+                BasePage.InitializeChildrenData();
+                LoadChildrens();
+            } );
         }
 
         private void OnNavigateToDetailPage(IndividualChildDetail vm) {
