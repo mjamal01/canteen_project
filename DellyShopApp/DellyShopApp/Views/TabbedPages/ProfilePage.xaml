@@ -10,6 +10,7 @@
     xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
     xmlns:app="clr-namespace:DellyShopApp"
     BackgroundColor="{DynamicResource BackgroundColor}">
+
     <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
         <StackLayout
             Margin="10"
@@ -306,6 +307,7 @@
                         </Image>
                     </StackLayout>
                 </pancakeView:PancakeView>
+
                 <pancakeView:PancakeView
                     Margin="0,10,0,10"
                     ClassId="Settings"
@@ -348,4 +350,5 @@
             </StackLayout>
         </StackLayout>
     </ScrollView>
+
 </base:BasePage>

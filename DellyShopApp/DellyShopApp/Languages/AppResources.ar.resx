@@ -505,4 +505,28 @@
   <data name="EnterAmount" xml:space="preserve">
     <value>أدخل المبلغ</value>
   </data>
+  <data name="EnterAddress" xml:space="preserve">
+    <value>أدخل العنوان</value>
+  </data>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني</value>
+  </data>
+  <data name="EnterPhone" xml:space="preserve">
+    <value>أدخل رقم الهاتف</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>أدخل الاسم الكامل</value>
+  </data>
+  <data name="NationalID" xml:space="preserve">
+    <value>الرقم القومي / رقم الإقامة</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value> هل نسيت كلمة المرور؟</value>
+  </data>
+  <data name="GetNewOne" xml:space="preserve">
+    <value>احصل على واحد جديد</value>
+  </data>
+  <data name="NoAccount" xml:space="preserve">
+    <value> ليس لديك حساب؟ </value>
+  </data>
 </root>

@@ -403,6 +403,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter address.
+        /// </summary>
+        internal static string EnterAddress {
+            get {
+                return ResourceManager.GetString("EnterAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter Amount.
         /// </summary>
         internal static string EnterAmount {
@@ -412,11 +421,29 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter email.
+        /// </summary>
+        internal static string EnterEmail {
+            get {
+                return ResourceManager.GetString("EnterEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please enter your email address..
         /// </summary>
         internal static string EnterEmailAddress {
             get {
                 return ResourceManager.GetString("EnterEmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter phone number.
+        /// </summary>
+        internal static string EnterPhone {
+            get {
+                return ResourceManager.GetString("EnterPhone", resourceCulture);
             }
         }
         
@@ -444,6 +471,33 @@ namespace DellyShopApp.Languages {
         internal static string ForgotPass {
             get {
                 return ResourceManager.GetString("ForgotPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forgot Password? .
+        /// </summary>
+        internal static string ForgotPassword {
+            get {
+                return ResourceManager.GetString("ForgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter full name.
+        /// </summary>
+        internal static string FullName {
+            get {
+                return ResourceManager.GetString("FullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get New One.
+        /// </summary>
+        internal static string GetNewOne {
+            get {
+                return ResourceManager.GetString("GetNewOne", resourceCulture);
             }
         }
         
@@ -637,6 +691,24 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to National / iqama ID.
+        /// </summary>
+        internal static string NationalID {
+            get {
+                return ResourceManager.GetString("NationalID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Don&apos;t have account? .
+        /// </summary>
+        internal static string NoAccount {
+            get {
+                return ResourceManager.GetString("NoAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to There are no financial operations.
         /// </summary>
         internal static string NoFinancialOperations {
@@ -750,6 +822,15 @@ namespace DellyShopApp.Languages {
         internal static string PhoneNumber {
             get {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Picture.
+        /// </summary>
+        internal static string Picture {
+            get {
+                return ResourceManager.GetString("Picture", resourceCulture);
             }
         }
         

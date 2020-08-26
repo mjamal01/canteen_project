@@ -1,26 +1,26 @@
 {
   "colors": [
     {
-      "idiom": "iphone",
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": 1.0,
-          "green": 1.0,
-          "blue": 1.0,
-          "alpha": 1.0
+          "red": "1.000",
+          "alpha": "1.000",
+          "blue": "1.000",
+          "green": "1.000"
         }
-      }
+      },
+      "appearances": [],
+      "idiom": "iphone"
     },
     {
-      "idiom": "iphone",
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": 0.13333334,
-          "green": 0.156862751,
-          "blue": 0.192156866,
-          "alpha": 1.0
+          "red": "0.133",
+          "alpha": "1.000",
+          "blue": "0.192",
+          "green": "0.157"
         }
       },
       "appearances": [
@@ -28,17 +28,17 @@
           "appearance": "luminosity",
           "value": "dark"
         }
-      ]
+      ],
+      "idiom": "iphone"
     },
     {
-      "idiom": "iphone",
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": 1.0,
-          "green": 1.0,
-          "blue": 1.0,
-          "alpha": 1.0
+          "red": "1.000",
+          "alpha": "1.000",
+          "blue": "1.000",
+          "green": "1.000"
         }
       },
       "appearances": [
@@ -46,9 +46,11 @@
           "appearance": "luminosity",
           "value": "light"
         }
-      ]
+      ],
+      "idiom": "iphone"
     }
   ],
+  "properties": {},
   "info": {
     "version": 1,
     "author": "xcode"

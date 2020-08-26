@@ -93,14 +93,17 @@ namespace DellyShopApp.ViewModel {
             CreditLimitCommand = new Command( OnCreditLimit );
             NavigateToDetailPageCommand = new Command<IndividualChildDetail>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
-            SetCreditLimit();
+            //SetCreditLimit();
             SetMessagingCenter();
         }
 
         private void SetMessagingCenter() {
             MessagingCenter.Subscribe<ChildrenProductsViewModel>( this, "LoadChildrenDetailList", (sender) => {
-                BasePage.InitializeChildrenData();
-                LoadChildrens();
+
+                Device.BeginInvokeOnMainThread( () => {
+                    BasePage.InitializeChildrenData();
+                    LoadChildrens();
+                } );
             } );
         }
 

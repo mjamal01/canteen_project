@@ -99,7 +99,7 @@ namespace DellyShopApp.ViewModel {
         };
 
 
-        public static Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>> ProductsWithDay { get; set; } = new Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>>();
+        public Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>> ProductsWithDay { get; set; } = new Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>>();
         //public Dictionary<string, string> DialyLimitWithDay { get; set; } = new Dictionary<string, string>();
 
         private int _selectedDay;
@@ -149,29 +149,34 @@ namespace DellyShopApp.ViewModel {
         }
 
         private void OnUploadChildDialyLimit() {
+            try {
+                var payLoad = new StudentLimitsUpdateByParent();
+                payLoad.CustomerId = ChildDetail.customer_id;
+                payLoad.DailyAllowedMoney = DialyLimit;
 
-            var payLoad = new StudentLimitsUpdateByParent();
-            payLoad.CustomerId = ChildDetail.customer_id;
-            payLoad.DailyAllowedMoney = DialyLimit;
-
-            ProductsWithLimit.ForEach( item => {
-                payLoad.listOfQtyLimits.Add( new ProductLimitsByParent() {
-                    ProductId = item.id,
-                    QtyLimit = 0,
-                    DailyQty7Days = GetDailyQty7Days( item.id )
+                ProductsWithLimit.ForEach( item => {
+                    payLoad.listOfQtyLimits.Add( new ProductLimitsByParent() {
+                        ProductId = item.id,
+                        QtyLimit = 0,
+                        DailyQty7Days = GetDailyQty7Days( item.id )
+                    } );
                 } );
-            } );
 
-            string limitData = JsonConvert.SerializeObject( payLoad );
-            List<KeyValuePair<string, string>> pairs = new List<KeyValuePair<string, string>>()
-            {
-                new KeyValuePair<string, string>("data",limitData)
-            };
-            string result = HelperClass.PostRecord( $"{Global.WebApiUrl}/api/parent/UpdateProdLimits", pairs );
+                string limitData = JsonConvert.SerializeObject( payLoad );
+                //Console.WriteLine( limitData );
+                List<KeyValuePair<string, string>> pairs = new List<KeyValuePair<string, string>>()
+                {
+                    new KeyValuePair<string, string>("data",limitData)
+                };
+                string result = HelperClass.PostRecord( $"{Global.WebApiUrl}/api/parent/UpdateProdLimits", pairs );
 
-            MessagingCenter.Send( this, "LoadChildrenDetailList" );
+                MessagingCenter.Send( this, "LoadChildrenDetailList" );
 
-            Application.Current.MainPage.DisplayAlert( "Info Message", result, "OK" );
+                Application.Current.MainPage.DisplayAlert( "Info Message", result, "OK" );
+            } catch ( Exception ex ) {
+                Console.WriteLine( ex.StackTrace );
+            }
+
         }
 
         private string GetDailyQty7Days(long pid) {

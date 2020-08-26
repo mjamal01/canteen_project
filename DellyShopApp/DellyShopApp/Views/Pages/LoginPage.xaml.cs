@@ -14,8 +14,8 @@ namespace DellyShopApp.Views.Pages {
         public string accessToken = "";
         public LoginPage() {
             InitializeComponent();
-            //EntryUserName.Text = "msajjadh@gmail.com";
-            //EntryPassword.Text = "31180";
+            EntryUserName.Text = "msajjadh@gmail.com";
+            EntryPassword.Text = "31180";
         }
 
         private async void LoginButtonClick(object sender, EventArgs e) {
@@ -92,6 +92,10 @@ namespace DellyShopApp.Views.Pages {
             await DisplayAlert( AppResources.Success,
                 AppResources.SuccessSendEmail
                 + " " + result, AppResources.Okay );
+        }
+
+        private void SignUpTabbed(object sender, EventArgs e) {
+            Navigation.PushAsync( new SignupParentPage() );
         }
     }
 }

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:app="clr-namespace:DellyShopApp"
+    BackgroundColor="{DynamicResource BackgroundColor}" 
+    NavigationPage.HasNavigationBar="False"
+    x:Class="DellyShopApp.Views.Pages.SignupParentPage">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <partialViews:NavigationBarPartialView
+                Grid.Row="0"
+                BackButtonVisibler="True"
+                FavVisible="False"
+                IsModalpage="False"
+                NavigationTitle="{x:Static languages:AppResources.Signup}" />
+
+            <ScrollView 
+                Grid.Row="1"
+                HorizontalScrollBarVisibility="Never" 
+                VerticalScrollBarVisibility="Never">
+                <StackLayout
+                    Margin="10"
+                    Padding="5,5,5,50"
+                    Spacing="15">
+
+                    <!--<Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        BackgroundColor="White" 
+                        HeightRequest="100"
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                            <Image
+                                Grid.Column="0"
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center" 
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.Camera}"
+                                    Size="20"
+                                    Color="Gray" />
+                                </Image.Source>
+                            </Image>
+
+                            <Label 
+                                Text="Picture" 
+                                FontAttributes="Bold" 
+                                FontSize="20"
+                                HorizontalOptions="Start" 
+                                HorizontalTextAlignment="Center" 
+                                VerticalOptions="CenterAndExpand" 
+                                VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>-->
+
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        BackgroundColor="White" 
+                        Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout
+                            Spacing="0"
+                            Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                Margin="15,0,15,0"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.IdCard}"
+                                        Size="20"
+                                        Color="Gray" />
+                                </Image.Source>
+                            </Image>
+                            <!--This is email entry box-->
+                            <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                            <renderers:BorderlessEntry
+                                Margin="10,0,10,0"
+                                HorizontalOptions="FillAndExpand"
+                                Text="{Binding IqamaId, Mode=TwoWay}"
+                                Placeholder="{x:Static languages:AppResources.NationalID}"
+                                Keyboard="Email"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                        BackgroundColor="White" 
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout 
+                            Spacing="0"
+                            Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                Margin="15,0,15,0"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiUser}"
+                                        Size="20"
+                                        Color="Gray" />
+                                </Image.Source>
+                            </Image>
+
+                            <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+
+                            <renderers:BorderlessEntry
+                                Margin="10,0,10,0"
+                                HorizontalOptions="FillAndExpand"
+                                Text="{Binding FullName,Mode=TwoWay}"
+                                Placeholder="{x:Static languages:AppResources.FullName}"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        BackgroundColor="White" 
+                        Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout 
+                            Spacing="0"
+                            Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                Margin="15,0,15,0"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiEmail}"
+                                        Size="20"
+                                        Color="Gray" />
+                                </Image.Source>
+                            </Image>
+
+                            <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                            <renderers:BorderlessEntry
+                                Margin="10,0,10,0"
+                                HorizontalOptions="FillAndExpand"
+                                Text="{Binding Email,Mode=TwoWay}"
+                                Placeholder="{x:Static languages:AppResources.EnterEmail}"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                        BackgroundColor="White" 
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout 
+                            Spacing="0"
+                            Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center" 
+                                Margin="15,0,15,0"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.Phone}"
+                                        Size="20"
+                                        Color="Gray" />
+                                </Image.Source>
+                            </Image>
+                            <!--This is email entry box-->
+                            <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                            <renderers:BorderlessEntry
+                                Margin="10,0,10,0"
+                                HorizontalOptions="FillAndExpand"
+                                Placeholder="{x:Static languages:AppResources.PhoneNumber}"
+                                Text="{Binding Phone,Mode=TwoWay}"
+                                Keyboard="Email"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--<Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                        BackgroundColor="White" 
+                        BorderColor="#B3B3B3">
+
+                        <StackLayout 
+                            Spacing="0"
+                            Orientation="Horizontal">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="20"
+                                Margin="15,0,15,0"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="20">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.LocationPin}"
+                                        Size="20"
+                                        Color="Gray" />
+                                </Image.Source>
+                            </Image>
+                            <BoxView VerticalOptions="CenterAndExpand" Color="Gray" WidthRequest="1"></BoxView>
+                            -->
+                    <!--This is email entry box-->
+                    <!--
+                            <renderers:BorderlessEntry
+                                Margin="10,0,0,0"
+                                HorizontalOptions="FillAndExpand"
+                                Placeholder="Enter address"
+                                Keyboard="Email"
+                                TextColor="{DynamicResource EntryTextColor}"
+                                />
+                        </StackLayout>
+                    </Frame>-->
+
+                    <Button
+                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='5,20,5,10'}"
+                        BackgroundColor="{DynamicResource  ButtonBackgroudColor}"
+                        BorderColor="{DynamicResource  LightLabelTextColor}"
+                        Command="{Binding ParentSignupCommand}"
+                        Style="{DynamicResource ButtonStyle}"
+                        Text="{x:Static languages:AppResources.Signup}"
+                        TextColor="White"
+                        x:Name="LoginButton"
+                    />
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

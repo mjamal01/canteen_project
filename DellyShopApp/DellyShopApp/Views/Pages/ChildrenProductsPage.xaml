@@ -154,12 +154,15 @@
 
             </yummy:PancakeView>
 
+            <!-- Buttons -->
+
             <Grid Margin="20,10,20,0" ColumnSpacing="20" Grid.Row="1" ColumnDefinitions="*,*">
+                
                 <yummy:PancakeView
                     Grid.Column="0" 
                     BackgroundColor="Transparent" 
                     Margin="0"    
-                    Padding="16"   
+                    Padding="{x:OnPlatform Android='16', iOS='13'}"   
                     HasShadow="True"
                     CornerRadius="5,5,5,5"  
                     VerticalOptions="FillAndExpand"
@@ -176,6 +179,7 @@
                         TextColor="{DynamicResource LightLabelTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
+                        FontSize="{x:OnPlatform Android='13', iOS='13'}" 
                         Text="{x:Static languages:AppResources.SendBalance}"></Label>
                 </yummy:PancakeView>
 
@@ -184,7 +188,7 @@
                     Grid.Column="1" 
                     BackgroundColor="Transparent" 
                     Margin="0"    
-                    Padding="16"   
+                    Padding="{x:OnPlatform Android='16', iOS='13'}"   
                     HasShadow="True" 
                     CornerRadius="5,5,5,5"  
                     VerticalOptions="FillAndExpand"
@@ -202,6 +206,7 @@
                         TextColor="{DynamicResource LightLabelTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
+                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                         Text="{x:Static languages:AppResources.EditDailylimit}"></Label>
                 </yummy:PancakeView>
 
@@ -214,15 +219,19 @@
                         Text="{x:Static languages:AppResources.CanteenStatus}" 
                         TextColor="Black" 
                         FontAttributes="Bold" 
-                        FontSize="16" 
+                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                         VerticalTextAlignment="Center"></Label>
                     <yummy:PancakeView
                         Grid.Column="0" 
                         BackgroundColor="Green" 
                         Margin="0"    
-                        Padding="10,3,10,5"    
+                        Padding="{x:OnPlatform Android='10,3,10,5', iOS='10,3,10,5'}"    
                         CornerRadius="0">
-                        <Label Text="{x:Static languages:AppResources.Active}" FontSize="17" VerticalTextAlignment="Center" TextColor="White"></Label>
+                        <Label 
+                            Text="{x:Static languages:AppResources.Active}" 
+                            FontSize="{x:OnPlatform Android='16', iOS='15'}" 
+                            VerticalTextAlignment="Center" 
+                            TextColor="White"></Label>
                     </yummy:PancakeView>
                 </StackLayout>
 
@@ -241,7 +250,7 @@
                     Grid.Column="0" 
                     BackgroundColor="{Binding CanteenProductBtnColor}" 
                     Margin="0"    
-                    Padding="18"   
+                    Padding="{x:OnPlatform Android='18', iOS='5,15,5,15'}"   
                     HasShadow="True"
                     CornerRadius="5,0,5,0"  
                     VerticalOptions="FillAndExpand"
@@ -258,6 +267,7 @@
                         TextColor="{Binding CanteenProductBtnTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
+                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                         Text="{x:Static languages:AppResources.CanteenProducts}"></Label>
                 </yummy:PancakeView>
 
@@ -266,7 +276,7 @@
                     Grid.Column="1" 
                     BackgroundColor="{Binding SonsPurchasesBtnColor}" 
                     Margin="0"    
-                    Padding="12"   
+                    Padding="{x:OnPlatform Android='18', iOS='5,10,5,10'}"  
                     HasShadow="True" 
                     CornerRadius="0,5,0,5"  
                     VerticalOptions="FillAndExpand"
@@ -283,6 +293,7 @@
                         TextColor="{Binding SonsPurchasesBtnTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
+                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                         Text="{x:Static languages:AppResources.SonsPurchases}"></Label>
                 </yummy:PancakeView>
 
@@ -293,48 +304,63 @@
             <CollectionView 
                 x:Name="listItems"
                 Grid.Row="5" 
+                BackgroundColor="White"
                 IsVisible="{Binding ShowCanteenProduct}"
                 Margin="20,20,20,0"
+                VerticalScrollBarVisibility="Never"
                 HorizontalScrollBarVisibility="Never"
-                ItemsSource="{Binding ProductsWithLimit}"
-                SelectionMode="Single">
+                ItemsSource="{Binding ProductsWithLimit}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <yummy:PancakeView 
-                            BackgroundColor="Transparent" 
-                            Padding="12" 
-                            CornerRadius="10"
-                            HasShadow="True" >
-                            <yummy:PancakeView.Border>
-                                <yummy:Border Color="#24000000" Thickness="1" />
-                            </yummy:PancakeView.Border>
+                    <DataTemplate >
+                        <Grid>
+                            <yummy:PancakeView 
+                                BackgroundColor="White" 
+                                Padding="5,10,10,10"   
+                                CornerRadius="10"
+                                Margin="0,0,2,0"
+                                HasShadow="False"    
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand">
+                                <yummy:PancakeView.Border>
+                                    <yummy:Border Color="#24000000" Thickness="1" />
+                                </yummy:PancakeView.Border>
 
-                            <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
-                                <Image 
+                                <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
+                                    <Image 
                                     Grid.Column="0"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Source="{Binding image}"/>
-                                <StackLayout  Grid.Column="1">
-                                    <Label Text="{Binding name}"/>
-                                    <Label 
-                                        BindingContext="{x:Static languages:AppResources.Calories}" 
-                                        Text="{Binding ., StringFormat='{0} : 0'}"></Label>
-                                </StackLayout>
+                                    <StackLayout  Grid.Column="1">
+                                        <Label 
+                                            VerticalOptions="StartAndExpand"
+                                            VerticalTextAlignment="Center"
+                                            Text="{Binding name}" 
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
+                                        <Label 
+                                            VerticalOptions="CenterAndExpand"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}"
+                                            BindingContext="{x:Static languages:AppResources.Calories}" 
+                                            Text="{Binding ., StringFormat='{0} : 0'}"></Label>
+                                    </StackLayout>
 
-                                <StackLayout  Grid.Column="2">
-                                    <Label HorizontalTextAlignment="Center">
-                                        <Label.FormattedText>
-                                            <FormattedString>
-                                                <Span Text="{Binding price, StringFormat='{0:0}'}" />
-                                                <Span Text="{x:Static languages:AppResources.SAR}"/>
-                                            </FormattedString>
-                                        </Label.FormattedText>
-                                    </Label>
-                                    <!--<Label HorizontalTextAlignment="End">
+                                    <StackLayout  Grid.Column="2">
+                                        <Label 
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                                            VerticalOptions="StartAndExpand"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding price, StringFormat='{0:0}'}" />
+                                                    <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <!--<Label HorizontalTextAlignment="End">
                                         <Label.FormattedText>
                                             <FormattedString>
                                                 <Span Text="{Binding DialyLimit, StringFormat='{0}'}" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
@@ -342,57 +368,58 @@
                                             </FormattedString>
                                         </Label.FormattedText>
                                     </Label>-->
-                                    <yummy:PancakeView          
-                                        CornerRadius="10"   >
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image
-                                                Margin="0"
-                                                Aspect="AspectFit" 
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="CenterAndExpand"
-                                                WidthRequest="20">
-                                                <Image.GestureRecognizers>
-                                                    <TapGestureRecognizer
-                                                        Command="{Binding Path=BindingContext.DeductItemCommand, Source={x:Reference listItems}}" 
-                                                        CommandParameter="{Binding .}"  />
-                                                </Image.GestureRecognizers>
-                                                <Image.Source>
-                                                    <FontImageSource
+                                        <yummy:PancakeView   
+                                            VerticalOptions="CenterAndExpand"
+                                            CornerRadius="10">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Image
+                                                    Margin="0"
+                                                    Aspect="AspectFit" 
+                                                    HorizontalOptions="Center"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="20">
+                                                        <Image.GestureRecognizers>
+                                                            <TapGestureRecognizer
+                                                            Command="{Binding Path=BindingContext.DeductItemCommand, Source={x:Reference listItems}}" 
+                                                            CommandParameter="{Binding .}"  />
+                                                        </Image.GestureRecognizers>
+                                                    <Image.Source>
+                                                        <FontImageSource
                                                         FontFamily="{DynamicResource MaterialFontFamily}"
                                                         Glyph="{x:Static font:FontAwesomeIcons.Minus}"
-                                                        Size="30"
+                                                        Size="{x:OnPlatform Android='30', iOS='25'}"
                                                         Color="{DynamicResource DarkLabelTextColor}" />
-                                                </Image.Source>
-                                            </Image>
-                                            <Label
-                                                x:Name="ProductCountLabel"
-                                                FontFamily="{DynamicResource VerdanaProLight}"
-                                                FontSize="20"
-                                                HorizontalOptions="Center"
-                                                Text="{Binding Count}"
-                                                TextColor="{DynamicResource WhiteDarkFontColor}"
-                                                VerticalOptions="CenterAndExpand" />
-                                            <Image
-                                                Aspect="AspectFit" 
-                                                HorizontalOptions="Center"
-                                                VerticalOptions="CenterAndExpand"
-                                                WidthRequest="15">
-                                                <Image.GestureRecognizers>
-                                                    <TapGestureRecognizer  
+                                                    </Image.Source>
+                                                </Image>
+                                                <Label
+                                                    x:Name="ProductCountLabel"
+                                                    FontFamily="{DynamicResource VerdanaProLight}"
+                                                    FontSize="{x:OnPlatform Android='20', iOS='15'}"
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Count}"
+                                                    TextColor="{DynamicResource WhiteDarkFontColor}"
+                                                    VerticalOptions="CenterAndExpand" />
+                                                <Image
+                                                    Aspect="AspectFit" 
+                                                    HorizontalOptions="Center"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="15">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer  
                                                         Command="{Binding Path=BindingContext.AddItemCommand, Source={x:Reference listItems}}" 
                                                         CommandParameter="{Binding .}" />
-                                                </Image.GestureRecognizers>
-                                                <Image.Source>
-                                                    <FontImageSource
+                                                    </Image.GestureRecognizers>
+                                                    <Image.Source>
+                                                        <FontImageSource
                                                         FontFamily="{DynamicResource MaterialFontFamily}"
                                                         Glyph="{x:Static font:FontAwesomeIcons.Plus}"
-                                                        Size="30"
+                                                        Size="{x:OnPlatform Android='30', iOS='25'}"
                                                         Color="{DynamicResource DarkLabelTextColor}" />
-                                                </Image.Source>
-                                            </Image>
-                                        </StackLayout>
-                                        <!--<Label Text="Allow" TextColor="White" HorizontalTextAlignment="Center" ></Label>-->
-                                        <!--<yummy:PancakeView.BackgroundColor>
+                                                    </Image.Source>
+                                                </Image>
+                                            </StackLayout>
+                                            <!--<Label Text="Allow" TextColor="White" HorizontalTextAlignment="Center" ></Label>-->
+                                            <!--<yummy:PancakeView.BackgroundColor>
                                             <Binding Source="{Binding Allowed}" ConverterParameter="{Binding Allowed}">
                                                 <Binding.Converter>
                                                     <converters:BoolToObjectConverter 
@@ -404,17 +431,18 @@
 
                                         </yummy:PancakeView.BackgroundColor>-->
 
-                                    </yummy:PancakeView>
-                                </StackLayout>
+                                        </yummy:PancakeView>
+                                    </StackLayout>
 
-                            </Grid>
-                            <yummy:PancakeView.GestureRecognizers>
-                                <TapGestureRecognizer
+                                </Grid>
+                                <yummy:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer
                                         Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference listItems}}"
                                         CommandParameter="{Binding .}"
                                         NumberOfTapsRequired="1" />
-                            </yummy:PancakeView.GestureRecognizers>
-                        </yummy:PancakeView>
+                                </yummy:PancakeView.GestureRecognizers>
+                            </yummy:PancakeView>
+                        </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

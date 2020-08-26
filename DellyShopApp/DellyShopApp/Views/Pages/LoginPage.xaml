@@ -27,12 +27,12 @@
 
                 <Image
                     Aspect="AspectFill"
-                    HeightRequest="{x:OnPlatform Android='140', iOS='30'}"
+                    HeightRequest="{x:OnPlatform Android='140', iOS='140'}"
                     HorizontalOptions="Center"
                     Source="icon"
                     VerticalOptions="Center"
                     WidthRequest="300"
-                    Scale="{x:OnPlatform Android='0.5', iOS='5'}"/>
+                    Scale="{x:OnPlatform Android='0.5', iOS='1'}"/>
 
                 <!--<AbsoluteLayout Margin="{x:OnPlatform Android='60,70,0,0',iOS ='180,70,0,0'}">
                     <StackLayout
@@ -130,7 +130,8 @@
                         Style="{StaticResource LabelStyle}"
                         Text="{x:Static helpers:AppResources.Mail}" />-->
 
-                    <Frame Style="{DynamicResource FrameStyle}" BackgroundColor="White" BorderColor="#B3B3B3">
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" BackgroundColor="White" BorderColor="#B3B3B3">
                         <StackLayout Orientation="Horizontal">
                             <!--<Image
                                 Aspect="AspectFit"
@@ -166,7 +167,7 @@
                         Style="{DynamicResource FrameStyle}" 
                         BackgroundColor="White" 
                         BorderColor="#B3B3B3">
-                        
+
                         <StackLayout Orientation="Horizontal">
                             <!--<Image
                                 Aspect="AspectFit"
@@ -203,22 +204,54 @@
                         TextColor="White"
                         x:Name="LoginButton"
                         />
-                    <!--<StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
                         <BoxView HeightRequest="1" BackgroundColor="#B3B3B3" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></BoxView>
                         <Label Text="Or"></Label>
                         <BoxView HeightRequest="1" BackgroundColor="#B3B3B3" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></BoxView>
-                    </StackLayout>-->
-                    <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label   TextColor="#B3B3B3">
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label  FontSize="14" TextColor="#B3B3B3">
                             <Label.FormattedText>
                                 <FormattedString>
-                                    <Span Text="Don't have account?   " TextColor="#B3B3B3">  </Span>
-                                    <Span Text="Sign up" FontAttributes="Bold" TextColor="{DynamicResource  LightLabelTextColor}" ></Span> 
+                                    <Span 
+                                        Text="{x:Static helpers:AppResources.ForgotPassword}" 
+                                        TextColor="#B3B3B3"></Span>
+                                    <Span 
+                                        Text="{x:Static helpers:AppResources.GetNewOne}" 
+                                        FontAttributes="Bold" 
+                                        TextColor="{DynamicResource LightLabelTextColor}" ></Span>
                                 </FormattedString>
                             </Label.FormattedText>
-                     
-                        </Label> 
-                    </StackLayout>-->
+
+                        </Label>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="SignUpTabbed" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label  FontSize="15" TextColor="#B3B3B3">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    
+                                    <Span 
+                                        Text="{x:Static helpers:AppResources.NoAccount}" 
+                                        TextColor="#B3B3B3"></Span>
+                                    
+                                    <Span 
+                                        Text="{x:Static helpers:AppResources.Signup}" 
+                                        FontAttributes="Bold" 
+                                        TextColor="{DynamicResource LightLabelTextColor}" ></Span>
+                                
+                                </FormattedString>
+                            </Label.FormattedText>
+
+                        </Label>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="SignUpTabbed" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
                     <!--<Label
                         Margin="0,0,0,10"
                         HorizontalOptions="CenterAndExpand"

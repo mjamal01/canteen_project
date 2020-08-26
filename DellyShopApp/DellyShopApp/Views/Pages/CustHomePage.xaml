@@ -19,7 +19,8 @@
     BackgroundColor="{DynamicResource BackgroundColor}"
     x:Class="DellyShopApp.Views.Pages.CustHomePage">
 
-    <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand" Padding="0,20,0,0">
+        <ScrollView>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0"/>
@@ -130,14 +131,17 @@
                 <yummy:PancakeView
                         Grid.Row="3" 
                         Margin="20,0,20,0"
-                        Padding="20,5,20,5" 
+                        Padding="{x:OnPlatform Android='20,5,20,5', iOS='20,0,20,0'}" 
                         HasShadow="True"
                         BackgroundColor="Transparent"
                         CornerRadius="20"   
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand" >
                     <yummy:PancakeView.Shadow>
-                        <yummy:DropShadow Color="#8349f5" Offset="15,15" Opacity="1" BlurRadius="20" />
+                        <yummy:DropShadow Color="#8349f5" 
+                                          Offset="{x:OnPlatform Android='15,15', iOS='5,5'}" 
+                                          Opacity="1" 
+                                          BlurRadius="{x:OnPlatform Android='20', iOS='10'}" />
                     </yummy:PancakeView.Shadow>
                     <yummy:PancakeView.BackgroundGradientStops>
                         <yummy:GradientStopCollection>
@@ -146,7 +150,7 @@
                         </yummy:GradientStopCollection>
                     </yummy:PancakeView.BackgroundGradientStops>
 
-                    <Grid HorizontalOptions="FillAndExpand" Padding="0,15,0,15" ColumnSpacing="20" ColumnDefinitions="*, 2, *, 2, *">
+                    <Grid HorizontalOptions="FillAndExpand" Padding="{x:OnPlatform Android='0,15,0,15', iOS='0,15,0,15'}" ColumnSpacing="20" ColumnDefinitions="*, 2, *, 2, *">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer
                                             Command="{Binding CreditLimitCommand}"
@@ -253,7 +257,7 @@
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="StartAndExpand"
                         BackgroundColor="Transparent"
-                        Margin="30,0,0,0"
+                        Margin="0,0,0,0"
                         HorizontalScrollBarVisibility="Never"
                         ItemsSource="{Binding ChildrenDetailList}">
                     <CollectionView.ItemsLayout>
@@ -273,7 +277,7 @@
                                                     Color='#A2601E'}"
                                         VerticalOptions="End">-->
                                 <yummy:PancakeView 
-                                        Margin="10,10,10,20"
+                                        Margin="30,10,0,20"
                                         Padding="0" 
                                         HasShadow="True" 
                                         WidthRequest="120"
@@ -282,7 +286,8 @@
                                         VerticalOptions="FillAndExpand"
                                         HorizontalOptions="FillAndExpand" >
                                     <yummy:PancakeView.Shadow>
-                                        <yummy:DropShadow Color="{DynamicResource MainHeading}" Offset="15,15" />
+                                        <yummy:DropShadow Color="{DynamicResource MainHeading}" 
+                                                          Offset="{x:OnPlatform Android='15,15', iOS='5,5'}" />
                                     </yummy:PancakeView.Shadow>
 
                                     <Grid RowDefinitions="auto, auto" ColumnDefinitions="*" BackgroundColor="Transparent">
@@ -374,5 +379,5 @@
             </Grid>
         </Grid>
     </ScrollView>
-
+    </StackLayout>
 </base:BasePage>
