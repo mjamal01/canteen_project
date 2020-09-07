@@ -12,13 +12,14 @@
     xmlns:app="clr-namespace:DellyShopApp"
     BackgroundColor="{DynamicResource BackgroundColor}" 
     NavigationPage.HasNavigationBar="False"
-    x:Class="DellyShopApp.Views.Pages.SignupParentPage">
+    x:Class="DellyShopApp.Views.Pages.AddChildPage">
 
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, *">
-            <partialViews:LangSelectNavView
+            <partialViews:NavigationBarPartialView
                 Grid.Row="0"
-                BackButtonVisibler="True" 
+                BackButtonVisibler="True"
+                FavVisible="False"
                 IsModalpage="False"
                 NavigationTitle="{x:Static languages:AppResources.Signup}" />
 
@@ -31,39 +32,64 @@
                     Padding="5,5,5,50"
                     Spacing="15">
 
-                    <!--<Frame 
-                        Style="{DynamicResource FrameStyle}" 
-                        BackgroundColor="White" 
-                        HeightRequest="100"
-                        BorderColor="#B3B3B3">
+                    <Grid>
 
-                        <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-                            <Image
-                                Grid.Column="0"
-                                Aspect="AspectFit"
-                                HeightRequest="20"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center" 
-                                WidthRequest="20">
-                                <Image.Source>
-                                    <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{x:Static font:FontAwesomeIcons.Camera}"
-                                    Size="20"
-                                    Color="Gray" />
-                                </Image.Source>
-                            </Image>
+                        <Frame 
+                            IsVisible="{Binding IsImageSelected, Converter={StaticResource InverseBoolConverter}}"
+                            Style="{DynamicResource FrameStyle}" 
+                            BackgroundColor="White" 
+                            HeightRequest="100"
+                            BorderColor="#B3B3B3">
 
-                            <Label 
-                                Text="Picture" 
-                                FontAttributes="Bold" 
-                                FontSize="20"
-                                HorizontalOptions="Start" 
-                                HorizontalTextAlignment="Center" 
-                                VerticalOptions="CenterAndExpand" 
-                                VerticalTextAlignment="Center"/>
-                        </StackLayout>
-                    </Frame>-->
+                            <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                                <Image
+                                    Grid.Column="0"
+                                    Aspect="AspectFit"
+                                    HeightRequest="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" 
+                                    WidthRequest="20">
+                                    <Image.Source>
+                                        <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.Camera}"
+                                        Size="20"
+                                        Color="Gray" />
+                                    </Image.Source>
+                                </Image>
+
+                                <Label 
+                                    Text="Picture" 
+                                    FontAttributes="Bold" 
+                                    FontSize="20"
+                                    HorizontalOptions="Start" 
+                                    HorizontalTextAlignment="Center" 
+                                    VerticalOptions="CenterAndExpand" 
+                                    VerticalTextAlignment="Center"/>
+                            </StackLayout>
+
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding PickImageCommand}"
+                                    NumberOfTapsRequired="1" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <Image
+                            Aspect="AspectFit"
+                            HeightRequest="100"
+                            IsVisible="{Binding IsImageSelected}"
+                            Source="{Binding ChildImage}" >
+
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding PickImageCommand}"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                    </Grid>
 
                     <Frame 
                         Style="{DynamicResource FrameStyle}" 
@@ -94,7 +120,7 @@
                             <renderers:BorderlessEntry
                                 Margin="10,0,10,0"
                                 HorizontalOptions="FillAndExpand"
-                                Text="{Binding IqamaId, Mode=TwoWay}"
+                                Text="{Binding UniqueId, Mode=TwoWay}"
                                 Placeholder="{x:Static languages:AppResources.NationalID}"
                                 Keyboard="Email"
                                 TextColor="{DynamicResource EntryTextColor}"
@@ -212,7 +238,7 @@
                         </StackLayout>
                     </Frame>
 
-                    <!--<Frame 
+                    <Frame 
                         Style="{DynamicResource FrameStyle}" 
                         Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
                         BackgroundColor="White" 
@@ -237,26 +263,27 @@
                                 </Image.Source>
                             </Image>
                             <BoxView VerticalOptions="CenterAndExpand" Color="Gray" WidthRequest="1"></BoxView>
-                            -->
-                    <!--This is email entry box-->
-                    <!--
+                            
+                            <!--This is email entry box-->
+                    
                             <renderers:BorderlessEntry
                                 Margin="10,0,0,0"
                                 HorizontalOptions="FillAndExpand"
                                 Placeholder="Enter address"
+                                Text="{Binding Address, Mode=TwoWay}"
                                 Keyboard="Email"
                                 TextColor="{DynamicResource EntryTextColor}"
                                 />
                         </StackLayout>
-                    </Frame>-->
+                    </Frame>
 
                     <Button
                         Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='5,20,5,10'}"
                         BackgroundColor="{DynamicResource  ButtonBackgroudColor}"
                         BorderColor="{DynamicResource  LightLabelTextColor}"
-                        Command="{Binding ParentSignupCommand}"
+                        Command="{Binding AddChildCommand}"
                         Style="{DynamicResource ButtonStyle}"
-                        Text="{x:Static languages:AppResources.Signup}"
+                        Text="{x:Static languages:AppResources.Submit}"
                         TextColor="White"
                         x:Name="LoginButton"
                     />

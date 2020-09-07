@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Threading;
 using DellyShopApp.Helpers;
 using DellyShopApp.Languages;
+using DellyShopApp.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static DellyShopApp.ThemeManager;
@@ -28,23 +29,7 @@ namespace DellyShopApp.Views.Pages {
             Application.Current.MainPage = new NavigationPage( new LoginPage() );
         }
         protected async void SelectLanguage(object sender, EventArgs args) {
-            var selectlanguage = await DisplayActionSheet( AppResources.SelectLanguage, AppResources.Cancel, AppResources.Cancel, languages );
-            switch ( selectlanguage ) {
-                case "English":
-                    Settings.SelectLanguage = "en";
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo( "en" );
-                    AppResources.Culture = new CultureInfo( "en" );
-                    Application.Current.MainPage = new NavigationPage( new LoginPage() );
-                    break;
-                case "العربية":
-                    Settings.SelectLanguage = "ar";
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo( "ar" );
-                    AppResources.Culture = new CultureInfo( "ar" );
-                    Application.Current.MainPage = new NavigationPage( new LoginPage() );
-                    break;
-                default:
-                    break;
-            }
+            AppServices.SelectLanguage();
         }
     }
 }

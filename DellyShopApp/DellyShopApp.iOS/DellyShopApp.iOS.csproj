@@ -233,6 +233,9 @@
     <PackageReference Include="Sharpnado.Shadows">
       <Version>1.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ProgressRing">
       <Version>0.1.2</Version>
     </PackageReference>

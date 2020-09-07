@@ -1,44 +1,63 @@
-﻿using System;
+﻿using DellyShopApp.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace DellyShopApp.ViewModel  {
-    public class IndividualChildDetail  {
-        public long customer_id { get; set; }
-        public string name { get; set; }
-        public string customer_image { get; set; }
+namespace DellyShopApp.ViewModel {
+    public class IndividualChildDetail {
+        [JsonProperty( "customer_id" )]
+        public long CustomerId { get; set; }
+
+        [JsonProperty( "name" )]
+        public string Name { get; set; }
+
+        [JsonProperty( "name_ar" )]
+        public string NameAr { get; set; }
+
+        [JsonProperty( "customer_image" )]
+        public string CustomerImage { get; set; }
+
+        [JsonProperty( "DailyCashLimit" )]
         public decimal DailyCashLimit { get; set; }
+
+        [JsonProperty( "UniqueRef" )]
         public string UniqueRef { get; set; }
+
+        [JsonProperty( "ProductsList" )]
         public ObservableCollection<productsWithQtyLimitMobile> ProductsList { get; set; } = new ObservableCollection<productsWithQtyLimitMobile>();
-        public IndividualChildDetail() {
-            customer_id = 0;
-            name = "";
-            DailyCashLimit = 0;
-            UniqueRef = "";
-        }
     }
+
     public class productsWithQtyLimitMobile : BaseVm {
-        public long id { get; set; }
-        public string name { get; set; }
-        public string image { get; set; }
-        public decimal price { get; set; }
-        public string DailyQty7Days { get; set; } 
-         
-        private int _count = 0 ;
+
+        [JsonProperty( "id" )]
+        public long Id { get; set; }
+
+        [JsonProperty( "name" )]
+        public string Name { get; set; }
+
+        [JsonProperty( "image" )]
+        public string Image { get; set; }
+
+        [JsonProperty( "price" )]
+        public decimal Price { get; set; }
+
+        [JsonProperty( "DailyQty7Days" )]
+        public string DailyQty7Days { get; set; }
+
+        [JsonProperty( "cat_code" )]
+        public string CatCode { get; set; }
+
+        [JsonProperty( "cat_name" )]
+        public string CatName { get; set; }
+
+        private int _count = 0;
         public int Count {
             get => _count;
             set {
                 _count = value;
                 OnPropertyChanged( nameof( Count ) );
             }
-        }
-
-        public productsWithQtyLimitMobile() {
-            id = 0;
-            name = "";
-            price = 0;
-            image = "";
-            DailyQty7Days = "";
         }
     }
 }

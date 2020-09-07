@@ -16,11 +16,22 @@
     Visual="Material">
     <ScrollView
         VerticalOptions="Fill"
+        HorizontalScrollBarVisibility="Never"
         VerticalScrollBarVisibility="Never">
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+
+            <StackLayout Padding="20,10,20,10" HorizontalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Tapped="ChangeLangTabbed" />
+                </StackLayout.GestureRecognizers>
+
+
+                <Label Text="{Binding Language}" FontSize="20" FontAttributes="Bold" HorizontalOptions="End" TextColor="Black"/>
+
+            </StackLayout>
             <pancakeView:PancakeView
                 CornerRadius="0" 
-                Margin="{x:OnPlatform Android='0,70,0,0',iOS ='0,70,0,0'}"
+                Margin="{x:OnPlatform Android='0,50,0,0',iOS ='0,50,0,0'}"
                 HorizontalOptions="FillAndExpand"
                 Style="{DynamicResource PancakeStyle}"
                 VerticalOptions="Center">
@@ -119,7 +130,7 @@
             <pancakeView:PancakeView
                 Margin="10,0,10,0"
                 Padding="25"
-                CornerRadius="35,35,0,0"
+                CornerRadius="0"
                 HasShadow="False"
                 VerticalOptions="StartAndExpand">
                 <StackLayout>
@@ -150,7 +161,7 @@
                             <!--This is email entry box-->
                             <renderers:BorderlessEntry
                                 HorizontalOptions="FillAndExpand"
-                                Placeholder="Enter username or email"
+                                Placeholder="{x:Static helpers:AppResources.EnterUserOrEmail}"
                                 Keyboard="Email"
                                 TextColor="{DynamicResource EntryTextColor}"
                                 x:Name="EntryUserName"
@@ -186,7 +197,7 @@
                             <!--This is password entry box-->
                             <renderers:BorderlessEntry
                                 HorizontalOptions="FillAndExpand"
-                                Placeholder="Enter password"
+                                Placeholder="{x:Static helpers:AppResources.EnterPassword}"
                                 IsPassword="True"
                                 TextColor="{DynamicResource EntryTextColor}"
                                 x:Name="EntryPassword"
@@ -211,38 +222,43 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label  FontSize="14" TextColor="#B3B3B3">
+
                             <Label.FormattedText>
+
                                 <FormattedString>
+
                                     <Span 
                                         Text="{x:Static helpers:AppResources.ForgotPassword}" 
                                         TextColor="#B3B3B3"></Span>
+
                                     <Span 
                                         Text="{x:Static helpers:AppResources.GetNewOne}" 
                                         FontAttributes="Bold" 
-                                        TextColor="{DynamicResource LightLabelTextColor}" ></Span>
+                                        TextColor="{DynamicResource LightLabelTextColor}"></Span>
+
                                 </FormattedString>
+
                             </Label.FormattedText>
 
                         </Label>
                         <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer
-                                    Tapped="SignUpTabbed" />
+                            <TapGestureRecognizer  Tapped="ForgotPasswordTabbed" />
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label  FontSize="15" TextColor="#B3B3B3">
                             <Label.FormattedText>
                                 <FormattedString>
-                                    
+
                                     <Span 
                                         Text="{x:Static helpers:AppResources.NoAccount}" 
                                         TextColor="#B3B3B3"></Span>
-                                    
+
                                     <Span 
                                         Text="{x:Static helpers:AppResources.Signup}" 
                                         FontAttributes="Bold" 
                                         TextColor="{DynamicResource LightLabelTextColor}" ></Span>
-                                
+
                                 </FormattedString>
                             </Label.FormattedText>
 
@@ -264,6 +280,38 @@
                     </Label>-->
                 </StackLayout>
             </pancakeView:PancakeView>
+
+            <StackLayout 
+                Padding="20"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center">
+                <Label  
+                    TextColor="#B3B3B3">
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <Span 
+                                Text="{x:Static helpers:AppResources.ARR}" 
+                                FontSize="11" 
+                                TextColor="#B3B3B3"></Span>
+
+                            <Span 
+                                Text="{x:Static helpers:AppResources.TandC}" 
+                                FontAttributes="Bold"   
+                                FontSize="11" 
+                                TextColor="{DynamicResource LightLabelTextColor}" ></Span>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Tapped="TandCTabbed" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
         </StackLayout>
     </ScrollView>
 </base:BasePage>

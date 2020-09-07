@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
 using DellyShopApp.CommonData;
+using DellyShopApp.Helpers;
 using DellyShopApp.Languages;
 using DellyShopApp.Models;
+using DellyShopApp.Services;
 using Newtonsoft.Json;
 using Xamarin.Forms.Xaml;
 
@@ -12,10 +14,38 @@ namespace DellyShopApp.Views.Pages {
     [XamlCompilation( XamlCompilationOptions.Compile )]
     public partial class LoginPage {
         public string accessToken = "";
+
+        private string[] languages = { "English", "العربية" };
+
+        private string language;
+        public string Language {
+            get {
+                return language;
+            }
+            set {
+                language = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+
         public LoginPage() {
+
             InitializeComponent();
+            BindingContext = this;
             EntryUserName.Text = "msajjadh@gmail.com";
             EntryPassword.Text = "31180";
+            CheckLang();
+
+        }
+
+        private void CheckLang() {
+            if ( Settings.SelectLanguage == "ar" ) {
+                Language = languages[0];
+            } else {
+                Language = languages[1];
+            }
         }
 
         private async void LoginButtonClick(object sender, EventArgs e) {
@@ -59,7 +89,6 @@ namespace DellyShopApp.Views.Pages {
                     Global.ParentName = userinfo.parent_name;
                     //await DisplayAlert("Login", "Login Successful", "ok");
                     if ( Global.GroupId == 3 ) {
-                        LoginButton.IsEnabled = true;
                         await Navigation.PushAsync( new HomeTabbedPage() );
                         //await Navigation.PushAsync(new ParentsData.CashHandling.TransSummaryConfig());
                     } else {
@@ -96,6 +125,18 @@ namespace DellyShopApp.Views.Pages {
 
         private void SignUpTabbed(object sender, EventArgs e) {
             Navigation.PushAsync( new SignupParentPage() );
+        }
+
+        private void ChangeLangTabbed(object sender, EventArgs e) {
+            AppServices.SelectLanguage();
+        }
+
+        private void TandCTabbed(object sender, EventArgs e) {
+            Navigation.PushAsync( new TermsAndConditionsPage() );
+        }
+
+        private void ForgotPasswordTabbed(object sender, EventArgs e) {
+            Navigation.PushAsync( new ForgotPasswordPage() );
         }
     }
 }

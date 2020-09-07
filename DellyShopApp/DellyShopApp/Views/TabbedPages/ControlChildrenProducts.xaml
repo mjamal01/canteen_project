@@ -12,14 +12,17 @@
     xmlns:renderers="clr-namespace:DellyShopApp.Renderers" 
     xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
     BackgroundColor="{DynamicResource BackgroundColor}">
-    <StackLayout Margin="20">
+    <Grid Margin="20" RowDefinitions="auto,*,auto">
         <pancakeView:NavigationBarPartialView
-        BackButtonVisibler="False"
-        FavVisible="False"
-        IsModalpage="False"
-        NavigationTitle="{x:Static languages:AppResources.ChildrenDetails}" />
+            Grid.Row="0"
+            BackButtonVisibler="False"
+            FavVisible="False"
+            IsModalpage="False"
+            NavigationTitle="{x:Static languages:AppResources.ChildrenDetails}" />
 
-        <customControl:RepeaterView x:Name="ChildrenList">
+        <customControl:RepeaterView 
+            Grid.Row="1"
+            x:Name="ChildrenList">
             <customControl:RepeaterView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -63,5 +66,18 @@
                 </DataTemplate>
             </customControl:RepeaterView.ItemTemplate>
         </customControl:RepeaterView>
-    </StackLayout>
+
+        <Button
+            Grid.Row="2"
+            Margin="-20,0,-20,0"
+            CornerRadius="0"
+            BackgroundColor="{DynamicResource  ButtonBackgroudColor}"
+            BorderColor="{DynamicResource  LightLabelTextColor}"
+            Clicked="AddChildClick" 
+            Style="{DynamicResource ButtonStyle}"
+            Text="{x:Static languages:AppResources.AddChild}"
+            TextColor="White"
+            x:Name="LoginButton"
+            />
+    </Grid>
 </base:BasePage>

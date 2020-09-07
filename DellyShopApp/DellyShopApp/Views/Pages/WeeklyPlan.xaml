@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:converters="clr-namespace:DellyShopApp.Converters"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="DellyShopApp.Views.Pages.WeeklyPlan">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <partialViews:NavigationBarPartialView
+                Grid.Row="0"
+                BackButtonVisibler="True"
+                FavVisible="False"
+                IsModalpage="False"
+                NavigationTitle="{x:Static languages:AppResources.WeeklyPlan}" />
+
+            <CollectionView 
+                x:Name="listItems"
+                Grid.Row="1" 
+                BackgroundColor="White" 
+                Margin="20,20,20,0"
+                IsGrouped="True"
+                VerticalScrollBarVisibility="Never"
+                HorizontalScrollBarVisibility="Never"
+                ItemsSource="{Binding WeekPlan}">
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label 
+                            Text="{Binding DayOfWeek}" 
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate >
+                        <Grid>
+                            <yummy:PancakeView 
+                                BackgroundColor="White" 
+                                Padding="5,10,10,10"   
+                                CornerRadius="10"
+                                Margin="0,0,2,0"
+                                HasShadow="False"    
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand">
+                                <yummy:PancakeView.Border>
+                                    <yummy:Border Color="#24000000" Thickness="1" />
+                                </yummy:PancakeView.Border>
+
+                                <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
+                                    <Image 
+                                    Grid.Column="0"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Source="{Binding image}"/>
+                                    <StackLayout  Grid.Column="1">
+                                        <Label 
+                                            VerticalOptions="StartAndExpand"
+                                            VerticalTextAlignment="Center"
+                                            Text="{Binding name}"  
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
+                                        <Label 
+                                            VerticalOptions="CenterAndExpand"
+                                            VerticalTextAlignment="Center">
+                                            
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span 
+                                                        BindingContext="{x:Static languages:AppResources.Categories}" 
+                                                        FontSize="{x:OnPlatform Android='15', iOS='13'}"
+                                                        Text="{Binding ., StringFormat='{0} : '}" />
+                                                    <Span 
+                                                        FontSize="{x:OnPlatform Android='15', iOS='13'}"
+                                                        Text="{Binding cat_name}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                            
+                                        </Label>
+                                    </StackLayout>
+
+                                    <StackLayout  Grid.Column="2">
+                                        <Label 
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                                            VerticalOptions="StartAndExpand"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span 
+                                                        Text="{Binding price, StringFormat=' {0:0} '}" />
+                                                    <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <!--<Label HorizontalTextAlignment="End">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding DialyLimit, StringFormat='{0}'}" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                                <Span Text="{x:Static languages:AppResources.SAR}" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>-->
+
+                                        <Label 
+                                            FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontAttributes="Bold" Text="{Binding Count, StringFormat='{0:0} , '}" />
+                                                    <Span FontAttributes="Bold" Text="{x:Static languages:AppResources.Unit}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+
+                                </Grid>
+                                <yummy:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference listItems}}"
+                                        CommandParameter="{Binding .}"
+                                        NumberOfTapsRequired="1" />
+                                </yummy:PancakeView.GestureRecognizers>
+                            </yummy:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

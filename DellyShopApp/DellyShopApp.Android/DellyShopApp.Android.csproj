@@ -71,6 +71,9 @@
     <PackageReference Include="Sharpnado.Shadows">
       <Version>1.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ProgressRing">
       <Version>0.1.2</Version>
     </PackageReference>
@@ -775,10 +778,13 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionDellyShopAppAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionDellyShopAppAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadUnhandledDeviceExceptionDellyShopAppAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionDellyShopAppAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- <Target Name="_ResolveSatellitePaths" DependsOnTargets="_ResolveAssemblies">

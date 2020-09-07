@@ -21,7 +21,7 @@ namespace DellyShopApp.Views.Pages {
         public SingleChildDetail(IndividualChildDetail ArgindividualChildDetail) {
             individualChildDetail = ArgindividualChildDetail;
             InitializeComponent();
-            ChildName.Text = individualChildDetail.name;
+            ChildName.Text = individualChildDetail.Name;
             List<string> weekDays = new List<string>() { "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
             DayPicker.ItemsSource = weekDays;
             DayPicker.SelectedIndex = 0;
@@ -52,10 +52,10 @@ namespace DellyShopApp.Views.Pages {
             studentLimitsUpdateByParent.CustomerId = CurrentChildId;
             studentLimitsUpdateByParent.DailyAllowedMoney = decimal.Parse( MaxAmountPerDay.Text );
 
-            var studentRec = ChildrenDetailList.Where( item => item.customer_id == CurrentChildId ).ToList().FirstOrDefault();
+            var studentRec = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).ToList().FirstOrDefault();
             studentRec.ProductsList.ForEach( item => {
                 studentLimitsUpdateByParent.listOfQtyLimits.Add( new ProductLimitsByParent() {
-                    ProductId = item.id,
+                    ProductId = item.Id,
                     QtyLimit = 0,
                     DailyQty7Days = item.DailyQty7Days
                 } );
@@ -68,6 +68,7 @@ namespace DellyShopApp.Views.Pages {
             {
                 new KeyValuePair<string, string>("data",limitData)
             };
+
             string result = HelperClass.PostRecord( $"{Global.WebApiUrl}/api/parent/UpdateProdLimits", pairs );
             await DisplayAlert( "Info Message", result, "OK" );
         }

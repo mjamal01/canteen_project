@@ -15,12 +15,12 @@
     <ScrollView>
         <StackLayout Margin="10">
             <StackLayout>
-                 <partialViews:NavigationBarPartialView
-            BackButtonVisibler="True"
-            FavVisible="False"
-            IsModalpage="False"
-            NavigationTitle="{x:Static languages:AppResources.MyComments}" />
-               
+                <partialViews:NavigationBarPartialView
+                    BackButtonVisibler="True"
+                    FavVisible="False"
+                    IsModalpage="False"
+                    NavigationTitle="{x:Static languages:AppResources.MyComments}" />
+
             </StackLayout>
             <customControl:RepeaterView
                 x:Name="Comments"

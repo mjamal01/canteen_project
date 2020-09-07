@@ -26,12 +26,16 @@ namespace DellyShopApp.Views.TabbedPages {
             if ( !( pancake.BindingContext is IndividualChildDetail item ) )
                 return;
 
-            CurrentChildId = ( int ) item.customer_id;
+            CurrentChildId = ( int ) item.CustomerId;
             //await Navigation.PushAsync(new ProductDetail(item));
             await Navigation.PushAsync( new ChildrenProductsPage( item ) );
         }
 
         private async void TransSummarySimpleButtonClick(System.Object sender, System.EventArgs e) {
+        }
+
+        private async void AddChildClick(object sender, EventArgs e) {
+            await Navigation.PushAsync( new AddChildPage() );
         }
     }
 }

@@ -21,12 +21,12 @@
 
     <StackLayout VerticalOptions="FillAndExpand" Padding="0,20,0,0">
         <ScrollView>
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <!--<Grid Grid.Row="0" Margin="5,5,5,0">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--<Grid Grid.Row="0" Margin="5,5,5,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40"/>
                         <ColumnDefinition Width="*"/>
@@ -51,45 +51,45 @@
                     </Button>
                 </Grid>-->
 
-            <Grid Grid.Row="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="170"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="170"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <StackLayout Padding="10,20,10,0" Grid.Row="0" Margin="0" Spacing="0" HorizontalOptions="CenterAndExpand">
-                    <Label  
+                    <StackLayout Padding="10,20,10,0" Grid.Row="0" Margin="0" Spacing="0" HorizontalOptions="CenterAndExpand">
+                        <Label  
                             HorizontalOptions="CenterAndExpand" 
                             VerticalOptions="Start"  
                             Text="{x:Static languages:AppResources.Balance}" 
                             TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
 
-                    <Label 
+                        <Label 
                         HorizontalOptions="CenterAndExpand" 
                         VerticalOptions="Start" 
                         FontSize="36"
                         FontAttributes="Bold" 
                         TextColor="{DynamicResource WhiteDarkFontColor}">
-                        
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="{Binding TotalBalance, StringFormat='{0:0}'}" />
-                                <Span Text="{x:Static languages:AppResources.SAR}"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                </StackLayout>
 
-                <StackLayout Grid.Row="1" Padding="20,0,20,0"  Margin="10,0,10,0"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding TotalBalance, StringFormat='{0:0}'}" />
+                                    <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
 
-                    <Label  
+                    <StackLayout Grid.Row="1" Padding="20,0,20,0"  Margin="10,0,10,0"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+
+                        <Label  
                             Text="{x:Static languages:AppResources.TodaysReport}" 
                             HorizontalOptions="StartAndExpand" 
                             VerticalOptions="Center"  
@@ -97,9 +97,9 @@
                             FontAttributes="Bold" 
                             TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
 
-                </StackLayout>
+                    </StackLayout>
 
-                <yummy:PancakeView
+                    <yummy:PancakeView
                         Grid.Row="2" 
                         BackgroundColor="#104569FF" 
                         Margin="20,0,20,0"    
@@ -107,28 +107,28 @@
                         CornerRadius="5,5,5,5"  
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand" >
-                    <!--<yummy:PancakeView.BackgroundGradientStops>
+                        <!--<yummy:PancakeView.BackgroundGradientStops>
                             <yummy:GradientStopCollection>
                                 <yummy:GradientStop Color="#8349f5" Offset="0" /> {DynamicResource DarkLabelTextColor}
                                 <yummy:GradientStop Color="#4569ff" Offset="1" />
                             </yummy:GradientStopCollection>-->
-                    <!--</yummy:PancakeView.BackgroundGradientStops>-->
-                    <yummy:PancakeView.GestureRecognizers>
-                        <TapGestureRecognizer
+                        <!--</yummy:PancakeView.BackgroundGradientStops>-->
+                        <yummy:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer
                                 Command="{Binding ChartRefreshCommand}"
                                 NumberOfTapsRequired="1" />
-                    </yummy:PancakeView.GestureRecognizers>
+                        </yummy:PancakeView.GestureRecognizers>
 
-                    <microcharts:ChartView    
+                        <microcharts:ChartView    
                             ScaleX="1.2" 
                             Margin="-10,0,0,0"
                             
                             HorizontalOptions="FillAndExpand" 
                             Chart="{Binding AltitudeChart}" />
 
-                </yummy:PancakeView>
+                    </yummy:PancakeView>
 
-                <yummy:PancakeView
+                    <yummy:PancakeView
                         Grid.Row="3" 
                         Margin="20,0,20,0"
                         Padding="{x:OnPlatform Android='20,5,20,5', iOS='20,0,20,0'}" 
@@ -137,46 +137,49 @@
                         CornerRadius="20"   
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand" >
-                    <yummy:PancakeView.Shadow>
-                        <yummy:DropShadow Color="#8349f5" 
+                        <yummy:PancakeView.Shadow>
+                            <yummy:DropShadow Color="#8349f5" 
                                           Offset="{x:OnPlatform Android='15,15', iOS='5,5'}" 
                                           Opacity="1" 
                                           BlurRadius="{x:OnPlatform Android='20', iOS='10'}" />
-                    </yummy:PancakeView.Shadow>
-                    <yummy:PancakeView.BackgroundGradientStops>
-                        <yummy:GradientStopCollection>
-                            <yummy:GradientStop Color="#8349f5" Offset="0" />
-                            <yummy:GradientStop Color="#4569ff" Offset="1" />
-                        </yummy:GradientStopCollection>
-                    </yummy:PancakeView.BackgroundGradientStops>
+                        </yummy:PancakeView.Shadow>
+                        <yummy:PancakeView.BackgroundGradientStops>
+                            <yummy:GradientStopCollection>
+                                <yummy:GradientStop Color="#8349f5" Offset="0" />
+                                <yummy:GradientStop Color="#4569ff" Offset="1" />
+                            </yummy:GradientStopCollection>
+                        </yummy:PancakeView.BackgroundGradientStops>
 
-                    <Grid HorizontalOptions="FillAndExpand" Padding="{x:OnPlatform Android='0,15,0,15', iOS='0,15,0,15'}" ColumnSpacing="20" ColumnDefinitions="*, 2, *, 2, *">
-                        <Grid.GestureRecognizers>
-                            <TapGestureRecognizer
+                        <Grid HorizontalOptions="FillAndExpand" Padding="{x:OnPlatform Android='0,15,0,15', iOS='0,15,0,15'}" ColumnSpacing="20" ColumnDefinitions="*, 2, *, 2, *">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer
                                             Command="{Binding CreditLimitCommand}"
                                             NumberOfTapsRequired="1" />
-                        </Grid.GestureRecognizers>
+                            </Grid.GestureRecognizers>
 
-                        <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
-                            <Label Text="{x:Static languages:AppResources.TotalSpent}" HorizontalTextAlignment="Center" FontSize="10" TextColor="#A4FFFFFF"></Label> 
-                            
-                            <Label 
+                            <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
+                                <Label 
+                                Text="{x:Static languages:AppResources.TotalSpent}" 
+                                HorizontalTextAlignment="Center" 
+                                FontSize="10" TextColor="#A4FFFFFF"></Label>
+
+                                <Label 
                                 HorizontalTextAlignment="Center" 
                                 FontAttributes="Bold" 
-                                FontSize="18" 
+                                FontSize="15" 
                                 TextColor="White">
 
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span Text="500" />
-                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                        </StackLayout>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="500" />
+                                            <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
 
-                        <BoxView Grid.Column="1" BackgroundColor="#65FFFFFF" ></BoxView>
-                        <!--<Label 
+                            <BoxView Grid.Column="1" BackgroundColor="#65FFFFFF" ></BoxView>
+                            <!--<Label 
                                 Grid.Column="0" 
                                 Text="{Binding CreditLimitLabel, StringFormat='{0}%'}" 
                                 HorizontalOptions="Center" 
@@ -196,62 +199,66 @@
                                 HorizontalOptions="FillAndExpand"  
                                 Progress="{Binding CreditLimitPercent}"/>-->
 
-                        <StackLayout Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
-                            <Label Text="{x:Static languages:AppResources.TodaysSpent}"  HorizontalTextAlignment="Center" TextColor="#A4FFFFFF" FontSize="10" ></Label>
-                            <Label 
+                            <StackLayout Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
+                                <Label 
+                                Text="{x:Static languages:AppResources.TodaysSpent}" 
+                                HorizontalTextAlignment="Center"
+                                TextColor="#A4FFFFFF" 
+                                FontSize="10" ></Label>
+                                <Label 
                                 HorizontalTextAlignment="Center" 
                                 FontAttributes="Bold" 
-                                FontSize="18" 
+                                FontSize="15" 
                                 TextColor="White">
 
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span Text="500" />
-                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                        </StackLayout>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="500" />
+                                            <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
 
-                        <BoxView Grid.Column="3" BackgroundColor="#65FFFFFF" ></BoxView>
+                            <BoxView Grid.Column="3" BackgroundColor="#65FFFFFF" ></BoxView>
 
-                        <!--<StackLayout Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
+                            <!--<StackLayout Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0">
                             <Label Text="Todays spent"  HorizontalTextAlignment="Center" TextColor="#A4FFFFFF" FontSize="15" ></Label>
                             <Label Text="SAR500"  HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="White"></Label>
                         </StackLayout>-->
-                        <Grid Grid.Column="4" ColumnDefinitions="2*,*" BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                            <Grid Grid.Column="4" ColumnDefinitions="2*,*" BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
-                            <Label 
+                                <Label 
                                 Grid.Column="0" 
                                 Text="{x:Static languages:AppResources.Topup}"  
                                 HorizontalTextAlignment="Center" 
                                 VerticalTextAlignment="Center" 
                                 TextColor="#A4FFFFFF" FontSize="12" ></Label>
-                            <ImageButton Grid.Column="1" HorizontalOptions="End"  BackgroundColor="Transparent">
-                                <ImageButton.Source>
-                                    <FontImageSource
+                                <ImageButton Grid.Column="1" HorizontalOptions="End"  BackgroundColor="Transparent">
+                                    <ImageButton.Source>
+                                        <FontImageSource
                                         FontFamily="{DynamicResource MaterialFontFamily}"
                                         Glyph="{x:Static font:FontAwesomeIcons.SimpleRight}"  
                                         Color="White" />
-                                </ImageButton.Source>
-                            </ImageButton>
+                                    </ImageButton.Source>
+                                </ImageButton>
+                            </Grid>
                         </Grid>
-                    </Grid>
 
-                </yummy:PancakeView>
+                    </yummy:PancakeView>
 
-                <StackLayout Grid.Row="4"  Padding="20,10,20,0"  Margin="10,20,10,0"   HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <StackLayout Grid.Row="4"  Padding="20,10,20,0"  Margin="10,20,10,0"   HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
-                    <Label  
+                        <Label  
                             Text="{x:Static languages:AppResources.Childrens}" 
                             HorizontalOptions="StartAndExpand" 
                             VerticalOptions="Center"  
                             FontSize="22"
                             FontAttributes="Bold" 
                             TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
-                </StackLayout>
+                    </StackLayout>
 
-                <CollectionView
+                    <CollectionView
                         x:Name="Categories"
                         Grid.Row="5" 
                         HorizontalOptions="FillAndExpand"
@@ -260,13 +267,13 @@
                         Margin="0,0,0,0"
                         HorizontalScrollBarVisibility="Never"
                         ItemsSource="{Binding ChildrenDetailList}">
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal" />
-                    </CollectionView.ItemsLayout>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <!--<shadows:Shadows
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout ItemSpacing="0" Orientation="Horizontal" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <!--<shadows:Shadows
                                         Grid.Row="3"
                                         Grid.Column="1"
                                         CornerRadius="10"
@@ -276,8 +283,8 @@
                                                     Opacity=0.6,
                                                     Color='#A2601E'}"
                                         VerticalOptions="End">-->
-                                <yummy:PancakeView 
-                                        Margin="30,10,0,20"
+                                    <yummy:PancakeView 
+                                        Margin="10,10,10,20"
                                         Padding="0" 
                                         HasShadow="True" 
                                         WidthRequest="120"
@@ -285,14 +292,14 @@
                                         CornerRadius="20"   
                                         VerticalOptions="FillAndExpand"
                                         HorizontalOptions="FillAndExpand" >
-                                    <yummy:PancakeView.Shadow>
-                                        <yummy:DropShadow Color="{DynamicResource MainHeading}" 
+                                        <yummy:PancakeView.Shadow>
+                                            <yummy:DropShadow Color="{DynamicResource MainHeading}" 
                                                           Offset="{x:OnPlatform Android='15,15', iOS='5,5'}" />
-                                    </yummy:PancakeView.Shadow>
+                                        </yummy:PancakeView.Shadow>
 
-                                    <Grid RowDefinitions="auto, auto" ColumnDefinitions="*" BackgroundColor="Transparent">
+                                        <Grid RowDefinitions="auto, auto" ColumnDefinitions="*" BackgroundColor="Transparent">
 
-                                        <yummy:PancakeView 
+                                            <yummy:PancakeView 
                                                 
                                                 Grid.Row="0" 
                                                 Grid.Column="0"   
@@ -305,18 +312,18 @@
                                                 VerticalOptions="CenterAndExpand"
                                                 HorizontalOptions="CenterAndExpand" >
 
-                                            <Image
+                                                <Image
                                                     Aspect="AspectFill" 
                                                     VerticalOptions="CenterAndExpand"
                                                     HorizontalOptions="CenterAndExpand" Source="{Binding customer_image}">
 
-                                                <!--<FontImageSource
+                                                    <!--<FontImageSource
                                                         FontFamily="{DynamicResource MaterialFontFamily}"
                                                         Glyph="{Binding Image}"  
                                                         Color="{DynamicResource MainHeading}" />-->
-                                            </Image>
-                                        </yummy:PancakeView>
-                                        <!--<Image
+                                                </Image>
+                                            </yummy:PancakeView>
+                                            <!--<Image
                                                 Grid.Row="0"
                                                 Grid.Column="2"
                                                 Rotation="90"
@@ -332,11 +339,11 @@
                                                         Color="{DynamicResource MainHeading}" />
                                             </Image.Source>
                                         </Image>-->
-                                        <StackLayout   
+                                            <StackLayout   
                                                 Grid.Row="1"
                                                 Spacing="0" HorizontalOptions="CenterAndExpand" Margin="0" >
-                                            <!--Text="{Binding rating, Converter={converter:IsNumberIntConverter}}"-->
-                                            <Label
+                                                <!--Text="{Binding rating, Converter={converter:IsNumberIntConverter}}"-->
+                                                <Label
                                                 Margin="0"
                                                 FontFamily="FontFontello"
                                                 FontSize="18"
@@ -344,8 +351,8 @@
                                                 TextColor="{DynamicResource MainHeading}"
                                                 Text="{Binding name}" 
                                                 FontAttributes="Bold"
-                                                VerticalOptions="Center" /> 
-                                            <Label 
+                                                VerticalOptions="Center" />
+                                                <Label 
                                                 Margin="0"
                                                 FontFamily="FontRobotoRegular"
                                                 FontSize="13"
@@ -353,31 +360,31 @@
                                                 TextColor="{DynamicResource MainHeading}" 
                                                 VerticalOptions="Center">
 
-                                                <Label.FormattedText>
-                                                    <FormattedString>
-                                                        <Span Text="{Binding DailyCashLimit, StringFormat='{0}'}" />
-                                                        <Span Text="{x:Static languages:AppResources.SAR}"/>
-                                                    </FormattedString>
-                                                </Label.FormattedText>
-                                            </Label>
-                                        </StackLayout>
-                                    </Grid>
-                                    <yummy:PancakeView.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding DailyCashLimit, StringFormat='{0}'}" />
+                                                            <Span Text="{x:Static languages:AppResources.SAR}"/>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                            </StackLayout>
+                                        </Grid>
+                                        <yummy:PancakeView.GestureRecognizers>
+                                            <TapGestureRecognizer
                                             Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference Categories}}"
                                             CommandParameter="{Binding .}"
                                             NumberOfTapsRequired="1" />
-                                    </yummy:PancakeView.GestureRecognizers>
-                                </yummy:PancakeView>
+                                        </yummy:PancakeView.GestureRecognizers>
+                                    </yummy:PancakeView>
 
-                                <!--</shadows:Shadows>-->
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                                    <!--</shadows:Shadows>-->
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
 
+                </Grid>
             </Grid>
-        </Grid>
-    </ScrollView>
+        </ScrollView>
     </StackLayout>
 </base:BasePage>

@@ -1,13 +1,17 @@
 ﻿using System;
-using DellyShopApp.Languages;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace DellyShopApp.Views.PartialViews {
     [XamlCompilation( XamlCompilationOptions.Compile )]
-    public partial class NavigationBarPartialView {
+    public partial class MainNavView : StackLayout {
         bool isModalpage = true;
-        public NavigationBarPartialView() {
+        public MainNavView() {
             InitializeComponent();
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += (s, e) => {
@@ -21,13 +25,13 @@ namespace DellyShopApp.Views.PartialViews {
         }
 
         public static BindableProperty FavVisibleProperty = BindableProperty.Create(
-          propertyName: nameof( FavVisible ),
-          returnType: typeof( bool ),
-          declaringType: typeof( NavigationBarPartialView ),
-          defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
-              var control = ( NavigationBarPartialView ) bindable;
-              control.FavVisible = ( bool ) newValue;
-          } );
+            propertyName: nameof( FavVisible ),
+            returnType: typeof( bool ),
+            declaringType: typeof( NavigationBarPartialView ),
+            defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
+                var control = ( NavigationBarPartialView ) bindable;
+                control.FavVisible = ( bool ) newValue;
+            } );
         public bool FavVisible {
             get => ( bool ) GetValue( FavVisibleProperty );
             set {
@@ -38,13 +42,13 @@ namespace DellyShopApp.Views.PartialViews {
 
 
         public static BindableProperty IsModalpageProperty = BindableProperty.Create(
-     propertyName: nameof( IsModalpage ),
-     returnType: typeof( bool ),
-     declaringType: typeof( NavigationBarPartialView ),
-     defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
-         var control = ( NavigationBarPartialView ) bindable;
-         control.IsModalpage = ( bool ) newValue;
-     } );
+            propertyName: nameof( IsModalpage ),
+            returnType: typeof( bool ),
+            declaringType: typeof( NavigationBarPartialView ),
+            defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
+                var control = ( NavigationBarPartialView ) bindable;
+                control.IsModalpage = ( bool ) newValue;
+            } );
 
         public bool IsModalpage {
             get => ( bool ) GetValue( IsModalpageProperty );
@@ -55,13 +59,13 @@ namespace DellyShopApp.Views.PartialViews {
         }
 
         public static BindableProperty BackButtonVisibleroperty = BindableProperty.Create(
-     propertyName: nameof( BackButtonVisibler ),
-     returnType: typeof( bool ),
-     declaringType: typeof( NavigationBarPartialView ),
-     defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
-         var control = ( NavigationBarPartialView ) bindable;
-         control.BackButtonVisibler = ( bool ) newValue;
-     } );
+             propertyName: nameof( BackButtonVisibler ),
+             returnType: typeof( bool ),
+             declaringType: typeof( NavigationBarPartialView ),
+             defaultValue: true, propertyChanged: (bindable, oldValue, newValue) => {
+                 var control = ( NavigationBarPartialView ) bindable;
+                 control.BackButtonVisibler = ( bool ) newValue;
+             } );
 
         public bool BackButtonVisibler {
             get => ( bool ) GetValue( BackButtonVisibleroperty );
@@ -72,13 +76,13 @@ namespace DellyShopApp.Views.PartialViews {
         }
 
         public static BindableProperty TitleProperty = BindableProperty.Create(
-       propertyName: nameof( NavigationTitle ),
-       returnType: typeof( string ),
-       declaringType: typeof( NavigationBarPartialView ),
-       defaultValue: string.Empty, propertyChanged: (bindable, oldValue, newValue) => {
-           var control = ( NavigationBarPartialView ) bindable;
-           control.NavigationTitle = newValue.ToString();
-       } );
+            propertyName: nameof( NavigationTitle ),
+            returnType: typeof( string ),
+            declaringType: typeof( NavigationBarPartialView ),
+            defaultValue: string.Empty, propertyChanged: (bindable, oldValue, newValue) => {
+                var control = ( NavigationBarPartialView ) bindable;
+                control.NavigationTitle = newValue.ToString();
+            } );
 
         public string NavigationTitle {
             get => ( string ) GetValue( TitleProperty );

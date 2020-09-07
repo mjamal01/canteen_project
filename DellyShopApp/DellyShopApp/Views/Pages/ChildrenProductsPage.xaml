@@ -62,20 +62,20 @@
                     <StackLayout 
                         Grid.Column="1">
 
-                        <StackLayout Orientation="Horizontal">
+                        <!--<StackLayout Orientation="Horizontal">
                             <Label Grid.Row="0" Grid.Column="0" FontSize="12" Text="{x:Static languages:AppResources.MasroofiNumber}"/>
                             <Label Grid.Row="0" Grid.Column="1" FontSize="12" Text="21" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}"/>
-                        </StackLayout>
+                        </StackLayout>-->
 
                         <Label FontAttributes="Bold"  Text="{Binding ChildDetail.name}"/>
 
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{x:Static languages:AppResources.Balance}" FontSize="12"/>
-                            <Label >
+                        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                            <!--<Label Text="{x:Static languages:AppResources.NationalID}" FontSize="12"/>-->
+                            <Label VerticalTextAlignment="End">
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span Text="{Binding ChildDetail.DailyCashLimit}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
-                                        <Span Text="{x:Static languages:AppResources.SAR}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                        <Span Text="{Binding ChildDetail.UniqueRef}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />
+                                        <!--<Span Text="{x:Static languages:AppResources.SAR}"  FontSize="12" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}" />-->
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
@@ -117,23 +117,23 @@
                             BackgroundColor="#2400FF00"
                             Padding="10,5,10,5"
                             CornerRadius="10">
-                            
+
                             <Label 
                                 Text="{x:Static languages:AppResources.Save}" 
                                 HorizontalOptions="End" 
                                 FontSize="12" 
                                 VerticalTextAlignment="Center" 
                                 TextColor="Green"></Label>
-                            
+
                             <yummy:PancakeView.GestureRecognizers>
-                                
+
                                 <TapGestureRecognizer
                                     Command="{Binding UploadChildDialyLimitCommand}"
                                     NumberOfTapsRequired="1" />
-                                
+
                             </yummy:PancakeView.GestureRecognizers>
                         </yummy:PancakeView>
-                        
+
                         <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
 
                             <Label HorizontalTextAlignment="End" FontSize="12" Text="{x:Static languages:AppResources.Dailylimit}"/>
@@ -157,7 +157,7 @@
             <!-- Buttons -->
 
             <Grid Margin="20,10,20,0" ColumnSpacing="20" Grid.Row="1" ColumnDefinitions="*,*">
-                
+
                 <yummy:PancakeView
                     Grid.Column="0" 
                     BackgroundColor="Transparent" 
@@ -172,7 +172,7 @@
                     </yummy:PancakeView.Border>
                     <yummy:PancakeView.GestureRecognizers>
                         <TapGestureRecognizer
-                            Command="{Binding ChartRefreshCommand}"
+                            Command="{Binding ShowWeeklyPlanCommand}"
                             NumberOfTapsRequired="1" />
                     </yummy:PancakeView.GestureRecognizers>
                     <Label 
@@ -180,7 +180,7 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         FontSize="{x:OnPlatform Android='13', iOS='13'}" 
-                        Text="{x:Static languages:AppResources.SendBalance}"></Label>
+                        Text="{x:Static languages:AppResources.WeeklyPlan}"></Label>
                 </yummy:PancakeView>
 
 
@@ -213,28 +213,48 @@
 
             </Grid>
 
-            <Grid Margin="20,0,20,5" ColumnSpacing="0"  Grid.Row="3" ColumnDefinitions="*,*">
-                <StackLayout Grid.Row="0" Margin="0" Orientation="Horizontal">
+            <Grid 
+                Margin="20,0,20,5" 
+                ColumnSpacing="0" 
+                Grid.Row="3" 
+                ColumnDefinitions="*,*">
+
+                <StackLayout Grid.Column="0" Margin="0" Orientation="Horizontal">
                     <Label 
                         Text="{x:Static languages:AppResources.CanteenStatus}" 
                         TextColor="Black" 
                         FontAttributes="Bold" 
-                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                        FontSize="{x:OnPlatform Android='12', iOS='13'}" 
                         VerticalTextAlignment="Center"></Label>
                     <yummy:PancakeView
                         Grid.Column="0" 
                         BackgroundColor="Green" 
                         Margin="0"    
-                        Padding="{x:OnPlatform Android='10,3,10,5', iOS='10,3,10,5'}"    
+                        Padding="{x:OnPlatform Android='10', iOS='10,3,10,5'}"    
                         CornerRadius="0">
                         <Label 
                             Text="{x:Static languages:AppResources.Active}" 
-                            FontSize="{x:OnPlatform Android='16', iOS='15'}" 
+                            FontSize="{x:OnPlatform Android='12', iOS='15'}" 
                             VerticalTextAlignment="Center" 
                             TextColor="White"></Label>
                     </yummy:PancakeView>
                 </StackLayout>
 
+                <Frame 
+                    Grid.Column="1"
+                    Style="{DynamicResource FrameStyle}" 
+                    BackgroundColor="#166FA9FF" 
+                    CornerRadius="5" Margin="0" 
+                    Padding="10,0,0,0" 
+                    BorderColor="#B3B3B3">
+
+                    <renderers:BorderlessPicker 
+                        ItemsSource="{Binding WeekDays}" 
+                        Title="Select day" 
+                        TextColor="{DynamicResource EntryTextColor}" 
+                        TitleColor="Gray" 
+                        SelectedIndex="{Binding SelectedDay, Mode=TwoWay}"  ></renderers:BorderlessPicker>
+                </Frame>
                 <!--<yummy:PancakeView
                     Margin="0" 
                     Grid.Column="1"    
@@ -267,7 +287,7 @@
                         TextColor="{Binding CanteenProductBtnTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
-                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                        FontSize="{x:OnPlatform Android='12', iOS='13'}" 
                         Text="{x:Static languages:AppResources.CanteenProducts}"></Label>
                 </yummy:PancakeView>
 
@@ -293,7 +313,7 @@
                         TextColor="{Binding SonsPurchasesBtnTextColor}" 
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
-                        FontSize="{x:OnPlatform Android='15', iOS='13'}" 
+                        FontSize="{x:OnPlatform Android='12', iOS='13'}" 
                         Text="{x:Static languages:AppResources.SonsPurchases}"></Label>
                 </yummy:PancakeView>
 
@@ -378,11 +398,11 @@
                                                     HorizontalOptions="Center"
                                                     VerticalOptions="CenterAndExpand"
                                                     WidthRequest="20">
-                                                        <Image.GestureRecognizers>
-                                                            <TapGestureRecognizer
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer
                                                             Command="{Binding Path=BindingContext.DeductItemCommand, Source={x:Reference listItems}}" 
                                                             CommandParameter="{Binding .}"  />
-                                                        </Image.GestureRecognizers>
+                                                    </Image.GestureRecognizers>
                                                     <Image.Source>
                                                         <FontImageSource
                                                         FontFamily="{DynamicResource MaterialFontFamily}"
@@ -588,14 +608,7 @@
                     Text="{x:Static languages:AppResources.EditDailylimit}"></Label>
                 <!--/SelectedItem="{Binding SelectedDay, Mode=TwoWay}"-->
 
-                <Frame Style="{DynamicResource FrameStyle}" BackgroundColor="#166FA9FF" CornerRadius="5" Margin="0,20,0,0" Padding="10,0,0,0" BorderColor="#B3B3B3">
-                    <renderers:BorderlessPicker 
-                        ItemsSource="{Binding WeekDays}" 
-                        Title="Select day" 
-                        TextColor="{DynamicResource EntryTextColor}" 
-                        TitleColor="Gray" 
-                        SelectedIndex="{Binding SelectedDay, Mode=TwoWay}"  ></renderers:BorderlessPicker>
-                </Frame>
+
 
                 <!---->
                 <Frame Style="{DynamicResource FrameStyle}" CornerRadius="5"  Padding="10,0,0,0"  BackgroundColor="#166FA9FF" BorderColor="#B3B3B3">

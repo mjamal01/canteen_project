@@ -131,7 +131,7 @@ namespace DellyShopApp.ViewModel {
             foreach ( var item in ChildrenDetailList ) {
                 list.Add( new ChartEntry( ( float ) item.DailyCashLimit ) {
 
-                    Label = item.name,
+                    Label = item.Name,
                     ValueLabel = item.DailyCashLimit.ToString( "0" ),
                     Color = SKColor.Parse( "#8349f5" )
                 } );

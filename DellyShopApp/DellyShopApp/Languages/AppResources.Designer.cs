@@ -97,6 +97,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add child.
+        /// </summary>
+        internal static string AddChild {
+            get {
+                return ResourceManager.GetString("AddChild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Credit Card.
         /// </summary>
         internal static string AddCreditCard {
@@ -174,6 +183,15 @@ namespace DellyShopApp.Languages {
         internal static string AllowedProducts {
             get {
                 return ResourceManager.GetString("AllowedProducts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Rights Reserved To 2020 Masrofee.
+        /// </summary>
+        internal static string ARR {
+            get {
+                return ResourceManager.GetString("ARR", resourceCulture);
             }
         }
         
@@ -264,6 +282,15 @@ namespace DellyShopApp.Languages {
         internal static string Categories {
             get {
                 return ResourceManager.GetString("Categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string Category {
+            get {
+                return ResourceManager.GetString("Category", resourceCulture);
             }
         }
         
@@ -439,11 +466,29 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter password.
+        /// </summary>
+        internal static string EnterPassword {
+            get {
+                return ResourceManager.GetString("EnterPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter phone number.
         /// </summary>
         internal static string EnterPhone {
             get {
                 return ResourceManager.GetString("EnterPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter username or email.
+        /// </summary>
+        internal static string EnterUserOrEmail {
+            get {
+                return ResourceManager.GetString("EnterUserOrEmail", resourceCulture);
             }
         }
         
@@ -466,7 +511,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forget Password.
+        ///   Looks up a localized string similar to Forgot Password.
         /// </summary>
         internal static string ForgotPass {
             get {
@@ -480,6 +525,15 @@ namespace DellyShopApp.Languages {
         internal static string ForgotPassword {
             get {
                 return ResourceManager.GetString("ForgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Enter The Mobile Number And You Will Receive SMS to Recover Your Password..
+        /// </summary>
+        internal static string ForgotPasswordDetails {
+            get {
+                return ResourceManager.GetString("ForgotPasswordDetails", resourceCulture);
             }
         }
         
@@ -1132,6 +1186,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Success.
         /// </summary>
         internal static string Success {
@@ -1173,6 +1236,26 @@ namespace DellyShopApp.Languages {
         internal static string SummaryStartDate {
             get {
                 return ResourceManager.GetString("SummaryStartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Terms and Conditions.
+        /// </summary>
+        internal static string TandC {
+            get {
+                return ResourceManager.GetString("TandC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to MASROFEE
+        ///
+        ///This Privacy Policy sets out the basis on which any personal data, including but not limited to payment details and other information we collect from you or other sources or that you provide to us (&quot;Information&quot;) will be handled by us in connection with your access and use of masrofee app, and/or the Masrofee mobile application (collectively, the &quot;Platform&quot;), services and applications (collectively, the &quot;Services&quot;). We understand the importance you place on the Information, and we are [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TermsAndCond {
+            get {
+                return ResourceManager.GetString("TermsAndCond", resourceCulture);
             }
         }
         
@@ -1249,6 +1332,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unit.
+        /// </summary>
+        internal static string Unit {
+            get {
+                return ResourceManager.GetString("Unit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
         internal static string Update {
@@ -1272,6 +1364,15 @@ namespace DellyShopApp.Languages {
         internal static string ViewWeeklyPlan {
             get {
                 return ResourceManager.GetString("ViewWeeklyPlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weekly Plan.
+        /// </summary>
+        internal static string WeeklyPlan {
+            get {
+                return ResourceManager.GetString("WeeklyPlan", resourceCulture);
             }
         }
         
