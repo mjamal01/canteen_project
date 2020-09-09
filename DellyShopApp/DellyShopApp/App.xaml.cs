@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
+using System.Net;
 using System.Threading;
 using DellyShopApp.Helpers;
 using DellyShopApp.Languages;
@@ -30,7 +32,11 @@ namespace DellyShopApp {
             NavigationPage.SetHasNavigationBar( navigation, false );
             MainPage = navpage;
             App.Current.MainPage.FlowDirection = Settings.SelectLanguage == "ar" ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+            LoadPlatForms();
+        }
 
+        private void LoadPlatForms() {
+            ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
         }
     }
 }

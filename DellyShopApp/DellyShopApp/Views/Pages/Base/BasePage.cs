@@ -43,9 +43,9 @@ namespace DellyShopApp.Views.Pages.Base {
 
         public double BaseTotalPrice = 0;
         public static void InitializeChildrenData() {
-            string url = $"{Global.WebApiUrl}/api/parent/GetChildrenMoneyAndProductsDetail?parentId={Global.ParentId}";
-            var result = HelperClass.GetStringRecord( url );
-                ChildrenDetailList = JsonConvert.DeserializeObject<ObservableCollection<IndividualChildDetail>>( result );
+            var url = $"{Global.WebApiUrl}/api/parent/GetChildrenMoneyAndProductsDetail?parentId={Global.ParentId}";
+            var result = HelperClass.GetRecord( url );
+            ChildrenDetailList = JsonConvert.DeserializeObject<ObservableCollection<IndividualChildDetail>>( result );
         }
 
         public BasePage() {

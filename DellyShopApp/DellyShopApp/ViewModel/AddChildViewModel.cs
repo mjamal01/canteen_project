@@ -1,8 +1,11 @@
 ﻿using DellyShopApp.CommonData;
+using DellyShopApp.Extensions;
 using DellyShopApp.Models;
 using DellyShopApp.Services;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -63,9 +66,9 @@ namespace DellyShopApp.ViewModel {
                 isImageSelected = value;
                 OnPropertyChanged( nameof( IsImageSelected ) );
             }
-        } 
+        }
 
-        private ImageSource childImage = null; 
+        private ImageSource childImage = null;
         public ImageSource ChildImage {
             get => childImage;
             set {
@@ -75,16 +78,16 @@ namespace DellyShopApp.ViewModel {
         }
 
 
-
+        private MediaFile childImageMediaFile = null;
         private IndividualChildDetail editChild = null;
         public ICommand PickImageCommand { get; set; }
         public ICommand AddChildCommand { get; set; }
-        public AddChildViewModel(IndividualChildDetail vm =null) {
+        public AddChildViewModel(IndividualChildDetail vm = null) {
             AddChildCommand = new Command( OnAddChild );
             PickImageCommand = new Command( OnPickImage );
             editChild = vm;
 
-            if( vm  != null) {
+            if ( vm != null ) {
 
                 UniqueId = vm.UniqueRef;
                 FullName = vm.Name;
@@ -93,25 +96,26 @@ namespace DellyShopApp.ViewModel {
                 Address = "Hello hello";
             }
 
-            //UniqueId = "123123";
-            //FullName = "Hamza"; 
-            //Email = "hamza@hamza.com";
-            //Phone = "923105499567";
-            //Address = "Hello hello";
+            UniqueId = "123123";
+            FullName = "Hamza";
+            Email = "hamza@hamza.com";
+            Phone = "923105499567";
+            Address = "Hello hello";
 
         }
 
         private async void OnPickImage(object obj) {
-            var image = await AppServices.PickImageFromPhone();
-            if (image == null) {
+            childImageMediaFile = await AppServices.PickImageFromPhone();
+
+            if ( childImageMediaFile == null ) {
 
                 IsImageSelected = false;
                 ChildImage = null;
-            
+
             } else {
 
                 IsImageSelected = true;
-                ChildImage = image;
+                ChildImage = childImageMediaFile.GetImageSource();
             }
         }
 
@@ -140,25 +144,29 @@ namespace DellyShopApp.ViewModel {
 
 
             try {
-                string result = "";
-                List <KeyValuePair<string, string>> pairs = new List<KeyValuePair<string, string>>()
-                {
-                    new KeyValuePair<string, string>("UniqueRef", UniqueId),
-                    new KeyValuePair<string, string>("name", FullName),
-                    new KeyValuePair<string, string>("email", Email),
-                    new KeyValuePair<string, string>("phone", Phone),
-                    new KeyValuePair<string, string>("address", Address),
-                    new KeyValuePair<string, string>("school_Id", "123"),
-                    new KeyValuePair<string, string>("parent_id", Global.ParentId.ToString()),
-                };
 
-                if ( editChild == null) { 
-                    result = HelperClass.PostRecord( $"https://pos2.dndaims.net/api/cust/add", pairs );
+                string result = "";
+                var content = new MultipartFormDataContent {
+                    { new StringContent( UniqueId ), "UniqueRef" },
+                    { new StringContent( FullName ), "name" },
+                    { new StringContent( Phone ), "phone" },
+                    { new StringContent( Email ), "email" },
+                    { new StringContent( Address ), "address" },
+                    { new StringContent( "1" ), "school_Id" },
+                    { new StringContent( Global.ParentId.ToString() ), "parent_id" }
+                };
+                if ( childImageMediaFile != null ) {
+                    var file = childImageMediaFile.GetByteArray();
+                    content.Add( new ByteArrayContent( file, 0, file.Length ), "avatar", "avatar.jpg" );
+                }
+
+                if ( editChild == null ) {
+                    result = HelperClass.PostRecord( $"https://pos2.dndaims.net/api/cust/add", content );
                 } else {
 
-                    //pairs.Add( new KeyValuePair<string, string>( "id", editChild.Id.ToString() ) );
+                    //content.Add( new KeyValuePair<string, string>( "id", editChild.Id.ToString() ) );
 
-                    result = HelperClass.PostRecord( $"https://pos2.dndaims.net/api/cust/update", pairs );
+                    result = HelperClass.PostRecord( $"https://pos2.dndaims.net/api/cust/update", content );
                 }
 
                 Application.Current.MainPage.DisplayAlert( "Added", result, "OK" );

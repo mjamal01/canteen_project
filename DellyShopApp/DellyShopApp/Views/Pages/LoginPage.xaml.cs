@@ -13,7 +13,6 @@ using Xamarin.Forms.Xaml;
 namespace DellyShopApp.Views.Pages {
     [XamlCompilation( XamlCompilationOptions.Compile )]
     public partial class LoginPage {
-        public string accessToken = "";
 
         private string[] languages = { "English", "العربية" };
 
@@ -50,13 +49,16 @@ namespace DellyShopApp.Views.Pages {
 
         private async void LoginButtonClick(object sender, EventArgs e) {
             LoginButton.IsEnabled = false;
-            if ( EntryUserName.Text == "" || EntryPassword.Text == "" || EntryUserName.Text == null || EntryPassword.Text == null ) {
+            if ( string.IsNullOrEmpty( EntryUserName.Text ) || string.IsNullOrEmpty( EntryPassword.Text ) ) {
                 await DisplayAlert( "Error", "User name or password cannot be empty.", "ok" );
                 LoginButton.IsEnabled = true;
                 return;
             }
-            //Here first complete the login process
-            var keyValues = new List<KeyValuePair<string, string>>
+
+            try {
+
+                //Here first complete the login process
+                var keyValues = new List<KeyValuePair<string, string>>
                 {
                     new KeyValuePair<string, string>("username", EntryUserName.Text),
                     new KeyValuePair<string, string>("password", EntryPassword.Text),
@@ -64,29 +66,30 @@ namespace DellyShopApp.Views.Pages {
                     new KeyValuePair<string, string>("response_type", "token"),
                 };
 
-
-            try {
-                var request = new HttpRequestMessage( HttpMethod.Post, string.Format( @"{0}/token", Global.WebApiUrl ) );
-                request.Content = new FormUrlEncodedContent( keyValues );
-                request.Headers.Add( "IsMobileApp", "1" );
+                var content = new FormUrlEncodedContent( keyValues );
+                var response = HelperClass.PostRecord( $"{Global.WebApiUrl}/token", content );
+                //var request = new HttpRequestMessage( HttpMethod.Post, string.Format( @"{0}/token", Global.WebApiUrl ) );
+                //request.Content = new FormUrlEncodedContent( keyValues );
+                //request.Headers.Add( "IsMobileApp", "1" );
                 //request.Headers.Add("Content-Type", "application/json; charset=UTF-8");
-                var client = new HttpClient();
-                var response = await client.SendAsync( request );
-                var content = await response.Content.ReadAsStringAsync();
-                Newtonsoft.Json.Linq.JObject jwtDynamic = JsonConvert.DeserializeObject<dynamic>( content );
-                accessToken = jwtDynamic.Value<string>( "access_token" );
-                if ( accessToken != null && accessToken != "" ) {
+                //var client = new HttpClient();
+                //var response = await client.SendAsync( request );
+                //var content = await response.Content.ReadAsStringAsync();
+                var loginToken = JsonConvert.DeserializeObject<LoginToken>( response );
+                var accessToken = loginToken.AccessToken;
+                if ( !string.IsNullOrEmpty( accessToken ) ) {
+
                     Global.token = accessToken;
                     //Here get the user info
-                    var result = HelperClass.GetStringRecord( $"{Global.WebApiUrl}/api/user/GetUserInfoMobile?username={EntryUserName.Text}" );
+                    var result = HelperClass.GetRecord( $"{Global.WebApiUrl}/api/user/GetUserInfoMobile?username={EntryUserName.Text}" );
 
-                    userinfo_mobile_v userinfo = JsonConvert.DeserializeObject<userinfo_mobile_v>( result );
+                    var userInfo = JsonConvert.DeserializeObject<UserInfo>( result );
 
-                    Global.Username = userinfo.username;
-                    Global.LoggedInUserId = userinfo.UserId;
-                    Global.GroupId = userinfo.group_id;
-                    Global.ParentId = userinfo.parent_id;
-                    Global.ParentName = userinfo.parent_name;
+                    Global.Username = userInfo.Username;
+                    Global.LoggedInUserId = userInfo.UserId;
+                    Global.GroupId = userInfo.GroupId;
+                    Global.ParentId = userInfo.ParentId;
+                    Global.ParentName = userInfo.ParentName;
                     //await DisplayAlert("Login", "Login Successful", "ok");
                     if ( Global.GroupId == 3 ) {
                         await Navigation.PushAsync( new HomeTabbedPage() );

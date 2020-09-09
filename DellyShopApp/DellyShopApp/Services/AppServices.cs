@@ -2,6 +2,7 @@
 using DellyShopApp.Languages;
 using DellyShopApp.Views.Pages;
 using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -61,7 +62,7 @@ namespace DellyShopApp.Services {
             }
         }
 
-        public static async Task<ImageSource> PickImageFromPhone() {
+        public static async Task<MediaFile> PickImageFromPhone() {
             var initialize = await CrossMedia.Current.Initialize();
 
             if ( !CrossMedia.Current.IsPickPhotoSupported ) {
@@ -79,14 +80,7 @@ namespace DellyShopApp.Services {
             if ( file == null )
                 return null;
 
-            //await MainPage.DisplayAlert( "File Location", file.Path, "OK" );
-
-            var imageSource = ImageSource.FromStream( () => {
-                var stream = file.GetStream();
-                return stream;
-            } );
-
-            return imageSource;
+            return file;
         }
 
     }
