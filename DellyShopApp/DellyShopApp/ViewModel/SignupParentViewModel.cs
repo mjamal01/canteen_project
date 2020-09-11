@@ -85,7 +85,7 @@ namespace DellyShopApp.ViewModel {
                     new KeyValuePair<string, string>("phone", Phone),
                 };
 
-                string result = HelperClass.PostRecord( $"https://pos2.dndaims.net/api/parent/Add", pairs );
+                string result = HelperClass.PostRecord( $"{Global.WebApiUrl}/api/parent/Add", pairs );
                 Application.Current.MainPage.DisplayAlert( "Signup", result, "OK" );
             } catch ( Exception ex ) {
                 Console.WriteLine( ex.StackTrace );

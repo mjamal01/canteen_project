@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base;assembly=DellyShopApp"
+    xmlns:customControl="clr-namespace:DellyShopApp.CustomControl"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    xmlns:converters="clr-namespace:DellyShopApp.Converters"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
+    iOsSpecific:Page.UseSafeArea="True"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="DellyShopApp.Views.Pages.TransectionListPage">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <partialViews:NavigationBarPartialView
+                Grid.Row="0"
+                BackButtonVisibler="True"
+                FavVisible="False"
+                IsModalpage="False"
+                NavigationTitle="{x:Static languages:AppResources.TransactionsSummary}" />
+
+            <CollectionView 
+                x:Name="listItems"
+                Grid.Row="1" 
+                BackgroundColor="White" 
+                Margin="20,20,20,0" 
+                VerticalScrollBarVisibility="Never"
+                HorizontalScrollBarVisibility="Never"> 
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate >
+                        <Grid>
+                            <yummy:PancakeView 
+                                BackgroundColor="White" 
+                                Padding="10"   
+                                CornerRadius="10"
+                                HasShadow="False"    
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand">
+                                <yummy:PancakeView.Border>
+                                    <yummy:Border Color="#24000000" Thickness="1" />
+                                </yummy:PancakeView.Border>
+
+                                <Grid ColumnDefinitions="*,2*" ColumnSpacing="0">
+
+                                    <Label Grid.Column="0" Grid.Row="0"  FontAttributes="Bold" Text="Date" />
+
+                                    <Label Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Transection" />
+
+                                    <Label Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="Credit" />
+
+                                    <Label Grid.Column="0" Grid.Row="3" FontAttributes="Bold" Text="Debit" />
+
+                                    <Label Grid.Column="0" Grid.Row="4" FontAttributes="Bold" Text="Balance" />
+
+
+
+
+                                    <Label Grid.Column="1" Grid.Row="0" FontAttributes="Bold" Text="{Binding DTG}" />
+
+                                    <Label Grid.Column="1" Grid.Row="1" FontAttributes="Bold" Text="{Binding Ref}" />
+
+                                    <Label Grid.Column="1" Grid.Row="2" FontAttributes="Bold" Text="{Binding Credit}" />
+
+                                    <Label Grid.Column="1" Grid.Row="3" FontAttributes="Bold" Text="{Binding Debit}" />
+
+                                    <Label Grid.Column="1" Grid.Row="4" FontAttributes="Bold" Text="{Binding Balance}" />
+
+
+
+
+                                </Grid>
+                                <yummy:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, Source={x:Reference listItems}}"
+                                        CommandParameter="{Binding .}"
+                                        NumberOfTapsRequired="1" />
+                                </yummy:PancakeView.GestureRecognizers>
+                            </yummy:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

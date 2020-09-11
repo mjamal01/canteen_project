@@ -75,20 +75,25 @@
                             </Frame.GestureRecognizers>
                         </Frame>
 
-                        <Image
-                            Aspect="AspectFit"
-                            HeightRequest="100"
+                        <Frame 
                             IsVisible="{Binding IsImageSelected}"
-                            Source="{Binding ChildImage}" >
+                            Style="{DynamicResource FrameStyle}" 
+                            BackgroundColor="White" 
+                            HeightRequest="100"
+                            BorderColor="#B3B3B3">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="100"
+                                IsVisible="{Binding IsImageSelected}"
+                                Source="{Binding ChildImage}" > 
+                            </Image>
 
-
-                            <Image.GestureRecognizers>
+                            <Frame.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Command="{Binding PickImageCommand}"
                                     NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-
+                            </Frame.GestureRecognizers>
+                        </Frame>
                     </Grid>
 
                     <Frame 
@@ -263,9 +268,9 @@
                                 </Image.Source>
                             </Image>
                             <BoxView VerticalOptions="CenterAndExpand" Color="Gray" WidthRequest="1"></BoxView>
-                            
+
                             <!--This is email entry box-->
-                    
+
                             <renderers:BorderlessEntry
                                 Margin="10,0,0,0"
                                 HorizontalOptions="FillAndExpand"
@@ -275,6 +280,22 @@
                                 TextColor="{DynamicResource EntryTextColor}"
                                 />
                         </StackLayout>
+                    </Frame>
+
+                    <Frame 
+                        Style="{DynamicResource FrameStyle}" 
+                        BackgroundColor="White" 
+                        BorderColor="#B3B3B3">
+
+                        <renderers:BorderlessPicker  
+                            x:Name="schoolsPkr"
+                            ItemDisplayBinding="{Binding Name}"
+                            ItemsSource="{Binding Schools}" 
+                            SelectedItem="{Binding SchoolDetail}"
+                            SelectedIndexChanged="OnSchoolChanged"
+                            Title="{x:Static languages:AppResources.SelectSchool}"
+                            Style="{DynamicResource BorderlessEntry}"
+                            TextColor="{DynamicResource WhiteDarkFontColor}" />
                     </Frame>
 
                     <Button

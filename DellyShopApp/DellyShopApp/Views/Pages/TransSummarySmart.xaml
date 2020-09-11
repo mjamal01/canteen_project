@@ -43,7 +43,7 @@ NavigationPage.BackButtonTitle="Hello">
                             <Image
                                 Aspect="AspectFill" 
                                 HeightRequest="50"
-                                Source="{Binding image}"
+                                Source="{Binding Image}"
                                 WidthRequest="50" />
                         </pancakeView:PancakeView>
                         <StackLayout VerticalOptions="CenterAndExpand">

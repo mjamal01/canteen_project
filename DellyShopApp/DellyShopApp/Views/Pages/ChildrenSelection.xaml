@@ -38,7 +38,7 @@ NavigationPage.HasNavigationBar="False">
                             <Image
                                 Aspect="AspectFill" 
                                 HeightRequest="50"
-                                Source="{Binding customer_image}"
+                                Source="{Binding Avatar}"
                                 WidthRequest="50" />
                         </pancakeView:PancakeView>
                         <StackLayout VerticalOptions="CenterAndExpand">

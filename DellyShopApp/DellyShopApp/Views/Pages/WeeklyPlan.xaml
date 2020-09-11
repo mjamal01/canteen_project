@@ -65,12 +65,12 @@
                                     Grid.Column="0"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Source="{Binding image}"/>
+                                    Source="{Binding Image}"/>
                                     <StackLayout  Grid.Column="1">
                                         <Label 
                                             VerticalOptions="StartAndExpand"
                                             VerticalTextAlignment="Center"
-                                            Text="{Binding name}"  
+                                            Text="{Binding Name}"  
                                             FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
                                         <Label 
                                             VerticalOptions="CenterAndExpand"

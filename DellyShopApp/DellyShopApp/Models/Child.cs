@@ -8,13 +8,13 @@ namespace DellyShopApp.Models {
         [JsonProperty( "name" )]
         public string Name { get; set; } = "";
 
-        [JsonProperty( "phone" )]
+        [JsonProperty( "Phone" )]
         public string Phone { get; set; } = "";
 
         [JsonProperty( "UniqueRef" )]
         public string UniqueRef { get; set; }
 
-        [JsonProperty( "email" )]
+        [JsonProperty( "Email" )]
         public string Email { get; set; } = "";
 
         [JsonProperty( "parent_name" )]
@@ -22,8 +22,8 @@ namespace DellyShopApp.Models {
 
         [JsonProperty( "id" )]
         public int Id { get; set; }
-
-        [JsonProperty( "school_id" )]
+         
+        [JsonProperty( "SchoolID" )]
         public int SchoolId { get; set; }
 
         [JsonProperty( "type" )]
@@ -33,12 +33,12 @@ namespace DellyShopApp.Models {
         public int ParentId { get; set; }
 
         [JsonProperty( "TotalBalance" )]
-        public double TotalBalance { get; set; }
+        public decimal TotalBalance { get; set; }
 
         [JsonProperty( "avatar" )]
         public string Avatar { get; set; }
 
-        [JsonProperty( "address" )]
+        [JsonProperty( "Address" )]
         public string Address { get; set; }
     }
 }

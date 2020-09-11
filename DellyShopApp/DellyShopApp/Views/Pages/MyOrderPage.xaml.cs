@@ -14,7 +14,7 @@ namespace DellyShopApp.Views.Pages {
             BasketItems.ItemsSource = ProcutListModel;
         }
 
-        public MyOrderPage(IndividualChildDetail childDetail) {
+        public MyOrderPage(ChildWithProducts childDetail) {
             InitializeComponent();
         }
 

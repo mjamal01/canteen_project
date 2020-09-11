@@ -37,6 +37,8 @@ namespace DellyShopApp {
 
         private void LoadPlatForms() {
             ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
+
+            Device.SetFlags( new[] { "SwipeView_Experimental" } );
         }
     }
 }

@@ -57,7 +57,7 @@
                         Grid.Column="0"
                         HeightRequest="50"
                         WidthRequest="50"
-                        Source="{Binding ChildDetail.customer_image}"/>
+                        Source="{Binding ChildDetail.Avatar}"/>
 
                     <StackLayout 
                         Grid.Column="1">
@@ -67,7 +67,7 @@
                             <Label Grid.Row="0" Grid.Column="1" FontSize="12" Text="21" FontAttributes="Bold" TextColor="{DynamicResource LightLabelTextColor}"/>
                         </StackLayout>-->
 
-                        <Label FontAttributes="Bold"  Text="{Binding ChildDetail.name}"/>
+                        <Label FontAttributes="Bold"  Text="{Binding ChildDetail.Name}"/>
 
                         <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
                             <!--<Label Text="{x:Static languages:AppResources.NationalID}" FontSize="12"/>-->
@@ -350,25 +350,25 @@
 
                                 <Grid ColumnDefinitions="50,*,auto" ColumnSpacing="20">
                                     <Image 
-                                    Grid.Column="0"
-                                    HeightRequest="50"
-                                    WidthRequest="50"
-                                    Source="{Binding image}"/>
-                                    <StackLayout  Grid.Column="1">
-                                        <Label 
-                                            VerticalOptions="StartAndExpand"
-                                            VerticalTextAlignment="Center"
-                                            Text="{Binding name}" 
-                                            FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
-                                        <Label 
-                                            VerticalOptions="CenterAndExpand"
-                                            VerticalTextAlignment="Center"
-                                            FontSize="{x:OnPlatform Android='15', iOS='13'}"
-                                            BindingContext="{x:Static languages:AppResources.Calories}" 
-                                            Text="{Binding ., StringFormat='{0} : 0'}"></Label>
-                                    </StackLayout>
+                                        Grid.Column="0"
+                                        HeightRequest="50"
+                                        WidthRequest="50"
+                                        Source="{Binding Image}"/>
+                                        <StackLayout  Grid.Column="1">
+                                            <Label 
+                                                VerticalOptions="StartAndExpand"
+                                                VerticalTextAlignment="Center"
+                                                Text="{Binding Name}" 
+                                                FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
+                                            <Label 
+                                                VerticalOptions="CenterAndExpand"
+                                                VerticalTextAlignment="Center"
+                                                FontSize="{x:OnPlatform Android='15', iOS='13'}"
+                                                BindingContext="{x:Static languages:AppResources.Calories}" 
+                                                Text="{Binding ., StringFormat='{0} : 0'}"></Label>
+                                        </StackLayout>
 
-                                    <StackLayout  Grid.Column="2">
+                                        <StackLayout  Grid.Column="2">
                                         <Label 
                                             FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                                             VerticalOptions="StartAndExpand"
@@ -405,10 +405,10 @@
                                                     </Image.GestureRecognizers>
                                                     <Image.Source>
                                                         <FontImageSource
-                                                        FontFamily="{DynamicResource MaterialFontFamily}"
-                                                        Glyph="{x:Static font:FontAwesomeIcons.Minus}"
-                                                        Size="{x:OnPlatform Android='30', iOS='25'}"
-                                                        Color="{DynamicResource DarkLabelTextColor}" />
+                                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                                            Glyph="{x:Static font:FontAwesomeIcons.Minus}"
+                                                            Size="{x:OnPlatform Android='30', iOS='25'}"
+                                                            Color="{DynamicResource DarkLabelTextColor}" />
                                                     </Image.Source>
                                                 </Image>
                                                 <Label
@@ -431,10 +431,10 @@
                                                     </Image.GestureRecognizers>
                                                     <Image.Source>
                                                         <FontImageSource
-                                                        FontFamily="{DynamicResource MaterialFontFamily}"
-                                                        Glyph="{x:Static font:FontAwesomeIcons.Plus}"
-                                                        Size="{x:OnPlatform Android='30', iOS='25'}"
-                                                        Color="{DynamicResource DarkLabelTextColor}" />
+                                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                                            Glyph="{x:Static font:FontAwesomeIcons.Plus}"
+                                                            Size="{x:OnPlatform Android='30', iOS='25'}"
+                                                            Color="{DynamicResource DarkLabelTextColor}" />
                                                     </Image.Source>
                                                 </Image>
                                             </StackLayout>
@@ -528,9 +528,9 @@
                                     Grid.Column="0"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Source="{Binding image}"/>
+                                    Source="{Binding Image}"/>
                                 <StackLayout  Grid.Column="1">
-                                    <Label Text="{Binding name}"/>
+                                    <Label Text="{Binding Name}"/>
                                     <Label Text="Calories : 0"/>
                                 </StackLayout>
                                 <StackLayout  Grid.Column="2">

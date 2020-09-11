@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml;
 namespace DellyShopApp.Views.Pages {
     [XamlCompilation( XamlCompilationOptions.Compile )]
     public partial class SingleStudentProducts {
-        public SingleStudentProducts(IndividualChildDetail individualChildDetail) {
+        public SingleStudentProducts(ChildWithProducts individualChildDetail) {
             InitializeComponent();
             SingleStudentProductsBasketItems.ItemsSource = individualChildDetail.ProductsList;
             //SingleStudentProductsBasketItems.ItemsSource = ProcutListModel;
@@ -21,7 +21,7 @@ namespace DellyShopApp.Views.Pages {
             //await Navigation.PushAsync(new ProductDetail(item));
 
 
-            if ( !( pancake.BindingContext is productsWithQtyLimitMobile item ) )
+            if ( !( pancake.BindingContext is Product item ) )
                 return;
 
             ProductListModel productListModel = new ProductListModel() {

@@ -12,7 +12,7 @@ namespace DellyShopApp.Views.Pages
         public TransSummarySmart()
         {
             InitializeComponent();
-            UpdateTransactions();
+            //UpdateTransactions();
             TransactionsList.ItemsSource = transactions;
         }
 

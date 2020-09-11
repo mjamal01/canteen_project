@@ -65,13 +65,13 @@ namespace DellyShopApp.Views.Pages {
 
 
             //Get the allowed quantity
-            var individualChildDetail = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).Select( data => data ).First();
-            string SevenDaysQuantity = individualChildDetail.ProductsList.Where( data => data.Id == CurrentProductId ).Select( info => info.DailyQty7Days ).First();
-            string quantity = SevenDaysQuantity.Split( ',' ).GetValue( CurrentDayIndex ) as string;
+            //var individualChildDetail = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).Select( data => data ).First();
+            //string SevenDaysQuantity = individualChildDetail.ProductsList.Where( data => data.Id == CurrentProductId ).Select( info => info.DailyQty7Days ).First();
+            //string quantity = SevenDaysQuantity.Split( ',' ).GetValue( CurrentDayIndex ) as string;
 
-            Random random = new Random();
+            //Random random = new Random();
 
-            ProductCountLabel.Text = quantity.ToString();
+            //ProductCountLabel.Text = quantity.ToString();
             //starList.ItemsSource = _startList;
             //starListglobal.ItemsSource = _startList;
 
@@ -108,12 +108,12 @@ namespace DellyShopApp.Views.Pages {
             try {
                 //int TargetQty = int.Parse(ProductCountLabel.Text);
                 //Here get the target student record
-                var studentRec = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).ToList().FirstOrDefault();
-                var productRec = studentRec.ProductsList.Where( prod => prod.Id == _products.Id ).First();
+                //var studentRec = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).ToList().FirstOrDefault();
+                //var productRec = studentRec.ProductsList.Where( prod => prod.Id == _products.Id ).First();
 
-                string[] arr = productRec.DailyQty7Days.Split( ',' );
-                arr[CurrentDayIndex] = ProductCountLabel.Text;
-                productRec.DailyQty7Days = String.Join( ",", arr );
+                //string[] arr = productRec.DailyQty7Days.Split( ',' );
+                //arr[CurrentDayIndex] = ProductCountLabel.Text;
+                //productRec.DailyQty7Days = String.Join( ",", arr );
 
                 DisplayAlert( AppResources.Success, _products.Title + " " + productCount + " " + AppResources.AddedBakset, AppResources.Okay );
             } catch ( Exception ex ) {

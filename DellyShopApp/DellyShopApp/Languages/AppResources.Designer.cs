@@ -1015,6 +1015,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search List.
+        /// </summary>
+        internal static string SearchList {
+            get {
+                return ResourceManager.GetString("SearchList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Address.
         /// </summary>
         internal static string SelectAddress {
@@ -1056,6 +1065,15 @@ namespace DellyShopApp.Languages {
         internal static string SelectLanguage {
             get {
                 return ResourceManager.GetString("SelectLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select School.
+        /// </summary>
+        internal static string SelectSchool {
+            get {
+                return ResourceManager.GetString("SelectSchool", resourceCulture);
             }
         }
         
@@ -1296,11 +1314,29 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total Credit.
+        /// </summary>
+        internal static string TotalCredit {
+            get {
+                return ResourceManager.GetString("TotalCredit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total Current Balance.
         /// </summary>
         internal static string TotalCurrentBalance {
             get {
                 return ResourceManager.GetString("TotalCurrentBalance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Debit.
+        /// </summary>
+        internal static string TotalDebit {
+            get {
+                return ResourceManager.GetString("TotalDebit", resourceCulture);
             }
         }
         

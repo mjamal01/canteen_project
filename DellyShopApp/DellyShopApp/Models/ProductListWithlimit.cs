@@ -5,10 +5,10 @@ using System.Collections.ObjectModel;
 using System.Text;
 
 namespace DellyShopApp.Models {
-    public class ProductListWithlimit : ObservableCollection<productsWithQtyLimitMobile> {
-        public string DayOfWeek { get; set; }   
+    public class ProductListWithlimit : ObservableCollection<Product> {
+        public string DayOfWeek { get; set; }
 
-        public ProductListWithlimit(string dayOfWeek, ObservableCollection<productsWithQtyLimitMobile> products) : base( products ) {
+        public ProductListWithlimit(string dayOfWeek, ObservableCollection<Product> products) : base( products ) {
             DayOfWeek = dayOfWeek;
         }
 

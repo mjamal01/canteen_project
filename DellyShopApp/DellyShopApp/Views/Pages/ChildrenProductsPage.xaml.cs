@@ -1,4 +1,5 @@
-﻿using DellyShopApp.ViewModel;
+﻿using DellyShopApp.Models;
+using DellyShopApp.ViewModel;
 using DellyShopApp.Views.Pages.Base;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ using Xamarin.Forms.Xaml;
 namespace DellyShopApp.Views.Pages {
     [XamlCompilation( XamlCompilationOptions.Compile )]
     public partial class ChildrenProductsPage {
-        public ChildrenProductsPage(IndividualChildDetail vm) {
+        public ChildrenProductsPage(ChildWithProducts vm) {
             InitializeComponent();
             ViewModel = new ChildrenProductsViewModel( vm );
         }

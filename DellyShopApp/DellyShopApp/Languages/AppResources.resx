@@ -615,4 +615,16 @@ If you have any concerns about your Information on the Platform, please contact 
   <data name="AddChild" xml:space="preserve">
     <value>Add child</value>
   </data>
+  <data name="SearchList" xml:space="preserve">
+    <value>Search List</value>
+  </data>
+  <data name="SelectSchool" xml:space="preserve">
+    <value>Select School</value>
+  </data>
+  <data name="TotalCredit" xml:space="preserve">
+    <value>Total Credit</value>
+  </data>
+  <data name="TotalDebit" xml:space="preserve">
+    <value>Total Debit</value>
+  </data>
 </root>

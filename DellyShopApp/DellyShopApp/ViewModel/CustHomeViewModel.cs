@@ -1,5 +1,6 @@
 ﻿using DellyShopApp.Helpers;
 using DellyShopApp.Models;
+using DellyShopApp.Services;
 using DellyShopApp.Views.Pages;
 using DellyShopApp.Views.Pages.Base;
 using Microcharts;
@@ -16,7 +17,7 @@ using Xamarin.Forms;
 namespace DellyShopApp.ViewModel {
     public class CustHomeViewModel : BaseVm {
 
-        public ObservableCollection<IndividualChildDetail> ChildrenDetailList { get; set; } = new ObservableCollection<IndividualChildDetail>();
+        public ObservableCollection<ChildWithProducts> ChildrenDetailList { get; set; } = new ObservableCollection<ChildWithProducts>();
 
         private string _currency;
         public string Currenncy {
@@ -27,12 +28,30 @@ namespace DellyShopApp.ViewModel {
             }
         }
 
-        private double _totalBalance;
-        public double TotalBalance {
+        private decimal _totalBalance;
+        public decimal TotalBalance {
             get => _totalBalance;
             set {
                 _totalBalance = value;
                 OnPropertyChanged( nameof( TotalBalance ) );
+            }
+        }
+
+        private decimal _totalCredit;
+        public decimal TotalCredit {
+            get => _totalCredit;
+            set {
+                _totalCredit = value;
+                OnPropertyChanged( nameof( TotalCredit ) );
+            }
+        }
+
+        private decimal _totalDebit;
+        public decimal TotalDebit {
+            get => _totalDebit;
+            set {
+                _totalDebit = value;
+                OnPropertyChanged( nameof( TotalDebit ) );
             }
         }
 
@@ -81,7 +100,7 @@ namespace DellyShopApp.ViewModel {
         }
 
         public void LoadChildrens() {
-            ChildrenDetailList = BasePage.ChildrenDetailList;
+            ChildrenDetailList = RestService.GetChildrenMoneyAndProductsDetail();
             OnPropertyChanged( nameof( ChildrenDetailList ) );
             SetChart();
         }
@@ -91,23 +110,31 @@ namespace DellyShopApp.ViewModel {
             Currenncy = "SR";
             ChartRefreshCommand = new Command( OnChartRefresh );
             CreditLimitCommand = new Command( OnCreditLimit );
-            NavigateToDetailPageCommand = new Command<IndividualChildDetail>( vm => OnNavigateToDetailPage( vm ) );
+            NavigateToDetailPageCommand = new Command<ChildWithProducts>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
+            Initialize();
             //SetCreditLimit();
             SetMessagingCenter();
+        }
+
+        private void Initialize() {
+            var parentCashInfo = RestService.GetParentTotalDebitCredit();
+
+            TotalCredit = parentCashInfo.TotalCredit;
+            TotalDebit = parentCashInfo.TotalDebit;
         }
 
         private void SetMessagingCenter() {
             MessagingCenter.Subscribe<ChildrenProductsViewModel>( this, "LoadChildrenDetailList", (sender) => {
 
                 Device.BeginInvokeOnMainThread( () => {
-                    BasePage.InitializeChildrenData();
+                    RestService.GetChildrenMoneyAndProductsDetail( true );
                     LoadChildrens();
                 } );
             } );
         }
 
-        private void OnNavigateToDetailPage(IndividualChildDetail vm) {
+        private void OnNavigateToDetailPage(ChildWithProducts vm) {
             App.Current.MainPage.Navigation.PushAsync( new ChildrenProductsPage( vm ) );
         }
 
@@ -127,16 +154,21 @@ namespace DellyShopApp.ViewModel {
 
         private IEnumerable<ChartEntry> GetChildrens() {
             //
-            List<ChartEntry> list = new List<ChartEntry>();
-            foreach ( var item in ChildrenDetailList ) {
-                list.Add( new ChartEntry( ( float ) item.DailyCashLimit ) {
+            try {
+                List<ChartEntry> list = new List<ChartEntry>();
+                foreach ( var item in ChildrenDetailList.Take( 5 ) ) {
+                    list.Add( new ChartEntry( ( float ) item.DailyCashLimit ) {
 
-                    Label = item.Name,
-                    ValueLabel = item.DailyCashLimit.ToString( "0" ),
-                    Color = SKColor.Parse( "#8349f5" )
-                } );
+                        Label = item.Name,
+                        ValueLabel = item.DailyCashLimit.ToString( "0" ),
+                        Color = SKColor.Parse( "#8349f5" )
+                    } );
+                }
+                return list.AsEnumerable();
+            } catch ( Exception ) {
+                return new List<ChartEntry>();
             }
-            return list.AsEnumerable();
+
         }
 
         private void SetChart() {

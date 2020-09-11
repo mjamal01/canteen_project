@@ -12,13 +12,14 @@ using DellyShopApp.CommonData;
 using DellyShopApp.Views.Pages.Base;
 using Xamarin.Forms.Internals;
 using System.Linq;
+using DellyShopApp.Services;
 
 namespace DellyShopApp.Views.Pages {
     [XamlCompilation( XamlCompilationOptions.Compile )]
     public partial class SingleChildDetail {
         public string formTitle { get; set; }
-        private IndividualChildDetail individualChildDetail { get; set; }
-        public SingleChildDetail(IndividualChildDetail ArgindividualChildDetail) {
+        private ChildWithProducts individualChildDetail { get; set; }
+        public SingleChildDetail(ChildWithProducts ArgindividualChildDetail) {
             individualChildDetail = ArgindividualChildDetail;
             InitializeComponent();
             ChildName.Text = individualChildDetail.Name;
@@ -52,7 +53,8 @@ namespace DellyShopApp.Views.Pages {
             studentLimitsUpdateByParent.CustomerId = CurrentChildId;
             studentLimitsUpdateByParent.DailyAllowedMoney = decimal.Parse( MaxAmountPerDay.Text );
 
-            var studentRec = ChildrenDetailList.Where( item => item.CustomerId == CurrentChildId ).ToList().FirstOrDefault();
+            var list = RestService.GetChildrenMoneyAndProductsDetail();
+            var studentRec = list.Where( item => item.Id == CurrentChildId ).ToList().FirstOrDefault();
             studentRec.ProductsList.ForEach( item => {
                 studentLimitsUpdateByParent.listOfQtyLimits.Add( new ProductLimitsByParent() {
                     ProductId = item.Id,

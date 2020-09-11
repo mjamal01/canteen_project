@@ -11,6 +11,7 @@
     xmlns:pancakeView1="clr-namespace:DellyShopApp.Views.CustomView"
     xmlns:renderers="clr-namespace:DellyShopApp.Renderers"
     BackgroundColor="{DynamicResource BackgroundColor}">
+
     <StackLayout Padding="20">
         <!--<pancakeView:NavigationBarPartialView
             BackButtonVisibler="False"
@@ -30,8 +31,15 @@
                 Padding="5"
                 Spacing="10">
                 <!--<Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.TotalCurrentBalance}" />-->
-                <Label Style="{DynamicResource EntryHeaderLabel}" Text="{x:Static languages:AppResources.EnterAmount}" />
-                <pancakeView1:PancakeView Style="{DynamicResource PancakeFrameStyle}">
+                <Label 
+                    Style="{DynamicResource EntryHeaderLabel}" 
+                    Text="{x:Static languages:AppResources.EnterAmount}" />
+
+                <Frame 
+                    Style="{DynamicResource FrameStyle}" 
+                    BackgroundColor="White" 
+                    BorderColor="#B3B3B3">
+
                     <renderers:BorderlessEntry
                         Keyboard="Text"
                         MaxLength="30"
@@ -40,20 +48,40 @@
                         Placeholder="0.0"
                         Style="{DynamicResource BorderlessEntry}"
                         TextColor="{DynamicResource WhiteDarkFontColor}" />
-                </pancakeView1:PancakeView>
-                <Button
-                        Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
-                        Clicked="SaveButtonClick"
-                        Style="{DynamicResource ButtonStyle}"
-                        Text="{x:Static languages:AppResources.Save}"
-                        TextColor="{DynamicResource LabelTextColor}" />
+                </Frame>
+
+
+
+                <Label 
+                    Style="{DynamicResource EntryHeaderLabel}" 
+                    Text="{x:Static languages:AppResources.SelectSchool}" />
+
+                <Frame 
+                    Style="{DynamicResource FrameStyle}" 
+                    BackgroundColor="White" 
+                    BorderColor="#B3B3B3">
+
+                    <renderers:BorderlessPicker  
+                        x:Name="schoolsPkr"
+                        ItemDisplayBinding="{Binding Name}"
+                        Title="{x:Static languages:AppResources.SelectSchool}"
+                        Style="{DynamicResource BorderlessEntry}"
+                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                </Frame>
 
                 <Button
+                    Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
+                    Clicked="SaveButtonClick"
+                    Style="{DynamicResource ButtonStyle}"
+                    Text="{x:Static languages:AppResources.Submit}"
+                    TextColor="{DynamicResource LabelTextColor}" />
+
+                <!--<Button
                         Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='50,20,50,10'}"
                         Clicked="CancelButtonClick"
                         Style="{DynamicResource ButtonStyle}"
                         Text="{x:Static languages:AppResources.Cancel}"
-                        TextColor="{DynamicResource LabelTextColor}" />
+                        TextColor="{DynamicResource LabelTextColor}" />-->
 
 
             </StackLayout>

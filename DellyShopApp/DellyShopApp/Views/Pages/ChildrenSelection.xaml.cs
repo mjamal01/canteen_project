@@ -9,8 +9,8 @@ namespace DellyShopApp.Views.Pages {
     public partial class ChildrenSelection {
         public ChildrenSelection() {
             InitializeComponent();
-            InitializeChildrenData();
-            ChildrenList.ItemsSource = ChildrenDetailList;
+            //InitializeChildrenData();
+            //ChildrenList.ItemsSource = ChildrenDetailList;
         }
 
         private async void ClickItem(object sender, EventArgs e) {

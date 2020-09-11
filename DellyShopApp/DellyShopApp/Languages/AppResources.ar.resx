@@ -584,4 +584,16 @@
   <data name="AddChild" xml:space="preserve">
     <value>أضف الطفل</value>
   </data>
+  <data name="SearchList" xml:space="preserve">
+    <value>قائمة البحث</value>
+  </data>
+  <data name="SelectSchool" xml:space="preserve">
+    <value>اختر المدرسة</value>
+  </data>
+  <data name="TotalCredit" xml:space="preserve">
+    <value>إجمالي الائتمان</value>
+  </data>
+  <data name="TotalDebit" xml:space="preserve">
+    <value>إجمالي الخصم</value>
+  </data>
 </root>

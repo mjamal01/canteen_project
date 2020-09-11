@@ -17,10 +17,12 @@ using Xamarin.Forms.Internals;
 namespace DellyShopApp.ViewModel {
     public class ChildrenProductsViewModel : BaseVm {
 
-        public ObservableCollection<productsWithQtyLimitMobile> ProductsWithLimit { get; set; } = new ObservableCollection<productsWithQtyLimitMobile>();
+        public ObservableCollection<Product> ProductsWithLimit { get; set; } = new ObservableCollection<Product>();
+        public Dictionary<string, Dictionary<string, ObservableCollection<Product>>> ProductsWithDay { get; set; } = new Dictionary<string, Dictionary<string, ObservableCollection<Product>>>();
 
-        private IndividualChildDetail _ChildDetail;
-        public IndividualChildDetail ChildDetail {
+
+        private ChildWithProducts _ChildDetail;
+        public ChildWithProducts ChildDetail {
             get => _ChildDetail;
             set {
                 _ChildDetail = value;
@@ -100,8 +102,6 @@ namespace DellyShopApp.ViewModel {
         };
 
 
-        public Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>> ProductsWithDay { get; set; } = new Dictionary<string, Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>>();
-        //public Dictionary<string, string> DialyLimitWithDay { get; set; } = new Dictionary<string, string>();
 
         private int _selectedDay;
         public int SelectedDay {
@@ -127,7 +127,7 @@ namespace DellyShopApp.ViewModel {
         public ICommand ShowWeeklyPlanCommand { get; set; }
         public ICommand UploadChildDialyLimitCommand { get; set; }
 
-        public ChildrenProductsViewModel(IndividualChildDetail detail) {
+        public ChildrenProductsViewModel(ChildWithProducts detail) {
 
             ChildDetail = detail;
             CanteenProductsCommand = new Command( OnCanteenProducts );
@@ -135,12 +135,12 @@ namespace DellyShopApp.ViewModel {
             SendBalanceCommand = new Command( OnSendBalance );
             EditDialyLimitCommand = new Command( OnEditDialyLimit );
             EditInfoCommand = new Command( OnEditInfo );
-            ItemAllowCommand = new Command<productsWithQtyLimitMobile>( vm => OnItemAllow( vm ) );
-            ItemSelectedCommand = new Command<productsWithQtyLimitMobile>( vm => OnItemSelected( vm ) );
+            ItemAllowCommand = new Command<Product>( vm => OnItemAllow( vm ) );
+            ItemSelectedCommand = new Command<Product>( vm => OnItemSelected( vm ) );
             UpdateDialyLimitCommand = new Command( OnUpdateDialyLimit );
             HideDialogeBoxCommand = new Command( OnHideDialogeBox );
-            DeductItemCommand = new Command<productsWithQtyLimitMobile>( vm => OnDeductItem( vm ) );
-            AddItemCommand = new Command<productsWithQtyLimitMobile>( vm => OnAddItem( vm ) );
+            DeductItemCommand = new Command<Product>( vm => OnDeductItem( vm ) );
+            AddItemCommand = new Command<Product>( vm => OnAddItem( vm ) );
             UploadChildDialyLimitCommand = new Command( OnUploadChildDialyLimit );
             ShowWeeklyPlanCommand = new Command( OnShowWeeklyPlan );
             UpdateByLanuguage();
@@ -161,7 +161,7 @@ namespace DellyShopApp.ViewModel {
         private void OnUploadChildDialyLimit() {
             try {
                 var payLoad = new StudentLimitsUpdateByParent();
-                payLoad.CustomerId = ChildDetail.CustomerId;
+                payLoad.CustomerId = ChildDetail.Id;
                 payLoad.DailyAllowedMoney = DialyLimit;
 
                 ProductsWithLimit.ForEach( item => {
@@ -211,16 +211,16 @@ namespace DellyShopApp.ViewModel {
             }
 
             if ( !ProductsWithDay.ContainsKey( ChildDetail.UniqueRef ) ) {
-                ProductsWithDay[ChildDetail.UniqueRef] = new Dictionary<string, ObservableCollection<productsWithQtyLimitMobile>>();
+                ProductsWithDay[ChildDetail.UniqueRef] = new Dictionary<string, ObservableCollection<Product>>();
             }
 
             if ( ProductsWithDay[ChildDetail.UniqueRef].Count != 7 ) {
 
-                var list = new List<productsWithQtyLimitMobile>();
+                var list = new List<Product>();
                 ChildDetail.ProductsList.ForEach( t => list.Add( t ) );
                 ProductsWithDay[ChildDetail.UniqueRef].Clear();
                 WeekDays.ForEach( t => {
-                    ProductsWithDay[ChildDetail.UniqueRef].Add( t, JsonConvert.DeserializeObject<ObservableCollection<productsWithQtyLimitMobile>>( JsonConvert.SerializeObject( ChildDetail.ProductsList ) ) );
+                    ProductsWithDay[ChildDetail.UniqueRef].Add( t, JsonConvert.DeserializeObject<ObservableCollection<Product>>( JsonConvert.SerializeObject( ChildDetail.ProductsList ) ) );
                 } );
             }
 
@@ -244,7 +244,7 @@ namespace DellyShopApp.ViewModel {
             var products = ProductsWithDay[ChildDetail.UniqueRef][WeekDays[SelectedDay]];
         }
 
-        private void OnAddItem(productsWithQtyLimitMobile vm) {
+        private void OnAddItem(Product vm) {
             if ( vm == null ) {
                 return;
             }
@@ -260,7 +260,7 @@ namespace DellyShopApp.ViewModel {
 
         }
 
-        private void OnDeductItem(productsWithQtyLimitMobile vm) {
+        private void OnDeductItem(Product vm) {
             if ( vm == null || vm.Count == 0 ) {
                 return;
             }
@@ -289,12 +289,12 @@ namespace DellyShopApp.ViewModel {
             ShowDialyLimitDialoge = true;
         }
 
-        private void OnItemSelected(productsWithQtyLimitMobile vm) {
+        private void OnItemSelected(Product vm) {
 
 
         }
 
-        private void OnItemAllow(productsWithQtyLimitMobile vm) {
+        private void OnItemAllow(Product vm) {
 
 
         }

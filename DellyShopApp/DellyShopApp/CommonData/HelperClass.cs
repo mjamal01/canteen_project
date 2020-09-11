@@ -122,8 +122,8 @@ namespace DellyShopApp.CommonData {
                 return s;
             }
         }
-
-        static public string PostRecord(string url, HttpContent content) {
+         
+        static public string SendRecord(string url, HttpContent content, string method = "POST") {
 
             string result = null;
             using ( var httpClient = new HttpClient() ) {
@@ -132,9 +132,18 @@ namespace DellyShopApp.CommonData {
                 httpClient.DefaultRequestHeaders.Add( "Host", Global.Host );
                 httpClient.DefaultRequestHeaders.Add( "IsMobileApp", "1" );
 
-                HttpResponseMessage response = httpClient.PostAsync( url, content ).Result;
-                response.EnsureSuccessStatusCode();
+                var requestStr = content.ReadAsStringAsync().Result;
+                var reqMethod = new HttpMethod( method );
+                var reqMessage = new HttpRequestMessage( reqMethod, url );
+                reqMessage.Content = content;
+
+                HttpResponseMessage response = httpClient.SendAsync( reqMessage ).Result;
                 result = response.Content.ReadAsStringAsync().Result;
+                try { 
+                    response.EnsureSuccessStatusCode();
+                } catch ( Exception ) {
+                    throw new Exception( result );
+                }
 
             }
 

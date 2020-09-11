@@ -51,6 +51,14 @@
         </tabbedPages:ProfilePage.IconImageSource>
     </tabbedPages:ProfilePage>
 
+    <Pages:TransectionSearchPage>
+        <Pages:TransectionSearchPage.IconImageSource>
+            <FontImageSource
+                FontFamily="LineIcons"
+                Glyph="{x:Static font:LineIcon.Event }" />
+        </Pages:TransectionSearchPage.IconImageSource>
+    </Pages:TransectionSearchPage>
+
 </TabbedPage>
 
 <!--android:TabbedPage.ToolbarPlacement="Bottom"-->

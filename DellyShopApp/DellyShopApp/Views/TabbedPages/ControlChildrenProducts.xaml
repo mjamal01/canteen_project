@@ -20,56 +20,80 @@
             IsModalpage="False"
             NavigationTitle="{x:Static languages:AppResources.ChildrenDetails}" />
 
-        <customControl:RepeaterView 
+        <ListView 
+            HasUnevenRows="True"
             Grid.Row="1"
             x:Name="ChildrenList">
-            <customControl:RepeaterView.ItemTemplate>
+            <ListView.ItemTemplate>
                 <DataTemplate>
+
                     <ViewCell>
                         <pancakeView1:PancakeView Margin="0,10,0,0" Style="{DynamicResource PancakeFrameStyle}">
-                            <pancakeView1:PancakeView.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TransSummaryButtonClick" />
-                            </pancakeView1:PancakeView.GestureRecognizers>
-                            <StackLayout
-                                BackgroundColor="{DynamicResource ItemColor}"
-                                Orientation="Horizontal"
-                                VerticalOptions="FillAndExpand">
-                                <pancakeView1:PancakeView Padding="0" 
-                                    HorizontalOptions="Start" 
-                                    VerticalOptions="FillAndExpand" 
-                                    Style="{DynamicResource PancakeFrameStyle}">
-                                    <Image
-                                        Aspect="AspectFill" 
-                                        HeightRequest="50"
-                                        Source="{Binding customer_image}"
-                                        WidthRequest="50" />
-                                </pancakeView1:PancakeView>
-                                <StackLayout VerticalOptions="CenterAndExpand">
+                           
+                            <SwipeView Margin="0">
+                                <SwipeView.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TransSummaryButtonClick" />
+                                </SwipeView.GestureRecognizers>
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem 
+                                            Text="Delete" 
+                                            
+                                            BackgroundColor="{StaticResource LightLabelTextColor}" 
+                                            Command="{Binding Path=BindingContext.DeleteChildCommnad, Source={x:Reference ChildrenList}}"
+                                            CommandParameter="{Binding .}">
+
+                                            <SwipeItem.IconImageSource>
+                                                <FontImageSource 
+                                                    FontFamily="LineIcons"
+                                                    Color="Gray"
+                                                    Glyph="{x:Static font:LineIcon.Trash}" />
+                                            </SwipeItem.IconImageSource>
+                                        </SwipeItem>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <StackLayout
+                                    BackgroundColor="{DynamicResource ItemColor}"
+                                    Orientation="Horizontal"
+                                    VerticalOptions="FillAndExpand">
+                                    <pancakeView1:PancakeView Padding="0" 
+                                        HorizontalOptions="Start" 
+                                        VerticalOptions="FillAndExpand" 
+                                        Style="{DynamicResource PancakeFrameStyle}">
+                                        <Image
+                                            Aspect="AspectFill" 
+                                            HeightRequest="50"
+                                            Source="{Binding Avatar}"
+                                            WidthRequest="50" />
+                                    </pancakeView1:PancakeView>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                        <Label
+                                            FontFamily="{DynamicResource VerdanaProRegular}"
+                                            FontSize="15"
+                                            Text="{Binding Name}"
+                                            TextColor="{DynamicResource WhiteDarkFontColor}" />
+                                    </StackLayout>
                                     <Label
+                                        Margin="0,0,10,0"
+                                        FontAttributes="Bold"
                                         FontFamily="{DynamicResource VerdanaProRegular}"
-                                        FontSize="15"
-                                        Text="{Binding name}"
-                                        TextColor="{DynamicResource WhiteDarkFontColor}" />
+                                        FontSize="22"
+                                        HorizontalOptions="EndAndExpand"
+                                        Text="{Binding UniqueRef}"
+                                        TextColor="{DynamicResource PriceLabelColor}"
+                                        VerticalOptions="CenterAndExpand" />
                                 </StackLayout>
-                                <Label
-                                    Margin="0,0,10,0"
-                                    FontAttributes="Bold"
-                                    FontFamily="{DynamicResource VerdanaProRegular}"
-                                    FontSize="22"
-                                    HorizontalOptions="EndAndExpand"
-                                    Text="{Binding UniqueRef}"
-                                    TextColor="{DynamicResource PriceLabelColor}"
-                                    VerticalOptions="CenterAndExpand" />
-                            </StackLayout>
+
+                            </SwipeView>
                         </pancakeView1:PancakeView>
                     </ViewCell>
                 </DataTemplate>
-            </customControl:RepeaterView.ItemTemplate>
-        </customControl:RepeaterView>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <Button
             Grid.Row="2"
-            Margin="-20,0,-20,0"
+            Margin="0,10,0,0"
             CornerRadius="0"
             BackgroundColor="{DynamicResource  ButtonBackgroudColor}"
             BorderColor="{DynamicResource  LightLabelTextColor}"

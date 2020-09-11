@@ -33,8 +33,12 @@ namespace DellyShopApp.Views.Pages {
 
             InitializeComponent();
             BindingContext = this;
-            EntryUserName.Text = "msajjadh@gmail.com";
-            EntryPassword.Text = "31180";
+            if ( Global.DebugMode ) {
+                //EntryUserName.Text = "msajjadh@gmail.com";
+                //EntryPassword.Text = "31180";
+                EntryUserName.Text = "rizwanfidalahore@gmail.com";
+                EntryPassword.Text = "31182";
+            }
             CheckLang();
 
         }
@@ -66,16 +70,20 @@ namespace DellyShopApp.Views.Pages {
                     new KeyValuePair<string, string>("response_type", "token"),
                 };
 
+                LoginToken loginToken = null;
                 var content = new FormUrlEncodedContent( keyValues );
-                var response = HelperClass.PostRecord( $"{Global.WebApiUrl}/token", content );
-                //var request = new HttpRequestMessage( HttpMethod.Post, string.Format( @"{0}/token", Global.WebApiUrl ) );
-                //request.Content = new FormUrlEncodedContent( keyValues );
-                //request.Headers.Add( "IsMobileApp", "1" );
-                //request.Headers.Add("Content-Type", "application/json; charset=UTF-8");
-                //var client = new HttpClient();
-                //var response = await client.SendAsync( request );
-                //var content = await response.Content.ReadAsStringAsync();
-                var loginToken = JsonConvert.DeserializeObject<LoginToken>( response );
+
+                try {
+
+                    var response = HelperClass.SendRecord( $"{Global.WebApiUrl}/token", content );
+                    loginToken = JsonConvert.DeserializeObject<LoginToken>( response );
+
+                } catch ( Exception ) {
+                    await DisplayAlert( "Invalid", "Provided username and password is incorrect", "Okay" );
+                    LoginButton.IsEnabled = true;
+                    return;
+                }
+
                 var accessToken = loginToken.AccessToken;
                 if ( !string.IsNullOrEmpty( accessToken ) ) {
 
@@ -91,6 +99,9 @@ namespace DellyShopApp.Views.Pages {
                     Global.ParentId = userInfo.ParentId;
                     Global.ParentName = userInfo.ParentName;
                     //await DisplayAlert("Login", "Login Successful", "ok");
+                    RestService.GetSchoolsList();
+                    RestService.GetChildrenMoneyAndProductsDetail();
+                    RestService.GetParentTotalDebitCredit();
                     if ( Global.GroupId == 3 ) {
                         await Navigation.PushAsync( new HomeTabbedPage() );
                         //await Navigation.PushAsync(new ParentsData.CashHandling.TransSummaryConfig());
@@ -104,7 +115,7 @@ namespace DellyShopApp.Views.Pages {
                     await DisplayAlert( "Login", "Login Failed, Try Again.", "ok" );
                 }
 
-            } catch ( Exception ex ) {
+            } catch ( Exception ) {
                 Global.token = "";
                 LoginButton.IsEnabled = true;
                 //status.Text = "Host is not accessible.";

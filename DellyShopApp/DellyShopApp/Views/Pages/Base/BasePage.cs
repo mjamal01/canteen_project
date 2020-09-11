@@ -19,14 +19,12 @@ namespace DellyShopApp.Views.Pages.Base {
     public class BasePage : ContentPage, INotifyPropertyChanged {
 
 
-        public ObservableCollection<NotificationModel> NotificationList = new ObservableCollection<NotificationModel>();
-        public ObservableCollection<ProductListModel> ProcutListModel = new ObservableCollection<ProductListModel>();
+        public ObservableCollection<NotificationModel> NotificationList { get; set; } = new ObservableCollection<NotificationModel>();
+        public ObservableCollection<ProductListModel> ProcutListModel { get; set; } = new ObservableCollection<ProductListModel>();
         //Here add a list which will be filled from WebApi having information of all the transactions of a parent
-        public ObservableCollection<cant_parent_cash_trans> transactions = new ObservableCollection<cant_parent_cash_trans>();
+        public ObservableCollection<cant_parent_cash_trans> transactions { get; set; } = new ObservableCollection<cant_parent_cash_trans>();
 
-        //Here fetch the list of children belonging to this parent 
-
-        static public ObservableCollection<IndividualChildDetail> ChildrenDetailList { get; set; } = new ObservableCollection<IndividualChildDetail>();
+        //Here fetch the list of children belonging to this parent  
 
         static public decimal totalDebit = 0;
         static public decimal totalCredit = 0;
@@ -42,135 +40,12 @@ namespace DellyShopApp.Views.Pages.Base {
         public List<CommentModel> CommentList = new List<CommentModel>();
 
         public double BaseTotalPrice = 0;
-        public static void InitializeChildrenData() {
-            var url = $"{Global.WebApiUrl}/api/parent/GetChildrenMoneyAndProductsDetail?parentId={Global.ParentId}";
-            var result = HelperClass.GetRecord( url );
-            ChildrenDetailList = JsonConvert.DeserializeObject<ObservableCollection<IndividualChildDetail>>( result );
-        }
 
         public BasePage() {
-            //InitializeChildrenData(); 
 
-            Xamarin.Forms.NavigationPage.SetHasNavigationBar( this, false );
+            NavigationPage.SetHasNavigationBar( this, false );
             this.FlowDirection = Settings.SelectLanguage == "ar" ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
-            NotificationList.Add( new NotificationModel {
-                Title = AppResources.NotificatinTitle,
-                SubTitle = AppResources.NotificationSubtitle,
-                Description = AppResources.LoremIpsum,
-                Id = 1,
-                Image = "elecronics.jpeg",
-                InstertedAt = DateTime.Now
-
-            } );
-            NotificationList.Add( new NotificationModel {
-
-                Title = AppResources.NotificatinTitle,
-                SubTitle = AppResources.NotificationSubtitle,
-                Description = AppResources.LoremIpsum,
-                Id = 2,
-                Image = "shoes.jpg",
-                InstertedAt = DateTime.Now
-
-            } );
-            ProcutListModel.Add( new ProductListModel {
-                Title = AppResources.ProcutTitle,
-                Brand = AppResources.ProductBrand,
-                Id = 1,
-                Image = "shoesBlack",
-                Price = 362,
-                VisibleItemDelete = false,
-                ProductList = new string[] { "red1", "shoesBlack" }
-            } );
-            ProcutListModel.Add( new ProductListModel {
-                Title = AppResources.ProcutTitle1,
-                Brand = AppResources.ProductBrand1,
-                Id = 2,
-                Image = "grazy1",
-                Price = 150,
-                VisibleItemDelete = false,
-                ProductList = new string[] { "garzy2", "grazy1" }
-            } );
-            ProcutListModel.Add( new ProductListModel {
-                Title = AppResources.ProcutTitle2,
-                Brand = AppResources.ProductBrand2,
-                Id = 3,
-                Image = "shoesyellow",
-                Price = 299,
-                VisibleItemDelete = false,
-                ProductList = new string[] { "py_1", "shoesyellow" }
-            } );
-            foreach ( var item in ProcutListModel ) {
-                BaseTotalPrice += item.Price;
-            }
-            CatoCategoriesList.Add( new Category {
-                CategoryName = AppResources.Shoes,
-                Image = "shoesCategory.png",
-                Id = "1"
-            } );
-            CatoCategoriesList.Add( new Category {
-                CategoryName = AppResources.Electronics,
-
-                Image = "electronicCategory.png",
-                Id = "2"
-            } );
-            CatoCategoriesList.Add( new Category {
-                CategoryName = AppResources.Clothing,
-
-                Image = "clothingCategory.png",
-                Id = "3"
-            } );
-            StartList.Add( new StartList {
-                StarImg = FontAwesomeIcons.Star
-            } );
-            StartList.Add( new StartList {
-                StarImg = FontAwesomeIcons.Star
-            } );
-            StartList.Add( new StartList {
-                StarImg = FontAwesomeIcons.Star
-            } );
-            StartList.Add( new StartList {
-                StarImg = FontAwesomeIcons.Star
-            } );
-            StartList.Add( new StartList {
-                StarImg = FontAwesomeIcons.Star
-            } );
-            CommentList.Add( new CommentModel {
-                Name = "Ufuk Sahin",
-                CommentTime = "12/1/19",
-                Id = 1,
-                Rates = StartList
-            } );
-            CommentList.Add( new CommentModel {
-                Name = "Hans Goldman",
-                CommentTime = "11/6/19",
-                Id = 2,
-                Rates = StartList.Skip( 0 ).ToList()
-            } );
-            CommentList.Add( new CommentModel {
-                Name = "Jon Goodman",
-                CommentTime = "12/8/19",
-                Id = 3,
-                Rates = StartList.Skip( 1 ).ToList()
-            } );
-            CatoCategoriesDetail.Add( new Category {
-                Image = "shoes.jpg"
-            } );
-            CatoCategoriesDetail.Add( new Category {
-                Image = "bestShoes.jpg"
-            } );
-            CatoCategoriesDetail.Add( new Category {
-                Image = "bestofYear.jpg"
-            } );
-            Carousel.Add( new Category {
-                Image = "shoes.jpg"
-            } );
-            Carousel.Add( new Category {
-                Image = "clothing.jpg"
-            } );
-            Carousel.Add( new Category {
-                Image = "elecronics.jpeg"
-            } );
         }
 
         public void UpdateTransactions() {
