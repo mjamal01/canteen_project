@@ -1,8 +1,10 @@
 ﻿using DellyShopApp.CommonData;
 using DellyShopApp.Models;
+using DellyShopApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -65,11 +67,11 @@ namespace DellyShopApp.ViewModel {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter full name.", "Back" );
                 return;
             }
-            if ( string.IsNullOrEmpty( Email ) ) {
+            if ( string.IsNullOrEmpty( Email ) || !AppServices.IsValidEmail( Email ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter email.", "Back" );
                 return;
             }
-            if ( string.IsNullOrEmpty( Phone ) ) {
+            if ( string.IsNullOrEmpty( Phone ) || !AppServices.IsValidPhoneNumber( Phone ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter phone number.", "Back" );
                 return;
             }

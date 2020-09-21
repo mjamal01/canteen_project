@@ -561,7 +561,7 @@
     <value>جميع الحقوق محفوظة 2020 مصروفى</value>
   </data>
   <data name="ForgotPasswordDetails" xml:space="preserve">
-    <value>الرجاء إدخال رقم الهاتف المحمول وسوف تتلقى رسالة نصية قصيرة لاستعادة كلمة المرور الخاصة بك.</value>
+    <value>يرجى إدخال عنوان البريد الإلكتروني وسوف تتلقى بريدًا إلكترونيًا لاستعادة كلمة المرور الخاصة بك.</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>إرسال</value>

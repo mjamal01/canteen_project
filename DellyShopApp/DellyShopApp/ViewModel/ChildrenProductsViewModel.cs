@@ -15,11 +15,19 @@ using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
 namespace DellyShopApp.ViewModel {
-    public class ChildrenProductsViewModel : BaseVm {
+    public class ChildrenProductsViewModel : BaseVm, IBackButtonHandler {
 
         public ObservableCollection<Product> ProductsWithLimit { get; set; } = new ObservableCollection<Product>();
         public Dictionary<string, Dictionary<string, ObservableCollection<Product>>> ProductsWithDay { get; set; } = new Dictionary<string, Dictionary<string, ObservableCollection<Product>>>();
 
+        private bool showSaveMenu = false;
+        public bool ShowSaveMenu {
+            get => showSaveMenu;
+            set {
+                showSaveMenu = value;
+                OnPropertyChanged( nameof( ShowSaveMenu ) );
+            }
+        }
 
         private ChildWithProducts _ChildDetail;
         public ChildWithProducts ChildDetail {
@@ -152,14 +160,27 @@ namespace DellyShopApp.ViewModel {
 
         private void OnShowWeeklyPlan() {
             var list = new List<ProductListWithlimit>();
-            ProductsWithDay[ChildDetail.UniqueRef].ForEach( t => list.Add( new ProductListWithlimit( t.Key, t.Value ) ) );
+
+            ProductsWithDay[ChildDetail.UniqueRef].ForEach( t => {
+
+                var list2 = t.Value.ToList().FindAll( f => f.Count > 0 ).ToObservableCollection();
+
+                if ( list2.Count > 0 ) {
+
+                    list.Add( new ProductListWithlimit( t.Key, list2 ) );
+
+                }
+            } );
+
             Application.Current.MainPage.Navigation.PushAsync( new WeeklyPlan( list ) );
             //Application.Current.MainPage.Navigation.PushAsync( new MyOrderPage() );
 
         }
 
-        private void OnUploadChildDialyLimit() {
+        public void OnUploadChildDialyLimit() {
+
             try {
+
                 var payLoad = new StudentLimitsUpdateByParent();
                 payLoad.CustomerId = ChildDetail.Id;
                 payLoad.DailyAllowedMoney = DialyLimit;
@@ -183,6 +204,8 @@ namespace DellyShopApp.ViewModel {
                 MessagingCenter.Send( this, "LoadChildrenDetailList" );
 
                 Application.Current.MainPage.DisplayAlert( "Info Message", result, "OK" );
+
+                showSaveMenu = false;
             } catch ( Exception ex ) {
                 Console.WriteLine( ex.StackTrace );
             }
@@ -248,6 +271,7 @@ namespace DellyShopApp.ViewModel {
             if ( vm == null ) {
                 return;
             }
+            showSaveMenu = true;
             var items = vm.Count + 1;
             var totalAmount = ProductsWithLimit.Sum( t => t.Count * t.Price );
             totalAmount += vm.Price;
@@ -264,13 +288,14 @@ namespace DellyShopApp.ViewModel {
             if ( vm == null || vm.Count == 0 ) {
                 return;
             }
-
+            showSaveMenu = true;
             vm.Count -= 1;
 
         }
 
         private void OnUpdateDialyLimit() {
-            ShowDialyLimitDialoge = false;
+            ShowDialyLimitDialoge = false; 
+            showSaveMenu = true;
         }
 
         private void OnHideDialogeBox() {
@@ -319,8 +344,19 @@ namespace DellyShopApp.ViewModel {
             SonsPurchasesBtnTextColor = Color.Black;
             CanteenProductBtnTextColor = Color.White;
             ShowCanteenProduct = true;
+        }
 
+        public async void OnBackButtonPress() {
+            if ( ShowSaveMenu ) {
 
+                var save = await Application.Current.MainPage.DisplayAlert( "Info", "You have modified the data. Do you want to save it?", "Yes", "No" );
+
+                if ( save ) {
+                    OnUploadChildDialyLimit();
+                } 
+            }
+
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

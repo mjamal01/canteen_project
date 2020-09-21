@@ -25,7 +25,7 @@
                 BackButtonVisibler="True"
                 FavVisible="False"
                 IsModalpage="False"
-                NavigationTitle="{x:Static languages:AppResources.AllowedProducts}" />
+                NavigationTitle="{x:Static languages:AppResources.TransactionsSummary}" />
 
             <StackLayout  Grid.Row="1" Margin="20" Spacing="10" >
 
@@ -64,7 +64,7 @@
                     BorderColor="{DynamicResource  LightLabelTextColor}"
                     Clicked="SearchListClick"
                     Style="{DynamicResource ButtonStyle}"
-                    Text="{x:Static languages:AppResources.SearchList }"
+                    Text="{x:Static languages:AppResources.Submit }"
                     TextColor="White"
                     x:Name="LoginButton"
                     />

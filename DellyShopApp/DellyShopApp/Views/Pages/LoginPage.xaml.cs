@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
+using System.Xml.XPath;
 using DellyShopApp.CommonData;
 using DellyShopApp.Helpers;
 using DellyShopApp.Languages;
 using DellyShopApp.Models;
 using DellyShopApp.Services;
 using Newtonsoft.Json;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace DellyShopApp.Views.Pages {
@@ -35,9 +37,11 @@ namespace DellyShopApp.Views.Pages {
             BindingContext = this;
             if ( Global.DebugMode ) {
                 //EntryUserName.Text = "msajjadh@gmail.com";
-                //EntryPassword.Text = "31180";
-                EntryUserName.Text = "rizwanfidalahore@gmail.com";
-                EntryPassword.Text = "31182";
+                //EntryPassword.Text = "12345678";
+                EntryUserName.Text = "qkhan@qmsolutions.sa";
+                EntryPassword.Text = "12345678";
+                //EntryUserName.Text = "rizwanfidalahore@gmail.com";
+                //EntryPassword.Text = "31182";
             }
             CheckLang();
 
@@ -57,7 +61,7 @@ namespace DellyShopApp.Views.Pages {
                 await DisplayAlert( "Error", "User name or password cannot be empty.", "ok" );
                 LoginButton.IsEnabled = true;
                 return;
-            }
+            } 
 
             try {
 
@@ -99,23 +103,27 @@ namespace DellyShopApp.Views.Pages {
                     Global.ParentId = userInfo.ParentId;
                     Global.ParentName = userInfo.ParentName;
                     //await DisplayAlert("Login", "Login Successful", "ok");
-                    RestService.GetSchoolsList();
-                    RestService.GetChildrenMoneyAndProductsDetail();
-                    RestService.GetParentTotalDebitCredit();
+                    RestService.GetChildrenSchoolsList( true );
+                    RestService.GetSchoolsList( true );
+                    RestService.GetChildrenMoneyAndProductsDetail( true );
+                    RestService.GetParentTotalDebitCredit( true );
+
                     if ( Global.GroupId == 3 ) {
                         await Navigation.PushAsync( new HomeTabbedPage() );
+                        LoginButton.IsEnabled = true;
                         //await Navigation.PushAsync(new ParentsData.CashHandling.TransSummaryConfig());
                     } else {
                         LoginButton.IsEnabled = true;
                         await DisplayAlert( "View", "View for admin is not available.", "ok" );
                     }
+
                 } else {
                     Global.token = "";
                     LoginButton.IsEnabled = true;
                     await DisplayAlert( "Login", "Login Failed, Try Again.", "ok" );
                 }
 
-            } catch ( Exception ) {
+            } catch ( Exception ex ) {
                 Global.token = "";
                 LoginButton.IsEnabled = true;
                 //status.Text = "Host is not accessible.";

@@ -56,7 +56,8 @@
                                     BackgroundColor="{DynamicResource ItemColor}"
                                     Orientation="Horizontal"
                                     VerticalOptions="FillAndExpand">
-                                    <pancakeView1:PancakeView Padding="0" 
+                                    <pancakeView1:PancakeView 
+                                        Padding="0" 
                                         HorizontalOptions="Start" 
                                         VerticalOptions="FillAndExpand" 
                                         Style="{DynamicResource PancakeFrameStyle}">

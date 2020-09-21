@@ -2,32 +2,26 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DellyShopApp.Views.Pages
-{
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RegisterPage 
-	{
-		public RegisterPage ()
-		{
-		   
+namespace DellyShopApp.Views.Pages {
+    [XamlCompilation( XamlCompilationOptions.Compile )]
+    public partial class RegisterPage {
+        public RegisterPage() {
 
-            InitializeComponent ();
-		  
-		}
-	    protected override async void OnAppearing()
-	    {
-	        base.OnAppearing();
-	     
+
+            InitializeComponent();
+
         }
-        private async void RegisteruButtonClick(object sender, EventArgs e)
-	    {
-	      await  Navigation.PushAsync(new HomeTabbedPage());
-	    }
+        protected override void OnAppearing() {
+            base.OnAppearing();
 
-        private void BackButton(object sender, EventArgs e)
-        {
+        }
+        private async void RegisteruButtonClick(object sender, EventArgs e) {
+            await Navigation.PushAsync( new HomeTabbedPage() );
+        }
+
+        private void BackButton(object sender, EventArgs e) {
             Navigation.PopAsync();
         }
     }
-    
+
 }

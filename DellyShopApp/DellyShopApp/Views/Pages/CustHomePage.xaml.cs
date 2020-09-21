@@ -26,6 +26,7 @@ namespace DellyShopApp.Views.Pages {
         protected override void OnAppearing() {
             base.OnAppearing();
             ViewModel.LoadChildrens();
+            ViewModel.LoadBalanceCommand.Execute( null );
         }
     }
 }

@@ -14,13 +14,13 @@
     BackgroundColor="{DynamicResource BackgroundColor}"
     NavigationPage.HasNavigationBar="False">
     <StackLayout Margin="10">
-         <partialViews:NavigationBarPartialView
+        <partialViews:NavigationBarPartialView
             BackButtonVisibler="True"
             FavVisible="False"
             IsModalpage="False"
             NavigationTitle="{x:Static languages:AppResources.MyFavorites}" />
-               
-       
+
+
         <customControl:RepeaterView x:Name="SingleStudentProductsBasketItems">
             <customControl:RepeaterView.ItemTemplate>
                 <DataTemplate>
@@ -80,7 +80,7 @@
                                     FontFamily="{DynamicResource VerdanaProRegular}"
                                     FontSize="22"
                                     HorizontalOptions="EndAndExpand"
-                                    Text="{Binding price, StringFormat='{0:C2}'}"
+                                    Text="{Binding Price, StringFormat='{0:C2}'}"
                                     TextColor="{DynamicResource PriceLabelColor}"
                                     VerticalOptions="CenterAndExpand" />
 

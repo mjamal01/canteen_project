@@ -14,7 +14,9 @@ namespace DellyShopApp.Services {
 
         private static ObservableCollection<School> schoolsList { get; set; }
 
-        private static ParentWithCrdandDeb parentCashInfo { get; set; } 
+        private static ObservableCollection<School> childrenSchoolsList { get; set; }
+
+        private static ParentWithCrdandDeb parentCashInfo { get; set; }
 
         public static ObservableCollection<ChildWithProducts> GetChildrenMoneyAndProductsDetail(bool refresh = false) {
 
@@ -40,7 +42,7 @@ namespace DellyShopApp.Services {
 
         }
         //https://pos2.dndaims.net/api/parent/GetParentTotalDebitCredit?id=55
-           
+
         public static ParentWithCrdandDeb GetParentTotalDebitCredit(bool refresh = false) {
 
             if ( parentCashInfo == null || refresh ) {
@@ -52,6 +54,18 @@ namespace DellyShopApp.Services {
             return parentCashInfo;
 
         }
+        ///
+        /// 
+        public static ObservableCollection<School> GetChildrenSchoolsList(bool refresh = false) {
 
+            if ( childrenSchoolsList == null || refresh ) {
+                var url = $"{Global.WebApiUrl}/api/school/GetSchoolsForAddMoney?parent_id={Global.ParentId}";
+                var result = HelperClass.GetRecord( url );
+                childrenSchoolsList = JsonConvert.DeserializeObject<ObservableCollection<School>>( result );
+            }
+
+            return childrenSchoolsList;
+
+        }
     }
 }

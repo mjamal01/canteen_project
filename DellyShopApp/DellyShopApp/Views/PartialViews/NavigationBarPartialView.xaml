@@ -36,6 +36,11 @@
                     Size="50"
                     Color="{DynamicResource IconBgColor}" />
             </Image.Source>
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="BackButtonClick">
+
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
         </Image>
         <Label
             x:Name="Title"

@@ -126,21 +126,25 @@ namespace DellyShopApp.ViewModel {
 
             } else {
 
-                if (Global.DebugMode) {
+                if ( Global.DebugMode ) {
                     UniqueId = "123123";
                     FullName = "Hamza";
                     Email = "hamza@hamza.com";
                     Phone = "923105499567";
                     Address = "Hello hello";
                 }
-                
+
             }
 
         }
 
         private void LoadSchoolList() {
             var list = RestService.GetSchoolsList();
-            Schools = list;
+            if ( list != null && list.Count > 0 ) {
+                Schools = list;
+            } else {
+                Schools = null;
+            }
         }
 
         private async void OnPickImage() {
@@ -164,18 +168,22 @@ namespace DellyShopApp.ViewModel {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter IqamaID.", "Back" );
                 return;
             }
+
             if ( string.IsNullOrEmpty( FullName ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter full name.", "Back" );
                 return;
             }
-            if ( string.IsNullOrEmpty( Email ) ) {
+
+            if ( string.IsNullOrEmpty( Email ) || !AppServices.IsValidEmail( Email ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter email.", "Back" );
                 return;
             }
-            if ( string.IsNullOrEmpty( Phone ) ) {
+
+            if ( string.IsNullOrEmpty( Phone ) || !AppServices.IsValidPhoneNumber( Phone ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter phone number.", "Back" );
                 return;
             }
+
             if ( string.IsNullOrEmpty( Address ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter address.", "Back" );
                 return;
@@ -214,8 +222,10 @@ namespace DellyShopApp.ViewModel {
                     content.Add( new StringContent( ChildId.ToString() ), "id" );
                     result = HelperClass.SendRecord( $"https://pos2.dndaims.net/api/cust/update", content, "PUT" );
                 }
+                RestService.GetChildrenSchoolsList( true );
                 RestService.GetChildrenMoneyAndProductsDetail( true );
                 Application.Current.MainPage.DisplayAlert( "Result", result, "OK" );
+                App.Current.MainPage.Navigation.PopAsync();
             } catch ( Exception ex ) {
                 Console.WriteLine( ex.StackTrace );
                 Application.Current.MainPage.DisplayAlert( "Error", ex.Message, "OK" );

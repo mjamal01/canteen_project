@@ -75,7 +75,7 @@
                                         <Label 
                                             VerticalOptions="CenterAndExpand"
                                             VerticalTextAlignment="Center">
-                                            
+
                                             <Label.FormattedText>
                                                 <FormattedString>
                                                     <Span 
@@ -87,7 +87,7 @@
                                                         Text="{Binding cat_name}"/>
                                                 </FormattedString>
                                             </Label.FormattedText>
-                                            
+
                                         </Label>
                                     </StackLayout>
 
@@ -99,7 +99,7 @@
                                             <Label.FormattedText>
                                                 <FormattedString>
                                                     <Span 
-                                                        Text="{Binding price, StringFormat=' {0:0} '}" />
+                                                        Text="{Binding Price, StringFormat=' {0:0} '}" />
                                                     <Span Text="{x:Static languages:AppResources.SAR}"/>
                                                 </FormattedString>
                                             </Label.FormattedText>

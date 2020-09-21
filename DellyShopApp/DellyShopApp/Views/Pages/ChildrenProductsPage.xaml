@@ -20,10 +20,11 @@
 
     <Grid RowDefinitions="Auto, *">
         <partialViews:NavigationBarPartialView
+            BindingContext="{Binding .}"
             Grid.Row="0"
             BackButtonVisibler="True"
             FavVisible="False"
-            IsModalpage="False"
+            IsModalpage="False" 
             NavigationTitle="{x:Static languages:AppResources.AllowedProducts}" />
 
 
@@ -354,28 +355,28 @@
                                         HeightRequest="50"
                                         WidthRequest="50"
                                         Source="{Binding Image}"/>
-                                        <StackLayout  Grid.Column="1">
-                                            <Label 
+                                    <StackLayout  Grid.Column="1">
+                                        <Label 
                                                 VerticalOptions="StartAndExpand"
                                                 VerticalTextAlignment="Center"
                                                 Text="{Binding Name}" 
                                                 FontSize="{x:OnPlatform Android='15', iOS='13'}"/>
-                                            <Label 
+                                        <Label 
                                                 VerticalOptions="CenterAndExpand"
                                                 VerticalTextAlignment="Center"
                                                 FontSize="{x:OnPlatform Android='15', iOS='13'}"
                                                 BindingContext="{x:Static languages:AppResources.Calories}" 
                                                 Text="{Binding ., StringFormat='{0} : 0'}"></Label>
-                                        </StackLayout>
+                                    </StackLayout>
 
-                                        <StackLayout  Grid.Column="2">
+                                    <StackLayout  Grid.Column="2">
                                         <Label 
                                             FontSize="{x:OnPlatform Android='15', iOS='13'}" 
                                             VerticalOptions="StartAndExpand"
                                             HorizontalTextAlignment="End">
                                             <Label.FormattedText>
                                                 <FormattedString>
-                                                    <Span Text="{Binding price, StringFormat='{0:0}'}" />
+                                                    <Span Text="{Binding Price, StringFormat='{0:0}'}" />
                                                     <Span Text="{x:Static languages:AppResources.SAR}"/>
                                                 </FormattedString>
                                             </Label.FormattedText>
@@ -537,7 +538,7 @@
                                     <Label HorizontalTextAlignment="Center">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding price, StringFormat='{0:0}'}" />
+                                                <Span Text="{Binding Price, StringFormat='{0:0}'}" />
                                                 <Span Text="{x:Static languages:AppResources.SAR}"/>
                                             </FormattedString>
                                         </Label.FormattedText>
@@ -638,7 +639,7 @@
                             TextColor="White" 
                             HorizontalTextAlignment="Center" 
                             VerticalTextAlignment="Center" 
-                            Text="{x:Static languages:AppResources.Edit}"></Label>
+                            Text="{x:Static languages:AppResources.Save}"></Label>
                     </yummy:PancakeView>
 
 

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -28,7 +29,7 @@ namespace DellyShopApp.Services {
             }
             string[] languages = { "English", "العربية" };
 
-            var selectlanguage = await CurrentPage.DisplayActionSheet( AppResources.SelectLanguage, AppResources.Cancel, AppResources.Cancel, languages );
+            var selectlanguage = await CurrentPage.DisplayActionSheet( AppResources.SelectLanguage, AppResources.Cancel, null, languages );
 
             switch ( selectlanguage ) {
                 case "English":
@@ -83,5 +84,13 @@ namespace DellyShopApp.Services {
             return file;
         }
 
+        public static bool IsValidEmail(string email) {
+            return Regex.Match( email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" ).Success;
+        }
+        //
+
+        public static bool IsValidPhoneNumber(string phone) {
+            return Regex.Match( phone, @"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" ).Success;
+        }
     }
 }

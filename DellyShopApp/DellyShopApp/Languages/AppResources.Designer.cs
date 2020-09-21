@@ -304,7 +304,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Childrens.
+        ///   Looks up a localized string similar to Children.
         /// </summary>
         internal static string Childrens {
             get {
@@ -529,7 +529,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please Enter The Mobile Number And You Will Receive SMS to Recover Your Password..
+        ///   Looks up a localized string similar to Please Enter The Email Address And You Will Receive An Email to Recover Your Password..
         /// </summary>
         internal static string ForgotPasswordDetails {
             get {

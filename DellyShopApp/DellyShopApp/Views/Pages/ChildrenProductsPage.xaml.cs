@@ -22,5 +22,11 @@ namespace DellyShopApp.Views.Pages {
             get => this.BindingContext as ChildrenProductsViewModel;
             set => this.BindingContext = value;
         }
+
+        protected override bool OnBackButtonPressed() {
+            //return base.OnBackButtonPressed(); 
+            ViewModel.OnBackButtonPress();
+            return true;
+        }
     }
 }

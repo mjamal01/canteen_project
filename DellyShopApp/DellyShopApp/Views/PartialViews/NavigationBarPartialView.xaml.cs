@@ -1,5 +1,7 @@
 ﻿using System;
 using DellyShopApp.Languages;
+using DellyShopApp.Models;
+using DellyShopApp.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,16 +10,7 @@ namespace DellyShopApp.Views.PartialViews {
     public partial class NavigationBarPartialView {
         bool isModalpage = true;
         public NavigationBarPartialView() {
-            InitializeComponent();
-            var tapGestureRecognizer = new TapGestureRecognizer();
-            tapGestureRecognizer.Tapped += (s, e) => {
-                if ( isModalpage )
-                    Navigation.PopModalAsync();
-                else
-                    Navigation.PopAsync();
-            };
-
-            BackButton.GestureRecognizers.Add( tapGestureRecognizer );
+            InitializeComponent(); 
         }
 
         public static BindableProperty FavVisibleProperty = BindableProperty.Create(
@@ -88,7 +81,20 @@ namespace DellyShopApp.Views.PartialViews {
             }
         }
         void BackButtonClick(System.Object sender, System.EventArgs e) {
-            Navigation.PopAsync();
+            var ctx = this.BindingContext;
+            if ( ctx == null ) {
+                Navigation.PopAsync();
+            } else {
+                try {
+                    if ( ctx is IBackButtonHandler vm ) {
+                        vm.OnBackButtonPress();
+                    } else {
+                        Navigation.PopAsync();
+                    }
+                } catch ( Exception ) {
+
+                }
+            }
         }
 
     }

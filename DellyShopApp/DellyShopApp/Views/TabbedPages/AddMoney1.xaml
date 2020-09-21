@@ -43,8 +43,7 @@
                     <renderers:BorderlessEntry
                         Keyboard="Text"
                         MaxLength="30"
-                        x:Name="entryBalance"
-                        IsReadOnly="False"
+                        x:Name="entryBalance" 
                         Placeholder="0.0"
                         Style="{DynamicResource BorderlessEntry}"
                         TextColor="{DynamicResource WhiteDarkFontColor}" />

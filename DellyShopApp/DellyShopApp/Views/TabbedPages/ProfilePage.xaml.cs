@@ -47,7 +47,7 @@ namespace DellyShopApp.Views.TabbedPages {
         }
 
         private void OnLogout(object sender, EventArgs e) {
-            Application.Current.MainPage.Navigation.PopAsync();
+            Application.Current.MainPage = new NavigationPage( new LoginPage() ); 
         }
     }
 }

@@ -445,7 +445,7 @@
     <value>Canteen Status</value>
   </data>
   <data name="Childrens" xml:space="preserve">
-    <value>Childrens</value>
+    <value>Children</value>
   </data>
   <data name="Dailylimit" xml:space="preserve">
     <value>Daily limit</value>
@@ -592,7 +592,7 @@ If you have any concerns about your Information on the Platform, please contact 
     <value>All Rights Reserved To 2020 Masrofee</value>
   </data>
   <data name="ForgotPasswordDetails" xml:space="preserve">
-    <value>Please Enter The Mobile Number And You Will Receive SMS to Recover Your Password.</value>
+    <value>Please Enter The Email Address And You Will Receive An Email to Recover Your Password.</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Submit</value>

@@ -73,7 +73,7 @@ namespace DellyShopApp.ViewModel {
                 OnPropertyChanged( nameof( CreditLimitLabel ) );
             }
         }
-
+        public ICommand LoadBalanceCommand { get; set; }
         public ICommand ChartRefreshCommand { get; set; }
 
         public ICommand CreditLimitCommand { get; set; }
@@ -106,22 +106,23 @@ namespace DellyShopApp.ViewModel {
         }
 
         public CustHomeViewModel() {
-            TotalBalance = 16945;
             Currenncy = "SR";
             ChartRefreshCommand = new Command( OnChartRefresh );
             CreditLimitCommand = new Command( OnCreditLimit );
+            LoadBalanceCommand = new Command( OnLoadBalance );
+
             NavigateToDetailPageCommand = new Command<ChildWithProducts>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
-            Initialize();
             //SetCreditLimit();
             SetMessagingCenter();
         }
 
-        private void Initialize() {
+        private void OnLoadBalance() {
             var parentCashInfo = RestService.GetParentTotalDebitCredit();
 
             TotalCredit = parentCashInfo.TotalCredit;
             TotalDebit = parentCashInfo.TotalDebit;
+            TotalBalance = TotalCredit - TotalDebit;
         }
 
         private void SetMessagingCenter() {
