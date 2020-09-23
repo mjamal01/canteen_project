@@ -22,7 +22,7 @@
         <Grid RowDefinitions="Auto, *">
             <partialViews:NavigationBarPartialView
                 Grid.Row="0"
-                BackButtonVisibler="True"
+                BackButtonVisibler="False"
                 FavVisible="False"
                 IsModalpage="False"
                 NavigationTitle="{x:Static languages:AppResources.TransactionsSummary}" />
@@ -39,6 +39,7 @@
                     BorderColor="#B3B3B3">
 
                     <renderers:BorderlessDatePicker 
+                        x:Name="pkrStartDate"
                         DateSelected="StartDataSelected"
                         >
 
@@ -53,6 +54,7 @@
                     BorderColor="#B3B3B3">
 
                     <renderers:BorderlessDatePicker  
+                        x:Name="pkrEndDate"
                         DateSelected="EndDataSelected"
                         >
 

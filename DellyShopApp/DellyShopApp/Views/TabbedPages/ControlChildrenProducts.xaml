@@ -72,6 +72,7 @@
                                             FontFamily="{DynamicResource VerdanaProRegular}"
                                             FontSize="15"
                                             Text="{Binding Name}"
+                                            LineBreakMode="TailTruncation"
                                             TextColor="{DynamicResource WhiteDarkFontColor}" />
                                     </StackLayout>
                                     <Label
@@ -81,6 +82,7 @@
                                         FontSize="22"
                                         HorizontalOptions="EndAndExpand"
                                         Text="{Binding UniqueRef}"
+                                        LineBreakMode="TailTruncation"
                                         TextColor="{DynamicResource PriceLabelColor}"
                                         VerticalOptions="CenterAndExpand" />
                                 </StackLayout>

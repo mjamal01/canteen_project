@@ -19,6 +19,7 @@ namespace DellyShopApp.Views.Pages {
         public DateTime EndDate { get; set; }
         public TransectionSearchPage() {
             InitializeComponent();
+            BindingContext = this;
         }
 
         private void StartDataSelected(object sender, DateChangedEventArgs e) {
@@ -27,7 +28,17 @@ namespace DellyShopApp.Views.Pages {
             }
         }
 
+        private void EndDataSelected(object sender, DateChangedEventArgs e) {
+            if ( e.NewDate != null ) {
+                EndDate = e.NewDate;
+            }
+        }
+
         private async void SearchListClick(object sender, EventArgs e) {
+
+            StartDate = pkrStartDate.Date;
+            EndDate = pkrEndDate.Date;
+
             if ( StartDate == null ) {
                 await DisplayAlert( "Sart date", "Please select start date and try again.", "Okay" );
                 return;
@@ -59,14 +70,6 @@ namespace DellyShopApp.Views.Pages {
 
             }
 
-
-
-        }
-
-        private void EndDataSelected(object sender, DateChangedEventArgs e) {
-            if ( e.NewDate != null ) {
-                EndDate = e.NewDate;
-            }
         }
     }
 }
