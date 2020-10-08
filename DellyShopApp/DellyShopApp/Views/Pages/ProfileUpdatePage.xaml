@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:font="clr-namespace:DellyShopApp.Helpers;assembly=DellyShopApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:base="clr-namespace:DellyShopApp.Views.Pages.Base"
+    xmlns:languages="clr-namespace:DellyShopApp.Languages"
+    xmlns:renderers="clr-namespace:DellyShopApp.Renderers;assembly=DellyShopApp"
+    xmlns:partialViews="clr-namespace:DellyShopApp.Views.PartialViews;assembly=DellyShopApp"
+    mc:Ignorable="d"
+    xmlns:shadows="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+    xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
+    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:pancakeView="clr-namespace:DellyShopApp.Views.CustomView"
+    BackgroundColor="{DynamicResource BackgroundColor}"
+    x:Class="DellyShopApp.Views.Pages.ProfileUpdatePage">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto, *">
+
+            <Grid RowDefinitions="Auto, *">
+                <partialViews:NavigationBarPartialView
+                    Grid.Row="0"
+                    FavVisible="False"
+                    BackButtonVisibler="True" 
+                    IsModalpage="False"
+                    NavigationTitle="{x:Static languages:AppResources.Personalize}" />
+
+                <ScrollView 
+                    Grid.Row="1"
+                    HorizontalScrollBarVisibility="Never" 
+                    VerticalScrollBarVisibility="Never">
+
+                    <StackLayout
+                        Margin="10"
+                        Padding="5,5,5,50"
+                        Spacing="15">
+
+                        <Frame 
+                            Style="{DynamicResource FrameStyle}" 
+                            BackgroundColor="White" 
+                            Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                            BorderColor="#B3B3B3">
+
+                            <StackLayout
+                                Spacing="0"
+                                Orientation="Horizontal">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="20"
+                                    Margin="15,0,15,0"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center"
+                                    WidthRequest="20">
+                                    <Image.Source>
+                                        <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.IdCard}"
+                                        Size="20"
+                                        Color="Gray" />
+                                    </Image.Source>
+                                </Image>
+                                <!--This is email entry box-->
+                                <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                                <renderers:BorderlessEntry
+                                    Margin="10,0,10,0"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="{Binding AqamaId, Mode=TwoWay}"
+                                    Placeholder="{x:Static languages:AppResources.NationalID}"
+                                    Keyboard="Email"
+                                    TextColor="{DynamicResource EntryTextColor}"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame 
+                            Style="{DynamicResource FrameStyle}" 
+                            Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                            BackgroundColor="White" 
+                            BorderColor="#B3B3B3">
+
+                            <StackLayout 
+                                Spacing="0"
+                                Orientation="Horizontal">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="20"
+                                    Margin="15,0,15,0"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center"
+                                    WidthRequest="20">
+                                    <Image.Source>
+                                        <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiUser}"
+                                        Size="20"
+                                        Color="Gray" />
+                                    </Image.Source>
+                                </Image>
+
+                                <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+
+                                <renderers:BorderlessEntry
+                                    Margin="10,0,10,0"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="{Binding FullName,Mode=TwoWay}"
+                                    Placeholder="{x:Static languages:AppResources.FullName}"
+                                    TextColor="{DynamicResource EntryTextColor}"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame 
+                            Style="{DynamicResource FrameStyle}" 
+                            BackgroundColor="White" 
+                            Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                            BorderColor="#B3B3B3">
+
+                            <StackLayout 
+                                Spacing="0"
+                                Orientation="Horizontal">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="20"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center"
+                                    Margin="15,0,15,0"
+                                    WidthRequest="20">
+                                    <Image.Source>
+                                        <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.UiEmail}"
+                                        Size="20"
+                                        Color="Gray" />
+                                    </Image.Source>
+                                </Image>
+
+                                <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                                <renderers:BorderlessEntry
+                                    Margin="10,0,10,0"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="{Binding Email,Mode=TwoWay}"
+                                    Placeholder="{x:Static languages:AppResources.EnterEmail}"
+                                    TextColor="{DynamicResource EntryTextColor}"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame 
+                            Style="{DynamicResource FrameStyle}" 
+                            Padding="{x:OnPlatform Android='0,8,0,8', iOS='0'}"
+                            BackgroundColor="White" 
+                            BorderColor="#B3B3B3">
+
+                            <StackLayout 
+                                Spacing="0"
+                                Orientation="Horizontal">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="20"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" 
+                                    Margin="15,0,15,0"
+                                    WidthRequest="20">
+                                    <Image.Source>
+                                        <FontImageSource
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{x:Static font:FontAwesomeIcons.Phone}"
+                                        Size="20"
+                                        Color="Gray" />
+                                    </Image.Source>
+                                </Image>
+                                <!--This is email entry box-->
+                                <BoxView VerticalOptions="CenterAndExpand" Margin="0,10,0,10" Color="Gray" WidthRequest="1"></BoxView>
+                                <renderers:BorderlessEntry
+                                    Margin="10,0,10,0"
+                                    HorizontalOptions="FillAndExpand"
+                                    Placeholder="0096659xxxxxxx"
+                                    Text="{Binding Phone,Mode=TwoWay}"
+                                    Keyboard="Email"
+                                    TextColor="{DynamicResource EntryTextColor}"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Button
+                            Margin="{x:OnIdiom Tablet='150,20,150,10',Phone='5,20,5,10'}"
+                            BackgroundColor="{DynamicResource  ButtonBackgroudColor}"
+                            BorderColor="{DynamicResource  LightLabelTextColor}"
+                            Command="{Binding ParentUpdateCommand}"
+                            Style="{DynamicResource ButtonStyle}"
+                            Text="{x:Static languages:AppResources.Submit}"
+                            TextColor="White"
+                            x:Name="LoginButton" />
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

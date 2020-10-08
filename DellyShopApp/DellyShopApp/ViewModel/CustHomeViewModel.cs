@@ -75,7 +75,7 @@ namespace DellyShopApp.ViewModel {
         }
         public ICommand LoadBalanceCommand { get; set; }
         public ICommand ChartRefreshCommand { get; set; }
-
+        public ICommand TopupCommand { get; set; }
         public ICommand CreditLimitCommand { get; set; }
         public ICommand NavigateToDetailPageCommand { get; set; }
 
@@ -110,11 +110,15 @@ namespace DellyShopApp.ViewModel {
             ChartRefreshCommand = new Command( OnChartRefresh );
             CreditLimitCommand = new Command( OnCreditLimit );
             LoadBalanceCommand = new Command( OnLoadBalance );
-
+            TopupCommand = new Command( OnTopupCommand );
             NavigateToDetailPageCommand = new Command<ChildWithProducts>( vm => OnNavigateToDetailPage( vm ) );
             SetChart();
             //SetCreditLimit();
             SetMessagingCenter();
+        }
+
+        private void OnTopupCommand(object obj) {
+            HomeTabbedPage.Current.SetAddMoneyPage();
         }
 
         private void OnLoadBalance() {

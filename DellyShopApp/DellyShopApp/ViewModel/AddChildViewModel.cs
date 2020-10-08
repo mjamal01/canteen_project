@@ -164,12 +164,12 @@ namespace DellyShopApp.ViewModel {
 
         private void OnAddChild() {
 
-            if ( string.IsNullOrEmpty( UniqueId ) ) {
+            if ( string.IsNullOrEmpty( UniqueId ) || !AppServices.IsValidAqamaId( UniqueId ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter IqamaID.", "Back" );
                 return;
             }
 
-            if ( string.IsNullOrEmpty( FullName ) ) {
+            if ( string.IsNullOrEmpty( FullName ) || !AppServices.IsValidFullName( FullName ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter full name.", "Back" );
                 return;
             }
@@ -210,7 +210,14 @@ namespace DellyShopApp.ViewModel {
                 };
 
                 if ( childImageMediaFile != null ) {
+
                     var file = childImageMediaFile.GetByteArray();
+                    if ( ( long ) file.Length > Global.MaxPhotoSize ) {
+                        long num = Global.MaxPhotoSize / 1048576L;
+                        Application.Current.MainPage.DisplayAlert( "Invalid", string.Format( "Please select image less than {0} mb", num ), "Back" );
+                        return;
+                    }
+
                     content.Add( new ByteArrayContent( file, 0, file.Length ), "avatar", "avatar.jpg" );
                 }
 

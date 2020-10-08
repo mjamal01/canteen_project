@@ -61,7 +61,7 @@ namespace DellyShopApp.Views.Pages {
                 await DisplayAlert( "Error", "User name or password cannot be empty.", "ok" );
                 LoginButton.IsEnabled = true;
                 return;
-            } 
+            }
 
             try {
 
@@ -93,9 +93,7 @@ namespace DellyShopApp.Views.Pages {
 
                     Global.token = accessToken;
                     //Here get the user info
-                    var result = HelperClass.GetRecord( $"{Global.WebApiUrl}/api/user/GetUserInfoMobile?username={EntryUserName.Text}" );
-
-                    var userInfo = JsonConvert.DeserializeObject<UserInfo>( result );
+                    var userInfo = RestService.GetUserInfoMobile( EntryUserName.Text, true );
 
                     Global.Username = userInfo.Username;
                     Global.LoggedInUserId = userInfo.UserId;
@@ -103,6 +101,7 @@ namespace DellyShopApp.Views.Pages {
                     Global.ParentId = userInfo.ParentId;
                     Global.ParentName = userInfo.ParentName;
                     //await DisplayAlert("Login", "Login Successful", "ok");
+                    RestService.GetParentProfile( true );
                     RestService.GetChildrenSchoolsList( true );
                     RestService.GetSchoolsList( true );
                     RestService.GetChildrenMoneyAndProductsDetail( true );

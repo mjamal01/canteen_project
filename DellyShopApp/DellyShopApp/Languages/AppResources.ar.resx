@@ -596,4 +596,7 @@
   <data name="TotalDebit" xml:space="preserve">
     <value>إجمالي الخصم</value>
   </data>
+  <data name="Personalize" xml:space="preserve">
+    <value>أضفى طابع شخصي</value>
+  </data>
 </root>

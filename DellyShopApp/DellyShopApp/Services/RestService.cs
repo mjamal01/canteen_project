@@ -15,7 +15,9 @@ namespace DellyShopApp.Services {
         private static ObservableCollection<School> schoolsList { get; set; }
 
         private static ObservableCollection<School> childrenSchoolsList { get; set; }
+        private static ParentProfile parentProfile { get; set; }
 
+        private static UserInfo userInfoMobile { get; set; }
         private static ParentWithCrdandDeb parentCashInfo { get; set; }
 
         public static ObservableCollection<ChildWithProducts> GetChildrenMoneyAndProductsDetail(bool refresh = false) {
@@ -67,5 +69,19 @@ namespace DellyShopApp.Services {
             return childrenSchoolsList;
 
         }
+
+
+        public static ParentProfile GetParentProfile(bool refresh = false) {
+            if ( parentProfile == null || refresh )
+                parentProfile = JsonConvert.DeserializeObject<ParentProfile>( HelperClass.GetRecord( string.Format( "{0}/api/parent/GetParentProfile?id={1}", Global.WebApiUrl, Global.ParentId ) ) );
+            return parentProfile;
+        }
+
+        public static UserInfo GetUserInfoMobile(string email = null, bool refresh = false) {
+            if ( userInfoMobile == null || refresh )
+                userInfoMobile = JsonConvert.DeserializeObject<UserInfo>( HelperClass.GetRecord( Global.WebApiUrl + "/api/user/GetUserInfoMobile?username=" + ( email ?? Global.Username ) ) );
+            return userInfoMobile;
+        }
+
     }
 }

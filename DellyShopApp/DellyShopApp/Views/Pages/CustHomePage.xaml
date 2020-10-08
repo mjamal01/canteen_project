@@ -225,11 +225,16 @@
 
                                 <Label 
                                 Grid.Column="0" 
+                                InputTransparent="True"
                                 Text="{x:Static languages:AppResources.Topup}"  
                                 HorizontalTextAlignment="Center" 
                                 VerticalTextAlignment="Center" 
                                 TextColor="#A4FFFFFF" FontSize="12" ></Label>
-                                <ImageButton Grid.Column="1" HorizontalOptions="End"  BackgroundColor="Transparent">
+                                <ImageButton 
+                                    Grid.Column="1" 
+                                    InputTransparent="True"
+                                    HorizontalOptions="End" 
+                                    BackgroundColor="Transparent">
                                     <ImageButton.Source>
                                         <FontImageSource
                                             FontFamily="{DynamicResource MaterialFontFamily}"
@@ -237,6 +242,12 @@
                                             Color="White" />
                                     </ImageButton.Source>
                                 </ImageButton>
+
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                            Command="{Binding TopupCommand}"
+                                            NumberOfTapsRequired="1" />
+                                </Grid.GestureRecognizers>
                             </Grid>
                         </Grid>
 

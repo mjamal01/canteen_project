@@ -627,4 +627,7 @@ If you have any concerns about your Information on the Platform, please contact 
   <data name="TotalDebit" xml:space="preserve">
     <value>Total Debit</value>
   </data>
+  <data name="Personalize" xml:space="preserve">
+    <value>Personalize</value>
+  </data>
 </root>

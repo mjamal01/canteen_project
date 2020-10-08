@@ -14,5 +14,6 @@ namespace DellyShopApp {
         static public string CashTransDetail { get; set; }
 
         static public bool DebugMode { get; set; } = false;
+        public static long MaxPhotoSize { get; } = 1048576L;
     }
 }

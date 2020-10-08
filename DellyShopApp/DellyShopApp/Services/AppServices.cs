@@ -6,6 +6,7 @@ using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -14,83 +15,69 @@ using Xamarin.Forms;
 
 namespace DellyShopApp.Services {
     public static class AppServices {
-
-        private static Page MainPage => Application.Current.MainPage;
-        private static Page CurrentPage => Application.Current.MainPage;
-        public readonly static Dictionary<string, string> Languages = new Dictionary<string, string>() {
+        public static readonly Dictionary<string, string> Languages = new Dictionary<string, string>() {
             ["en"] = "English",
             ["ar"] = "العربية"
         };
 
+        private static Page CurrentPage {
+            get => Application.Current.MainPage;
+            set => Application.Current.MainPage = value;
+        }
+
         public static async void SelectLanguage() {
-
-            if ( CurrentPage == null ) {
+            if ( AppServices.CurrentPage == null )
                 return;
-            }
-            string[] languages = { "English", "العربية" };
-
-            var selectlanguage = await CurrentPage.DisplayActionSheet( AppResources.SelectLanguage, AppResources.Cancel, null, languages );
-
-            switch ( selectlanguage ) {
-                case "English":
-
+            try {
+                string selectlanguage = await AppServices.CurrentPage.DisplayActionSheet( AppResources.SelectLanguage, "", "", AppServices.Languages.Select( t => t.Value ).ToArray<string>() );
+                if ( selectlanguage == AppServices.Languages["en"] ) {
                     if ( Settings.SelectLanguage == "ar" ) {
                         Settings.SelectLanguage = "en";
                         Thread.CurrentThread.CurrentUICulture = new CultureInfo( "en" );
                         AppResources.Culture = new CultureInfo( "en" );
-                        Application.Current.MainPage = new NavigationPage( new LoginPage() );
-                        SetPageFlow();
-                    }
-
-                    break;
-                case "العربية":
-
+                        AppServices.CurrentPage = ( Page ) new NavigationPage( ( Page ) new LoginPage() );
+                        AppServices.SetPageFlow();
+                    } else
+                        await AppServices.CurrentPage.DisplayAlert( "Waning", "Selected language is already " + selectlanguage, "Back" );
+                } else if ( selectlanguage == AppServices.Languages["ar"] ) {
                     if ( Settings.SelectLanguage == "en" ) {
                         Settings.SelectLanguage = "ar";
                         Thread.CurrentThread.CurrentUICulture = new CultureInfo( "ar" );
                         AppResources.Culture = new CultureInfo( "ar" );
-                        Application.Current.MainPage = new NavigationPage( new LoginPage() );
-                        SetPageFlow();
-                    }
-
-                    break;
-                default:
-                    break;
-            }
-
-            void SetPageFlow() {
-                Application.Current.MainPage.FlowDirection = Settings.SelectLanguage == "ar" ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+                        AppServices.CurrentPage = ( Page ) new NavigationPage( ( Page ) new LoginPage() );
+                        AppServices.SetPageFlow();
+                    } else
+                        await AppServices.CurrentPage.DisplayAlert( "Waning", "Selected language is already " + selectlanguage, "Back" );
+                } else
+                    await AppServices.CurrentPage.DisplayAlert( "Waning", "No language is selected.", "Back" );
+                selectlanguage = ( string ) null;
+            } catch ( Exception ex ) {
+                await AppServices.CurrentPage.DisplayAlert( "Error", "Unable to change language please try again later. " + ex.Message, "Back" );
             }
         }
 
-        public static async Task<MediaFile> PickImageFromPhone() {
-            var initialize = await CrossMedia.Current.Initialize();
+        public static void SetPageFlow() => AppServices.CurrentPage.FlowDirection = Settings.SelectLanguage == "ar" ? ( FlowDirection ) 2 : ( FlowDirection ) 1;
 
+        public static async Task<MediaFile> PickImageFromPhone() {
+
+            bool initialize = await CrossMedia.Current.Initialize();
             if ( !CrossMedia.Current.IsPickPhotoSupported ) {
-                await MainPage.DisplayAlert( "Access denied", "No access available.", "OK" );
+                await AppServices.CurrentPage.DisplayAlert( "Access denied", "No access available.", "OK" );
                 return null;
             }
 
-            //new Plugin.Media.Abstractions.StoreCameraMediaOptions {
-            //    Directory = "Sample",
-            //    Name = "test.jpg"
-            //}
-
             var file = await CrossMedia.Current.PickPhotoAsync();
-
-            if ( file == null )
-                return null;
-
             return file;
         }
 
-        public static bool IsValidEmail(string email) {
-            return Regex.Match( email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" ).Success;
-        }
-        //
+        public static bool IsValidAqamaId(string id) => id.Length == 10 & AppServices.IsNumberOnly( id );
 
-        public static bool IsValidPhoneNumber(string phone) {
-            return Regex.Match( phone, @"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" ).Success;
-        }
+        public static bool IsValidFullName(string email) => Regex.Match( email, "^[a-zA-Z ]*$" ).Success;
+
+        public static bool IsValidEmail(string email) => Regex.Match( email, "^([\\w\\.\\-]+)@([\\w\\-]+)((\\.(\\w){2,3})+)$" ).Success;
+
+        public static bool IsValidPhoneNumber(string phone) => phone.Length == 14 & phone.StartsWith( "00" ) & AppServices.IsNumberOnly( phone );
+
+        public static bool IsNumberOnly(string number) => Regex.Match( number, "^[0-9]*$" ).Success;
     }
 }

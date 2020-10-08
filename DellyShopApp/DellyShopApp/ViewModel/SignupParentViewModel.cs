@@ -59,11 +59,11 @@ namespace DellyShopApp.ViewModel {
 
         private void OnParentSignup() {
 
-            if ( string.IsNullOrEmpty( IqamaId ) ) {
+            if ( string.IsNullOrEmpty( IqamaId ) || !AppServices.IsValidAqamaId( IqamaId ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter IqamaID.", "Back" );
                 return;
             }
-            if ( string.IsNullOrEmpty( FullName ) ) {
+            if ( string.IsNullOrEmpty( FullName ) || !AppServices.IsValidFullName( FullName ) ) {
                 Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter full name.", "Back" );
                 return;
             }

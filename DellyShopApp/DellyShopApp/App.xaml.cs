@@ -17,13 +17,8 @@ namespace DellyShopApp {
             InitializeComponent();
             FlowListView.Init();
 
-            if ( Settings.SelectLanguage == "" ) {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo( "en" );
-                AppResources.Culture = new CultureInfo( "en" );
-            } else {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo( Settings.SelectLanguage );
-                AppResources.Culture = new CultureInfo( Settings.SelectLanguage );
-            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo( Settings.SelectLanguage );
+            AppResources.Culture = new CultureInfo( Settings.SelectLanguage );
 
             //MainPage navigation = new MainPage();
             var navigation = new LoginPage();  //new HomeTabbedPage(); // new CustHomePage(); //new LoginPage(); //

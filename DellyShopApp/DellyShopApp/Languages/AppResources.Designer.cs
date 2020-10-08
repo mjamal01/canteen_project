@@ -871,6 +871,15 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Personalize.
+        /// </summary>
+        internal static string Personalize {
+            get {
+                return ResourceManager.GetString("Personalize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone Number.
         /// </summary>
         internal static string PhoneNumber {

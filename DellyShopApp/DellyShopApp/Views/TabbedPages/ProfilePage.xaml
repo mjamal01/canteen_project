@@ -63,7 +63,7 @@
                             FontSize="20"
                             HorizontalOptions="Start"
                             LineBreakMode="TailTruncation"
-                            Text="{x:Static app:Global.ParentName}"
+                            Text="{Binding FullName}"
                             TextColor="{DynamicResource WhiteDarkFontColor}"
                             VerticalOptions="Start"
                             VerticalTextAlignment="Center" />
@@ -72,7 +72,7 @@
                             FontSize="16"
                             HorizontalOptions="Start"
                             LineBreakMode="TailTruncation"
-                            Text="{x:Static app:Global.Username}"
+                            Text="{Binding Email}"
                             TextColor="{DynamicResource WhiteDarkFontColor}"
                             VerticalOptions="Start"
                             VerticalTextAlignment="Center" />
@@ -267,7 +267,45 @@
                         </Image>
                     </StackLayout>
                 </pancakeView:PancakeView>-->
-
+                <pancakeView:PancakeView
+                    Margin="0,10,0,0"
+                    ClassId="Personalize"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{DynamicResource PancakeFrameStyle}">
+                    <pancakeView:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OrderInfoClick" />
+                    </pancakeView:PancakeView.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Image
+                            Margin="10,0,10,0"
+                            HeightRequest="25"
+                            Style="{DynamicResource ImageStyleEntry}"
+                            WidthRequest="25">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.UserAlt3}"
+                                    Size="25"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            FontSize="20"
+                            Style="{DynamicResource ProfleLabelStyle}"
+                            Text="{x:Static languages:AppResources.Personalize}" />
+                        <Image
+                            Aspect="AspectFit"
+                            HorizontalOptions="EndAndExpand"
+                            Style="{DynamicResource ImageStyleEntry}">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{x:Static font:FontAwesomeIcons.ThinRight}"
+                                    Color="{DynamicResource IconBgColor}" />
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </pancakeView:PancakeView>
                 <pancakeView:PancakeView
                     Margin="0,10,0,0"
                     ClassId="Notifications"
