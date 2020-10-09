@@ -284,29 +284,21 @@
             <StackLayout 
                 Padding="20"
                 VerticalOptions="EndAndExpand"
-                HorizontalOptions="Center">
-                <Label  
-                    TextColor="#B3B3B3">
-                    <Label.FormattedText>
+                HorizontalOptions="CenterAndExpand">
 
-                        <FormattedString>
+                <Label 
+                    Text="{x:Static helpers:AppResources.ARR}" 
+                    FontSize="11" 
+                    HorizontalTextAlignment="Center"
+                    TextColor="#B3B3B3"></Label>
 
-                            <Span 
-                                Text="{x:Static helpers:AppResources.ARR}" 
-                                FontSize="11" 
-                                TextColor="#B3B3B3"></Span>
+                <Label 
+                    Text="{x:Static helpers:AppResources.TandC}" 
+                    FontAttributes="Bold"   
+                    HorizontalTextAlignment="Center"
+                    FontSize="11" 
+                    TextColor="{DynamicResource LightLabelTextColor}" ></Label>
 
-                            <Span 
-                                Text="{x:Static helpers:AppResources.TandC}" 
-                                FontAttributes="Bold"   
-                                FontSize="11" 
-                                TextColor="{DynamicResource LightLabelTextColor}" ></Span>
-
-                        </FormattedString>
-
-                    </Label.FormattedText>
-
-                </Label>
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer  Tapped="TandCTabbed" />
                 </StackLayout.GestureRecognizers>

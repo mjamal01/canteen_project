@@ -169,7 +169,7 @@
     <value>Discounts up to 50%</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>0096659xxxxxxx</value>
   </data>
   <data name="PreviousViewed" xml:space="preserve">
     <value>Previous Viewed</value>
@@ -502,16 +502,16 @@
     <value>Enter address</value>
   </data>
   <data name="EnterEmail" xml:space="preserve">
-    <value>Enter email</value>
+    <value>Enter email address</value>
   </data>
   <data name="EnterPhone" xml:space="preserve">
-    <value>Enter phone number</value>
+    <value>0096659xxxxxxx</value>
   </data>
   <data name="FullName" xml:space="preserve">
     <value>Enter full name</value>
   </data>
   <data name="NationalID" xml:space="preserve">
-    <value>National / iqama ID</value>
+    <value>National / AqamaID</value>
   </data>
   <data name="Picture" xml:space="preserve">
     <value>Picture</value>
@@ -592,7 +592,7 @@ If you have any concerns about your Information on the Platform, please contact 
     <value>All Rights Reserved To 2020 Masrofee</value>
   </data>
   <data name="ForgotPasswordDetails" xml:space="preserve">
-    <value>Please Enter The Email Address And You Will Receive An Email to Recover Your Password.</value>
+    <value>Please enter the email address and you will receive an email to recover your password.</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Submit</value>

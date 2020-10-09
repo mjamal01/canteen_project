@@ -68,11 +68,11 @@ namespace DellyShopApp.ViewModel {
         private void OnParentUpdate() {
 
             if ( string.IsNullOrEmpty( AqamaId ) || !AppServices.IsValidAqamaId( AqamaId ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid AqamaID.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid AqamaID and try again.", "Back" );
                 return;
             }
             if ( string.IsNullOrEmpty( FullName ) || !AppServices.IsValidFullName( FullName ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid full name.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid name and try again.", "Back" );
                 return;
             }
             if ( string.IsNullOrEmpty( Email ) || !AppServices.IsValidEmail( Email ) ) {

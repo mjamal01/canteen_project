@@ -165,27 +165,27 @@ namespace DellyShopApp.ViewModel {
         private void OnAddChild() {
 
             if ( string.IsNullOrEmpty( UniqueId ) || !AppServices.IsValidAqamaId( UniqueId ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter IqamaID.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid AqamaID and try again.", "Back" );
                 return;
             }
 
             if ( string.IsNullOrEmpty( FullName ) || !AppServices.IsValidFullName( FullName ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter full name.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid name and try again.", "Back" );
                 return;
             }
 
             if ( string.IsNullOrEmpty( Email ) || !AppServices.IsValidEmail( Email ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter email.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid email address and try again.", "Back" );
                 return;
             }
 
             if ( string.IsNullOrEmpty( Phone ) || !AppServices.IsValidPhoneNumber( Phone ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter phone number.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid phone number. Must be start with 00 and 14 characters in length.", "Back" );
                 return;
             }
 
             if ( string.IsNullOrEmpty( Address ) ) {
-                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter address.", "Back" );
+                Application.Current.MainPage.DisplayAlert( "Invalid", "Please enter a valid address.", "Back" );
                 return;
             }
 

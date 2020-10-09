@@ -448,7 +448,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter email.
+        ///   Looks up a localized string similar to Enter email address.
         /// </summary>
         internal static string EnterEmail {
             get {
@@ -475,7 +475,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter phone number.
+        ///   Looks up a localized string similar to 0096659xxxxxxx.
         /// </summary>
         internal static string EnterPhone {
             get {
@@ -529,7 +529,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please Enter The Email Address And You Will Receive An Email to Recover Your Password..
+        ///   Looks up a localized string similar to Please enter the email address and you will receive an email to recover your password..
         /// </summary>
         internal static string ForgotPasswordDetails {
             get {
@@ -745,7 +745,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to National / iqama ID.
+        ///   Looks up a localized string similar to National / AqamaID.
         /// </summary>
         internal static string NationalID {
             get {
@@ -880,7 +880,7 @@ namespace DellyShopApp.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phone Number.
+        ///   Looks up a localized string similar to 0096659xxxxxxx.
         /// </summary>
         internal static string PhoneNumber {
             get {

@@ -58,6 +58,7 @@
                         Grid.Column="0"
                         HeightRequest="50"
                         WidthRequest="50"
+                        Aspect="AspectFill"
                         Source="{Binding ChildDetail.Avatar}"/>
 
                     <StackLayout 
@@ -111,7 +112,7 @@
                             </yummy:PancakeView>
                         </StackLayout>-->
 
-                        <yummy:PancakeView
+                        <!--<yummy:PancakeView
                             Margin="0" 
                             Grid.Column="1"  
                             HorizontalOptions="End"
@@ -133,7 +134,7 @@
                                     NumberOfTapsRequired="1" />
 
                             </yummy:PancakeView.GestureRecognizers>
-                        </yummy:PancakeView>
+                        </yummy:PancakeView>-->
 
                         <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
 
@@ -216,30 +217,34 @@
 
             <Grid 
                 Margin="20,0,20,5" 
-                ColumnSpacing="0" 
+                ColumnSpacing="20" 
                 Grid.Row="3" 
                 ColumnDefinitions="*,*">
 
-                <StackLayout Grid.Column="0" Margin="0" Orientation="Horizontal">
+                <yummy:PancakeView
+                    Grid.Column="0" 
+                    BackgroundColor="#2400FF00"
+                    Margin="0"    
+                    Padding="{x:OnPlatform Android='16', iOS='13'}"   
+                    HasShadow="True"
+                    CornerRadius="5,5,5,5"  
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <yummy:PancakeView.Border>
+                        <yummy:Border Color="Green" Thickness="1" />
+                    </yummy:PancakeView.Border>
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding UploadChildDialyLimitCommand}"
+                            NumberOfTapsRequired="1" />
+                    </yummy:PancakeView.GestureRecognizers>
                     <Label 
-                        Text="{x:Static languages:AppResources.CanteenStatus}" 
-                        TextColor="Black" 
-                        FontAttributes="Bold" 
-                        FontSize="{x:OnPlatform Android='12', iOS='13'}" 
-                        VerticalTextAlignment="Center"></Label>
-                    <yummy:PancakeView
-                        Grid.Column="0" 
-                        BackgroundColor="Green" 
-                        Margin="0"    
-                        Padding="{x:OnPlatform Android='10', iOS='10,3,10,5'}"    
-                        CornerRadius="0">
-                        <Label 
-                            Text="{x:Static languages:AppResources.Active}" 
-                            FontSize="{x:OnPlatform Android='12', iOS='15'}" 
-                            VerticalTextAlignment="Center" 
-                            TextColor="White"></Label>
-                    </yummy:PancakeView>
-                </StackLayout>
+                        TextColor="Green" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        FontSize="{x:OnPlatform Android='15', iOS='15'}" 
+                        Text="{x:Static languages:AppResources.Save}"></Label>
+                </yummy:PancakeView>
 
                 <Frame 
                     Grid.Column="1"
@@ -251,7 +256,8 @@
 
                     <renderers:BorderlessPicker 
                         ItemsSource="{Binding WeekDays}" 
-                        Title="Select day" 
+                        Title="Select day"  
+                        FontSize="15"
                         TextColor="{DynamicResource EntryTextColor}" 
                         TitleColor="Gray" 
                         SelectedIndex="{Binding SelectedDay, Mode=TwoWay}"  ></renderers:BorderlessPicker>

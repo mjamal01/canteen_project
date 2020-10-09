@@ -53,7 +53,7 @@
 
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="150"/>
                         <RowDefinition Height="Auto"/>
@@ -64,27 +64,34 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <StackLayout Padding="10,20,10,0" Grid.Row="0" Margin="0" Spacing="0" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Padding="20" Grid.Row="0" Margin="0" Spacing="5" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
                         <Label  
                             HorizontalOptions="CenterAndExpand" 
-                            VerticalOptions="Start"  
-                            Text="{x:Static languages:AppResources.Balance}" 
+                            VerticalOptions="Start"   
+                            FontSize="24"
+                            BindingContext="{x:Static languages:AppResources.Balance}"
+                            Text="{Binding ., StringFormat='{0:0}:'}" 
                             TextColor="{DynamicResource WhiteDarkFontColor}"></Label>
 
                         <Label 
-                        HorizontalOptions="CenterAndExpand" 
-                        VerticalOptions="Start" 
-                        FontSize="36"
-                        FontAttributes="Bold" 
-                        TextColor="{DynamicResource WhiteDarkFontColor}">
-
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="{Binding TotalBalance, StringFormat='{0:0}'}" />
-                                    <Span Text="{x:Static languages:AppResources.SAR}"/>
-                                </FormattedString>
-                            </Label.FormattedText>
+                            HorizontalOptions="CenterAndExpand" 
+                            VerticalOptions="Start" 
+                            FontSize="24"
+                            Text="{Binding TotalBalance, StringFormat='{0:0}'}"
+                            FontAttributes="Bold" 
+                            TextColor="{DynamicResource WhiteDarkFontColor}">
                         </Label>
+
+                        <Label 
+                            HorizontalOptions="CenterAndExpand" 
+                            VerticalOptions="Start" 
+                            FontSize="24" 
+                            Text="{x:Static languages:AppResources.SAR}"
+                            FontAttributes="Bold" 
+                            TextColor="{DynamicResource WhiteDarkFontColor}">
+                        </Label>
+
                     </StackLayout>
 
                     <StackLayout Grid.Row="1" Padding="20,0,20,0"  Margin="10,0,10,0"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
